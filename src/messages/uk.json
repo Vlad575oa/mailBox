@@ -1,0 +1,119 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "features": "Features",
+        "reviews": "Reviews",
+        "faq": "FAQ",
+        "shop": "Shop Now"
+    },
+    "Hero": {
+        "badge": "Premium Collection 2024",
+        "title_start": "Elevate Your",
+        "title_end": "Curb Appeal",
+        "description": "Handcrafted from Corten steel and solid brass. A fusion of modern art and timeless durability. Designed to weather the storm and age gracefully.",
+        "cta_shop": "Shop Collection",
+        "cta_catalog": "View Catalog",
+        "badge_shipping": "Worldwide Shipping",
+        "badge_warranty": "5-Year Warranty",
+        "card_badge": "Best Seller",
+        "card_title": "Corten Wall Mount"
+    },
+    "Catalog": {
+        "title_start": "Curated",
+        "title_end": "Collection",
+        "description": "Explore our range of bespoke mailboxes, each crafted to stand the test of time.",
+        "all": "All",
+        "corten": "Corten Steel",
+        "brass": "Brass",
+        "steel": "Steel",
+        "no_products": "No products found in this category.",
+        "buy_now": "Buy Now"
+    },
+    "Benefits": {
+        "title_start": "Why",
+        "title_end": "FerrumDecor",
+        "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
+        "items": {
+            "artisan": {
+                "title": "Artisan Craftsmanship",
+                "description": "Forged by hand using techniques passed down through generations. Every weld tells a story of precision."
+            },
+            "element": {
+                "title": "Element Proof",
+                "description": "Engineered to withstand the harshest environments. From coastal salt spray to freezing mountain winds."
+            },
+            "sustainable": {
+                "title": "Sustainable Luxury",
+                "description": "Crafted from 100% recyclable, high-grade metals that age beautifully without harming the planet."
+            },
+            "aesthetic": {
+                "title": "Timeless Aesthetic",
+                "description": "Minimalist design that enhances modern and traditional architecture alike. A statement piece for your home."
+            }
+        }
+    },
+    "HowToOrder": {
+        "title": "How to Order",
+        "subtitle": "Your custom mailbox is just 3 steps away.",
+        "step1_title": "Choose Your Model",
+        "step1_desc": "Browse our catalog and select the design that fits your home.",
+        "step2_title": "Personalize",
+        "step2_desc": "Select material (Corten, Brass, Steel) and add address numbers.",
+        "step3_title": "We Craft & Ship",
+        "step3_desc": "We handcraft your order and ship it worldwide with care."
+    },
+    "Reviews": {
+        "title_start": "Trusted by",
+        "title_end": "Homeowners",
+        "subtitle": "See what our clients say about us.",
+        "items": [
+            {
+                "text": "The craftsmanship is incredible. It's not just a mailbox, it's a piece of art. The Corten steel looks amazing against our modern fence."
+            },
+            {
+                "text": "Arrived faster than expected. The personalization is precise and sharp. Highly recommend for anyone looking to upgrade their curb appeal."
+            },
+            {
+                "text": "Heavy duty and beautiful. The brass finish is stunning and draws compliments from all our neighbors. Worth every penny."
+            }
+        ]
+    },
+    "FAQ": {
+        "title_start": "Frequently Asked",
+        "title_end": "Questions",
+        "subtitle": "Everything you need to know about our products.",
+        "items": {
+            "shipping": {
+                "question": "Do you ship internationally?",
+                "answer": "Yes, we ship our mailboxes worldwide including the US, Canada, Europe, and Australia. Every package is securely crated to ensure safe arrival."
+            },
+            "production": {
+                "question": "How long does custom production take?",
+                "answer": "Since every item is hand-finished, standard orders ship within 2-3 business days. Personalized orders typically take 5-7 business days to craft with precision."
+            },
+            "corten": {
+                "question": "Will the Corten steel stain my wall?",
+                "answer": "Our Corten steel is pre-weathered but natural stabilization takes time. We recommend using the provided stand-off spacers to create a gap between the mailbox and the wall, preventing direct contact runoff."
+            },
+            "customization": {
+                "question": "Can I choose a different font for numbers?",
+                "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
+            }
+        }
+    },
+    "Footer": {
+        "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
+        "newsletter_title": "Newsletter",
+        "newsletter_desc": "Subscribe for exclusive designs and offers.",
+        "subscribe": "Join",
+        "rights": "FerrumDecor Studio. All rights reserved.",
+        "links": {
+            "shop": "Collections",
+            "support": "Support",
+            "how_to": "How to Order",
+            "contact": "Contact Us",
+            "terms": "Terms of Service",
+            "privacy": "Privacy Policy"
+        }
+    }
+}
