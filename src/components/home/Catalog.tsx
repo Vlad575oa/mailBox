@@ -29,30 +29,30 @@ export function Catalog() {
     };
 
     return (
-        <section id="catalog" className="py-24 bg-white">
-            <div className="container mx-auto px-4 lg:px-6">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-                    <div>
+        <section id="catalog" className="py-32 bg-[#09090b]">
+            <div className="container mx-auto px-6 lg:px-12">
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-12 border-b border-gray-800 pb-12">
+                    <div className="max-w-2xl">
                         <FadeIn>
-                            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-                                {t('title_start')} <span className="text-primary">{t('title_end')}</span>
+                            <h2 className="text-5xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
+                                {t('title_start')} <span className="font-medium italic gold-text">{t('title_end')}</span>
                             </h2>
                         </FadeIn>
                         <FadeIn delay={0.1}>
-                            <p className="mt-4 text-lg text-gray-600 max-w-2xl">
+                            <p className="text-xl text-gray-400 font-light leading-relaxed">
                                 {t('description')}
                             </p>
                         </FadeIn>
                     </div>
 
-                    <FadeIn delay={0.2} className="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+                    <FadeIn delay={0.2} className="flex flex-wrap gap-4">
                         {categories.map((cat) => (
                             <button
                                 key={cat}
                                 onClick={() => setFilter(cat)}
-                                className={`px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 border whitespace-nowrap ${filter === cat
-                                        ? 'bg-gray-900 text-white border-gray-900 shadow-lg scale-105'
-                                        : 'bg-white text-gray-600 border-gray-200 hover:border-gray-900 hover:text-gray-900'
+                                className={`px-8 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border ${filter === cat
+                                    ? 'bg-[#D4AF37] text-black border-[#D4AF37]'
+                                    : 'bg-transparent text-gray-400 border-gray-800 hover:border-[#D4AF37] hover:text-[#D4AF37]'
                                     }`}
                             >
                                 {getCategoryLabel(cat)}
@@ -61,14 +61,14 @@ export function Catalog() {
                     </FadeIn>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-16 gap-x-8">
                     {filteredProducts.map((product) => (
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </div>
 
                 {filteredProducts.length === 0 && (
-                    <div className="text-center py-20 text-gray-500">
+                    <div className="text-center py-32 text-gray-500 font-light text-xl">
                         {t('no_products')}
                     </div>
                 )}

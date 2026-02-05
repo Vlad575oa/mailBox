@@ -1,31 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Premium Light Mode (Optional, focusing on dark) */
+  --background: #f4f4f5;
+  /* Zinc 100 */
+  --foreground: #18181b;
+  /* Zinc 950 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  
-  --color-primary: #D97706;
-  --color-primary-dark: #B45309;
-  --color-secondary: #1F2937;
-  --color-metallic: #94A3B8;
+  --font-sans: var(--font-inter);
+
+  /* Luxury Palette */
+  --color-primary: #D4AF37;
+  /* Metallic Gold */
+  --color-primary-dark: #aa8c2c;
+  --color-secondary: #27272a;
+  /* Zinc 800 */
+  --color-accent: #e4e4e7;
+  /* Zinc 200 - Silver/Platinum tone */
+
+  /* Dark Mode Overrides (Default for Luxury) */
+  --color-dark-bg: #09090b;
+  /* Zinc 950 - Deep rich black */
+  --color-dark-surface: #18181b;
+  /* Zinc 900 */
+  --color-dark-text: #fafafa;
+  /* Zinc 50 */
+  --color-dark-muted: #a1a1aa;
+  /* Zinc 400 */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #09090b;
+    --foreground: #fafafa;
   }
 }
 
+/* Force Dark Mode Default for High-End Feel manually if needed, 
+   but respecting system pref for now while designing for dark first */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #09090b;
+  /* Defaulting to dark base */
+  color: #fafafa;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .metal-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400;
+  }
+
+  .gold-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37];
+  }
 }

@@ -15,54 +15,45 @@ export function ProductCard({ product }: ProductCardProps) {
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            whileHover={{ y: -8 }}
-            className="group relative flex flex-col overflow-hidden rounded-[1.5rem] bg-white transition-all duration-300 shadow-lg hover:shadow-xl border border-gray-100"
+            whileHover={{ y: -5 }}
+            className="group relative flex flex-col bg-[#18181b] rounded-none overflow-hidden"
         >
-            {/* Image Container */}
-            <div className="relative aspect-[4/5] w-full overflow-hidden bg-gray-100">
+            {/* Image Container - Minimalist */}
+            <div className="relative aspect-[3/4] w-full overflow-hidden">
                 <Image
                     src={product.image}
                     alt={product.title}
                     fill
-                    className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                    className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                 />
 
-                {/* Overlay gradient on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
-                {/* Floating Price */}
-                <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm text-sm font-bold text-gray-900 border border-white/50">
-                    {product.price}
-                </div>
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
             </div>
 
-            {/* Content */}
-            <div className="relative p-6 flex flex-col flex-grow">
-                <div className="mb-3 flex items-center gap-2">
-                    <span className="inline-block h-2 w-2 rounded-full bg-primary" />
-                    <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">
-                        {product.material}
-                    </span>
+            {/* Content - Hidden initially or very minimal */}
+            <div className="pt-6 space-y-2">
+                <div className="flex justify-between items-start">
+                    <h3 className="text-xl font-light text-white tracking-wide group-hover:text-[#D4AF37] transition-colors">{product.title}</h3>
+                    <span className="text-lg font-medium text-[#D4AF37]">{product.price}</span>
                 </div>
 
-                <h3 className="mb-4 text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors">
-                    {product.title}
-                </h3>
+                <div className="flex justify-between items-center text-sm text-gray-500">
+                    <span className="uppercase tracking-wider text-xs">{product.material}</span>
+                </div>
 
-                {/* Hidden benefits that slide up on hover could go here, but kept clean for mobile */}
-
-                <div className="mt-auto pt-6 border-t border-gray-100 flex gap-3 opacity-90 group-hover:opacity-100 transition-opacity">
+                <div className="pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
                     <a
                         href={product.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1"
+                        className="block"
                     >
-                        <Button variant="premium" fullWidth size="sm" className="rounded-xl shadow-none">
+                        <Button variant="outline" fullWidth size="sm" className="border-gray-700 text-gray-300 hover:border-white hover:text-white rounded-none">
                             {t('buy_now')}
                         </Button>
                     </a>
