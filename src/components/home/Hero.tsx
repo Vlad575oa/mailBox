@@ -6,120 +6,15 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const products = [
-    {
-        id: 1,
-        name: 'Corten Steel Lord of the Rings',
-        price: '$359',
-        image: '/images/product-1.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-lord-of-the-rings-inspired-corten-postbox-unique-personalized-mail-box'
-    },
-    {
-        id: 2,
-        name: 'Custom Order Joe Edition',
-        price: '$1,525',
-        image: '/images/product-2.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-order-for-joe-custom-wall-mount-corten-steel-mailbox'
-    },
-    {
-        id: 3,
-        name: 'Modern Personalizable Corten',
-        price: '$359',
-        image: '/images/product-3.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-modern-personalizable-corten-postbox-unique-personalized-mail-box-copy-4'
-    },
-    {
-        id: 4,
-        name: 'Modern Colored Black Metal',
-        price: '$359',
-        image: '/images/product-4.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-mailbox-modern-colored-black-metal-postbox-unique-personalized-mail-box-copy-1'
-    },
-    {
-        id: 5,
-        name: 'Pure Brass 100% Letter Box',
-        price: '$949',
-        image: '/images/product-5.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/pure-brass-personalized-mailbox-modern-wall-mount-100-brass-letter-box-unique-personalized-post-box-copy'
-    },
-    {
-        id: 6,
-        name: 'Brass Personalized Letter Box',
-        price: '$949',
-        image: '/images/product-6.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/pure-brass-personalized-letter-box-modern-wall-mount-brass-mailbox-unique-personalized-post-box-copy'
-    },
-    {
-        id: 7,
-        name: 'Corten Steel Modern Series',
-        price: '$949',
-        image: '/images/product-7.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-modern-personalizable-corten-postbox-unique-personalized-mail-box-copy-3'
-    },
-    {
-        id: 8,
-        name: 'Corten Steel Personalizable V2',
-        price: '$359',
-        image: '/images/product-8.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-modern-personalizable-corten-postbox-unique-personalized-mail-box-copy-2'
-    },
-    {
-        id: 9,
-        name: 'Corten Steel Premium',
-        price: '$399',
-        image: '/images/product-9.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-modern-personalizable-corten-postbox-unique-personalized-mail-box-copy-1'
-    },
-    {
-        id: 10,
-        name: 'Black Metal Modern Postbox',
-        price: '$359',
-        image: '/images/product-10.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-mailbox-modern-colored-black-metal-postbox-unique-personalized-mail-box-copy'
-    },
-    {
-        id: 11,
-        name: 'Corten Wall Mount Classic',
-        price: '$229',
-        image: '/images/product-11.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-modern-personalizable-corten-postbox-unique-personalized-mail-box-copy'
-    },
-    {
-        id: 12,
-        name: 'Corten Steel Designer Edition',
-        price: '$395',
-        image: '/images/product-12.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-modern-personalizable-corten-postbox-unique-personalized-mail-box'
-    },
-    {
-        id: 13,
-        name: 'Merbau Wood Wall Mount',
-        price: '$395',
-        image: '/images/product-13.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/merbau-wall-mount-personalized-mailbox-copy'
-    },
-    {
-        id: 14,
-        name: 'Pure Brass Signature',
-        price: '$395',
-        image: '/images/product-14.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/pure-brass-personalized-mailbox-copy'
-    },
-    {
-        id: 15,
-        name: 'Brass Personalized Luxury',
-        price: '$949',
-        image: '/images/product-15.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/bespoke-custom-built-wall-mount-cor-ten-steel-mailbox-copy'
-    },
-    {
-        id: 16,
-        name: 'Corten Personalized Wall Mount',
-        price: '$445',
-        image: '/images/product-16.jpg',
-        url: 'https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-copy'
-    },
-];
+import productsData from '@/data/products.json';
+
+const products = productsData.map((item) => ({
+    id: item.id,
+    name: item.title,
+    price: item.price ? item.price.replace('.00 USD', '') : item.title.match(/\$\d+/)?.[0] || 'Price on request',
+    image: item.image,
+    url: item.link
+}));
 
 export function Hero() {
     const t = useTranslations('Hero');
@@ -135,13 +30,13 @@ export function Hero() {
                 style={{ y: y1 }}
                 className="absolute inset-0 z-0"
             >
-                <div className="absolute inset-0 bg-gradient-to-b from-[#F9F9F7]/12 to-[#F9F9F7] z-2" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#F9F9F7]/22 to-[#F9F9F7] z-2" />
                 <Image
                     src="/images/hero-bg-modern.png"
                     alt="Vintage Mailbox Background"
                     fill
                     priority
-                    className="object-cover opacity-89"
+                    className="object-cover opacity-70"
                 />
             </motion.div>
 
