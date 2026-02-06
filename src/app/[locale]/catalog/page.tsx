@@ -1,7 +1,8 @@
 import { ProductGrid } from '@/components/home/ProductGrid';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'Catalog' });
     return {
         title: t('title_start') + ' ' + t('title_end') + ' | FerrumDecor',
