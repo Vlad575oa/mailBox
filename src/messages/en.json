@@ -4,19 +4,69 @@
         "features": "Features",
         "reviews": "Reviews",
         "faq": "FAQ",
-        "shop": "Shop Now"
+        "shop": "Shop Now",
+        "about": "About Us",
+        "catalog": "Catalog"
     },
     "Hero": {
         "badge": "Premium Collection 2024",
         "title_start": "Elevate Your",
         "title_end": "Curb Appeal",
-        "description": "Handcrafted from Corten steel and solid brass. A fusion of modern art and timeless durability. Designed to weather the storm and age gracefully.",
+        "description": "A fusion of modern art and timeless durability.",
         "cta_shop": "Shop Collection",
         "cta_catalog": "View Catalog",
         "badge_shipping": "Worldwide Shipping",
         "badge_warranty": "5-Year Warranty",
         "card_badge": "Best Seller",
-        "card_title": "Corten Wall Mount"
+        "features_title": "Model Features",
+        "benefits": {
+            "durability": "Corten Steel Durability — Weather-resistant, corrosion-proof.",
+            "design": "Elegant Design — Steel and Pure Brass models fit any home exterior.",
+            "personalization": "Personalization Available — Add your name, logo, or custom design.",
+            "security": "Secure Locks — Protect your letters and parcels.",
+            "longevity": "Built to Last — Designed to last for decades."
+        },
+        "cta_buy": "Order Now",
+        "new_features": {
+            "materials_title": "Premium Materials",
+            "materials_desc": "Only certified steel and brass.",
+            "customization_title": "Personalization",
+            "customization_desc": "Your address, your style, your choice.",
+            "durability_title": "Durability",
+            "durability_desc": "50-year warranty against corrosion."
+        }
+    },
+    "ProductBento": {
+        "title": "Engineering Art",
+        "subtitle": "Every detail matters. We use the finest materials to craft perfection.",
+        "text": "We believe a mailbox is not just a container, but the first impression of your home.",
+        "details": [
+            "Laser cutting of steel with 0.1 mm precision.",
+            "Hand polishing of brass elements.",
+            "Weather-sealed construction for rain protection.",
+            "Reinforced hinges and anti-vandal lock."
+        ],
+        "material": {
+            "title": "Premium Materials",
+            "description": "Certified corten steel and solid brass."
+        },
+        "design": {
+            "title": "Unique Design",
+            "description": "Aesthetics ahead of time."
+        },
+        "durability": {
+            "title": "Durability",
+            "description": "50-year warranty against corrosion."
+        },
+        "customization": {
+            "title": "Customization",
+            "description": "Your address, your style, your choice."
+        }
+    },
+    "ProductGrid": {
+        "title": "Full Catalog",
+        "description": "Exclusive collection of corten and brass. Find your perfect mailbox.",
+        "buy_btn": "Buy on Ferrum"
     },
     "Catalog": {
         "title_start": "Curated",
@@ -32,6 +82,7 @@
     "Benefits": {
         "title_start": "Why",
         "title_end": "FerrumDecor",
+        "badge": "Why Choose Us",
         "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
         "items": {
             "artisan": {
@@ -112,6 +163,9 @@
             "support": "Support",
             "how_to": "How to Order",
             "contact": "Contact Us",
+            "corten": "Corten Steel",
+            "brass": "Solid Brass",
+            "custom": "Custom Orders",
             "terms": "Terms of Service",
             "privacy": "Privacy Policy"
         }

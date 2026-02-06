@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SmoothScroll } from '@/components/layout/SmoothScroll';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -40,14 +41,16 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col`}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
+          <SmoothScroll>
+            <Navbar />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </SmoothScroll>
         </NextIntlClientProvider>
         <script
           type="application/ld+json"

@@ -36,21 +36,23 @@ export function Navbar() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-                <div className="container mx-auto flex h-20 items-center justify-between px-6 md:px-12">
+                <div className="w-full flex h-20 items-center justify-between px-4 md:px-6 lg:px-8">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <span className="text-2xl font-light tracking-widest text-white">
-                            FERRUM<span className="font-bold gold-text">DECOR</span>
+                        <span className={`text-2xl font-medium tracking-widest transition-colors duration-300 ${isScrolled ? 'text-white' : 'text-black'
+                            }`}>
+                            FERRUM<span className="font-bold text-[#D4AF37]">DECOR</span>
                         </span>
                     </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-10">
                         <nav className="flex gap-8">
-                            {['features', 'reviews', 'faq'].map((item) => (
+                            {['about', 'features', 'reviews', 'faq'].map((item) => (
                                 <Link
                                     key={item}
-                                    href={`#${item}`}
-                                    className="relative text-sm font-medium tracking-wide text-gray-300 hover:text-white transition-colors duration-300 group"
+                                    href={item === 'about' ? '#brand-story' : `#${item}`}
+                                    className={`relative text-lg font-medium tracking-wide transition-colors duration-300 group ${isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-black hover:text-[#D4AF37]'
+                                        }`}
                                 >
                                     {t(item)}
                                     <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
@@ -58,19 +60,29 @@ export function Navbar() {
                             ))}
                         </nav>
 
-                        <div className="h-6 w-px bg-white/10"></div>
+                        <div className={`h-6 w-px transition-colors duration-300 ${isScrolled ? 'bg-white/10' : 'bg-black/10'
+                            }`}></div>
 
                         <div className="flex items-center gap-6">
-                            <LanguageSwitcher />
+                            <Link
+                                href="/catalog"
+                                className={`text-lg font-medium tracking-wide transition-colors duration-300 ${isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-black hover:text-[#D4AF37]'
+                                    }`}
+                            >
+                                {t('catalog')}
+                            </Link>
+
+                            <LanguageSwitcher isScrolled={isScrolled} />
 
                             <a
                                 href="https://ferrumdecorstudio.shop/collections/mail-boxes"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="relative px-6 py-2.5 overflow-hidden group bg-transparent border border-white/20 hover:border-[#D4AF37]/50 rounded-full transition-colors duration-300"
+                                className={`relative px-6 py-2.5 ml-8 overflow-hidden group rounded-full transition-colors duration-300 ${isScrolled ? 'bg-white hover:bg-[#D4AF37]' : 'bg-black hover:bg-[#D4AF37]'
+                                    }`}
                             >
-                                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#D4AF37]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                                <span className="relative text-sm font-medium text-white tracking-wider uppercase group-hover:text-[#D4AF37] transition-colors">
+                                <span className={`relative text-base font-medium tracking-wider uppercase transition-colors ${isScrolled ? 'text-black' : 'text-white'
+                                    }`}>
                                     {t('shop')}
                                 </span>
                             </a>
@@ -100,10 +112,10 @@ export function Navbar() {
                     >
                         <div className="container mx-auto px-6 flex flex-col gap-8 h-full">
                             <nav className="flex flex-col gap-6 items-center">
-                                {['features', 'reviews', 'faq'].map((item) => (
+                                {['about', 'features', 'reviews', 'faq'].map((item) => (
                                     <Link
                                         key={item}
-                                        href={`#${item}`}
+                                        href={item === 'about' ? '#brand-story' : `#${item}`}
                                         className="text-2xl font-light text-white/90 hover:text-[#D4AF37] transition-colors"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
@@ -115,7 +127,7 @@ export function Navbar() {
                             <div className="w-12 h-px bg-white/10 mx-auto"></div>
 
                             <div className="flex flex-col items-center gap-6">
-                                <LanguageSwitcher />
+                                <LanguageSwitcher isScrolled={isScrolled} />
 
                                 <a
                                     href="https://ferrumdecorstudio.shop/collections/mail-boxes"

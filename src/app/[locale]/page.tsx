@@ -1,17 +1,14 @@
 import { Hero } from '@/components/home/Hero';
-import { Benefits } from '@/components/home/Benefits';
-import { Catalog } from '@/components/home/Catalog';
-import { HowToOrder } from '@/components/home/HowToOrder';
+import { BrandStory } from '@/components/home/BrandStory';
+import { ProductBento } from '@/components/home/ProductBento';
 import { Reviews } from '@/components/home/Reviews';
 import { FAQ } from '@/components/home/FAQ';
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full bg-[#F9F9F7]">
       <Hero />
-      <Benefits />
-      <Catalog />
-      <HowToOrder />
+      <BrandStory />
       <Reviews />
       <FAQ />
     </div>

@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { ChangeEvent, useState, useTransition } from 'react';
 import { FaGlobe } from 'react-icons/fa';
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ isScrolled = false }: { isScrolled?: boolean }) {
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
@@ -37,7 +37,8 @@ export function LanguageSwitcher() {
         <div className="relative">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+                className={`flex items-center gap-2 px-3 py-2 text-lg font-medium transition-colors ${isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-black hover:text-[#D4AF37]'
+                    }`}
             >
                 <FaGlobe />
                 <span className="uppercase">{locale}</span>

@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  /* Premium Light Mode (Optional, focusing on dark) */
-  --background: #f4f4f5;
-  /* Zinc 100 */
-  --foreground: #18181b;
-  /* Zinc 950 */
+  /* Premium Light Palette */
+  --background: #F9F9F7;
+  /* Soft aesthetic cream/white */
+  --foreground: #1A1A1A;
+  /* Soft black for text */
+
+  /* Primary accents */
+  --color-gold: #B89E72;
+  /* Muted elegant gold */
+  --color-brass: #D4AF37;
+  /* Brass accent */
+
+  /* Secondary and Utility */
+  --color-soft-gray: #E5E5E5;
+  --color-warm-gray: #F2F0EB;
 }
 
 @theme inline {
@@ -13,42 +23,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
 
-  /* Luxury Palette */
-  --color-primary: #D4AF37;
-  /* Metallic Gold */
-  --color-primary-dark: #aa8c2c;
-  --color-secondary: #27272a;
-  /* Zinc 800 */
-  --color-accent: #e4e4e7;
-  /* Zinc 200 - Silver/Platinum tone */
-
-  /* Dark Mode Overrides (Default for Luxury) */
-  --color-dark-bg: #09090b;
-  /* Zinc 950 - Deep rich black */
-  --color-dark-surface: #18181b;
-  /* Zinc 900 */
-  --color-dark-text: #fafafa;
-  /* Zinc 50 */
-  --color-dark-muted: #a1a1aa;
-  /* Zinc 400 */
+  /* Extending theme with our premium colors */
+  --color-luxury-gold: var(--color-gold);
+  --color-luxury-brass: var(--color-brass);
+  --color-luxury-cream: var(--background);
+  --color-luxury-black: var(--foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #09090b;
-    --foreground: #fafafa;
-  }
-}
-
-/* Force Dark Mode Default for High-End Feel manually if needed, 
-   but respecting system pref for now while designing for dark first */
 body {
-  background: #09090b;
-  /* Defaulting to dark base */
-  color: #fafafa;
+  background: var(--background);
+  color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll from animations */
 }
 
 @layer utilities {
@@ -56,15 +45,18 @@ body {
     text-wrap: balance;
   }
 
-  .glass-panel {
-    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  /* Glassmorphism for light theme */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   }
 
-  .metal-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400;
-  }
-
-  .gold-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37];
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #B89E72 0%, #D4AF37 50%, #B89E72 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

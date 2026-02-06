@@ -8,7 +8,7 @@ export function Footer() {
     const t = useTranslations('Footer');
 
     return (
-        <footer className="bg-gray-950 text-white border-t border-white/5 pt-20 pb-10">
+        <footer id="contact" className="bg-gray-950 text-white border-t border-white/5 pt-20 pb-10">
             <div className="container mx-auto px-4 lg:px-6">
                 <div className="grid gap-12 md:grid-cols-4 mb-16">
                     <div className="md:col-span-1">
@@ -37,9 +37,9 @@ export function Footer() {
                         <FadeIn delay={0.1}>
                             <h4 className="font-bold text-lg mb-6 text-white">{t('links.shop')}</h4>
                             <ul className="space-y-4 text-gray-400 text-sm">
-                                <li><a href="#" className="hover:text-primary transition-colors">Corten Steel</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors">Solid Brass</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors">Custom Orders</a></li>
+                                <li><a href="https://ferrumdecorstudio.shop/collections/mail-boxes" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('links.corten')}</a></li>
+                                <li><a href="https://ferrumdecorstudio.shop/collections/mail-boxes" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('links.brass')}</a></li>
+                                <li><a href="https://ferrumdecorstudio.shop/collections/mail-boxes" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('links.custom')}</a></li>
                             </ul>
                         </FadeIn>
                     </div>
@@ -50,7 +50,7 @@ export function Footer() {
                             <ul className="space-y-4 text-gray-400 text-sm">
                                 <li><a href="#how-to-order" className="hover:text-primary transition-colors">{t('links.how_to')}</a></li>
                                 <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors">{t('links.contact')}</a></li>
+                                <li><a href="#contact" className="hover:text-primary transition-colors">{t('links.contact')}</a></li>
                             </ul>
                         </FadeIn>
                     </div>
@@ -61,13 +61,13 @@ export function Footer() {
                             <p className="text-gray-400 text-sm mb-4">
                                 {t('newsletter_desc')}
                             </p>
-                            <div className="flex gap-2">
+                            <div className="flex flex-col sm:flex-row gap-2">
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-primary w-full"
+                                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-primary w-full transition-all"
                                 />
-                                <button className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors">
+                                <button className="bg-primary text-white px-6 py-3 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20 whitespace-nowrap">
                                     {t('subscribe')}
                                 </button>
                             </div>
