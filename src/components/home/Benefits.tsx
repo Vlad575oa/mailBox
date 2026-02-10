@@ -1,6 +1,4 @@
-'use client';
-
-import { FaShieldAlt, FaFeather, FaHammer, FaRecycle } from 'react-icons/fa';
+import { FaShieldAlt, FaFeather, FaHammer, FaRecycle, FaGlobe, FaTruck, FaUserEdit, FaDraftingCompass } from 'react-icons/fa';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
 import clsx from 'clsx';
@@ -11,102 +9,115 @@ export function Benefits() {
 
     const features = [
         {
-            key: 'artisan',
+            key: 'production',
             icon: FaHammer,
-            title: t('items.artisan.title'),
-            description: t('items.artisan.description'),
-            className: "md:col-span-2 md:row-span-2 min-h-[400px]",
-            image: "/images/product-6.jpg" // Corten visual
-        },
-        {
-            key: 'element',
-            icon: FaShieldAlt,
-            title: t('items.element.title'),
-            description: t('items.element.description'),
+            title: t('items.production.title'),
+            description: t('items.production.description'),
             className: "md:col-span-1 md:row-span-1",
-            image: "/images/product-7.jpg" // Brass visual
+            image: null
         },
         {
-            key: 'sustainable',
+            key: 'design',
+            icon: FaDraftingCompass,
+            title: t('items.design.title'),
+            description: t('items.design.description'),
+            className: "md:col-span-1 md:row-span-1",
+            image: null
+        },
+        {
+            key: 'materials',
             icon: FaRecycle,
-            title: t('items.sustainable.title'),
-            description: t('items.sustainable.description'),
+            title: t('items.materials.title'),
+            description: t('items.materials.description'),
+            className: "md:col-span-1 md:row-span-1",
+            image: null
+        },
+        {
+            key: 'durability',
+            icon: FaShieldAlt,
+            title: t('items.durability.title'),
+            description: t('items.durability.description'),
+            className: "md:col-span-1 md:row-span-1",
+            image: null
+        },
+        {
+            key: 'personalization',
+            icon: FaUserEdit,
+            title: t('items.personalization.title'),
+            description: t('items.personalization.description'),
             className: "md:col-span-1 md:row-span-1",
             image: null // Icon focused
         },
         {
-            key: 'aesthetic',
-            icon: FaFeather,
-            title: t('items.aesthetic.title'),
-            description: t('items.aesthetic.description'),
-            className: "md:col-span-2 md:row-span-1",
-            image: "/images/product-8.jpg" // Designer visual
+            key: 'international',
+            icon: FaGlobe,
+            title: t('items.international.title'),
+            description: t('items.international.description'),
+            className: "md:col-span-1 md:row-span-1",
+            image: null
+        },
+        {
+            key: 'delivery',
+            icon: FaTruck,
+            title: t('items.delivery.title'),
+            description: t('items.delivery.description'),
+            className: "md:col-span-1 md:row-span-1",
+            image: null
         }
     ];
 
     return (
         <section id="features" className="py-24 bg-white relative overflow-hidden">
-
             <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                <div className="mb-16 max-w-3xl">
+                <div className="mb-16 max-w-4xl mx-auto text-center">
                     <FadeIn>
-                        <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-xs mb-2 block">{t('badge')}</span>
+                        <span className="text-[#C5A059] font-bold tracking-widest uppercase text-xs mb-2 block">{t('badge')}</span>
                         <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-[#1A1A1A] mb-6">
-                            {t('title_start')} <span className="font-serif italic text-[#D4AF37]">{t('title_end')}</span>
+                            {t('title_start')} <span className="font-serif italic text-gradient-gold">{t('title_end')}</span>
                         </h2>
                     </FadeIn>
                     <FadeIn delay={0.1}>
-                        <p className="text-xl text-[#666666] font-light leading-relaxed border-l-2 border-[#D4AF37] pl-6 max-w-2xl">
+                        <p className="text-xl text-[#666666] font-light leading-relaxed max-w-2xl mx-auto mb-12">
                             {t('subtitle')}
                         </p>
                     </FadeIn>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-[250px] mb-24">
                     {features.map((feature, index) => (
-                        <FadeIn key={index} delay={0.1 * index} className={clsx("h-full relative group rounded-2xl overflow-hidden shadow-lg", feature.className)}>
-                            {/* Background Image if exists */}
-                            {feature.image && (
-                                <Image
-                                    src={feature.image}
-                                    alt={feature.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-                            )}
-
-                            {/* Overlay */}
-                            <div className={clsx(
-                                "absolute inset-0 transition-opacity duration-300",
-                                feature.image ? "bg-black/60 group-hover:bg-black/50" : "bg-[#F9F9F7]"
-                            )} />
-
-                            <div className="relative h-full p-8 flex flex-col justify-between z-10">
-                                <div className={clsx(
-                                    "inline-flex items-center justify-center w-12 h-12 rounded-full mb-6 backdrop-blur-md",
-                                    feature.image ? "bg-white/20 text-white" : "bg-[#D4AF37]/10 text-[#D4AF37]"
-                                )}>
+                        <FadeIn key={index} delay={0.1 * index} className={clsx("h-full relative group rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white hover:shadow-md transition-all duration-300 p-8 flex flex-col justify-between", feature.className)}>
+                            <div className="mb-6">
+                                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-6 bg-[#C5A059]/10 text-[#C5A059]">
                                     <feature.icon className="h-5 w-5" />
                                 </div>
-
-                                <div>
-                                    <h3 className={clsx(
-                                        "text-2xl font-bold mb-3 tracking-wide",
-                                        feature.image ? "text-white" : "text-[#1A1A1A]"
-                                    )}>
-                                        {feature.title}
-                                    </h3>
-                                    <p className={clsx(
-                                        "font-light leading-relaxed text-sm md:text-base",
-                                        feature.image ? "text-white/80" : "text-[#666666]"
-                                    )}>
-                                        {feature.description}
-                                    </p>
-                                </div>
+                                <h3 className="text-xl font-bold mb-3 tracking-wide text-[#1A1A1A]">
+                                    {feature.title}
+                                </h3>
+                                <p className="font-light leading-relaxed text-sm text-[#666666]">
+                                    {feature.description}
+                                </p>
                             </div>
                         </FadeIn>
                     ))}
                 </div>
+
+                <FadeIn>
+                    <div className="bg-[#F9F9F7] rounded-3xl p-8 md:p-16 text-center">
+                        <h3 className="text-3xl font-thin tracking-tight text-[#1A1A1A] mb-6">
+                            {t('mission.title')}
+                        </h3>
+                        <p className="text-xl text-[#666666] font-light leading-relaxed max-w-3xl mx-auto mb-12">
+                            {t('mission.text')}
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+                            {['quality', 'design', 'reliability', 'individual', 'service'].map((value) => (
+                                <div key={value} className="flex items-center gap-2 text-[#1A1A1A] font-medium">
+                                    <span className="text-[#C5A059]">✔</span> {t(`values.${value}`)}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </FadeIn>
             </div>
         </section>
     );

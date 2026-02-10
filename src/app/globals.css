@@ -8,10 +8,10 @@
   /* Soft black for text */
 
   /* Primary accents */
-  --color-gold: #B89E72;
-  /* Muted elegant gold */
-  --color-brass: #D4AF37;
-  /* Brass accent */
+  --color-gold: #C5A059;
+  /* Premium Vibrant Gold */
+  --color-brass: #BF953F;
+  /* Deep Luxury Brass */
 
   /* Secondary and Utility */
   --color-soft-gray: #E5E5E5;
@@ -54,9 +54,10 @@ body {
   }
 
   .text-gradient-gold {
-    background: linear-gradient(135deg, #B89E72 0%, #D4AF37 50%, #B89E72 100%);
+    background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 50%, #B38728 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
   }
 }

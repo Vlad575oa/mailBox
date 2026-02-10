@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export function FAQ() {
     const t = useTranslations('FAQ');
@@ -25,12 +26,28 @@ export function FAQ() {
         {
             question: t('items.customization.question'),
             answer: t('items.customization.answer')
+        },
+        {
+            question: t('items.brand.question'),
+            answer: t('items.brand.answer')
+        },
+        {
+            question: t('items.history.question'),
+            answer: t('items.history.answer')
         }
     ];
 
     return (
-        <section id="faq" className="py-24 bg-gray-50">
-            <div className="container mx-auto px-4 max-w-4xl">
+        <section id="faq" className="relative py-24 bg-gray-50">
+            <Image
+                src="/images/backFAQ.png"
+                alt="FAQ Background"
+                fill
+                className="object-cover opacity-30"
+                quality={100}
+                priority
+            />
+            <div className="relative z-10 container mx-auto px-4 max-w-4xl">
                 <div className="text-center mb-16">
                     <FadeIn>
                         <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
@@ -40,6 +57,9 @@ export function FAQ() {
                     <FadeIn delay={0.1}>
                         <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
                             {t('subtitle')}
+                        </p>
+                        <p className="mt-4 text-sm text-gray-500">
+                            {t('main_shop_note')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ferrumdecorstudio.shop</a>
                         </p>
                     </FadeIn>
                 </div>

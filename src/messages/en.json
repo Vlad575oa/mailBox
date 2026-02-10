@@ -1,15 +1,17 @@
 {
     "Navbar": {
         "home": "Home",
-        "features": "Features",
+        "features": "Advantages",
         "reviews": "Reviews",
         "faq": "FAQ",
         "shop": "Shop Now",
         "about": "About Us",
-        "catalog": "Catalog"
+        "catalog": "Catalog",
+        "contact": "Contact",
+        "shop_note": "at ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Premium Collection 2024",
+        "badge": "Premium Collection 2025",
         "title_start": "Elevate Your",
         "title_end": "Curb Appeal",
         "description": "A fusion of modern art and timeless durability.",
@@ -26,7 +28,8 @@
             "security": "Secure Locks — Protect your letters and parcels.",
             "longevity": "Built to Last — Designed to last for decades."
         },
-        "cta_buy": "Order Now",
+        "cta_buy": "Order",
+        "cta_buy_note": "at ferrumdecorstudio.shop",
         "new_features": {
             "materials_title": "Premium Materials",
             "materials_desc": "Only certified steel and brass.",
@@ -34,7 +37,14 @@
             "customization_desc": "Your address, your style, your choice.",
             "durability_title": "Durability",
             "durability_desc": "50-year warranty against corrosion."
-        }
+        },
+        "stats": {
+            "exp_value": "5+",
+            "exp_label": "Years Experience",
+            "shipping_value": "EU/USA",
+            "shipping_label": "Worldwide Shipping"
+        },
+        "main_shop_note": "Visit our main shop for purchases: "
     },
     "ProductBento": {
         "title": "Engineering Art",
@@ -76,31 +86,76 @@
         "corten": "Corten Steel",
         "brass": "Brass",
         "steel": "Steel",
-        "no_products": "No products found in this category.",
-        "buy_now": "Buy Now"
+        "no_products": "No products found.",
+        "buy_now": "Order Now",
+        "buy_now_note": "at ferrumdecorstudio.shop",
+        "buy_intro": "You can place an order and pay for goods in our official online store",
+        "shop_link_text": "ferrumdecorstudio.shop",
+        "specialization": "We specialize in the production of premium architectural hatches and metal structures.",
+        "products": {
+            "1": "Custom Wall Mount Corten Steel Mailbox",
+            "2": "Custom order for Joe (Corten Steel)",
+            "3": "Custom Wall Mount Corten Steel Mailbox",
+            "4": "Custom Wall Mount Corten Steel Mailbox",
+            "5": "Custom Wall Mount Mailbox",
+            "6": "Custom Wall Mount Brass Mailbox",
+            "7": "Custom Wall Mount Corten Steel Mailbox",
+            "8": "Custom Wall Mount Corten Steel Mailbox",
+            "9": "Custom Wall Mount Corten Steel Mailbox",
+            "10": "Custom Wall Mount Corten Steel Mailbox",
+            "11": "Custom Wall Mount Mailbox",
+            "12": "Custom Wall Mount Corten Steel Mailbox",
+            "13": "Custom Wall Mount Corten Steel & Merbau Wood Mailbox",
+            "14": "Custom Wall Mount Brass Mailbox",
+            "15": "Bespoke Custom Built Wall Mount Corten Steel Mailbox",
+            "16": "Custom Wall Mount Personalized Mailbox"
+        }
     },
     "Benefits": {
         "title_start": "Why",
         "title_end": "FerrumDecor",
         "badge": "Why Choose Us",
-        "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
+        "subtitle": "All products are created in Ukraine, ensuring quality control and unique design.",
         "items": {
-            "artisan": {
+            "production": {
+                "title": "Design Approach",
+                "description": "Products are developed taking into account modern architectural and interior solutions."
+            },
+            "design": {
+                "title": "High-Quality Materials",
+                "description": "We use steel, stainless steel, brass, and corten steel. Confirmed by our product range."
+            },
+            "materials": {
+                "title": "Durability & Weather Resistance",
+                "description": "Metal products are designed for outdoor use and are built to last."
+            },
+            "durability": {
+                "title": "Personalization",
+                "description": "Many mailbox models are available in a personalized format."
+            },
+            "personalization": {
+                "title": "International Delivery",
+                "description": "We accept orders from different countries and work with international payment systems."
+            },
+            "international": {
+                "title": "Free Delivery",
+                "description": "Free delivery offer available for orders."
+            },
+            "delivery": {
                 "title": "Artisan Craftsmanship",
                 "description": "Forged by hand using techniques passed down through generations. Every weld tells a story of precision."
-            },
-            "element": {
-                "title": "Element Proof",
-                "description": "Engineered to withstand the harshest environments. From coastal salt spray to freezing mountain winds."
-            },
-            "sustainable": {
-                "title": "Sustainable Luxury",
-                "description": "Crafted from 100% recyclable, high-grade metals that age beautifully without harming the planet."
-            },
-            "aesthetic": {
-                "title": "Timeless Aesthetic",
-                "description": "Minimalist design that enhances modern and traditional architecture alike. A statement piece for your home."
             }
+        },
+        "mission": {
+            "title": "Our Mission",
+            "text": "To create durable designer metal products that combine functionality and aesthetics and help form the style of a modern home."
+        },
+        "values": {
+            "quality": "Quality Materials",
+            "design": "Modern Design",
+            "reliability": "Product Reliability",
+            "individual": "Individual Approach",
+            "service": "International Service Level"
         }
     },
     "HowToOrder": {
@@ -149,25 +204,94 @@
             "customization": {
                 "question": "Can I choose a different font for numbers?",
                 "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
+            },
+            "brand": {
+                "question": "Who is Ferrum Decor Studio?",
+                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+            },
+            "history": {
+                "question": "What is your story?",
+                "answer": "After 2022, we reimagined our production, opening doors to international clients. Today, our products are shipped to the USA, Canada, and Europe, and every order is a result of passion, craftsmanship, and attention to detail."
             }
-        }
+        },
+        "main_shop_note": "Visit our main shop for purchases: "
     },
     "Footer": {
         "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
-        "newsletter_title": "Newsletter",
-        "newsletter_desc": "Subscribe for exclusive designs and offers.",
-        "subscribe": "Join",
         "rights": "FerrumDecor Studio. All rights reserved.",
         "links": {
-            "shop": "Collections",
             "support": "Support",
-            "how_to": "How to Order",
             "contact": "Contact Us",
-            "corten": "Corten Steel",
-            "brass": "Solid Brass",
-            "custom": "Custom Orders",
             "terms": "Terms of Service",
             "privacy": "Privacy Policy"
+        }
+    },
+    "Contact": {
+        "title": "Contact",
+        "production_label": "Production",
+        "production_value": "Ukraine",
+        "phone_label": "Phone",
+        "phone_value": "+380 67 381 44 04",
+        "email_label": "Email",
+        "email_value": "ferrumdecorstudio@icloud.com",
+        "geo_label": "Geography of work",
+        "geo_value": "We ship orders throughout Ukraine and internationally.",
+        "delivery_label": "Delivery",
+        "delivery_value": "International delivery is available for most countries.",
+        "social_label": "Social Media",
+        "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+    },
+    "About": {
+        "title_start": "About",
+        "title_end": "Us",
+        "intro": "Ferrum Decor Studio is a Ukrainian workshop of designer metal products for exterior and interior.",
+        "specialization": "The brand specializes in creating modern mailboxes, ventilation grilles, hatches and decorative metal elements that combine functionality, durability and architectural aesthetics.",
+        "philosophy_title": "Our Philosophy",
+        "philosophy_text": "We create products that become part of the home design and form the first impression of the space.",
+        "products_title": "Our Range",
+        "products_list": {
+            "mailboxes": "Designer mailboxes",
+            "hatches": "Metal hatches",
+            "vents": "Ventilation grilles made of steel, stainless steel and brass"
+        },
+        "approach_title": "Approach",
+        "approach_text": "Ferrum Decor Studio products are developed taking into account modern architectural trends and are suitable for both private houses and commercial objects.",
+        "quality_text": "All products are created with attention to detail and undergo quality control before being sent to the client.",
+        "global_title": "Global Reach",
+        "global_text": "We work with customers all over the world and offer international delivery."
+    },
+    "FeaturesPage": {
+        "title": "Advantages of Ferrum Decor Studio",
+        "items": {
+            "materials": {
+                "title": "Premium Materials",
+                "description": "We use high-quality metals, including corten steel, brass, and a combination of metal with natural wood. These materials are characterized by high strength, resistance to weather conditions, and durability."
+            },
+            "personalization": {
+                "title": "Full Personalization",
+                "description": "Each mailbox is created with the client's wishes in mind. You can add a name, address, logo, individual design, or even your own image so that the product perfectly complements the exterior of your home or business."
+            },
+            "design": {
+                "title": "Unique Design",
+                "description": "We create modern, vintage, and artistic solutions that turn a mailbox into an element of architecture and decor. Each product combines aesthetics and functionality."
+            },
+            "security": {
+                "title": "Reliability and Security",
+                "description": "Our mailboxes are equipped with convenient mounting systems and locks that protect correspondence and ensure comfortable use."
+            },
+            "craftsmanship": {
+                "title": "Handmade and Attention to Detail",
+                "description": "Each product is made with high precision and undergoes individual processing, which ensures the quality and exclusivity of the products."
+            },
+            "speed": {
+                "title": "Fast Manufacturing",
+                "description": "The average production time is 5–8 working days, which allows for fast realization of individual orders."
+            },
+            "shipping": {
+                "title": "Worldwide Shipping",
+                "description": "We successfully send products to customers all over the world, ensuring reliable packaging and safe delivery."
+            }
         }
     }
 }

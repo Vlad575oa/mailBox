@@ -35,7 +35,7 @@ export function Catalog() {
                     <div className="max-w-2xl">
                         <FadeIn>
                             <h2 className="text-5xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
-                                {t('title_start')} <span className="font-medium italic gold-text">{t('title_end')}</span>
+                                {t('title_start')} <span className="font-medium italic text-gradient-gold">{t('title_end')}</span>
                             </h2>
                         </FadeIn>
                         <FadeIn delay={0.1}>
@@ -51,8 +51,8 @@ export function Catalog() {
                                 key={cat}
                                 onClick={() => setFilter(cat)}
                                 className={`px-8 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border ${filter === cat
-                                    ? 'bg-[#D4AF37] text-black border-[#D4AF37]'
-                                    : 'bg-transparent text-gray-400 border-gray-800 hover:border-[#D4AF37] hover:text-[#D4AF37]'
+                                    ? 'bg-[#C5A059] text-black border-[#C5A059]'
+                                    : 'bg-transparent text-gray-400 border-gray-800 hover:border-[#C5A059] hover:text-[#C5A059]'
                                     }`}
                             >
                                 {getCategoryLabel(cat)}

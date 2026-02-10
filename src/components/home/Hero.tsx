@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { FadeIn } from '@/components/ui/FadeIn';
@@ -17,26 +18,27 @@ const products = productsData.map((item) => ({
 }));
 
 export function Hero() {
+    // Re-trigger build
     const t = useTranslations('Hero');
     const { scrollY } = useScroll();
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
     return (
-        <section className="relative min-h-[90vh] w-full overflow-hidden bg-[#F9F9F7] flex items-center py-20 lg:py-24">
+        <section className="relative min-h-[90vh] w-full overflow-hidden bg-[#09090b] flex items-center py-20 lg:py-24">
 
             {/* Background Image Parallax (Subtle) */}
             <motion.div
                 style={{ y: y1 }}
                 className="absolute inset-0 z-0"
             >
-                <div className="absolute inset-0 bg-gradient-to-b from-[#F9F9F7]/22 to-[#F9F9F7] z-2" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-[#09090b]/50 z-2" />
                 <Image
                     src="/images/hero-bg-modern.png"
                     alt="Vintage Mailbox Background"
                     fill
                     priority
-                    className="object-cover opacity-70"
+                    className="object-cover opacity-99"
                 />
             </motion.div>
 
@@ -48,18 +50,17 @@ export function Hero() {
                         <FadeIn delay={0.4} direction="right">
                             <div className="relative">
                                 {/* Decorative elements */}
-                                <div className="absolute -inset-4 bg-gradient-to-tr from-[#D4AF37]/20 to-transparent rounded-full blur-3xl opacity-30 pointer-events-none" />
+                                <div className="absolute -inset-4 bg-gradient-to-tr from-[#C5A059]/20 to-transparent rounded-full blur-3xl opacity-30 pointer-events-none" />
 
                                 <div className="relative bg-white/50 backdrop-blur-sm rounded-2xl shadow-xl p-3 border border-white/50">
+
 
                                     {/* Desktop: 4x4 Grid */}
                                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                                         {products.map((product) => (
-                                            <a
+                                            <Link
                                                 key={product.id}
-                                                href={product.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
+                                                href={`/catalog?id=${product.id}`}
                                                 className="group block relative aspect-square overflow-hidden rounded-lg bg-[#F2F0EB] shadow-sm hover:shadow-md transition-all duration-300"
                                             >
                                                 <Image
@@ -68,13 +69,7 @@ export function Hero() {
                                                     fill
                                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                                 />
-                                                {/* Hover Overlay with Price */}
-                                                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                                    <span className="text-white font-medium text-sm tracking-wide bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
-                                                        {product.price}
-                                                    </span>
-                                                </div>
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
 
@@ -92,31 +87,31 @@ export function Hero() {
                         </FadeIn>
 
                         <FadeIn delay={0.4}>
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-thin tracking-tight text-[#1A1A1A] mb-8 leading-[1.1]">
+                            <h1 className="text-[38px] md:text-[50px] lg:text-[62px] font-thin tracking-tight text-white mb-8 leading-[1.1]">
                                 {t('title_start')} <br />
-                                <span className="font-serif italic text-[#D4AF37]">
+                                <span className="font-serif italic text-gradient-gold">
                                     {t('title_end')}
                                 </span>
                             </h1>
                         </FadeIn>
 
                         <FadeIn delay={0.6}>
-                            <p className="text-xl md:text-2xl text-[#1A1A1A] max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed mb-10 text-balance">
+                            <p className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed mb-10 text-balance">
                                 {t('description')}
                             </p>
                         </FadeIn>
 
                         {/* Stats - Moved to Right Column as requested */}
                         <FadeIn delay={0.7}>
-                            <div className="flex items-center justify-center lg:justify-start gap-12 opacity-80 mb-12 text-[#1A1A1A]">
+                            <div className="flex items-center justify-center lg:justify-start gap-12 opacity-80 mb-12 text-white">
                                 <div className="flex flex-col items-center lg:items-start gap-1">
-                                    <div className="text-3xl font-serif">15+</div>
-                                    <div className="text-[11px] uppercase tracking-wider text-[#666666]">Years Experience</div>
+                                    <div className="text-3xl font-serif">{t('stats.exp_value')}</div>
+                                    <div className="text-[11px] uppercase tracking-wider text-white/50">{t('stats.exp_label')}</div>
                                 </div>
-                                <div className="w-[1px] h-10 bg-[#1A1A1A]/10" />
+                                <div className="w-[1px] h-10 bg-white/10" />
                                 <div className="flex flex-col items-center lg:items-start gap-1">
-                                    <div className="text-3xl font-serif">EU/USA</div>
-                                    <div className="text-[11px] uppercase tracking-wider text-[#666666]">Worldwide Shipping</div>
+                                    <div className="text-3xl font-serif">{t('stats.shipping_value')}</div>
+                                    <div className="text-[11px] uppercase tracking-wider text-white/50">{t('stats.shipping_label')}</div>
                                 </div>
                             </div>
                         </FadeIn>
@@ -125,16 +120,16 @@ export function Hero() {
                         <FadeIn delay={0.8}>
                             <div className="space-y-8 mb-12 text-left">
                                 <div>
-                                    <h3 className="text-[#1A1A1A] font-bold text-xl mb-1">{t('new_features.materials_title')}</h3>
-                                    <p className="text-[#666666] font-light text-base">{t('new_features.materials_desc')}</p>
+                                    <h3 className="text-white font-bold text-xl mb-1">{t('new_features.materials_title')}</h3>
+                                    <p className="text-white/70 font-light text-base">{t('new_features.materials_desc')}</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-[#1A1A1A] font-bold text-xl mb-1">{t('new_features.customization_title')}</h3>
-                                    <p className="text-[#666666] font-light text-base">{t('new_features.customization_desc')}</p>
+                                    <h3 className="text-white font-bold text-xl mb-1">{t('new_features.customization_title')}</h3>
+                                    <p className="text-white/70 font-light text-base">{t('new_features.customization_desc')}</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-[#1A1A1A] font-bold text-xl mb-1">{t('new_features.durability_title')}</h3>
-                                    <p className="text-[#666666] font-light text-base">{t('new_features.durability_desc')}</p>
+                                    <h3 className="text-white font-bold text-xl mb-1">{t('new_features.durability_title')}</h3>
+                                    <p className="text-white/70 font-light text-base">{t('new_features.durability_desc')}</p>
                                 </div>
                             </div>
                         </FadeIn>
@@ -142,11 +137,15 @@ export function Hero() {
                         <FadeIn delay={1.0}>
                             <div className="flex gap-4 justify-center lg:justify-start">
                                 <a href="https://ferrumdecorstudio.shop/collections/mail-boxes" target="_blank" rel="noopener noreferrer">
-                                    <Button variant="gold" size="lg" className="min-w-[240px] py-6 text-lg shadow-xl shadow-[#D4AF37]/20 uppercase tracking-widest">
-                                        {t('cta_buy')}
+                                    <Button variant="gold" size="lg" className="min-w-[280px] py-4 h-auto flex flex-col items-center justify-center shadow-xl shadow-[#C5A059]/20 tracking-widest leading-tight">
+                                        <span className="text-xl font-bold uppercase">{t('cta_buy')}</span>
+                                        <span className="text-xs font-medium text-black/60 tracking-tight lowercase">{t('cta_buy_note')}</span>
                                     </Button>
                                 </a>
                             </div>
+                            <p className="mt-8 text-lg font-light text-white/90">
+                                {t('main_shop_note')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-[#C5A059] font-medium hover:underline">ferrumdecorstudio.shop</a>
+                            </p>
                         </FadeIn>
                     </div>
 
@@ -158,8 +157,8 @@ export function Hero() {
                 style={{ opacity }}
                 className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
             >
-                <span className="text-[10px] uppercase tracking-[0.2em] text-[#1A1A1A]/40">Scroll</span>
-                <div className="w-[1px] h-12 bg-gradient-to-b from-[#1A1A1A]/20 to-transparent"></div>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-white/40">Scroll</span>
+                <div className="w-[1px] h-12 bg-gradient-to-b from-white/20 to-transparent"></div>
             </motion.div>
         </section>
     );

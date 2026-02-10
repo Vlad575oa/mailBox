@@ -1,119 +1,297 @@
 {
     "Navbar": {
         "home": "Home",
-        "features": "Features",
-        "reviews": "Reviews",
+        "features": "Vantaggi",
+        "reviews": "Recensioni",
         "faq": "FAQ",
-        "shop": "Shop Now"
+        "shop": "Acquista",
+        "about": "Chi Siamo",
+        "catalog": "Catalogo",
+        "contact": "Contatti",
+        "shop_note": "su ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Premium Collection 2024",
-        "title_start": "Elevate Your",
-        "title_end": "Curb Appeal",
-        "description": "Handcrafted from Corten steel and solid brass. A fusion of modern art and timeless durability. Designed to weather the storm and age gracefully.",
-        "cta_shop": "Shop Collection",
-        "cta_catalog": "View Catalog",
-        "badge_shipping": "Worldwide Shipping",
-        "badge_warranty": "5-Year Warranty",
+        "badge": "Collezione Premium 2025",
+        "title_start": "Eleva Il Tuo",
+        "title_end": "Fascino Esterno",
+        "description": "Una fusione di arte moderna e durabilità senza tempo.",
+        "cta_shop": "Vedi Collezione",
+        "cta_catalog": "Vedi Catalogo",
+        "badge_shipping": "Spedizione Mondiale",
+        "badge_warranty": "Garanzia 5 Anni",
         "card_badge": "Best Seller",
-        "card_title": "Corten Wall Mount"
+        "features_title": "Caratteristiche del Modello",
+        "benefits": {
+            "durability": "Durabilità Acciaio Corten — Resistente alle intemperie e alla corrosione.",
+            "design": "Design Elegante — Modelli in acciaio e ottone puro si adattano a qualsiasi esterno.",
+            "personalization": "Personalizzazione Disponibile — Aggiungi il tuo nome, logo o design.",
+            "security": "Serrature Sicure — Proteggi le tue lettere e pacchi.",
+            "longevity": "Costruito per Durare — Progettato per durare decenni."
+        },
+        "cta_buy": "Ordina",
+        "cta_buy_note": "su ferrumdecorstudio.shop",
+        "new_features": {
+            "materials_title": "Materiali Premium",
+            "materials_desc": "Solo acciaio e ottone certificati.",
+            "customization_title": "Personalizzazione",
+            "customization_desc": "Il tuo indirizzo, il tuo stile, la tua scelta.",
+            "durability_title": "Durabilità",
+            "durability_desc": "Garanzia 50 anni contro la corrosione passante."
+        },
+        "stats": {
+            "exp_value": "5+",
+            "exp_label": "Anni di Esperienza",
+            "shipping_value": "UE/USA",
+            "shipping_label": "Spedizione Mondiale"
+        },
+        "main_shop_note": "Visita il nostro negozio principale per gli acquisti: "
+    },
+    "ProductBento": {
+        "title": "Arte Ingegneristica",
+        "subtitle": "Ogni dettaglio conta. Usiamo i migliori materiali per creare la perfezione.",
+        "text": "Crediamo che una cassetta postale non sia solo un contenitore, ma la prima impressione della tua casa.",
+        "details": [
+            "Taglio laser dell'acciaio con precisione di 0,1 mm.",
+            "Lucidatura a mano degli elementi in ottone.",
+            "Costruzione a tenuta stagna per protezione dalla pioggia.",
+            "Cerniere rinforzate e serratura antivandalo."
+        ],
+        "material": {
+            "title": "Materiali Premium",
+            "description": "Acciaio Corten certificato e ottone massiccio."
+        },
+        "design": {
+            "title": "Design Unico",
+            "description": "Estetica in anticipo sui tempi."
+        },
+        "durability": {
+            "title": "Durabilità",
+            "description": "Garanzia 50 anni contro la corrosione passante."
+        },
+        "customization": {
+            "title": "Personalizzazione",
+            "description": "Il tuo indirizzo, il tuo stile, la tua scelta."
+        }
+    },
+    "ProductGrid": {
+        "title": "Catalogo Completo",
+        "description": "Collezione esclusiva in Corten e ottone. Trova la tua cassetta postale perfetta.",
+        "buy_btn": "Acquista su Ferrum"
     },
     "Catalog": {
-        "title_start": "Curated",
-        "title_end": "Collection",
-        "description": "Explore our range of bespoke mailboxes, each crafted to stand the test of time.",
-        "all": "All",
-        "corten": "Corten Steel",
-        "brass": "Brass",
-        "steel": "Steel",
-        "no_products": "No products found in this category.",
-        "buy_now": "Buy Now"
+        "title_start": "Collezione",
+        "title_end": "Curata",
+        "description": "Esplora la nostra gamma di cassette postali su misura, create per resistere alla prova del tempo.",
+        "all": "Tutto",
+        "corten": "Acciaio Corten",
+        "brass": "Ottone",
+        "steel": "Acciaio",
+        "no_products": "Nessun prodotto trovato.",
+        "buy_now": "Ordina Ora",
+        "buy_now_note": "su ferrumdecorstudio.shop",
+        "buy_intro": "Puoi effettuare un ordine e pagare la merce nel nostro negozio online ufficiale",
+        "shop_link_text": "ferrumdecorstudio.shop",
+        "specialization": "We specialize in the production of premium architectural hatches and metal structures.",
+        "products": {
+            "1": "Custom Wall Mount Corten Steel Mailbox",
+            "2": "Custom order for Joe (Corten Steel)",
+            "3": "Custom Wall Mount Corten Steel Mailbox",
+            "4": "Custom Wall Mount Corten Steel Mailbox",
+            "5": "Custom Wall Mount Mailbox",
+            "6": "Custom Wall Mount Brass Mailbox",
+            "7": "Custom Wall Mount Corten Steel Mailbox",
+            "8": "Custom Wall Mount Corten Steel Mailbox",
+            "9": "Custom Wall Mount Corten Steel Mailbox",
+            "10": "Custom Wall Mount Corten Steel Mailbox",
+            "11": "Custom Wall Mount Mailbox",
+            "12": "Custom Wall Mount Corten Steel Mailbox",
+            "13": "Custom Wall Mount Corten Steel & Merbau Wood Mailbox",
+            "14": "Custom Wall Mount Brass Mailbox",
+            "15": "Bespoke Custom Built Wall Mount Corten Steel Mailbox",
+            "16": "Custom Wall Mount Personalized Mailbox"
+        }
     },
     "Benefits": {
-        "title_start": "Why",
+        "title_start": "Perché",
         "title_end": "FerrumDecor",
-        "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
+        "badge": "Perché sceglierci",
+        "subtitle": "Tutti i prodotti sono creati in Ucraina, garantendo controllo qualità e design unico.",
         "items": {
-            "artisan": {
-                "title": "Artisan Craftsmanship",
-                "description": "Forged by hand using techniques passed down through generations. Every weld tells a story of precision."
+            "production": {
+                "title": "Approccio al Design",
+                "description": "I prodotti vengono sviluppati tenendo conto delle moderne soluzioni architettoniche e d'interni."
             },
-            "element": {
-                "title": "Element Proof",
-                "description": "Engineered to withstand the harshest environments. From coastal salt spray to freezing mountain winds."
+            "design": {
+                "title": "Materiali di Alta Qualità",
+                "description": "Utilizziamo acciaio, acciaio inossidabile, ottone e acciaio corten. Confermato dalla nostra gamma di prodotti."
             },
-            "sustainable": {
-                "title": "Sustainable Luxury",
-                "description": "Crafted from 100% recyclable, high-grade metals that age beautifully without harming the planet."
+            "materials": {
+                "title": "Durata e Resistenza alle Intemperie",
+                "description": "I prodotti in metallo sono progettati per l'uso esterno e sono costruiti per durare."
             },
-            "aesthetic": {
-                "title": "Timeless Aesthetic",
-                "description": "Minimalist design that enhances modern and traditional architecture alike. A statement piece for your home."
+            "durability": {
+                "title": "Personalizzazione",
+                "description": "Molti modelli di cassette postali sono disponibili in un formato personalizzato."
+            },
+            "personalization": {
+                "title": "Spedizione Internazionale",
+                "description": "Accettiamo ordini da diversi paesi e lavoriamo con sistemi di pagamento internazionali."
+            },
+            "international": {
+                "title": "Consegna Gratuita",
+                "description": "Offerta di consegna gratuita disponibile per gli ordini."
+            },
+            "delivery": {
+                "title": "Maestria Artigianale",
+                "description": "Forgiato a mano utilizzando tecniche tramandate da generazioni. Ogni saldatura racconta una storia di precisione."
             }
+        },
+        "mission": {
+            "title": "La Nostra Missione",
+            "text": "Creare prodotti di design in metallo durevoli che combinino funzionalità ed estetica e aiutino a formare lo stile di una casa moderna."
+        },
+        "values": {
+            "quality": "Qualità dei Materiali",
+            "design": "Design Moderno",
+            "reliability": "Affidabilità dei Prodotti",
+            "individual": "Approccio Individuale",
+            "service": "Livello di Servizio Internazionale"
         }
     },
     "HowToOrder": {
-        "title": "How to Order",
-        "subtitle": "Your custom mailbox is just 3 steps away.",
-        "step1_title": "Choose Your Model",
-        "step1_desc": "Browse our catalog and select the design that fits your home.",
-        "step2_title": "Personalize",
-        "step2_desc": "Select material (Corten, Brass, Steel) and add address numbers.",
-        "step3_title": "We Craft & Ship",
-        "step3_desc": "We handcraft your order and ship it worldwide with care."
+        "title": "Come Ordinare",
+        "subtitle": "La tua cassetta postale personalizzata è a soli 3 passi.",
+        "step1_title": "Scegli il Tuo Modello",
+        "step1_desc": "Sfoglia il nostro catalogo e seleziona il design che si adatta alla tua casa.",
+        "step2_title": "Personalizza",
+        "step2_desc": "Seleziona il materiale (Corten, Ottone, Acciaio) e aggiungi i numeri civici.",
+        "step3_title": "Creazione & Spedizione",
+        "step3_desc": "Realizziamo a mano il tuo ordine e lo spediamo in tutto il mondo con cura."
     },
     "Reviews": {
-        "title_start": "Trusted by",
-        "title_end": "Homeowners",
-        "subtitle": "See what our clients say about us.",
+        "title_start": "Scelto dai",
+        "title_end": "Proprietari",
+        "subtitle": "Vedi cosa dicono i nostri clienti di noi.",
         "items": [
             {
-                "text": "The craftsmanship is incredible. It's not just a mailbox, it's a piece of art. The Corten steel looks amazing against our modern fence."
+                "text": "La maestria è incredibile. Non è solo una cassetta postale, è un'opera d'arte. L'acciaio Corten sta benissimo contro la nostra recinzione moderna."
             },
             {
-                "text": "Arrived faster than expected. The personalization is precise and sharp. Highly recommend for anyone looking to upgrade their curb appeal."
+                "text": "Arrivato più velocemente del previsto. La personalizzazione è precisa e nitida. Altamente raccomandato per chiunque voglia migliorare l'aspetto esteriore."
             },
             {
-                "text": "Heavy duty and beautiful. The brass finish is stunning and draws compliments from all our neighbors. Worth every penny."
+                "text": "Robusto e bellissimo. La finitura in ottone è sbalorditiva e attira i complimenti di tutti i nostri vicini. Vale ogni centesimo."
             }
         ]
     },
     "FAQ": {
-        "title_start": "Frequently Asked",
-        "title_end": "Questions",
-        "subtitle": "Everything you need to know about our products.",
+        "title_start": "Domande",
+        "title_end": "Frequenti",
+        "subtitle": "Tutto quello che devi sapere sui nostri prodotti.",
         "items": {
             "shipping": {
-                "question": "Do you ship internationally?",
-                "answer": "Yes, we ship our mailboxes worldwide including the US, Canada, Europe, and Australia. Every package is securely crated to ensure safe arrival."
+                "question": "Spedite a livello internazionale?",
+                "answer": "Sì, spediamo le nostre cassette postali in tutto il mondo, inclusi USA, Canada, Europa e Australia. Ogni pacco è imballato in modo sicuro per garantire un arrivo sicuro."
             },
             "production": {
-                "question": "How long does custom production take?",
-                "answer": "Since every item is hand-finished, standard orders ship within 2-3 business days. Personalized orders typically take 5-7 business days to craft with precision."
+                "question": "Quanto tempo richiede la produzione personalizzata?",
+                "answer": "Poiché ogni articolo è rifinito a mano, gli ordini standard vengono spediti entro 2-3 giorni lavorativi. Gli ordini personalizzati richiedono in genere 5-7 giorni lavorativi per una lavorazione accurata."
             },
             "corten": {
-                "question": "Will the Corten steel stain my wall?",
-                "answer": "Our Corten steel is pre-weathered but natural stabilization takes time. We recommend using the provided stand-off spacers to create a gap between the mailbox and the wall, preventing direct contact runoff."
+                "question": "L'acciaio Corten macchierà il mio muro?",
+                "answer": "Il nostro acciaio Corten è pre-invecchiato ma la stabilizzazione naturale richiede tempo. Consigliamo di utilizzare i distanziatori forniti per creare uno spazio tra la cassetta postale e il muro, prevenendo il contatto diretto con l'acqua piovana."
             },
             "customization": {
-                "question": "Can I choose a different font for numbers?",
-                "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
+                "question": "Posso scegliere un carattere diverso per i numeri?",
+                "answer": "Assolutamente. Offriamo opzioni di personalizzazione per caratteri e dimensioni. Si prega di specificare la preferenza nelle note dell'ordine o contattare il nostro team di supporto per una bozza."
+            },
+            "brand": {
+                "question": "Who is Ferrum Decor Studio?",
+                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+            },
+            "history": {
+                "question": "What is your story?",
+                "answer": "After 2022, we reimagined our production, opening doors to international clients. Today, our products are shipped to the USA, Canada, and Europe, and every order is a result of passion, craftsmanship, and attention to detail."
             }
-        }
+        },
+        "main_shop_note": "Visita il nostro negozio principale per gli acquisti: "
+    },
+    "Contact": {
+        "title": "Contatti",
+        "production_label": "Produzione",
+        "production_value": "Ucraina",
+        "phone_label": "Telefono",
+        "phone_value": "+380 67 381 44 04",
+        "email_label": "Email",
+        "email_value": "ferrumdecorstudio@icloud.com",
+        "geo_label": "Geografia del lavoro",
+        "geo_value": "Spediamo ordini in tutta l'Ucraina e a livello internazionale.",
+        "delivery_label": "Consegna",
+        "delivery_value": "La spedizione internazionale è disponibile per la maggior parte dei paesi.",
+        "social_label": "Social Media",
+        "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+    },
+    "About": {
+        "title_start": "Chi",
+        "title_end": "Siamo",
+        "intro": "Ferrum Decor Studio è un laboratorio ucraino di prodotti in metallo di design per esterni e interni.",
+        "specialization": "Il marchio è specializzato nella creazione di cassette postali moderne, griglie di ventilazione, botole ed elementi decorativi in metallo che combinano funzionalità, durata ed estetica architettonica.",
+        "philosophy_title": "La Nostra Filosofia",
+        "philosophy_text": "Creiamo prodotti che diventano parte del design della casa e formano la prima impressione dello spazio.",
+        "products_title": "La Nostra Gamma",
+        "products_list": {
+            "mailboxes": "Cassette postali di design",
+            "hatches": "Botole in metallo",
+            "vents": "Griglie di ventilazione in acciaio, acciaio inossidabile e ottone"
+        },
+        "approach_title": "Approccio",
+        "approach_text": "I prodotti Ferrum Decor Studio sono sviluppati tenendo conto delle moderne tendenze architettoniche e sono adatti sia per case private che per oggetti commerciali.",
+        "quality_text": "Tutti i prodotti sono creati con attenzione ai dettagli e sottoposti a controllo qualità prima di essere inviati al cliente.",
+        "global_title": "Copertura Globale",
+        "global_text": "Lavoriamo con clienti in tutto il mondo e offriamo la consegna internazionale."
     },
     "Footer": {
-        "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
-        "newsletter_title": "Newsletter",
-        "newsletter_desc": "Subscribe for exclusive designs and offers.",
-        "subscribe": "Join",
-        "rights": "FerrumDecor Studio. All rights reserved.",
+        "slogan": "Forgiamo il futuro del fascino esterno. Eccellenza artigianale in ogni saldatura.",
+        "rights": "FerrumDecor Studio. Tutti i diritti riservati.",
         "links": {
-            "shop": "Collections",
-            "support": "Support",
-            "how_to": "How to Order",
-            "contact": "Contact Us",
-            "terms": "Terms of Service",
+            "support": "Supporto",
+            "contact": "Contatti",
+            "terms": "Termini di Servizio",
             "privacy": "Privacy Policy"
+        }
+    },
+    "FeaturesPage": {
+        "title": "Vantaggi di Ferrum Decor Studio",
+        "items": {
+            "materials": {
+                "title": "Materiali Premium",
+                "description": "Utilizziamo metalli di alta qualità, tra cui acciaio corten, ottone e una combinazione di metallo con legno naturale. Questi materiali sono caratterizzati da elevata resistenza, resistenza agli agenti atmosferici e durata."
+            },
+            "personalization": {
+                "title": "Personalizzazione Completa",
+                "description": "Ogni cassetta postale viene creata tenendo conto dei desideri del cliente. Puoi aggiungere un nome, un indirizzo, un logo, un design individuale o persino la tua immagine, in modo che il prodotto completi perfettamente l'esterno della tua casa o della tua attività."
+            },
+            "design": {
+                "title": "Design Unico",
+                "description": "Creiamo soluzioni moderne, vintage e artistiche che trasformano una cassetta postale in un elemento di architettura e decoro. Ogni prodotto combina estetica e funzionalità."
+            },
+            "security": {
+                "title": "Affidabilità e Sicurezza",
+                "description": "Le nostre cassette postali sono dotate di comodi sistemi di montaggio e serrature che proteggono la corrispondenza e garantiscono un utilizzo confortevole."
+            },
+            "craftsmanship": {
+                "title": "Fatto a mano e attenzione ai dettagli",
+                "description": "Ogni prodotto è realizzato con alta precisione e sottoposto a lavorazione individuale, il che garantisce la qualità e l'esclusività dei prodotti."
+            },
+            "speed": {
+                "title": "Produzione Rapida",
+                "description": "Il tempo medio di produzione è di 5–8 giorni lavorativi, il che consente una rapida realizzazione di ordini individuali."
+            },
+            "shipping": {
+                "title": "Spedizione in tutto il mondo",
+                "description": "Inviamo con successo prodotti a clienti in tutto il mondo, garantendo un imballaggio affidabile e una consegna sicura."
+            }
         }
     }
 }

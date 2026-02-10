@@ -1,119 +1,297 @@
 {
     "Navbar": {
-        "home": "Home",
-        "features": "Features",
-        "reviews": "Reviews",
+        "home": "Головна",
+        "features": "Переваги",
+        "reviews": "Відгуки",
         "faq": "FAQ",
-        "shop": "Shop Now"
+        "shop": "Замовити",
+        "about": "Про Нас",
+        "catalog": "Каталог",
+        "contact": "Контакти",
+        "shop_note": "на ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Premium Collection 2024",
-        "title_start": "Elevate Your",
-        "title_end": "Curb Appeal",
-        "description": "Handcrafted from Corten steel and solid brass. A fusion of modern art and timeless durability. Designed to weather the storm and age gracefully.",
-        "cta_shop": "Shop Collection",
-        "cta_catalog": "View Catalog",
-        "badge_shipping": "Worldwide Shipping",
-        "badge_warranty": "5-Year Warranty",
-        "card_badge": "Best Seller",
-        "card_title": "Corten Wall Mount"
+        "badge": "Преміум Колекція 2025",
+        "title_start": "Підкресліть",
+        "title_end": "Красу Вашого Дому",
+        "description": "Поєднання сучасного мистецтва та вічної довговічності.",
+        "cta_shop": "Дивитися Колекцію",
+        "cta_catalog": "Переглянути Каталог",
+        "badge_shipping": "Доставка по Світу",
+        "badge_warranty": "Гарантія 5 Років",
+        "card_badge": "Хіт Продажів",
+        "features_title": "Особливості Моделі",
+        "benefits": {
+            "durability": "Довговічність Corten — Стійкість до погодних умов та корозії.",
+            "design": "Елегантний Дизайн — Моделі зі сталі та чистої латуні пасують до будь-якого екстер'єру.",
+            "personalization": "Персоналізація — Додайте ваше ім'я, логотип або власний дизайн.",
+            "security": "Надійні Замки — Захистіть ваші листи та посилки.",
+            "longevity": "На Віки — Створено, щоб служити десятиліттями."
+        },
+        "cta_buy": "Замовити",
+        "cta_buy_note": "на ferrumdecorstudio.shop",
+        "new_features": {
+            "materials_title": "Преміум Матеріали",
+            "materials_desc": "Тільки сертифікована сталь та латунь.",
+            "customization_title": "Персоналізація",
+            "customization_desc": "Ваша адреса, ваш стиль, ваш вибір.",
+            "durability_title": "Довговічність",
+            "durability_desc": "Гарантія 50 років на наскрізну корозію."
+        },
+        "stats": {
+            "exp_value": "5+",
+            "exp_label": "Років Досвіду",
+            "shipping_value": "ЄС/США",
+            "shipping_label": "Доставка по Світу"
+        },
+        "main_shop_note": "Відвідайте наш основний магазин для покупок: "
+    },
+    "ProductBento": {
+        "title": "Інженерне Мистецтво",
+        "subtitle": "Кожна деталь має значення. Ми використовуємо найкращі матеріали для створення досконалості.",
+        "text": "Ми віримо, що поштова скринька — це не просто контейнер, а перше враження про ваш дім.",
+        "details": [
+            "Лазерна різка сталі з точністю 0.1 мм.",
+            "Ручне полірування латунних елементів.",
+            "Герметична конструкція для захисту від дощу.",
+            "Посилені петлі та антивандальний замок."
+        ],
+        "material": {
+            "title": "Преміум Матеріали",
+            "description": "Сертифікована сталь Corten та масивна латунь."
+        },
+        "design": {
+            "title": "Унікальний Дизайн",
+            "description": "Естетика, що випереджає час."
+        },
+        "durability": {
+            "title": "Довговічність",
+            "description": "Гарантія 50 років на наскрізну корозію."
+        },
+        "customization": {
+            "title": "Персоналізація",
+            "description": "Ваша адреса, ваш стиль, ваш вибір."
+        }
+    },
+    "ProductGrid": {
+        "title": "Повний Каталог",
+        "description": "Ексклюзивна колекція з Corten та латуні. Знайдіть свою ідеальну поштову скриньку.",
+        "buy_btn": "Купити на Ferrum"
     },
     "Catalog": {
-        "title_start": "Curated",
-        "title_end": "Collection",
-        "description": "Explore our range of bespoke mailboxes, each crafted to stand the test of time.",
-        "all": "All",
-        "corten": "Corten Steel",
-        "brass": "Brass",
-        "steel": "Steel",
-        "no_products": "No products found in this category.",
-        "buy_now": "Buy Now"
+        "title_start": "Вибрана",
+        "title_end": "Колекція",
+        "description": "Досліджуйте наш асортимент поштових скриньок на замовлення, створених, щоб витримати випробування часом.",
+        "all": "Всі",
+        "corten": "Сталь Corten",
+        "brass": "Латунь",
+        "steel": "Сталь",
+        "no_products": "В цій категорії товарів не знайдено.",
+        "buy_now": "Замовити",
+        "buy_now_note": "на ferrumdecorstudio.shop",
+        "buy_intro": "Оформити замовлення та оплатити товар ви можете в нашому офіційному інтернет-магазині",
+        "shop_link_text": "ferrumdecorstudio.shop",
+        "specialization": "Ми спеціалізуємося на виробництві преміальних архітектурних люків та металоконструкцій.",
+        "products": {
+            "1": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "2": "Індивідуальне замовлення для Joe (Сталь Corten)",
+            "3": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "4": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "5": "Індивідуальна настінна поштова скринька",
+            "6": "Індивідуальна настінна латунна поштова скринька",
+            "7": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "8": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "9": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "10": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "11": "Індивідуальна настінна поштова скринька",
+            "12": "Індивідуальна настінна поштова скринька зі сталі Corten",
+            "13": "Настінна скринька зі сталі Corten та дерева Мербау",
+            "14": "Індивідуальна настінна латунна поштова скринька",
+            "15": "Ексклюзивна настінна скринька зі сталі Corten",
+            "16": "Індивідуальна настінна персоналізована поштова скринька"
+        }
     },
     "Benefits": {
-        "title_start": "Why",
-        "title_end": "FerrumDecor",
-        "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
+        "title_start": "Чому",
+        "title_end": "Ferrum Decor Studio",
+        "badge": "Чому обирають нас",
+        "subtitle": "Всі вироби створюються в Україні, що забезпечує контроль якості та унікальний дизайн.",
         "items": {
-            "artisan": {
-                "title": "Artisan Craftsmanship",
-                "description": "Forged by hand using techniques passed down through generations. Every weld tells a story of precision."
+            "production": {
+                "title": "Дизайнерський підхід",
+                "description": "Продукція розробляється з урахуванням сучасних архітектурних та інтер'єрних рішень."
             },
-            "element": {
-                "title": "Element Proof",
-                "description": "Engineered to withstand the harshest environments. From coastal salt spray to freezing mountain winds."
+            "design": {
+                "title": "Високоякісні матеріали",
+                "description": "Компанія використовує сталь, нержавіючу сталь, латунь та corten-сталь. Це підтверджується асортиментом товарів."
             },
-            "sustainable": {
-                "title": "Sustainable Luxury",
-                "description": "Crafted from 100% recyclable, high-grade metals that age beautifully without harming the planet."
+            "materials": {
+                "title": "Довговічність та стійкість",
+                "description": "Металеві вироби призначені для експлуатації на вулиці та розраховані на тривалий термін служби."
             },
-            "aesthetic": {
-                "title": "Timeless Aesthetic",
-                "description": "Minimalist design that enhances modern and traditional architecture alike. A statement piece for your home."
+            "durability": {
+                "title": "Можливість персоналізації",
+                "description": "Багато моделей поштових скриньок доступні у персоналізованому форматі."
+            },
+            "personalization": {
+                "title": "Міжнародна доставка",
+                "description": "Компанія приймає замовлення з різних країн і працює з міжнародними платіжними системами."
+            },
+            "international": {
+                "title": "Безкоштовна доставка",
+                "description": "На сайті вказана пропозиція безкоштовної доставки замовлень."
+            },
+            "delivery": {
+                "title": "Ручна робота",
+                "description": "Викувано вручну з використанням технік, що передаються з покоління в покоління."
             }
+        },
+        "mission": {
+            "title": "Наша місія",
+            "text": "Створювати довговічні дизайнерські металеві вироби, які поєднують функціональність та естетику і допомагають формувати стиль сучасного будинку."
+        },
+        "values": {
+            "quality": "Якість матеріалів",
+            "design": "Сучасний дизайн",
+            "reliability": "Надійність виробів",
+            "individual": "Індивідуальний підхід",
+            "service": "Міжнародний рівень сервісу"
         }
     },
     "HowToOrder": {
-        "title": "How to Order",
-        "subtitle": "Your custom mailbox is just 3 steps away.",
-        "step1_title": "Choose Your Model",
-        "step1_desc": "Browse our catalog and select the design that fits your home.",
-        "step2_title": "Personalize",
-        "step2_desc": "Select material (Corten, Brass, Steel) and add address numbers.",
-        "step3_title": "We Craft & Ship",
-        "step3_desc": "We handcraft your order and ship it worldwide with care."
+        "title": "Як Замовити",
+        "subtitle": "Ваша індивідуальна поштова скринька всього за 3 кроки.",
+        "step1_title": "Оберіть Модель",
+        "step1_desc": "Перегляньте наш каталог та оберіть дизайн, що пасує вашому дому.",
+        "step2_title": "Персоналізуйте",
+        "step2_desc": "Оберіть матеріал (Corten, Латунь, Сталь) та додайте номер будинку.",
+        "step3_title": "Виготовлення та Доставка",
+        "step3_desc": "Ми виготовляємо ваше замовлення вручну та дбайливо доставляємо по всьому світу."
     },
     "Reviews": {
-        "title_start": "Trusted by",
-        "title_end": "Homeowners",
-        "subtitle": "See what our clients say about us.",
+        "title_start": "Довіра",
+        "title_end": "Власників",
+        "subtitle": "Подивіться, що кажуть про нас клієнти.",
         "items": [
             {
-                "text": "The craftsmanship is incredible. It's not just a mailbox, it's a piece of art. The Corten steel looks amazing against our modern fence."
+                "text": "Майстерність неймовірна. Це не просто поштова скринька, це витвір мистецтва. Сталь Corten виглядає чудово на фоні нашого сучасного паркану."
             },
             {
-                "text": "Arrived faster than expected. The personalization is precise and sharp. Highly recommend for anyone looking to upgrade their curb appeal."
+                "text": "Прибуло швидше, ніж очікували. Персоналізація точна і чітка. Дуже рекомендую всім, хто хоче покращити зовнішній вигляд дому."
             },
             {
-                "text": "Heavy duty and beautiful. The brass finish is stunning and draws compliments from all our neighbors. Worth every penny."
+                "text": "Важкий і красивий. Латунне оздоблення приголомшливе і збирає компліменти від усіх сусідів. Варте кожного цента."
             }
         ]
     },
     "FAQ": {
-        "title_start": "Frequently Asked",
-        "title_end": "Questions",
-        "subtitle": "Everything you need to know about our products.",
+        "title_start": "Часті",
+        "title_end": "Запитання",
+        "subtitle": "Все, що вам потрібно знати про наші продукти.",
         "items": {
             "shipping": {
-                "question": "Do you ship internationally?",
-                "answer": "Yes, we ship our mailboxes worldwide including the US, Canada, Europe, and Australia. Every package is securely crated to ensure safe arrival."
+                "question": "Ви доставляєте за кордон?",
+                "answer": "Так, ми доставляємо наші поштові скриньки по всьому світу, включаючи США, Канаду, Європу та Австралію. Кожна посилка надійно упакована для безпечної доставки."
             },
             "production": {
-                "question": "How long does custom production take?",
-                "answer": "Since every item is hand-finished, standard orders ship within 2-3 business days. Personalized orders typically take 5-7 business days to craft with precision."
+                "question": "Скільки часу займає виготовлення на замовлення?",
+                "answer": "Оскільки кожен виріб обробляється вручну, стандартні замовлення відправляються протягом 2-3 робочих днів. Персоналізовані замовлення зазвичай займають 5-7 робочих днів для точного виготовлення."
             },
             "corten": {
-                "question": "Will the Corten steel stain my wall?",
-                "answer": "Our Corten steel is pre-weathered but natural stabilization takes time. We recommend using the provided stand-off spacers to create a gap between the mailbox and the wall, preventing direct contact runoff."
+                "question": "Чи забруднить сталь Corten мою стіну?",
+                "answer": "Наша сталь Corten попередньо зістарена, але природна стабілізація вимагає часу. Ми рекомендуємо використовувати розпірки, що йдуть в комплекті, щоб створити зазор між поштовою скринькою та стіною, запобігаючи прямому контакту з дощовою водою."
             },
             "customization": {
-                "question": "Can I choose a different font for numbers?",
-                "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
+                "question": "Чи можу я обрати інший шрифт для цифр?",
+                "answer": "Звісно. Ми пропонуємо варіанти кастомізації шрифтів та розмірів. Будь ласка, вкажіть ваші побажання в примітках до замовлення або зв'яжіться з нашою підтримкою для створення макету."
+            },
+            "brand": {
+                "question": "Хто такі Ferrum Decor Studio?",
+                "answer": "Ferrum Decor Studio — український бренд дизайнерських металевих виробів. Ми створюємо поштові скриньки з Corten steel, декоративні вентиляційні решітки та кастомні металеві вироби, які роблять екстер'єр вашого будинку стильним та довговічним."
+            },
+            "history": {
+                "question": "Яка ваша історія?",
+                "answer": "Після 2022 року ми переосмислили своє виробництво, відкривши двері міжнародним клієнтам. Сьогодні наші вироби відправляються в США, Канаду та Європу, і кожне замовлення — це результат пристрасті, майстерності та уваги до деталей."
             }
-        }
+        },
+        "main_shop_note": "Відвідайте наш основний магазин для покупок: "
+    },
+    "Contact": {
+        "title": "Контакти",
+        "production_label": "Виробництво",
+        "production_value": "Україна",
+        "phone_label": "Телефон",
+        "phone_value": "+380 67 381 44 04",
+        "email_label": "Email",
+        "email_value": "ferrumdecorstudio@icloud.com",
+        "geo_label": "Географія роботи",
+        "geo_value": "Ми надсилаємо замовлення по Україні та міжнародно.",
+        "delivery_label": "Доставка",
+        "delivery_value": "Міжнародна доставка доступна для більшості країн.",
+        "social_label": "Соціальні мережі",
+        "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+    },
+    "About": {
+        "title_start": "Про",
+        "title_end": "Нас",
+        "intro": "Ferrum Decor Studio — українська майстерня дизайнерських металевих виробів для екстер'єру та інтер'єру.",
+        "specialization": "Бренд спеціалізується на створенні сучасних поштових скриньок, вентиляційних решіток, люків та декоративних металевих елементів, які поєднують функціональність, довговічність та архітектурну естетику.",
+        "philosophy_title": "Наша Філософія",
+        "philosophy_text": "Ми створюємо вироби, які стають частиною дизайну будинку і формують перше враження про простір.",
+        "products_title": "Наш Асортимент",
+        "products_list": {
+            "mailboxes": "дизайнерські поштові скриньки",
+            "hatches": "металеві люки",
+            "vents": "вентиляційні решітки зі сталі, нержавіючої сталі та латуні"
+        },
+        "approach_title": "Підхід",
+        "approach_text": "Продукція Ferrum Decor Studio розробляється з урахуванням сучасних архітектурних трендів і підходить як для приватних будинків, так і для комерційних об'єктів.",
+        "quality_text": "Всі вироби створюються з увагою до деталей і проходять контроль якості перед відправкою клієнту.",
+        "global_title": "Глобальне Охоплення",
+        "global_text": "Ми працюємо з покупцями по всьому світу і пропонуємо міжнародну доставку."
     },
     "Footer": {
-        "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
-        "newsletter_title": "Newsletter",
-        "newsletter_desc": "Subscribe for exclusive designs and offers.",
-        "subscribe": "Join",
-        "rights": "FerrumDecor Studio. All rights reserved.",
+        "slogan": "Куємо майбутнє зовнішнього вигляду. Ручна досконалість у кожному зварному шві.",
+        "rights": "FerrumDecor Studio. Всі права захищені.",
         "links": {
-            "shop": "Collections",
-            "support": "Support",
-            "how_to": "How to Order",
-            "contact": "Contact Us",
-            "terms": "Terms of Service",
-            "privacy": "Privacy Policy"
+            "support": "Підтримка",
+            "contact": "Контакти",
+            "terms": "Умови Використання",
+            "privacy": "Політика Конфіденційності"
+        }
+    },
+    "FeaturesPage": {
+        "title": "Переваги Ferrum Decor Studio",
+        "items": {
+            "materials": {
+                "title": "Преміальні матеріали",
+                "description": "Ми використовуємо високоякісні метали, включаючи corten-сталь, латунь та поєднання металу з натуральним деревом. Ці матеріали відрізняються високою міцністю, стійкістю до погодних умов та довговічністю."
+            },
+            "personalization": {
+                "title": "Повна персоналізація",
+                "description": "Кожен поштовий ящик створюється з урахуванням побажань клієнта. Ви можете додати ім'я, адресу, логотип, індивідуальний дизайн або навіть власне зображення, щоб виріб ідеально доповнював екстер'єр вашого будинку чи бізнесу."
+            },
+            "design": {
+                "title": "Унікальний дизайн",
+                "description": "Ми створюємо сучасні, вінтажні та художні рішення, які перетворюють поштовий ящик на елемент архітектури та декору. Кожен продукт поєднує естетику та функціональність."
+            },
+            "security": {
+                "title": "Надійність та безпека",
+                "description": "Наші поштові скриньки оснащуються зручними системами кріплення та замками, які захищають кореспонденцію та забезпечують комфортне використання."
+            },
+            "craftsmanship": {
+                "title": "Ручна робота та увага до деталей",
+                "description": "Кожне виріб виготовляється з високою точністю і проходить індивідуальну обробку, що забезпечує якість та ексклюзивність продукції."
+            },
+            "speed": {
+                "title": "Швидке виготовлення",
+                "description": "Середній термін виробництва становить 5–8 робочих днів, що дозволяє швидко реалізувати індивідуальне замовлення."
+            },
+            "shipping": {
+                "title": "Доставка по всьому світу",
+                "description": "Ми успішно відправляємо продукцію клієнтам по всьому світу, забезпечуючи надійну упаковку та безпечну доставку."
+            }
         }
     }
 }

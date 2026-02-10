@@ -1,119 +1,297 @@
 {
     "Navbar": {
-        "home": "Home",
-        "features": "Features",
-        "reviews": "Reviews",
+        "home": "ホーム",
+        "features": "メリット",
+        "reviews": "レビュー",
         "faq": "FAQ",
-        "shop": "Shop Now"
+        "shop": "今すぐ購入",
+        "about": "私たちについて",
+        "catalog": "カタログ",
+        "contact": "お問い合わせ",
+        "shop_note": "ferrumdecorstudio.shop で注文"
     },
     "Hero": {
-        "badge": "Premium Collection 2024",
-        "title_start": "Elevate Your",
-        "title_end": "Curb Appeal",
-        "description": "Handcrafted from Corten steel and solid brass. A fusion of modern art and timeless durability. Designed to weather the storm and age gracefully.",
-        "cta_shop": "Shop Collection",
-        "cta_catalog": "View Catalog",
-        "badge_shipping": "Worldwide Shipping",
-        "badge_warranty": "5-Year Warranty",
-        "card_badge": "Best Seller",
-        "card_title": "Corten Wall Mount"
+        "badge": "プレミアムコレクション 2025",
+        "title_start": "高める",
+        "title_end": "家の外観の魅力",
+        "description": "モダンアートと時代を超越した耐久性の融合。",
+        "cta_shop": "コレクションを見る",
+        "cta_catalog": "カタログを見る",
+        "badge_shipping": "世界中へ配送",
+        "badge_warranty": "5年保証",
+        "card_badge": "ベストセラー",
+        "features_title": "モデルの特徴",
+        "benefits": {
+            "durability": "耐候性鋼の耐久性 — 耐候性、耐腐食性。",
+            "design": "エレガントなデザイン — 鋼鉄と純真鍮のモデルはどんな外観にもフィットします。",
+            "personalization": "パーソナライズ可能 — 名前、ロゴ、またはカスタムデザインを追加。",
+            "security": "安全なロック — 手紙や小包を保護します。",
+            "longevity": "長持ちする設計 — 何十年も続くように設計されています。"
+        },
+        "cta_buy": "注文する",
+        "cta_buy_note": "ferrumdecorstudio.shop で注文",
+        "new_features": {
+            "materials_title": "プレミアム素材",
+            "materials_desc": "認定された鋼鉄と真鍮のみ。",
+            "customization_title": "パーソナライズ",
+            "customization_desc": "あなたの住所、あなたのスタイル、あなたの選択。",
+            "durability_title": "耐久性",
+            "durability_desc": "腐食に対する50年保証。"
+        },
+        "stats": {
+            "exp_value": "5+",
+            "exp_label": "長年の経験",
+            "shipping_value": "EU/USA",
+            "shipping_label": "世界中へ配送"
+        },
+        "main_shop_note": "購入のためにメインショップを訪問してください："
+    },
+    "ProductBento": {
+        "title": "エンジニアリングアート",
+        "subtitle": "細部までこだわります。完璧を作り出すために最高級の素材を使用しています。",
+        "text": "私たちはポストはただの入れ物ではなく、家の第一印象であると信じています。",
+        "details": [
+            "0.1mm精度の鋼鉄レーザーカット。",
+            "真鍮要素の手磨き。",
+            "雨から守るための耐候性構造。",
+            "強化ヒンジと盗難防止ロック。"
+        ],
+        "material": {
+            "title": "プレミアム素材",
+            "description": "認定された耐候性鋼と真鍮無垢材。"
+        },
+        "design": {
+            "title": "ユニークなデザイン",
+            "description": "時代を先取りした美学。"
+        },
+        "durability": {
+            "title": "耐久性",
+            "description": "腐食に対する50年保証。"
+        },
+        "customization": {
+            "title": "カスタマイズ",
+            "description": "あなたの住所、あなたのスタイル、あなたの選択。"
+        }
+    },
+    "ProductGrid": {
+        "title": "全カタログ",
+        "description": "耐候性鋼と真鍮の限定コレクション。完璧なポストを見つけてください。",
+        "buy_btn": "Ferrumで購入"
     },
     "Catalog": {
-        "title_start": "Curated",
-        "title_end": "Collection",
-        "description": "Explore our range of bespoke mailboxes, each crafted to stand the test of time.",
-        "all": "All",
-        "corten": "Corten Steel",
-        "brass": "Brass",
-        "steel": "Steel",
-        "no_products": "No products found in this category.",
-        "buy_now": "Buy Now"
+        "title_start": "厳選された",
+        "title_end": "コレクション",
+        "description": "長持ちするように作られた、オーダーメイドのポストをご覧ください。",
+        "all": "すべて",
+        "corten": "耐候性鋼（コールテン鋼）",
+        "brass": "真鍮",
+        "steel": "鋼鉄",
+        "no_products": "商品が見つかりませんでした。",
+        "buy_now": "今すぐ注文",
+        "buy_now_note": "ferrumdecorstudio.shop で",
+        "buy_intro": "公式サイトおよびオンラインストアで注文と支払いが可能です",
+        "shop_link_text": "ferrumdecorstudio.shop",
+        "specialization": "私たちは、プレミアムな建築用ハッチや金属構造物の製造を専門としています。",
+        "products": {
+            "1": "Custom Wall Mount Corten Steel Mailbox",
+            "2": "Custom order for Joe (Corten Steel)",
+            "3": "Custom Wall Mount Corten Steel Mailbox",
+            "4": "Custom Wall Mount Corten Steel Mailbox",
+            "5": "Custom Wall Mount Mailbox",
+            "6": "Custom Wall Mount Brass Mailbox",
+            "7": "Custom Wall Mount Corten Steel Mailbox",
+            "8": "Custom Wall Mount Corten Steel Mailbox",
+            "9": "Custom Wall Mount Corten Steel Mailbox",
+            "10": "Custom Wall Mount Corten Steel Mailbox",
+            "11": "Custom Wall Mount Mailbox",
+            "12": "Custom Wall Mount Corten Steel Mailbox",
+            "13": "Custom Wall Mount Corten Steel & Merbau Wood Mailbox",
+            "14": "Custom Wall Mount Brass Mailbox",
+            "15": "Bespoke Custom Built Wall Mount Corten Steel Mailbox",
+            "16": "Custom Wall Mount Personalized Mailbox"
+        }
     },
     "Benefits": {
         "title_start": "Why",
         "title_end": "FerrumDecor",
-        "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
+        "badge": "Why Choose Us",
+        "subtitle": "All products are created in Ukraine, ensuring quality control and unique design.",
         "items": {
-            "artisan": {
-                "title": "Artisan Craftsmanship",
-                "description": "Forged by hand using techniques passed down through generations. Every weld tells a story of precision."
+            "production": {
+                "title": "デザインアプローチ",
+                "description": "現代の建築やインテリアのソリューションを考慮して製品を開発しています。"
             },
-            "element": {
-                "title": "Element Proof",
-                "description": "Engineered to withstand the harshest environments. From coastal salt spray to freezing mountain winds."
+            "design": {
+                "title": "高品質な素材",
+                "description": "スチール、ステンレス、真鍮、コールテン鋼を使用しています。当社の製品ラインナップで実証済みです。"
             },
-            "sustainable": {
-                "title": "Sustainable Luxury",
-                "description": "Crafted from 100% recyclable, high-grade metals that age beautifully without harming the planet."
+            "materials": {
+                "title": "耐久性と耐候性",
+                "description": "金属製品は屋外使用向けに設計されており、長持ちするように作られています。"
             },
-            "aesthetic": {
-                "title": "Timeless Aesthetic",
-                "description": "Minimalist design that enhances modern and traditional architecture alike. A statement piece for your home."
+            "durability": {
+                "title": "パーソナライズ",
+                "description": "多くのポストモデルは、パーソナライズされた形式で利用可能です。"
+            },
+            "personalization": {
+                "title": "国際配送",
+                "description": "さまざまな国からの注文を受け付け、国際的な決済システムに対応しています。"
+            },
+            "international": {
+                "title": "無料配送",
+                "description": "注文に対して無料配送のオファーが利用可能です。"
+            },
+            "delivery": {
+                "title": "職人による手作り",
+                "description": "何世代にもわたって受け継がれてきた技術を用いて手作業で鍛造されています。すべての溶接が精度の物語を語ります。"
             }
+        },
+        "mission": {
+            "title": "私たちの使命",
+            "text": "機能性と美しさを兼ね備え、モダンな家のスタイルを形成するのに役立つ、耐久性のあるデザイナーメタル製品を作ることです。"
+        },
+        "values": {
+            "quality": "高品質な素材",
+            "design": "モダンなデザイン",
+            "reliability": "製品の信頼性",
+            "individual": "個々へのアプローチ",
+            "service": "国際的なサービスレベル"
         }
     },
     "HowToOrder": {
-        "title": "How to Order",
-        "subtitle": "Your custom mailbox is just 3 steps away.",
-        "step1_title": "Choose Your Model",
-        "step1_desc": "Browse our catalog and select the design that fits your home.",
-        "step2_title": "Personalize",
-        "step2_desc": "Select material (Corten, Brass, Steel) and add address numbers.",
-        "step3_title": "We Craft & Ship",
-        "step3_desc": "We handcraft your order and ship it worldwide with care."
+        "title": "注文方法",
+        "subtitle": "カスタムポストまであと3ステップ。",
+        "step1_title": "モデルを選択",
+        "step1_desc": "カタログを見て、家に合うデザインを選択してください。",
+        "step2_title": "パーソナライズ",
+        "step2_desc": "素材（コールテン鋼、真鍮、鋼鉄）を選択し、番地を追加します。",
+        "step3_title": "製作＆発送",
+        "step3_desc": "ご注文を手作りし、世界中に丁寧に発送します。"
     },
     "Reviews": {
-        "title_start": "Trusted by",
-        "title_end": "Homeowners",
-        "subtitle": "See what our clients say about us.",
+        "title_start": "信頼されている",
+        "title_end": "住宅所有者",
+        "subtitle": "お客様の声をご覧ください。",
         "items": [
             {
-                "text": "The craftsmanship is incredible. It's not just a mailbox, it's a piece of art. The Corten steel looks amazing against our modern fence."
+                "text": "職人技は素晴らしいです。ただのポストではなく、芸術作品です。耐候性鋼はモダンなフェンスによく合います。"
             },
             {
-                "text": "Arrived faster than expected. The personalization is precise and sharp. Highly recommend for anyone looking to upgrade their curb appeal."
+                "text": "予想より早く到着しました。パーソナライズは正確でシャープです。外観を向上させたい人には強くお勧めします。"
             },
             {
-                "text": "Heavy duty and beautiful. The brass finish is stunning and draws compliments from all our neighbors. Worth every penny."
+                "text": "重厚で美しい。真鍮の仕上げは見事で、近所の人たちから褒められます。価格以上の価値があります。"
             }
         ]
     },
     "FAQ": {
-        "title_start": "Frequently Asked",
-        "title_end": "Questions",
-        "subtitle": "Everything you need to know about our products.",
+        "title_start": "よくある",
+        "title_end": "質問",
+        "subtitle": "当社の製品について知っておくべきことすべて。",
         "items": {
             "shipping": {
-                "question": "Do you ship internationally?",
-                "answer": "Yes, we ship our mailboxes worldwide including the US, Canada, Europe, and Australia. Every package is securely crated to ensure safe arrival."
+                "question": "海外発送はしていますか？",
+                "answer": "はい、アメリカ、カナダ、ヨーロッパ、オーストラリアを含む世界中にポストを発送しています。すべてのパッケージは安全に到着するようにしっかりと梱包されています。"
             },
             "production": {
-                "question": "How long does custom production take?",
-                "answer": "Since every item is hand-finished, standard orders ship within 2-3 business days. Personalized orders typically take 5-7 business days to craft with precision."
+                "question": "カスタム製作にはどのくらい時間がかかりますか？",
+                "answer": "すべてのアイテムが手作業で仕上げられるため、標準注文は2〜3営業日以内に発送されます。パーソナライズされた注文は、正確に製作するために通常5〜7営業日かかります。"
             },
             "corten": {
-                "question": "Will the Corten steel stain my wall?",
-                "answer": "Our Corten steel is pre-weathered but natural stabilization takes time. We recommend using the provided stand-off spacers to create a gap between the mailbox and the wall, preventing direct contact runoff."
+                "question": "耐候性鋼は壁を汚しますか？",
+                "answer": "当社の耐候性鋼は予め風化処理されていますが、自然な安定化には時間がかかります。ポストと壁の間に隙間を作り、流出水が直接接触するのを防ぐために、付属のスペーサーを使用することをお勧めします。"
             },
             "customization": {
-                "question": "Can I choose a different font for numbers?",
-                "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
+                "question": "数字のフォントを変更できますか？",
+                "answer": "もちろんです。フォントとサイズのカスタマイズオプションを提供しています。注文メモにご希望を記入するか、モックアップについてサポートチームにお問い合わせください。"
+            },
+            "brand": {
+                "question": "Who is Ferrum Decor Studio?",
+                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+            },
+            "history": {
+                "question": "What is your story?",
+                "answer": "After 2022, we reimagined our production, opening doors to international clients. Today, our products are shipped to the USA, Canada, and Europe, and every order is a result of passion, craftsmanship, and attention to detail."
             }
-        }
+        },
+        "main_shop_note": "購入のためにメインショップを訪問してください："
+    },
+    "Contact": {
+        "title": "お問い合わせ",
+        "production_label": "生産",
+        "production_value": "ウクライナ",
+        "phone_label": "電話",
+        "phone_value": "+380 67 381 44 04",
+        "email_label": "メール",
+        "email_value": "ferrumdecorstudio@icloud.com",
+        "geo_label": "活動地域",
+        "geo_value": "ウクライナ全土および海外へ注文を発送しています。",
+        "delivery_label": "配送",
+        "delivery_value": "ほとんどの国で国際配送が利用可能です。",
+        "social_label": "ソーシャルメディア",
+        "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+    },
+    "About": {
+        "title_start": "私たち",
+        "title_end": "について",
+        "intro": "Ferrum Decor Studioは、エクステリアおよびインテリア向けのデザイナーメタル製品を扱うウクライナの工房です。",
+        "specialization": "当ブランドは、機能性、耐久性、建築的美学を兼ね備えたモダンな郵便ポスト、換気グリル、ハッチ、装飾的な金属要素の制作を専門としています。",
+        "philosophy_title": "私たちの哲学",
+        "philosophy_text": "私たちは、家のデザインの一部となり、空間の第一印象を形成する製品を作り出しています。",
+        "products_title": "私たちの製品",
+        "products_list": {
+            "mailboxes": "デザイナー郵便ポスト",
+            "hatches": "金属製ハッチ",
+            "vents": "スチール、ステンレススチール、真鍮製の換気グリル"
+        },
+        "approach_title": "アプローチ",
+        "approach_text": "Ferrum Decor Studioの製品は、現代の建築トレンドを考慮して開発されており、民家や商業施設の両方に適しています。",
+        "quality_text": "すべての製品は細部にまで注意を払って作成され、顧客に発送される前に品質管理を受けています。",
+        "global_title": "グローバルリーチ",
+        "global_text": "私たちは世界中の顧客と協力し、国際配送を提供しています。"
     },
     "Footer": {
-        "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
-        "newsletter_title": "Newsletter",
-        "newsletter_desc": "Subscribe for exclusive designs and offers.",
-        "subscribe": "Join",
+        "slogan": "外観の未来を築く。すべての溶接における手作りの卓越性。",
         "rights": "FerrumDecor Studio. All rights reserved.",
         "links": {
-            "shop": "Collections",
-            "support": "Support",
-            "how_to": "How to Order",
-            "contact": "Contact Us",
-            "terms": "Terms of Service",
-            "privacy": "Privacy Policy"
+            "support": "サポート",
+            "contact": "お問い合わせ",
+            "terms": "利用規約",
+            "privacy": "プライバシーポリシー"
+        }
+    },
+    "FeaturesPage": {
+        "title": "Ferrum Decor Studio の利点",
+        "items": {
+            "materials": {
+                "title": "プレミアム素材",
+                "description": "コールテン鋼、真鍮、金属と天然木の組み合わせなど、高品質の金属を使用しています。これらの素材は、高強度、耐候性、耐久性が特徴です。"
+            },
+            "personalization": {
+                "title": "完全なパーソナライズ",
+                "description": "各ポストはお客様の希望を念頭に置いて作成されます。名前、住所、ロゴ、個別のデザイン、さらには独自の画像を追加して、製品がご自宅やビジネスの外観を完璧に補完するようにできます。"
+            },
+            "design": {
+                "title": "ユニークなデザイン",
+                "description": "ポストを建築や装飾の要素に変える、モダン、ヴィンテージ、芸術的なソリューションを作成します。各製品は美学と機能性を兼ね備えています。"
+            },
+            "security": {
+                "title": "信頼性とセキュリティ",
+                "description": "当社のポストには、通信を保護し快適な使用を確実にする便利な取り付けシステムとロックが装備されています。"
+            },
+            "craftsmanship": {
+                "title": "手作り、そして細部へのこだわり",
+                "description": "各製品は高い精度で作られ、個別の加工が行われているため、製品の品質と独占性が保証されます。"
+            },
+            "speed": {
+                "title": "迅速な製造",
+                "description": "平均製造時間は5〜8営業日で、個別注文の迅速な実現が可能です。"
+            },
+            "shipping": {
+                "title": "世界中へ配送",
+                "description": "世界中のお客様に製品を正常に発送し、信頼性の高い梱包と安全な配送をお約束します。"
+            }
         }
     }
 }

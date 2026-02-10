@@ -27,8 +27,8 @@ export function Button({
         secondary: 'bg-zinc-800 text-white hover:bg-zinc-700',
         outline: 'border border-white/30 text-white hover:border-white hover:bg-white/5 backdrop-blur-sm',
         ghost: 'text-gray-400 hover:text-white',
-        premium: 'bg-[#D4AF37] text-black hover:bg-[#F3E5AB]',
-        gold: 'bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] text-black bg-[length:200%_auto] hover:bg-right transition-[background-position] duration-500 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] border border-[#F3E5AB]/50',
+        premium: 'bg-[#C5A059] text-black hover:bg-[#FCF6BA]',
+        gold: 'bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] text-black bg-[length:200%_auto] hover:bg-right transition-[background-position] duration-500 shadow-[0_0_20px_rgba(197,160,89,0.3)] hover:shadow-[0_0_30px_rgba(197,160,89,0.5)] border border-[#FCF6BA]/50',
     };
 
     const sizes = {

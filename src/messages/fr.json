@@ -1,119 +1,297 @@
 {
     "Navbar": {
-        "home": "Home",
-        "features": "Features",
-        "reviews": "Reviews",
+        "home": "Accueil",
+        "features": "Avantages",
+        "reviews": "Avis",
         "faq": "FAQ",
-        "shop": "Shop Now"
+        "shop": "Acheter",
+        "about": "À Propos",
+        "catalog": "Catalogue",
+        "contact": "Contact",
+        "shop_note": "sur ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Premium Collection 2024",
-        "title_start": "Elevate Your",
-        "title_end": "Curb Appeal",
-        "description": "Handcrafted from Corten steel and solid brass. A fusion of modern art and timeless durability. Designed to weather the storm and age gracefully.",
-        "cta_shop": "Shop Collection",
-        "cta_catalog": "View Catalog",
-        "badge_shipping": "Worldwide Shipping",
-        "badge_warranty": "5-Year Warranty",
-        "card_badge": "Best Seller",
-        "card_title": "Corten Wall Mount"
+        "badge": "Collection Premium 2025",
+        "title_start": "Sublimez Votre",
+        "title_end": "Attrait Extérieur",
+        "description": "Une fusion d'art moderne et de durabilité intemporelle.",
+        "cta_shop": "Voir la Collection",
+        "cta_catalog": "Voir le Catalogue",
+        "badge_shipping": "Livraison Mondiale",
+        "badge_warranty": "Garantie 5 Ans",
+        "card_badge": "Meilleure Vente",
+        "features_title": "Caractéristiques du Modèle",
+        "benefits": {
+            "durability": "Durabilité Acier Corten — Résistant aux intempéries et à la corrosion.",
+            "design": "Design Élégant — Modèles en acier et laiton pur s'adaptent à tout extérieur.",
+            "personalization": "Personnalisation Disponible — Ajoutez votre nom, logo ou design.",
+            "security": "Serrures Sécurisées — Protégez vos lettres et colis.",
+            "longevity": "Conçu pour Durer — Créé pour durer des décennies."
+        },
+        "cta_buy": "Commander",
+        "cta_buy_note": "sur ferrumdecorstudio.shop",
+        "new_features": {
+            "materials_title": "Matériaux Premium",
+            "materials_desc": "Acier et laiton certifiés uniquement.",
+            "customization_title": "Personnalisation",
+            "customization_desc": "Votre adresse, votre style, votre choix.",
+            "durability_title": "Durabilité",
+            "durability_desc": "Garantie 50 ans contre la corrosion."
+        },
+        "stats": {
+            "exp_value": "5+",
+            "exp_label": "Ans d'Expérience",
+            "shipping_value": "UE/USA",
+            "shipping_label": "Livraison Mondiale"
+        },
+        "main_shop_note": "Visitez notre boutique principale pour les achats : "
+    },
+    "ProductBento": {
+        "title": "Art de l'Ingénierie",
+        "subtitle": "Chaque détail compte. Nous utilisons les meilleurs matériaux pour créer la perfection.",
+        "text": "Nous croyons qu'une boîte aux lettres n'est pas juste un conteneur, mais la première impression de votre maison.",
+        "details": [
+            "Découpe laser de l'acier avec une précision de 0,1 mm.",
+            "Polissage manuel des éléments en laiton.",
+            "Construction étanche pour la protection contre la pluie.",
+            "Charnières renforcées et serrure anti-vandalisme."
+        ],
+        "material": {
+            "title": "Matériaux Premium",
+            "description": "Acier Corten certifié et laiton massif."
+        },
+        "design": {
+            "title": "Design Unique",
+            "description": "Esthétique en avance sur son temps."
+        },
+        "durability": {
+            "title": "Durabilité",
+            "description": "Garantie 50 ans contre la corrosion."
+        },
+        "customization": {
+            "title": "Personnalisation",
+            "description": "Votre adresse, votre style, votre choix."
+        }
+    },
+    "ProductGrid": {
+        "title": "Catalogue Complet",
+        "description": "Collection exclusive en Corten et laiton. Trouvez votre boîte aux lettres parfaite.",
+        "buy_btn": "Acheter sur Ferrum"
     },
     "Catalog": {
-        "title_start": "Curated",
-        "title_end": "Collection",
-        "description": "Explore our range of bespoke mailboxes, each crafted to stand the test of time.",
-        "all": "All",
-        "corten": "Corten Steel",
-        "brass": "Brass",
-        "steel": "Steel",
-        "no_products": "No products found in this category.",
-        "buy_now": "Buy Now"
+        "title_start": "Collection",
+        "title_end": "Sélectionnée",
+        "description": "Explorez notre gamme de boîtes aux lettres sur mesure, conçues pour résister à l'épreuve du temps.",
+        "all": "Tout",
+        "corten": "Acier Corten",
+        "brass": "Laiton",
+        "steel": "Acier",
+        "no_products": "Aucun produit trouvé.",
+        "buy_now": "Commander Maintenant",
+        "buy_now_note": "sur ferrumdecorstudio.shop",
+        "buy_intro": "Vous pouvez passer une commande et payer vos articles sur notre boutique en ligne officielle",
+        "shop_link_text": "ferrumdecorstudio.shop",
+        "specialization": "We specialize in the production of premium architectural hatches and metal structures.",
+        "products": {
+            "1": "Custom Wall Mount Corten Steel Mailbox",
+            "2": "Custom order for Joe (Corten Steel)",
+            "3": "Custom Wall Mount Corten Steel Mailbox",
+            "4": "Custom Wall Mount Corten Steel Mailbox",
+            "5": "Custom Wall Mount Mailbox",
+            "6": "Custom Wall Mount Brass Mailbox",
+            "7": "Custom Wall Mount Corten Steel Mailbox",
+            "8": "Custom Wall Mount Corten Steel Mailbox",
+            "9": "Custom Wall Mount Corten Steel Mailbox",
+            "10": "Custom Wall Mount Corten Steel Mailbox",
+            "11": "Custom Wall Mount Mailbox",
+            "12": "Custom Wall Mount Corten Steel Mailbox",
+            "13": "Custom Wall Mount Corten Steel & Merbau Wood Mailbox",
+            "14": "Custom Wall Mount Brass Mailbox",
+            "15": "Bespoke Custom Built Wall Mount Corten Steel Mailbox",
+            "16": "Custom Wall Mount Personalized Mailbox"
+        }
     },
     "Benefits": {
-        "title_start": "Why",
+        "title_start": "Pourquoi",
         "title_end": "FerrumDecor",
-        "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
+        "badge": "Pourquoi nous choisir",
+        "subtitle": "Tous les produits sont créés en Ukraine, garantissant un contrôle qualité et un design unique.",
         "items": {
-            "artisan": {
-                "title": "Artisan Craftsmanship",
-                "description": "Forged by hand using techniques passed down through generations. Every weld tells a story of precision."
+            "production": {
+                "title": "Approche Design",
+                "description": "Les produits sont développés en tenant compte des solutions architecturales et intérieures modernes."
             },
-            "element": {
-                "title": "Element Proof",
-                "description": "Engineered to withstand the harshest environments. From coastal salt spray to freezing mountain winds."
+            "design": {
+                "title": "Matériaux de Haute Qualité",
+                "description": "Nous utilisons l'acier, l'acier inoxydable, le laiton et l'acier corten. Confirmé par notre gamme de produits."
             },
-            "sustainable": {
-                "title": "Sustainable Luxury",
-                "description": "Crafted from 100% recyclable, high-grade metals that age beautifully without harming the planet."
+            "materials": {
+                "title": "Durabilité et Résistance aux Intempéries",
+                "description": "Les produits métalliques sont conçus pour une utilisation en extérieur et sont bâtis pour durer."
             },
-            "aesthetic": {
-                "title": "Timeless Aesthetic",
-                "description": "Minimalist design that enhances modern and traditional architecture alike. A statement piece for your home."
+            "durability": {
+                "title": "Personnalisation",
+                "description": "De nombreux modèles de boîtes aux lettres sont disponibles dans un format personnalisé."
+            },
+            "personalization": {
+                "title": "Livraison Internationale",
+                "description": "Nous acceptons les commandes de différents pays et travaillons avec des systèmes de paiement internationaux."
+            },
+            "international": {
+                "title": "Livraison Gratuite",
+                "description": "Offre de livraison gratuite disponible pour les commandes."
+            },
+            "delivery": {
+                "title": "Savoir-faire Artisanal",
+                "description": "Forgé à la main selon des techniques transmises de génération en génération. Chaque soudure raconte une histoire de précision."
             }
+        },
+        "mission": {
+            "title": "Notre Mission",
+            "text": "Créer des produits métalliques design et durables qui allient fonctionnalité et esthétique, et aident à former le style d'une maison moderne."
+        },
+        "values": {
+            "quality": "Qualité des Matériaux",
+            "design": "Design Moderne",
+            "reliability": "Fiabilité des Produits",
+            "individual": "Approche Individuelle",
+            "service": "Niveau de Service International"
         }
     },
     "HowToOrder": {
-        "title": "How to Order",
-        "subtitle": "Your custom mailbox is just 3 steps away.",
-        "step1_title": "Choose Your Model",
-        "step1_desc": "Browse our catalog and select the design that fits your home.",
-        "step2_title": "Personalize",
-        "step2_desc": "Select material (Corten, Brass, Steel) and add address numbers.",
-        "step3_title": "We Craft & Ship",
-        "step3_desc": "We handcraft your order and ship it worldwide with care."
+        "title": "Comment Commander",
+        "subtitle": "Votre boîte aux lettres personnalisée est à seulement 3 étapes.",
+        "step1_title": "Choisissez Votre Modèle",
+        "step1_desc": "Parcourez notre catalogue et sélectionnez le design qui convient à votre maison.",
+        "step2_title": "Personnaliser",
+        "step2_desc": "Sélectionnez le matériau (Corten, Laiton, Acier) et ajoutez les numéros d'adresse.",
+        "step3_title": "Fabrication & Expédition",
+        "step3_desc": "Nous fabriquons votre commande à la main et l'expédions dans le monde entier avec soin."
     },
     "Reviews": {
-        "title_start": "Trusted by",
-        "title_end": "Homeowners",
-        "subtitle": "See what our clients say about us.",
+        "title_start": "Approuvé par les",
+        "title_end": "Propriétaires",
+        "subtitle": "Voyez ce que nos clients disent de nous.",
         "items": [
             {
-                "text": "The craftsmanship is incredible. It's not just a mailbox, it's a piece of art. The Corten steel looks amazing against our modern fence."
+                "text": "Le savoir-faire est incroyable. Ce n'est pas juste une boîte aux lettres, c'est une œuvre d'art. L'acier Corten est magnifique contre notre clôture moderne."
             },
             {
-                "text": "Arrived faster than expected. The personalization is precise and sharp. Highly recommend for anyone looking to upgrade their curb appeal."
+                "text": "Arrivé plus vite que prévu. La personnalisation est précise et nette. Hautement recommandé pour tous ceux qui veulent améliorer l'attrait de leur maison."
             },
             {
-                "text": "Heavy duty and beautiful. The brass finish is stunning and draws compliments from all our neighbors. Worth every penny."
+                "text": "Robuste et magnifique. La finition en laiton est superbe et attire les compliments de tous nos voisins. Vaut chaque centime."
             }
         ]
     },
     "FAQ": {
-        "title_start": "Frequently Asked",
-        "title_end": "Questions",
-        "subtitle": "Everything you need to know about our products.",
+        "title_start": "Questions",
+        "title_end": "Fréquentes",
+        "subtitle": "Tout ce que vous devez savoir sur nos produits.",
         "items": {
             "shipping": {
-                "question": "Do you ship internationally?",
-                "answer": "Yes, we ship our mailboxes worldwide including the US, Canada, Europe, and Australia. Every package is securely crated to ensure safe arrival."
+                "question": "Expédiez-vous à l'international ?",
+                "answer": "Oui, nous expédions nos boîtes aux lettres dans le monde entier, y compris aux États-Unis, au Canada, en Europe et en Australie. Chaque colis est solidement emballé pour garantir une arrivée en toute sécurité."
             },
             "production": {
-                "question": "How long does custom production take?",
-                "answer": "Since every item is hand-finished, standard orders ship within 2-3 business days. Personalized orders typically take 5-7 business days to craft with precision."
+                "question": "Combien de temps prend la production personnalisée ?",
+                "answer": "Puisque chaque article est fini à la main, les commandes standard sont expédiées sous 2-3 jours ouvrables. Les commandes personnalisées prennent généralement 5-7 jours ouvrables pour une fabrication précise."
             },
             "corten": {
-                "question": "Will the Corten steel stain my wall?",
-                "answer": "Our Corten steel is pre-weathered but natural stabilization takes time. We recommend using the provided stand-off spacers to create a gap between the mailbox and the wall, preventing direct contact runoff."
+                "question": "L'acier Corten va-t-il tacher mon mur ?",
+                "answer": "Notre acier Corten est pré-patiné mais la stabilisation naturelle prend du temps. Nous recommandons d'utiliser les entretoises fournies pour créer un espace entre la boîte aux lettres et le mur, empêchant le contact direct avec l'eau de ruissellement."
             },
             "customization": {
-                "question": "Can I choose a different font for numbers?",
-                "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
+                "question": "Puis-je choisir une police différente pour les chiffres ?",
+                "answer": "Absolument. Nous proposons des options de personnalisation pour les polices et les tailles. Veuillez préciser votre préférence dans les notes de commande ou contactez notre équipe de support pour une maquette."
+            },
+            "brand": {
+                "question": "Who is Ferrum Decor Studio?",
+                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+            },
+            "history": {
+                "question": "What is your story?",
+                "answer": "After 2022, we reimagined our production, opening doors to international clients. Today, our products are shipped to the USA, Canada, and Europe, and every order is a result of passion, craftsmanship, and attention to detail."
             }
-        }
+        },
+        "main_shop_note": "Visitez notre boutique principale pour les achats : "
+    },
+    "Contact": {
+        "title": "Contact",
+        "production_label": "Production",
+        "production_value": "Ukraine",
+        "phone_label": "Téléphone",
+        "phone_value": "+380 67 381 44 04",
+        "email_label": "Email",
+        "email_value": "ferrumdecorstudio@icloud.com",
+        "geo_label": "Géographie du travail",
+        "geo_value": "Nous expédions les commandes dans toute l'Ukraine et à l'international.",
+        "delivery_label": "Livraison",
+        "delivery_value": "La livraison internationale est disponible pour la plupart des pays.",
+        "social_label": "Réseaux sociaux",
+        "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+    },
+    "About": {
+        "title_start": "À Propos de",
+        "title_end": "Nous",
+        "intro": "Ferrum Decor Studio est un atelier ukrainien de produits métalliques design pour l'extérieur et l'intérieur.",
+        "specialization": "La marque se spécialise dans la création de boîtes aux lettres modernes, de grilles de ventilation, de trappes et d'éléments décoratifs en métal qui allient fonctionnalité, durabilité et esthétique architecturale.",
+        "philosophy_title": "Notre Philosophie",
+        "philosophy_text": "Nous créons des produits qui deviennent partie intégrante du design de la maison et forment la première impression de l'espace.",
+        "products_title": "Notre Gamme",
+        "products_list": {
+            "mailboxes": "Boîtes aux lettres design",
+            "hatches": "Trappes métalliques",
+            "vents": "Grilles de ventilation en acier, acier inoxydable et laiton"
+        },
+        "approach_title": "Approche",
+        "approach_text": "Les produits Ferrum Decor Studio sont développés en tenant compte des tendances architecturales modernes et conviennent aussi bien aux maisons privées qu'aux objets commerciaux.",
+        "quality_text": "Tous les produits sont créés avec le souci du détail et passent un contrôle qualité avant d'être envoyés au client.",
+        "global_title": "Portée Globale",
+        "global_text": "Nous travaillons avec des clients du monde entier et proposons une livraison internationale."
     },
     "Footer": {
-        "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
-        "newsletter_title": "Newsletter",
-        "newsletter_desc": "Subscribe for exclusive designs and offers.",
-        "subscribe": "Join",
-        "rights": "FerrumDecor Studio. All rights reserved.",
+        "slogan": "Forger l'avenir de l'attrait extérieur. Excellence artisanale dans chaque soudure.",
+        "rights": "FerrumDecor Studio. Tous droits réservés.",
         "links": {
-            "shop": "Collections",
             "support": "Support",
-            "how_to": "How to Order",
-            "contact": "Contact Us",
-            "terms": "Terms of Service",
-            "privacy": "Privacy Policy"
+            "contact": "Contact",
+            "terms": "Conditions d'Utilisation",
+            "privacy": "Politique de Confidentialité"
+        }
+    },
+    "FeaturesPage": {
+        "title": "Avantages de Ferrum Decor Studio",
+        "items": {
+            "materials": {
+                "title": "Matériaux Premium",
+                "description": "Nous utilisons des métaux de haute qualité, notamment l'acier Corten, le laiton et une combinaison de métal avec du bois naturel. Ces matériaux se caractérisent par une haute résistance, une résistance aux conditions météorologiques et une grande durabilité."
+            },
+            "personalization": {
+                "title": "Personnalisation Complète",
+                "description": "Chaque boîte aux lettres est créée en tenant compte des souhaits du client. Vous pouvez ajouter un nom, une adresse, un logo, un design individuel ou même votre propre image afin que le produit complète parfaitement l'extérieur de votre maison ou de votre entreprise."
+            },
+            "design": {
+                "title": "Design Unique",
+                "description": "Nous créons des solutions modernes, vintage et artistiques qui transforment une boîte aux lettres en un élément d'architecture et de décor. Chaque produit allie esthétique et fonctionnalité."
+            },
+            "security": {
+                "title": "Fiabilité et Sécurité",
+                "description": "Nos boîtes aux lettres sont équipées de systèmes de montage pratiques et de serrures qui protègent la correspondance et assurent une utilisation confortable."
+            },
+            "craftsmanship": {
+                "title": "Fait à la main et Souci du Détail",
+                "description": "Chaque produit est fabriqué avec une grande précision et subit un traitement individuel, ce qui garantit la qualité et l'exclusivité des produits."
+            },
+            "speed": {
+                "title": "Fabrication Rapide",
+                "description": "Le délai de production moyen est de 5 à 8 jours ouvrables, ce qui permet une réalisation rapide des commandes individuelles."
+            },
+            "shipping": {
+                "title": "Livraison dans le monde entier",
+                "description": "Nous envoyons avec succès des produits à des clients partout dans le monde, garantissant un emballage fiable et une livraison sécurisée."
+            }
         }
     }
 }

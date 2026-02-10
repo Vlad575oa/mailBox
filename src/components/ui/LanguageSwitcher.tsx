@@ -1,8 +1,8 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
-import { ChangeEvent, useState, useTransition } from 'react';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { useState, useTransition } from 'react';
 import { FaGlobe } from 'react-icons/fa';
 
 export function LanguageSwitcher({ isScrolled = false }: { isScrolled?: boolean }) {
@@ -24,11 +24,7 @@ export function LanguageSwitcher({ isScrolled = false }: { isScrolled?: boolean 
 
     const onSelectChange = (nextLocale: string) => {
         startTransition(() => {
-            // Replace the locale in the pathname
-            // /en/about -> /ru/about
-            const segments = pathname.split('/');
-            segments[1] = nextLocale;
-            router.replace(segments.join('/'));
+            router.replace(pathname, { locale: nextLocale });
         });
         setIsOpen(false);
     };
@@ -37,8 +33,7 @@ export function LanguageSwitcher({ isScrolled = false }: { isScrolled?: boolean 
         <div className="relative">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`flex items-center gap-2 px-3 py-2 text-lg font-medium transition-colors ${isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-black hover:text-[#D4AF37]'
-                    }`}
+                className={`flex items-center gap-2 px-3 py-2 text-lg font-medium transition-colors text-white hover:text-gradient-gold`}
             >
                 <FaGlobe />
                 <span className="uppercase">{locale}</span>
@@ -55,8 +50,8 @@ export function LanguageSwitcher({ isScrolled = false }: { isScrolled?: boolean 
                             <button
                                 key={lang.code}
                                 onClick={() => onSelectChange(lang.code)}
-                                disabled={isPending}
-                                className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${locale === lang.code ? 'font-bold text-primary' : 'text-gray-700'
+                                disabled={isPending || locale === lang.code} // Disable current locale
+                                className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${locale === lang.code ? 'font-bold text-primary bg-gray-50' : 'text-gray-700'
                                     }`}
                             >
                                 {lang.label}

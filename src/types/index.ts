@@ -4,7 +4,8 @@ export interface Product {
     link: string; // Product URL on external shop
     price: string; // Formatted price
     priceNumeric: number;
-    image: string; // Local path or remote fallback
+    image: string; // Main image path
+    images?: string[]; // Additional image paths
     remoteImage?: string;
     category: string;
     material: string;

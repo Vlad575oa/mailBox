@@ -1,4 +1,5 @@
-import { ProductGrid } from '@/components/home/ProductGrid';
+import { Suspense } from 'react';
+import { ProductCatalog } from '@/components/home/ProductCatalog';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -11,9 +12,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 export default function CatalogPage() {
+    // Catalog page render
     return (
-        <div className="pt-20 bg-[#F9F9F7] min-h-screen">
-            <ProductGrid />
+        <div className="pt-16 bg-white min-h-screen">
+            <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
+                <ProductCatalog />
+            </Suspense>
         </div>
     );
 }

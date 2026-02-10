@@ -1,119 +1,297 @@
 {
     "Navbar": {
-        "home": "Home",
-        "features": "Features",
-        "reviews": "Reviews",
+        "home": "Startseite",
+        "features": "Vorteile",
+        "reviews": "Bewertungen",
         "faq": "FAQ",
-        "shop": "Shop Now"
+        "shop": "Jetzt Kaufen",
+        "about": "Über Uns",
+        "catalog": "Katalog",
+        "contact": "Kontakt",
+        "shop_note": "auf ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Premium Collection 2024",
-        "title_start": "Elevate Your",
-        "title_end": "Curb Appeal",
-        "description": "Handcrafted from Corten steel and solid brass. A fusion of modern art and timeless durability. Designed to weather the storm and age gracefully.",
-        "cta_shop": "Shop Collection",
-        "cta_catalog": "View Catalog",
-        "badge_shipping": "Worldwide Shipping",
-        "badge_warranty": "5-Year Warranty",
-        "card_badge": "Best Seller",
-        "card_title": "Corten Wall Mount"
+        "badge": "Premium Kollektion 2025",
+        "title_start": "Veredeln Sie Ihre",
+        "title_end": "Bordsteinattraktivität",
+        "description": "Eine Fusion aus moderner Kunst und zeitloser Beständigkeit.",
+        "cta_shop": "Kollektion Ansehen",
+        "cta_catalog": "Katalog Ansehen",
+        "badge_shipping": "Weltweiter Versand",
+        "badge_warranty": "5 Jahre Garantie",
+        "card_badge": "Bestseller",
+        "features_title": "Modellfunktionen",
+        "benefits": {
+            "durability": "Cortenstahl-Beständigkeit — Wetterfest, korrosionsbeständig.",
+            "design": "Elegantes Design — Stahl und reines Messing passen zu jeder Außenfassade.",
+            "personalization": "Personalisierung möglich — Fügen Sie Ihren Namen, Ihr Logo oder ein individuelles Design hinzu.",
+            "security": "Sichere Schlösser — Schützen Sie Ihre Briefe und Pakete.",
+            "longevity": "Für die Ewigkeit gebaut — Entwickelt, um Jahrzehnte zu halten."
+        },
+        "cta_buy": "Bestellen",
+        "cta_buy_note": "auf ferrumdecorstudio.shop",
+        "new_features": {
+            "materials_title": "Premium Materialien",
+            "materials_desc": "Nur zertifizierter Stahl und Messing.",
+            "customization_title": "Personalisierung",
+            "customization_desc": "Ihre Adresse, Ihr Stil, Ihre Wahl.",
+            "durability_title": "Langlebigkeit",
+            "durability_desc": "50 Jahre Garantie gegen Durchrostung."
+        },
+        "stats": {
+            "exp_value": "5+",
+            "exp_label": "Jahre Erfahrung",
+            "shipping_value": "EU/USA",
+            "shipping_label": "Weltweiter Versand"
+        },
+        "main_shop_note": "Besuchen Sie unseren Hauptshop für Einkäufe: "
+    },
+    "ProductBento": {
+        "title": "Ingenieurskunst",
+        "subtitle": "Jedes Detail zählt. Wir verwenden die besten Materialien, um Perfektion zu schaffen.",
+        "text": "Wir glauben, dass ein Briefkasten nicht nur ein Behälter ist, sondern der erste Eindruck Ihres Hauses.",
+        "details": [
+            "Laserschnitt von Stahl mit 0,1 mm Präzision.",
+            "Handpolieren von Messingelementen.",
+            "Wetterfeste Konstruktion zum Schutz vor Regen.",
+            "Verstärkte Scharniere und vandalismusgeschütztes Schloss."
+        ],
+        "material": {
+            "title": "Premium Materialien",
+            "description": "Zertifizierter Cortenstahl und massives Messing."
+        },
+        "design": {
+            "title": "Einzigartiges Design",
+            "description": "Ästhetik der Zeit voraus."
+        },
+        "durability": {
+            "title": "Langlebigkeit",
+            "description": "50 Jahre Garantie gegen Durchrostung."
+        },
+        "customization": {
+            "title": "Anpassung",
+            "description": "Ihre Adresse, Ihr Stil, Ihre Wahl."
+        }
+    },
+    "ProductGrid": {
+        "title": "Gesamter Katalog",
+        "description": "Exklusive Kollektion aus Corten und Messing. Finden Sie Ihren perfekten Briefkasten.",
+        "buy_btn": "Bei Ferrum Kaufen"
     },
     "Catalog": {
-        "title_start": "Curated",
-        "title_end": "Collection",
-        "description": "Explore our range of bespoke mailboxes, each crafted to stand the test of time.",
-        "all": "All",
-        "corten": "Corten Steel",
-        "brass": "Brass",
-        "steel": "Steel",
-        "no_products": "No products found in this category.",
-        "buy_now": "Buy Now"
+        "title_start": "Kuratierte",
+        "title_end": "Kollektion",
+        "description": "Entdecken Sie unser Sortiment an maßgefertigten Briefkästen, die für die Ewigkeit gebaut sind.",
+        "all": "Alle",
+        "corten": "Cortenstahl",
+        "brass": "Messing",
+        "steel": "Stahl",
+        "no_products": "Keine Produkte in dieser Kategorie gefunden.",
+        "buy_now": "Bestellen",
+        "buy_now_note": "auf ferrumdecorstudio.shop",
+        "buy_intro": "Sie können eine Bestellung aufgeben und für Waren in unserem offiziellen Online-Shop bezahlen",
+        "shop_link_text": "ferrumdecorstudio.shop",
+        "specialization": "Wir spezialisieren uns auf die Herstellung von erstklassigen architektonischen Luken und Metallstrukturen.",
+        "products": {
+            "1": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "2": "Sonderanfertigung für Joe (Cortenstahl)",
+            "3": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "4": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "5": "Individueller Wand-Briefkasten",
+            "6": "Individueller Wand-Briefkasten aus Messing",
+            "7": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "8": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "9": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "10": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "11": "Individueller Wand-Briefkasten",
+            "12": "Individueller Wand-Briefkasten aus Cortenstahl",
+            "13": "Wand-Briefkasten aus Cortenstahl & Merbau-Holz",
+            "14": "Individueller Wand-Briefkasten aus Messing",
+            "15": "Maßgefertigter Wand-Briefkasten aus Cortenstahl",
+            "16": "Individueller wandmontierter personalisierter Briefkasten"
+        }
     },
     "Benefits": {
         "title_start": "Why",
         "title_end": "FerrumDecor",
-        "subtitle": "We don't just build mailboxes. We create architectural accents that define your home's character.",
+        "badge": "Why Choose Us",
+        "subtitle": "All products are created in Ukraine, ensuring quality control and unique design.",
         "items": {
-            "artisan": {
-                "title": "Artisan Craftsmanship",
-                "description": "Forged by hand using techniques passed down through generations. Every weld tells a story of precision."
+            "production": {
+                "title": "Design-Ansatz",
+                "description": "Die Produkte werden unter Berücksichtigung moderner architektonischer und innenarchitektonischer Lösungen entwickelt."
             },
-            "element": {
-                "title": "Element Proof",
-                "description": "Engineered to withstand the harshest environments. From coastal salt spray to freezing mountain winds."
+            "design": {
+                "title": "Hochwertige Materialien",
+                "description": "Wir verwenden Stahl, Edelstahl, Messing und Cortenstahl. Bestätigt durch unser Produktsortiment."
             },
-            "sustainable": {
-                "title": "Sustainable Luxury",
-                "description": "Crafted from 100% recyclable, high-grade metals that age beautifully without harming the planet."
+            "materials": {
+                "title": "Langlebigkeit & Wetterbeständigkeit",
+                "description": "Metallprodukte sind für den Außenbereich konzipiert und auf Langlebigkeit ausgelegt."
             },
-            "aesthetic": {
-                "title": "Timeless Aesthetic",
-                "description": "Minimalist design that enhances modern and traditional architecture alike. A statement piece for your home."
+            "durability": {
+                "title": "Personalisierung",
+                "description": "Viele Briefkastenmodelle sind in einem personalisierten Format verfügbar."
+            },
+            "personalization": {
+                "title": "Internationaler Versand",
+                "description": "Wir akzeptieren Bestellungen aus verschiedenen Ländern und arbeiten mit internationalen Zahlungssystemen."
+            },
+            "international": {
+                "title": "Kostenlose Lieferung",
+                "description": "Angebot für kostenlose Lieferung für Bestellungen verfügbar."
+            },
+            "delivery": {
+                "title": "Handwerkliche Kunstfertigkeit",
+                "description": "Von Hand geschmiedet mit Techniken, die über Generationen weitergegeben wurden. Jede Schweißnaht erzählt eine Geschichte von Präzision."
             }
+        },
+        "mission": {
+            "title": "Unsere Mission",
+            "text": "Langlebige Designer-Metallprodukte zu schaffen, die Funktionalität und Ästhetik vereinen und dazu beitragen, den Stil eines modernen Hauses zu prägen."
+        },
+        "values": {
+            "quality": "Qualitätsmaterialien",
+            "design": "Modernes Design",
+            "reliability": "Produktzuverlässigkeit",
+            "individual": "Individueller Ansatz",
+            "service": "Internationales Serviceniveau"
         }
     },
     "HowToOrder": {
-        "title": "How to Order",
-        "subtitle": "Your custom mailbox is just 3 steps away.",
-        "step1_title": "Choose Your Model",
-        "step1_desc": "Browse our catalog and select the design that fits your home.",
-        "step2_title": "Personalize",
-        "step2_desc": "Select material (Corten, Brass, Steel) and add address numbers.",
-        "step3_title": "We Craft & Ship",
-        "step3_desc": "We handcraft your order and ship it worldwide with care."
+        "title": "Bestellvorgang",
+        "subtitle": "Ihr individueller Briefkasten ist nur 3 Schritte entfernt.",
+        "step1_title": "Modell Wählen",
+        "step1_desc": "Durchsuchen Sie unseren Katalog und wählen Sie das Design, das zu Ihrem Haus passt.",
+        "step2_title": "Personalisieren",
+        "step2_desc": "Wählen Sie das Material (Corten, Messing, Stahl) und fügen Sie Adressnummern hinzu.",
+        "step3_title": "Fertigung & Versand",
+        "step3_desc": "Wir fertigen Ihre Bestellung von Hand und versenden sie weltweit mit Sorgfalt."
     },
     "Reviews": {
-        "title_start": "Trusted by",
-        "title_end": "Homeowners",
-        "subtitle": "See what our clients say about us.",
+        "title_start": "Vertraut von",
+        "title_end": "Hausbesitzern",
+        "subtitle": "Sehen Sie, was unsere Kunden über uns sagen.",
         "items": [
             {
-                "text": "The craftsmanship is incredible. It's not just a mailbox, it's a piece of art. The Corten steel looks amazing against our modern fence."
+                "text": "Die Handwerkskunst ist unglaublich. Es ist nicht nur ein Briefkasten, es ist ein Kunstwerk. Der Cortenstahl sieht toll aus vor unserem modernen Zaun."
             },
             {
-                "text": "Arrived faster than expected. The personalization is precise and sharp. Highly recommend for anyone looking to upgrade their curb appeal."
+                "text": "Schneller angekommen als erwartet. Die Personalisierung ist präzise und scharf. Sehr empfehlenswert für jeden, der seine Bordsteinattraktivität steigern möchte."
             },
             {
-                "text": "Heavy duty and beautiful. The brass finish is stunning and draws compliments from all our neighbors. Worth every penny."
+                "text": "Schwer und schön. Das Messing-Finish ist atemberaubend und zieht Komplimente von allen Nachbarn an. Jeden Cent wert."
             }
         ]
     },
     "FAQ": {
-        "title_start": "Frequently Asked",
-        "title_end": "Questions",
-        "subtitle": "Everything you need to know about our products.",
+        "title_start": "Häufig Gestellte",
+        "title_end": "Fragen",
+        "subtitle": "Alles, was Sie über unsere Produkte wissen müssen.",
         "items": {
             "shipping": {
-                "question": "Do you ship internationally?",
-                "answer": "Yes, we ship our mailboxes worldwide including the US, Canada, Europe, and Australia. Every package is securely crated to ensure safe arrival."
+                "question": "Versenden Sie international?",
+                "answer": "Ja, wir versenden unsere Briefkästen weltweit, einschließlich USA, Kanada, Europa und Australien. Jedes Paket wird sicher verpackt, um eine sichere Ankunft zu gewährleisten."
             },
             "production": {
-                "question": "How long does custom production take?",
-                "answer": "Since every item is hand-finished, standard orders ship within 2-3 business days. Personalized orders typically take 5-7 business days to craft with precision."
+                "question": "Wie lange dauert die kundenspezifische Produktion?",
+                "answer": "Da jeder Artikel handveredelt ist, werden Standardbestellungen innerhalb von 2-3 Werktagen versendet. Personalisierte Bestellungen benötigen in der Regel 5-7 Werktage für die präzise Fertigung."
             },
             "corten": {
-                "question": "Will the Corten steel stain my wall?",
-                "answer": "Our Corten steel is pre-weathered but natural stabilization takes time. We recommend using the provided stand-off spacers to create a gap between the mailbox and the wall, preventing direct contact runoff."
+                "question": "Wird der Cortenstahl meine Wand verfärben?",
+                "answer": "Unser Cortenstahl ist vorbewittert, aber die natürliche Stabilisierung braucht Zeit. Wir empfehlen die Verwendung der mitgelieferten Abstandshalter, um einen Spalt zwischen Briefkasten und Wand zu schaffen und direkten Kontakt mit Ablaufwasser zu vermeiden."
             },
             "customization": {
-                "question": "Can I choose a different font for numbers?",
-                "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
+                "question": "Kann ich eine andere Schriftart für Zahlen wählen?",
+                "answer": "Absolut. Wir bieten Anpassungsoptionen für Schriftarten und Größen. Bitte geben Sie Ihre Präferenz in den Bestellnotizen an oder kontaktieren Sie unser Support-Team für einen Entwurf."
+            },
+            "brand": {
+                "question": "Who is Ferrum Decor Studio?",
+                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+            },
+            "history": {
+                "question": "What is your story?",
+                "answer": "After 2022, we reimagined our production, opening doors to international clients. Today, our products are shipped to the USA, Canada, and Europe, and every order is a result of passion, craftsmanship, and attention to detail."
             }
-        }
+        },
+        "main_shop_note": "Besuchen Sie unseren Hauptshop für Einkäufe: "
+    },
+    "Contact": {
+        "title": "Kontakt",
+        "production_label": "Produktion",
+        "production_value": "Ukraine",
+        "phone_label": "Telefon",
+        "phone_value": "+380 67 381 44 04",
+        "email_label": "E-Mail",
+        "email_value": "ferrumdecorstudio@icloud.com",
+        "geo_label": "Arbeitsgeografie",
+        "geo_value": "Wir versenden Bestellungen in die ganze Ukraine und international.",
+        "delivery_label": "Lieferung",
+        "delivery_value": "Internationaler Versand ist für die meisten Länder verfügbar.",
+        "social_label": "Soziale Medien",
+        "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+    },
+    "About": {
+        "title_start": "Über",
+        "title_end": "Uns",
+        "intro": "Ferrum Decor Studio ist eine ukrainische Werkstatt für Design-Metallprodukte für Außen- und Innenbereiche.",
+        "specialization": "Die Marke ist spezialisiert auf die Herstellung moderner Briefkästen, Lüftungsgitter, Luken und dekorativer Metallelemente, die Funktionalität, Langlebigkeit und architektonische Ästhetik verbinden.",
+        "philosophy_title": "Unsere Philosophie",
+        "philosophy_text": "Wir schaffen Produkte, die Teil des Wohndesigns werden und den ersten Eindruck des Raumes prägen.",
+        "products_title": "Unser Sortiment",
+        "products_list": {
+            "mailboxes": "Designer-Briefkästen",
+            "hatches": "Metallluken",
+            "vents": "Lüftungsgitter aus Stahl, Edelstahl und Messing"
+        },
+        "approach_title": "Ansatz",
+        "approach_text": "Produkte von Ferrum Decor Studio werden unter Berücksichtigung moderner Architekturtrends entwickelt und eignen sich sowohl für Privathäuser als auch für gewerbliche Objekte.",
+        "quality_text": "Alle Produkte werden mit Liebe zum Detail gefertigt und durchlaufen vor dem Versand an den Kunden eine Qualitätskontrolle.",
+        "global_title": "Globale Reichweite",
+        "global_text": "Wir arbeiten mit Kunden auf der ganzen Welt zusammen und bieten internationalen Versand an."
     },
     "Footer": {
-        "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
-        "newsletter_title": "Newsletter",
-        "newsletter_desc": "Subscribe for exclusive designs and offers.",
-        "subscribe": "Join",
-        "rights": "FerrumDecor Studio. All rights reserved.",
+        "slogan": "Wir schmieden die Zukunft der Bordsteinattraktivität. Handgefertigte Exzellenz in jeder Schweißnaht.",
+        "rights": "FerrumDecor Studio. Alle Rechte vorbehalten.",
         "links": {
-            "shop": "Collections",
             "support": "Support",
-            "how_to": "How to Order",
-            "contact": "Contact Us",
-            "terms": "Terms of Service",
-            "privacy": "Privacy Policy"
+            "contact": "Kontakt",
+            "terms": "Nutzungsbedingungen",
+            "privacy": "Datenschutzrichtlinie"
+        }
+    },
+    "FeaturesPage": {
+        "title": "Vorteile des Ferrum Decor Studio",
+        "items": {
+            "materials": {
+                "title": "Premium Materialien",
+                "description": "Wir verwenden hochwertige Metalle, darunter Cortenstahl, Messing und eine Kombination aus Metall mit Naturholz. Diese Materialien zeichnen sich durch hohe Festigkeit, Witterungsbeständigkeit und Langlebigkeit aus."
+            },
+            "personalization": {
+                "title": "Vollständige Personalisierung",
+                "description": "Jeder Briefkasten wird unter Berücksichtigung der Kundenwünsche erstellt. Sie können Namen, Adresse, Logo, individuelles Design oder sogar Ihr eigenes Bild hinzufügen, damit das Produkt das Äußere Ihres Hauses oder Geschäfts perfekt ergänzt."
+            },
+            "design": {
+                "title": "Einzigartiges Design",
+                "description": "Wir schaffen moderne, Vintage- und künstlerische Lösungen, die einen Briefkasten in ein Element von Architektur und Dekoration verwandeln. Jedes Produkt vereint Ästhetik und Funktionalität."
+            },
+            "security": {
+                "title": "Zuverlässigkeit und Sicherheit",
+                "description": "Unsere Briefkästen sind mit komfortablen Montagesystemen und Schlössern ausgestattet, die die Korrespondenz schützen und eine komfortable Nutzung gewährleisten."
+            },
+            "craftsmanship": {
+                "title": "Handarbeit und Liebe zum Detail",
+                "description": "Jedes Produkt wird mit hoher Präzision gefertigt und einer individuellen Bearbeitung unterzogen, was die Qualität und die Exklusivität der Produkte sicherstellt."
+            },
+            "speed": {
+                "title": "Schnelle Herstellung",
+                "description": "Die durchschnittliche Produktionszeit beträgt 5–8 Werktage, was eine schnelle Realisierung individueller Bestellungen ermöglicht."
+            },
+            "shipping": {
+                "title": "Weltweiter Versand",
+                "description": "Wir versenden Produkte erfolgreich an Kunden auf der ganzen Welt und sorgen für eine zuverlässige Verpackung und sichere Lieferung."
+            }
         }
     }
 }
