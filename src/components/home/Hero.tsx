@@ -34,15 +34,21 @@ export function Hero() {
                 className="absolute inset-0 z-0"
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-[#09090b]/50 z-2" />
-                <Image
-                    src="/images/hero-bg-modern.png"
-                    alt="Vintage Mailbox Background"
-                    fill
-                    priority
-                    quality={90}
-                    className="object-cover opacity-99"
-                    sizes="100vw"
-                />
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcSet="/images/hero-bg-modern-mobile.webp"
+                    />
+                    <Image
+                        src="/images/hero-bg-modern.webp"
+                        alt="Vintage Mailbox Background"
+                        fill
+                        priority
+                        quality={90}
+                        className="object-cover opacity-99"
+                        sizes="100vw"
+                    />
+                </picture>
             </motion.div>
 
             <div className="w-full relative z-10">

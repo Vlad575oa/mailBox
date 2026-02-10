@@ -34,7 +34,7 @@ export function ProductCatalog() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/back_catalog.png"
+                    src="/images/back_catalog.webp"
                     alt="Catalog Background"
                     fill
                     className="object-cover opacity-40"

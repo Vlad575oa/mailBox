@@ -71,7 +71,7 @@ export function BrandStory() {
                         <div className="relative z-10">
                             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm shadow-2xl shadow-[#B89E72]/10">
                                 <Image
-                                    src="/images/brand-story-detail.png"
+                                    src="/images/brand-story-detail.webp"
                                     alt="Precision Engineering"
                                     fill
                                     className="object-cover"

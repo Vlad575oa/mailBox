@@ -40,7 +40,7 @@ export function FAQ() {
     return (
         <section id="faq" className="relative py-24 bg-gray-50">
             <Image
-                src="/images/backFAQ.png"
+                src="/images/backFAQ.webp"
                 alt="FAQ Background"
                 fill
                 className="object-cover opacity-30"
