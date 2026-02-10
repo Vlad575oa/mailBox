@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { getShimmerPlaceholder } from '@/lib/image-utils';
 
 interface ProductCardProps {
     product: Product;
@@ -53,8 +54,11 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
                             alt={product.title}
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            sizes="(max-width: 640px) 95vw, (max-width: 1024px) 45vw, 400px"
                             priority={priority}
+                            loading={priority ? 'eager' : 'lazy'}
+                            placeholder="blur"
+                            blurDataURL={getShimmerPlaceholder(400, 500)}
                         />
                     </motion.div>
                 </AnimatePresence>
@@ -103,7 +107,13 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
                                     className={`relative flex-shrink-0 w-12 h-12 border transition-all duration-300 ${currentIndex === idx ? 'border-[#C5A059] ring-1 ring-[#C5A059]' : 'border-white/10 opacity-50 hover:opacity-100'
                                         }`}
                                 >
-                                    <Image src={img} alt="" fill className="object-cover" />
+                                    <Image
+                                        src={img}
+                                        alt=""
+                                        fill
+                                        className="object-cover"
+                                        sizes="48px"
+                                    />
                                 </button>
                             ))}
                         </div>

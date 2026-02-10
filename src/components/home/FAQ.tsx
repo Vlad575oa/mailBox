@@ -46,6 +46,7 @@ export function FAQ() {
                 className="object-cover opacity-30"
                 quality={100}
                 priority
+                sizes="100vw"
             />
             <div className="relative z-10 container mx-auto px-4 max-w-4xl">
                 <div className="text-center mb-16">

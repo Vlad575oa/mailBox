@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 import productsData from '@/data/products.json';
+import { getShimmerPlaceholder } from '@/lib/image-utils';
 
 const products = productsData.map((item) => ({
     id: item.id,
@@ -38,7 +39,9 @@ export function Hero() {
                     alt="Vintage Mailbox Background"
                     fill
                     priority
+                    quality={90}
                     className="object-cover opacity-99"
+                    sizes="100vw"
                 />
             </motion.div>
 
@@ -69,7 +72,10 @@ export function Hero() {
                                                     fill
                                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                                     priority={index < 4}
-                                                    sizes="(max-width: 768px) 50vw, 25vw"
+                                                    loading={index < 4 ? 'eager' : 'lazy'}
+                                                    sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 15vw"
+                                                    placeholder="blur"
+                                                    blurDataURL={getShimmerPlaceholder(100, 100)}
                                                 />
                                             </Link>
                                         ))}

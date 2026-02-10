@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 
+import { getShimmerPlaceholder } from '@/lib/image-utils';
+
 export function BrandStory() {
     const containerRef = useRef<HTMLDivElement>(null);
     const t = useTranslations('ProductBento'); // Using ProductBento messages for now as we added keys there
@@ -73,6 +75,9 @@ export function BrandStory() {
                                     alt="Precision Engineering"
                                     fill
                                     className="object-cover"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                    placeholder="blur"
+                                    blurDataURL={getShimmerPlaceholder(600, 800)}
                                 />
                                 <div className="absolute inset-0 bg-[#B89E72]/5 mix-blend-overlay" />
                             </div>
