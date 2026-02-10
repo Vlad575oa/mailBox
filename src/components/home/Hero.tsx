@@ -46,13 +46,13 @@ export function Hero() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start lg:items-center">
 
                     {/* LEFT SIDE: Compact 4x4 Catalog Grid (Now First Order) */}
-                    <div className="lg:col-span-12 xl:col-span-5 order-2 lg:order-1 pl-[160px]">
+                    <div className="lg:col-span-12 xl:col-span-5 order-2 lg:order-1 pl-0 lg:pl-[160px]">
                         <FadeIn delay={0.4} direction="right">
                             <div className="relative">
                                 {/* Decorative elements */}
                                 <div className="absolute -inset-4 bg-gradient-to-tr from-[#C5A059]/20 to-transparent rounded-full blur-3xl opacity-30 pointer-events-none" />
 
-                                <div className="relative bg-white/50 backdrop-blur-sm rounded-2xl shadow-xl p-3 border border-white/50">
+                                <div className="relative bg-transparent sm:bg-white/50 backdrop-blur-sm rounded-none sm:rounded-2xl shadow-none sm:shadow-xl p-0 sm:p-3 border-0 sm:border border-white/50">
 
 
                                     {/* Desktop: 4x4 Grid */}

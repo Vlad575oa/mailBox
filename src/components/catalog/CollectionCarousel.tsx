@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Product } from '@/types';
 import { motion } from 'framer-motion';
@@ -15,15 +15,36 @@ interface CollectionCarouselProps {
 
 export function CollectionCarousel({ products, activeId, onSelect }: CollectionCarouselProps) {
     const t = useTranslations('Catalog');
+    const wrapperRef = useRef<HTMLDivElement>(null);
     const scrollRef = useRef<HTMLDivElement>(null);
+    const [constraints, setConstraints] = useState({ left: 0, right: 0 });
 
     const scroll = (direction: 'left' | 'right') => {
-        if (scrollRef.current) {
-            const { scrollLeft, clientWidth } = scrollRef.current;
+        if (wrapperRef.current) {
+            const { scrollLeft, clientWidth } = wrapperRef.current;
             const scrollTo = direction === 'left' ? scrollLeft - clientWidth / 2 : scrollLeft + clientWidth / 2;
-            scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+            wrapperRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
         }
     };
+
+    useEffect(() => {
+        if (!wrapperRef.current || !scrollRef.current) return;
+
+        const handleResize = () => {
+            if (wrapperRef.current && scrollRef.current) {
+                const containerWidth = wrapperRef.current.offsetWidth;
+                const contentWidth = scrollRef.current.scrollWidth;
+                // Calculate max drag distance (negative value)
+                // We want to stop when the right edge of content hits the right edge of container
+                const minLeft = -(contentWidth - containerWidth);
+                setConstraints({ left: minLeft > 0 ? 0 : minLeft, right: 0 });
+            }
+        };
+
+        handleResize(); // Initial calculation
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [products]);
 
     return (
         <div className="w-full bg-transparent py-4 px-4 sm:px-6">
@@ -47,14 +68,15 @@ export function CollectionCarousel({ products, activeId, onSelect }: CollectionC
                 </button>
 
                 <div
-                    className="flex-grow overflow-hidden py-4"
+                    ref={wrapperRef}
+                    className="flex-grow overflow-x-hidden py-4"
                 >
                     <motion.div
                         ref={scrollRef}
                         drag="x"
-                        dragConstraints={{ left: -1000, right: 0 }} // Dynamic constraints would be better but let's start with a large range or ref-based
+                        dragConstraints={constraints}
                         dragElastic={0.1}
-                        className="flex gap-4 sm:gap-6 cursor-grab active:cursor-grabbing items-end"
+                        className="flex gap-4 sm:gap-6 cursor-grab active:cursor-grabbing items-end w-max"
                     >
                         {products.map((product) => {
                             const isActive = product.id === activeId;

@@ -30,8 +30,8 @@ export function Catalog() {
 
     return (
         <section id="catalog" className="py-32 bg-[#09090b]">
-            <div className="container mx-auto px-6 lg:px-12">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-12 border-b border-gray-800 pb-12">
+            <div className="container mx-auto px-0 sm:px-6 lg:px-12">
+                <div className="px-6 sm:px-0 flex flex-col md:flex-row md:items-end justify-between mb-20 gap-12 border-b border-gray-800 pb-12">
                     <div className="max-w-2xl">
                         <FadeIn>
                             <h2 className="text-5xl md:text-6xl font-extralight text-white mb-6 tracking-tight">
@@ -68,7 +68,7 @@ export function Catalog() {
                 </div>
 
                 {filteredProducts.length === 0 && (
-                    <div className="text-center py-32 text-gray-500 font-light text-xl">
+                    <div className="px-6 sm:px-0 text-center py-32 text-gray-500 font-light text-xl">
                         {t('no_products')}
                     </div>
                 )}
