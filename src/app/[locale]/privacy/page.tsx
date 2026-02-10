@@ -17,9 +17,6 @@ export default function PrivacyPolicyPage() {
 
                     <div className="prose prose-invert prose-lg max-w-none space-y-12 text-gray-300">
                         <p className="text-lg leading-relaxed">{t('intro')}</p>
-                        <div className="bg-white/5 p-6 rounded-xl border border-white/10 italic text-[#C5A059]">
-                            {t('disclaimer')}
-                        </div>
 
                         <section>
                             <h2 className="text-2xl font-bold text-white mb-4">{t('sections.changes.title')}</h2>
