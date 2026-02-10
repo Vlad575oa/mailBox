@@ -43,24 +43,74 @@ export function Footer() {
                     </div>
                 </div>
 
-                <FadeIn delay={0.4} className="mt-8 pt-6 border-t border-white/10 text-center text-gray-600 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div>© {new Date().getFullYear()} {t('rights')}</div>
+                <FadeIn delay={0.4} className="mt-8 pt-6 border-t border-white/10 text-center text-gray-600 text-sm">
+                    {/* Mobile Layout */}
+                    <div className="flex flex-col gap-6 md:hidden">
+                        {/* Copyright */}
+                        <div>© {new Date().getFullYear()} {t('rights')}</div>
 
-                    <div className="flex items-center gap-2 order-3 md:order-2">
-                        <span className="text-gray-600 text-xs">{t('developed_by')}</span>
-                        <a href="https://t.me/Vlad557" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group/developer">
-                            <Image
-                                src="/images/Logo_Vlad.webp"
-                                alt="Developer Logo"
-                                width={24}
-                                height={24}
-                                className="rounded-full transition-all duration-300 brightness-0 invert-[0.3] group-hover/developer:invert group-hover/developer:brightness-100"
-                            />
-                        </a>
+                        {/* Developer - Mobile */}
+                        <div className="flex items-center justify-center gap-2">
+                            <span className="text-gray-500 text-xs">{t('developed_by')}</span>
+                            <a
+                                href="https://t.me/Vlad557"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 group/developer p-2 -m-2 active:scale-95 transition-transform"
+                            >
+                                <Image
+                                    src="/images/Logo_Vlad.webp"
+                                    alt="Developer Logo"
+                                    width={32}
+                                    height={32}
+                                    className="rounded-full transition-all duration-300 opacity-70 group-hover/developer:opacity-100 group-active/developer:opacity-100"
+                                />
+                            </a>
+                        </div>
+
+                        {/* Links - Mobile */}
+                        <div className="flex flex-col gap-4">
+                            <Link
+                                href="/terms"
+                                className="text-gray-500 hover:text-gray-300 active:text-gray-300 py-3 px-4 -mx-4 active:bg-white/5 transition-colors"
+                            >
+                                {t('links.terms')}
+                            </Link>
+                            <Link
+                                href="/privacy"
+                                className="text-gray-500 hover:text-gray-300 active:text-gray-300 py-3 px-4 -mx-4 active:bg-white/5 transition-colors"
+                            >
+                                {t('links.privacy')}
+                            </Link>
+                        </div>
                     </div>
-                    <div className="flex gap-6">
-                        <Link href="/terms" className="hover:text-gray-400">{t('links.terms')}</Link>
-                        <Link href="/privacy" className="hover:text-gray-400">{t('links.privacy')}</Link>
+
+                    {/* Desktop Layout */}
+                    <div className="hidden md:flex md:flex-row justify-between items-center gap-4">
+                        <div>© {new Date().getFullYear()} {t('rights')}</div>
+
+                        <div className="flex items-center gap-2">
+                            <span className="text-gray-500 text-xs">{t('developed_by')}</span>
+                            <a
+                                href="https://t.me/Vlad557"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 group/developer"
+                            >
+                                <Image
+                                    src="/images/Logo_Vlad.webp"
+                                    alt="Developer Logo"
+                                    width={28}
+                                    height={28}
+                                    className="rounded-full transition-all duration-300 opacity-60 hover:opacity-100 group-hover/developer:scale-110"
+                                />
+                            </a>
+                        </div>
+
+                        <div className="flex gap-6">
+                            <Link href="/terms" className="text-gray-500 hover:text-gray-300 transition-colors">{t('links.terms')}</Link>
+                            <Link href="/privacy" className="text-gray-500 hover:text-gray-300 transition-colors">{t('links.privacy')}</Link>
+                        </div>
                     </div>
                 </FadeIn>
             </div>
