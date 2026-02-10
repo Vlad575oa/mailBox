@@ -1,4 +1,9 @@
 {
+    "Metadata": {
+        "title": "FerrumDecor | Premium Briefkästen aus Cortenstahl & Messing",
+        "description": "Handgefertigte Briefkästen aus Stahl, Messing und Corten. Modernes Design, zeitlose Haltbarkeit und Personalisierung für Ihr Zuhause.",
+        "keywords": "Briefkästen, Cortenstahl, moderner Briefkasten, individueller Briefkasten, Messing Briefkasten"
+    },
     "Navbar": {
         "home": "Startseite",
         "features": "Vorteile",
@@ -221,7 +226,7 @@
         "production_label": "Produktion",
         "production_value": "Ukraine",
         "phone_label": "Telefon",
-        "phone_value": "+380 67 381 44 04",
+        "phone_value": "+380673814404",
         "email_label": "E-Mail",
         "email_value": "ferrumdecorstudio@icloud.com",
         "geo_label": "Arbeitsgeografie",
@@ -252,6 +257,7 @@
         "global_text": "Wir arbeiten mit Kunden auf der ganzen Welt zusammen und bieten internationalen Versand an."
     },
     "Footer": {
+        "developed_by": "Site developed by",
         "slogan": "Wir schmieden die Zukunft der Bordsteinattraktivität. Handgefertigte Exzellenz in jeder Schweißnaht.",
         "rights": "FerrumDecor Studio. Alle Rechte vorbehalten.",
         "links": {
@@ -291,6 +297,163 @@
             "shipping": {
                 "title": "Weltweiter Versand",
                 "description": "Wir versenden Produkte erfolgreich an Kunden auf der ganzen Welt und sorgen für eine zuverlässige Verpackung und sichere Lieferung."
+            }
+        }
+    },
+    "PrivacyPolicy": {
+        "title": "Datenschutzerklärung",
+        "last_updated": "Zuletzt aktualisiert: 8. Oktober 2025",
+        "disclaimer": "Wir selbst sammeln keine personenbezogenen Daten. Alle Informationen, die Sie über unsere Website senden, werden ausschließlich von den von uns genutzten Drittanbietern wie WhatsApp, Google Analytics usw. verarbeitet. Bitte lesen Sie die Datenschutzbestimmungen dieser Dienste.",
+        "intro": "Diese Datenschutzerklärung beschreibt, wie Ferrum Decor Studio (die „Website“, „wir“, „uns“ oder „unser“) Ihre personenbezogenen Daten sammelt, verwendet und offenlegt, wenn Sie ferrumdecorstudio.shop (die „Website“) besuchen, unsere Dienste nutzen oder einen Kauf tätigen oder anderweitig mit uns bezüglich der Website kommunizieren (zusammen die „Dienste“). Für die Zwecke dieser Datenschutzerklärung bedeuten „Sie“ und „Ihr“ Sie als Nutzer der Dienste, unabhängig davon, ob Sie ein Kunde, ein Website-Besucher oder eine andere Person sind, deren Daten wir gemäß dieser Datenschutzerklärung gesammelt haben.",
+        "sections": {
+            "changes": {
+                "title": "Änderungen dieser Datenschutzerklärung",
+                "content": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, unter anderem um Änderungen unserer Praktiken widerzuspiegeln oder aus anderen betrieblichen, rechtlichen oder regulatorischen Gründen. Wir werden die überarbeitete Datenschutzerklärung auf der Website veröffentlichen, das Datum der „letzten Aktualisierung“ aktualisieren und alle anderen nach geltendem Recht erforderlichen Schritte unternehmen."
+            },
+            "collection": {
+                "title": "Wie wir Ihre personenbezogenen Daten sammeln und verwenden",
+                "content": "Um die Dienste bereitzustellen, sammeln wir und haben wir in den letzten 12 Monaten personenbezogene Daten über Sie aus einer Vielzahl von Quellen gesammelt, wie unten dargelegt. Die Informationen, die wir sammeln und verwenden, variieren je nachdem, wie Sie mit uns interagieren."
+            },
+            "types": {
+                "title": "Welche personenbezogenen Daten wir sammeln",
+                "content": "Die Arten von personenbezogenen Daten, die wir über Sie erhalten, hängen davon ab, wie Sie mit unserer Website interagieren und unsere Dienste nutzen. Wenn wir den Begriff „personenbezogene Daten“ verwenden, beziehen wir uns auf Informationen, die Sie identifizieren, sich auf Sie beziehen, Sie beschreiben oder mit Ihnen in Verbindung gebracht werden können."
+            },
+            "direct_info": {
+                "title": "Informationen, die wir direkt von Ihnen sammeln",
+                "content": "Informationen, die Sie uns direkt über unsere Dienste übermitteln, können Folgendes umfassen: Kontaktdaten einschließlich Name, Adresse, Telefonnummer und E-Mail. Bestellinformationen einschließlich Name, Rechnungsadresse, Lieferadresse, Zahlungsbestätigung, E-Mail-Adresse und Telefonnummer. Kontoinformationen einschließlich Benutzername, Passwort, Sicherheitsfragen und andere Informationen, die für Kontosicherheitszwecke verwendet werden. Kundensupport-Informationen einschließlich der Informationen, die Sie in die Kommunikation mit uns aufnehmen, zum Beispiel beim Senden einer Nachricht über die Dienste."
+            },
+            "usage_info": {
+                "title": "Informationen, die wir über Ihre Nutzung sammeln",
+                "content": "Wir können auch automatisch bestimmte Informationen über Ihre Interaktion mit den Diensten sammeln („Nutzungsdaten“). Hierzu können wir Cookies, Pixel und ähnliche Technologien („Cookies“) verwenden. Nutzungsdaten können Informationen darüber enthalten, wie Sie auf unsere Website und Ihr Konto zugreifen und diese nutzen, einschließlich Geräteinformationen, Browserinformationen, Informationen über Ihre Netzwerkverbindung, Ihre IP-Adresse und andere Informationen bezüglich Ihrer Interaktion mit den Diensten."
+            },
+            "third_party_info": {
+                "title": "Informationen, die wir von Dritten erhalten",
+                "content": "Schließlich können wir Informationen über Sie von Dritten erhalten, einschließlich von Anbietern und Dienstleistern, die in unserem Auftrag Informationen sammeln können, wie z. B.: Unternehmen, die unsere Website und Dienste unterstützen, wie Shopify. Unsere Zahlungsabwickler, die Zahlungsinformationen (z. B. Bankkonto-, Kredit- oder Debitkarteninformationen, Rechnungsadresse) sammeln, um Ihre Zahlung zu verarbeiten, um Ihre Bestellungen zu erfüllen und Ihnen die von Ihnen angeforderten Produkte oder Dienstleistungen bereitzustellen, um unseren Vertrag mit Ihnen zu erfüllen."
+            },
+            "usage_purpose": {
+                "title": "Wie wir Ihre personenbezogenen Daten verwenden",
+                "content": "Bereitstellung von Produkten und Dienstleistungen. Wir verwenden Ihre personenbezogenen Daten, um Ihnen die Dienste bereitzustellen, um unseren Vertrag mit Ihnen zu erfüllen, einschließlich der Verarbeitung Ihrer Zahlungen, der Erfüllung Ihrer Bestellungen, des Sendens von Benachrichtigungen an Sie im Zusammenhang mit Ihrem Konto, Einkäufen, Rücksendungen, Umtausch oder anderen Transaktionen, zum Erstellen, Pflegen und anderweitigen Verwalten Ihres Kontos, zum Organisieren des Versands, zum Erleichtern von Rücksendungen und Umtausch sowie für andere Funktionen und Merkmale im Zusammenhang mit Ihrem Konto. Marketing und Werbung. Wir können Ihre personenbezogenen Daten für Marketing- und Werbezwecke verwenden, z. B. zum Senden von Marketing-, Werbe- und Verkaufsförderungsmitteilungen per E-Mail, Textnachricht oder Post und zum Anzeigen von Werbung für Produkte oder Dienstleistungen."
+            },
+            "cookies": {
+                "title": "Cookies",
+                "content": "Wie viele Websites verwenden wir Cookies auf unserer Website. Spezifische Informationen zu den Cookies, die wir im Zusammenhang mit dem Betrieb unseres Shops mit Shopify verwenden, finden Sie unter https://www.shopify.com/legal/cookies. Wir verwenden Cookies, um unsere Website und unsere Dienste zu betreiben und zu verbessern (einschließlich der Speicherung Ihrer Aktionen und Präferenzen), um Analysen durchzuführen und die Benutzerinteraktion mit den Diensten besser zu verstehen."
+            },
+            "disclosure": {
+                "title": "Wie wir personenbezogene Daten offenlegen",
+                "content": "Unter bestimmten Umständen können wir Ihre personenbezogenen Daten an Dritte zum Zwecke der Vertragserfüllung, für berechtigte Zwecke und aus anderen Gründen gemäß dieser Datenschutzerklärung offenlegen. Solche Umstände können sein: Mit Anbietern oder anderen Dritten, die Dienstleistungen in unserem Auftrag erbringen (z. B. IT-Management, Zahlungsabwicklung, Datenanalyse, Kundensupport, Cloud-Speicherung, Erfüllung und Versand)."
+            },
+            "children": {
+                "title": "Daten von Kindern",
+                "content": "Die Dienste sind nicht für die Nutzung durch Kinder bestimmt, und wir sammeln wissentlich keine personenbezogenen Daten über Kinder. Wenn Sie der Elternteil oder Erziehungsberechtigte eines Kindes sind, das uns seine personenbezogenen Daten zur Verfügung gestellt hat, können Sie uns über die unten angegebenen Kontaktdaten kontaktieren, um deren Löschung zu beantragen."
+            },
+            "security": {
+                "title": "Sicherheit und Aufbewahrung Ihrer Informationen",
+                "content": "Bitte beachten Sie, dass keine Sicherheitsmaßnahmen perfekt oder undurchdringlich sind und wir keine „perfekte Sicherheit“ garantieren können. Darüber hinaus sind Informationen, die Sie an uns senden, während der Übertragung möglicherweise nicht sicher. Wir empfehlen Ihnen, keine unsicheren Kanäle zu verwenden, um sensible oder vertrauliche Informationen an uns zu übermitteln."
+            },
+            "rights": {
+                "title": "Ihre Rechte",
+                "content": "Je nachdem, wo Sie leben, haben Sie möglicherweise einige oder alle der unten aufgeführten Rechte in Bezug auf Ihre personenbezogenen Daten. Diese Rechte sind jedoch nicht absolut, gelten möglicherweise nur unter bestimmten Umständen und in bestimmten Fällen können wir Ihre Anfrage ablehnen, soweit dies gesetzlich zulässig ist. Recht auf Auskunft / Information. Recht auf Löschung. Recht auf Berichtigung. Recht auf Datenübertragbarkeit."
+            },
+            "contact": {
+                "title": "Kontakt",
+                "content": "Sollten Sie Fragen zu unseren Datenschutzpraktiken oder dieser Datenschutzerklärung haben oder wenn Sie eines der Ihnen zur Verfügung stehenden Rechte ausüben möchten, rufen Sie uns bitte an oder senden Sie uns eine E-Mail an ferrumdecorstudio@icloud.com oder kontaktieren Sie uns unter 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US."
+            },
+            "whatsapp": {
+                "title": "WhatsApp-Kommunikation",
+                "content": "Wir verwenden WhatsApp Business, um Benutzernachrichten zu empfangen und darauf zu antworten. Ihre Telefonnummer und die von Ihnen gesendete Nachricht werden an WhatsApp übertragen. Sie können jederzeit die Löschung Ihrer Daten beantragen.",
+                "link_text": "WhatsApp-Datenschutzrichtlinie"
+            }
+        }
+    },
+    "WhatsApp": {
+        "tooltip": "Durch Klicken auf die Schaltfläche erklären Sie sich damit einverstanden, dass Ihre Telefonnummer und Nachricht an unseren WhatsApp-Manager gesendet werden. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
+        "privacy_link": "Datenschutzerklärung",
+        "greeting": "Hallo! Ich möchte mit Ihnen sprechen"
+    },
+    "TermsOfService": {
+        "title": "Nutzungsbedingungen",
+        "last_updated": "Zuletzt aktualisiert: 8. Oktober 2025",
+        "intro": "Diese Website wird von Ferrum Decor Studio betrieben. Auf der gesamten Website beziehen sich die Begriffe „wir“, „uns“ und „unser“ auf Ferrum Decor Studio. Ferrum Decor Studio bietet diese Website, einschließlich aller Informationen, Tools und Dienste, die auf dieser Website verfügbar sind, Ihnen, dem Nutzer, unter der Bedingung an, dass Sie alle hier angegebenen Bedingungen, Richtlinien und Hinweise akzeptieren. Indem Sie unsere Website besuchen und/oder etwas bei uns kaufen, nehmen Sie an unserem „Dienst“ teil und erklären sich damit einverstanden, an die folgenden Bedingungen gebunden zu sein („Nutzungsbedingungen“, „Bedingungen“), einschließlich der zusätzlichen Bedingungen und Richtlinien, auf die hierin verwiesen wird und/oder die per Hyperlink verfügbar sind. Diese Nutzungsbedingungen gelten für alle Nutzer der Website, einschließlich, aber nicht beschränkt auf Nutzer, die Browser, Verkäufer, Kunden, Händler und/oder Ersteller von Inhalten sind. Bitte lesen Sie diese Nutzungsbedingungen sorgfältig durch, bevor Sie auf unsere Website zugreifen oder diese nutzen. Durch den Zugriff auf oder die Nutzung eines Teils der Website erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie nicht allen Bedingungen dieser Vereinbarung zustimmen, dürfen Sie nicht auf die Website zugreifen oder Dienste nutzen. Wenn diese Nutzungsbedingungen als Angebot betrachtet werden, ist die Annahme ausdrücklich auf diese Nutzungsbedingungen beschränkt. Alle neuen Funktionen oder Tools, die dem aktuellen Shop hinzugefügt werden, unterliegen ebenfalls den Nutzungsbedingungen. Sie können die aktuellste Version der Nutzungsbedingungen jederzeit auf dieser Seite einsehen. Wir behalten uns das Recht vor, Teile dieser Nutzungsbedingungen zu aktualisieren, zu ändern oder zu ersetzen, indem wir Aktualisierungen und/oder Änderungen auf unserer Website veröffentlichen. Es liegt in Ihrer Verantwortung, diese Seite regelmäßig auf Änderungen zu überprüfen. Ihre fortgesetzte Nutzung oder Ihr Zugriff auf die Website nach der Veröffentlichung von Änderungen gilt als Annahme dieser Änderungen. Unser Shop wird auf Shopify Inc. gehostet. Sie stellen uns die Online-E-Commerce-Plattform zur Verfügung, die es uns ermöglicht, unsere Produkte und Dienste an Sie zu verkaufen.",
+        "sections": {
+            "online_store": {
+                "title": "ABSCHNITT 1 - BEDINGUNGEN FÜR DEN ONLINE-SHOP",
+                "content": "Indem Sie diesen Nutzungsbedingungen zustimmen, erklären Sie, dass Sie in Ihrem Wohnsitzland oder Ihrer Wohnsitzprovinz mindestens volljährig sind oder dass Sie in Ihrem Wohnsitzland oder Ihrer Wohnsitzprovinz volljährig sind und uns Ihr Einverständnis gegeben haben, Ihren minderjährigen Angehörigen die Nutzung dieser Website zu gestatten. Sie dürfen unsere Produkte nicht für illegale oder unbefugte Zwecke verwenden und dürfen bei der Nutzung des Dienstes keine Gesetze in Ihrer Gerichtsbarkeit verletzen (einschließlich, aber nicht beschränkt auf Urheberrechtsgesetze). Sie dürfen keine Würmer oder Viren oder Codes zerstörerischer Natur übertragen. Ein Verstoß gegen eine der Bedingungen führt zur sofortigen Kündigung Ihrer Dienste."
+            },
+            "general": {
+                "title": "ABSCHNITT 2 - ALLGEMEINE BEDINGUNGEN",
+                "content": "Wir behalten uns das Recht vor, jedem aus jedem Grund jederzeit den Dienst zu verweigern. Sie verstehen, dass Ihre Inhalte (ohne Kreditkarteninformationen) unverschlüsselt übertragen werden können und (a) Übertragungen über verschiedene Netzwerke beinhalten; und (b) Änderungen zur Anpassung an technische Anforderungen von Verbindungsnetzwerken oder Geräten beinhalten können. Kreditkarteninformationen werden bei der Übertragung über Netzwerke immer verschlüsselt. Sie erklären sich damit einverstanden, Teile des Dienstes, die Nutzung des Dienstes oder den Zugriff auf den Dienst oder Kontakte auf der Website, über die der Dienst bereitgestellt wird, ohne ausdrückliche schriftliche Genehmigung von uns nicht zu reproduzieren, zu vervielfältigen, zu kopieren, zu verkaufen, weiterzuverkaufen oder zu verwerten. Die in dieser Vereinbarung verwendeten Überschriften dienen nur der Übersichtlichkeit und schränken diese Bedingungen nicht ein oder beeinflussen sie anderweitig."
+            },
+            "accuracy": {
+                "title": "ABSCHNITT 3 - GENAUIGKEIT, VOLLSTÄNDIGKEIT UND RECHTZEITIGKEIT DER INFORMATIONEN",
+                "content": "Wir sind nicht verantwortlich, wenn die auf dieser Website bereitgestellten Informationen nicht genau, vollständig oder aktuell sind. Das Material auf dieser Website dient nur der allgemeinen Information und sollte nicht als alleinige Grundlage für Entscheidungen herangezogen werden, ohne primäre, genauere, vollständigere oder aktuellere Informationsquellen zu konsultieren. Jegliches Vertrauen in das Material auf dieser Website erfolgt auf eigenes Risiko. Diese Website kann bestimmte historische Informationen enthalten. Historische Informationen sind zwangsläufig nicht aktuell und dienen nur Ihrer Information. Wir behalten uns das Recht vor, den Inhalt dieser Website jederzeit zu ändern, sind jedoch nicht verpflichtet, Informationen auf unserer Website zu aktualisieren. Sie erklären sich damit einverstanden, dass es in Ihrer Verantwortung liegt, Änderungen auf unserer Website zu überwachen."
+            },
+            "modifications": {
+                "title": "ABSCHNITT 4 - ÄNDERUNGEN AM DIENST UND AN DEN PREISEN",
+                "content": "Preise für unsere Produkte können ohne vorherige Ankündigung geändert werden. Wir behalten uns das Recht vor, den Dienst (oder Teile oder Inhalte davon) jederzeit ohne Vorankündigung zu ändern oder einzustellen. Wir haften weder Ihnen noch Dritten gegenüber für Änderungen, Preisänderungen, Aussetzungen oder Einstellungen des Dienstes."
+            },
+            "products": {
+                "title": "ABSCHNITT 5 - PRODUKTE ODER DIENSTE",
+                "content": "Bestimmte Produkte oder Dienste können ausschließlich online über die Website verfügbar sein. Diese Produkte oder Dienste können begrenzte Mengen haben und unterliegen Rückgaben oder Umtausch nur gemäß unserer Rückgaberichtlinie. Wir haben uns bemüht, die Farben und Bilder unserer Produkte, die im Shop erscheinen, so genau wie möglich darzustellen. Wir können nicht garantieren, dass die Anzeige jeder Farbe auf Ihrem Computermonitor genau ist. Wir behalten uns das Recht vor, sind jedoch nicht verpflichtet, den Verkauf unserer Produkte oder Dienste auf Personen, geografische Regionen oder Gerichtsbarkeiten zu beschränken. Wir können dieses Recht von Fall zu Fall ausüben. Wir behalten uns das Recht vor, die Mengen der von uns angebotenen Produkte oder Dienste zu begrenzen. Alle Beschreibungen von Produkten oder Produktpreisen können jederzeit ohne Vorankündigung nach unserem alleinigen Ermessen geändert werden. Wir behalten uns das Recht vor, jedes Produkt jederzeit einzustellen. Jedes Angebot für Produkte oder Dienste auf dieser Website ist dort ungültig, wo es verboten ist. Wir garantieren nicht, dass die Qualität von Produkten, Diensten, Informationen oder anderem Material, das Sie erworben oder erhalten haben, Ihren Erwartungen entspricht oder dass Fehler im Dienst korrigiert werden."
+            },
+            "billing": {
+                "title": "ABSCHNITT 6 - GENAUIGKEIT DER ABRECHNUNGS- UND KONTOINFORMATIONEN",
+                "content": "Wir behalten uns das Recht vor, jede Bestellung, die Sie bei uns aufgeben, abzulehnen. Wir können nach eigenem Ermessen die pro Person, pro Haushalt oder pro Bestellung gekauften Mengen begrenzen oder stornieren. Diese Einschränkungen können Bestellungen umfassen, die von oder unter demselben Kundenkonto, derselben Kreditkarte aufgegeben wurden, und/oder Bestellungen, die dieselbe Rechnungs- und/oder Lieferadresse verwenden. Falls wir eine Änderung an einer Bestellung vornehmen oder eine Bestellung stornieren, können wir versuchen, Sie zu benachrichtigen, indem wir die zum Zeitpunkt der Bestellung angegebene E-Mail- und/oder Rechnungsadresse/Telefonnummer kontaktieren. Wir behalten uns das Recht vor, Bestellungen zu begrenzen oder zu verbieten, die nach unserem alleinigen Ermessen den Anschein erwecken, von Händlern, Wiederverkäufern oder Distributoren aufgegeben worden zu sein. Sie erklären sich damit einverstanden, aktuelle, vollständige und genaue Kauf- und Kontoinformationen für alle in unserem Shop getätigten Einkäufe bereitzustellen. Sie erklären sich damit einverstanden, Ihr Konto und andere Informationen, einschließlich Ihrer E-Mail-Adresse und Kreditkartennummern und Ablaufdaten, umgehend zu aktualisieren, damit wir Ihre Transaktionen abschließen und Sie bei Bedarf kontaktieren können."
+            },
+            "tools": {
+                "title": "ABSCHNITT 7 - OPTIONALE TOOLS",
+                "content": "Wir bieten Ihnen möglicherweise Zugriff auf Tools von Drittanbietern, über die wir weder Überwachungs- noch Kontroll- oder Einflussmöglichkeiten haben. Sie erkennen an und erklären sich damit einverstanden, dass wir den Zugriff auf solche Tools „wie besehen“ und „wie verfügbar“ ohne jegliche Garantien, Zusicherungen oder Bedingungen jeglicher Art und ohne jegliche Befürwortung gewähren. Wir übernehmen keinerlei Haftung, die sich aus oder im Zusammenhang mit Ihrer Nutzung optionaler Tools von Drittanbietern ergibt. Die Nutzung der über die Website angebotenen optionalen Tools erfolgt ausschließlich auf eigenes Risiko und nach eigenem Ermessen. Sie sollten sicherstellen, dass Sie mit den Bedingungen, zu denen die Tools von den jeweiligen Drittanbietern bereitgestellt werden, vertraut sind und diesen zustimmen. Wir werden möglicherweise auch in Zukunft neue Dienste und/oder Funktionen über die Website anbieten (einschließlich der Veröffentlichung neuer Tools und Ressourcen). Solche neuen Funktionen und/oder Dienste unterliegen ebenfalls diesen Nutzungsbedingungen."
+            },
+            "third_party": {
+                "title": "ABSCHNITT 8 - LINKS ZU DRITTANBIETERN",
+                "content": "Bestimmte Inhalte, Produkte und Dienste, die über unseren Dienst verfügbar sind, können Materialien von Drittanbietern enthalten. Links von Drittanbietern auf dieser Website können Sie auf Websites von Drittanbietern weiterleiten, die nicht mit uns verbunden sind. Wir sind nicht für die Prüfung oder Bewertung des Inhalts oder der Genauigkeit verantwortlich und geben keine Garantie und übernehmen keine Haftung oder Verantwortung für Materialien oder Websites von Drittanbietern oder für andere Materialien, Produkte oder Dienste von Drittanbietern. Wir haften nicht für Schäden im Zusammenhang mit dem Kauf oder der Nutzung von Waren, Diensten, Ressourcen, Inhalten oder anderen Transaktionen, die im Zusammenhang mit Websites von Drittanbietern getätigt werden. Bitte prüfen Sie die Richtlinien und Praktiken von Drittanbietern sorgfältig und stellen Sie sicher, dass Sie diese verstehen, bevor Sie eine Transaktion tätigen. Beschwerden, Ansprüche, Bedenken oder Fragen zu Produkten von Drittanbietern sollten an den Drittanbieter gerichtet werden."
+            },
+            "comments": {
+                "title": "ABSCHNITT 9 - NUTZERKOMMENTARE, FEEDBACK UND ANDERE EINSENDUNGEN",
+                "content": "Wenn Sie auf unsere Aufforderung hin bestimmte Einsendungen (z. B. Wettbewerbsbeiträge) senden oder ohne Aufforderung von uns kreative Ideen, Vorschläge, Pläne oder andere Materialien online, per E-Mail, per Post oder anderweitig senden (zusammenfassend „Kommentare“), erklären Sie sich damit einverstanden, dass wir jederzeit und ohne Einschränkung Kommentare, die Sie an uns weiterleiten, bearbeiten, kopieren, veröffentlichen, verbreiten, übersetzen und anderweitig in jedem Medium verwenden dürfen. Wir sind und bleiben nicht verpflichtet, (1) Kommentare vertraulich zu behandeln; (2) eine Entschädigung für Kommentare zu zahlen; oder (3) auf Kommentare zu antworten. Wir können, sind jedoch nicht verpflichtet, Inhalte zu überwachen, zu bearbeiten oder zu entfernen, die wir nach eigenem Ermessen als rechtswidrig, beleidigend, drohend, verleumderisch, pornografisch, obszön oder anderweitig anstößig erachten oder die das geistige Eigentum einer Partei oder diese Nutzungsbedingungen verletzen. Sie erklären sich damit einverstanden, dass Ihre Kommentare keine Rechte Dritter verletzen, einschließlich Urheber-, Marken-, Datenschutz-, Persönlichkeits- oder andere persönliche oder Eigentumsrechte. Sie stimmen ferner zu, dass Ihre Kommentare kein verleumderisches oder anderweitig rechtswidriges, missbräuchliches oder obszönes Material enthalten und keine Computerviren oder andere Malware enthalten, die den Betrieb des Dienstes oder einer damit verbundenen Website in irgendeiner Weise beeinträchtigen könnten. Sie dürfen keine falsche E-Mail-Adresse verwenden, sich nicht als jemand anderes ausgeben oder uns oder Dritte anderweitig über die Herkunft von Kommentaren täuschen. Sie sind allein verantwortlich für alle von Ihnen abgegebenen Kommentare und deren Genauigkeit. Wir übernehmen keine Verantwortung und Haftung für Kommentare, die von Ihnen oder Dritten gepostet wurden."
+            },
+            "personal_info": {
+                "title": "ABSCHNITT 10 - PERSONENBEZOGENE DATEN",
+                "content": "Die Übermittlung personenbezogener Daten über den Shop unterliegt unserer Datenschutzerklärung."
+            },
+            "errors": {
+                "title": "ABSCHNITT 11 - FEHLER, UNGENAUIGKEITEN UND AUSLASSUNGEN",
+                "content": "Gelegentlich kann es Informationen auf unserer Website oder im Dienst geben, die Tippfehler, Ungenauigkeiten oder Auslassungen enthalten, die sich auf Produktbeschreibungen, Preise, Werbeaktionen, Angebote, Produktversandkosten, Laufzeiten und Verfügbarkeit beziehen können. Wir behalten uns das Recht vor, Fehler, Ungenauigkeiten oder Auslassungen zu korrigieren und Informationen zu ändern oder zu aktualisieren oder Bestellungen zu stornieren, wenn Informationen im Dienst oder auf einer damit verbundenen Website jederzeit und ohne Vorankündigung ungenau sind (auch nachdem Sie Ihre Bestellung aufgegeben haben). Wir verpflichten uns nicht, Informationen im Dienst oder auf einer damit verbundenen Website zu aktualisieren, zu ergänzen oder zu klären, einschließlich, aber nicht beschränkt auf Preisinformationen, es sei denn, dies ist gesetzlich vorgeschrieben. Ein angegebenes Aktualisierungsdatum im Dienst oder auf einer damit verbundenen Website sollte nicht als Hinweis darauf verstanden werden, dass alle Informationen im Dienst oder auf einer damit verbundenen Website geändert oder aktualisiert wurden."
+            },
+            "prohibited": {
+                "title": "ABSCHNITT 12 - VERBOTENE NUTZUNGEN",
+                "content": "Zusätzlich zu anderen Verboten, die in den Nutzungsbedingungen festgelegt sind, ist es Ihnen untersagt, die Website oder deren Inhalt zu nutzen: (a) für rechtswidrige Zwecke; (b) um andere zur Durchführung oder Teilnahme an rechtswidrigen Handlungen aufzufordern; (c) um gegen internationale, bundesstaatliche, provinzielle oder staatliche Vorschriften, Regeln, Gesetze oder örtliche Verordnungen zu verstoßen; (d) um unsere geistigen Eigentumsrechte oder die geistigen Eigentumsrechte anderer zu verletzen; (e) um zu belästigen, zu missbrauchen, zu beleidigen, zu schaden, zu verleumden, zu diffamieren, herabzuwürdigen, einzuschüchtern oder zu diskriminieren aufgrund von Geschlecht, sexueller Orientierung, Religion, Ethnie, Rasse, Alter, nationaler Herkunft oder Behinderung; (f) um falsche oder irreführende Informationen zu übermitteln; (g) um Viren oder andere Arten von bösartigem Code hochzuladen oder zu übertragen, die in irgendeiner Weise verwendet werden oder werden können, die die Funktionalität oder den Betrieb des Dienstes oder einer damit verbundenen Website, anderer Websites oder des Internets beeinträchtigt; (h) um personenbezogene Daten anderer zu sammeln oder zu verfolgen; (i) für Spam, Phishing, Pharming, Pretexting, Spidering, Crawling oder Scraping; (j) für obszöne oder unmoralische Zwecke; oder (k) um die Sicherheitsfunktionen des Dienstes oder einer damit verbundenen Website, anderer Websites oder des Internets zu stören oder zu umgehen. Wir behalten uns das Recht vor, Ihre Nutzung des Dienstes oder einer damit verbundenen Website wegen Verletzung einer der verbotenen Nutzungen zu beenden."
+            },
+            "disclaimer": {
+                "title": "ABSCHNITT 13 - HAFTUNGSAUSSCHLUSS; HAFTUNGSBESCHRÄNKUNG",
+                "content": "Wir garantieren, vertreten oder gewährleisten nicht, dass Ihre Nutzung unseres Dienstes ununterbrochen, rechtzeitig, sicher oder fehlerfrei erfolgt. Wir garantieren nicht, dass die Ergebnisse, die durch die Nutzung des Dienstes erzielt werden können, genau oder zuverlässig sind. Sie erklären sich damit einverstanden, dass wir von Zeit zu Zeit den Dienst für unbestimmte Zeiträume entfernen oder den Dienst jederzeit ohne Vorankündigung kündigen können. Sie stimmen ausdrücklich zu, dass Ihre Nutzung des Dienstes bzw. die Unfähigkeit zur Nutzung des Dienstes auf Ihr alleiniges Risiko erfolgt. Der Dienst und alle Produkte und Dienste, die Ihnen über den Dienst bereitgestellt werden, werden (sofern nicht ausdrücklich von uns angegeben) „wie besehen“ und „wie verfügbar“ für Ihre Nutzung bereitgestellt, ohne jegliche Zusicherungen, Gewährleistungen oder Bedingungen jeglicher Art, weder ausdrücklich noch stillschweigend, einschließlich aller stillschweigenden Gewährleistungen oder Bedingungen der Marktgängigkeit, der marktgängigen Qualität, der Eignung für einen bestimmten Zweck, der Haltbarkeit, des Eigentums und der Nichtverletzung von Rechten. In keinem Fall haftet Ferrum Decor Studio, unsere Direktoren, leitenden Angestellten, Mitarbeiter, verbundenen Unternehmen, Agenten, Auftragnehmer, Praktikanten, Lieferanten, Dienstleister oder Lizenzgeber für Verletzungen, Verluste, Ansprüche oder direkte, indirekte, zufällige, strafende, besondere oder Folgeschäden jeglicher Art, einschließlich, aber nicht beschränkt auf entgangenen Gewinn, entgangenen Umsatz, entgangene Einsparungen, Datenverlust, Ersatzkosten oder ähnliche Schäden, unabhängig davon, ob sie auf Vertrag, unerlaubter Handlung (einschließlich Fahrlässigkeit), Gefährdungshaftung oder anderweitig beruhen, die sich aus Ihrer Nutzung des Dienstes oder von Produkten ergeben, die über den Dienst bezogen wurden, oder für andere Ansprüche, die in irgendeiner Weise mit Ihrer Nutzung des Dienstes oder eines Produkts zusammenhängen, einschließlich, aber nicht beschränkt auf Fehler oder Auslassungen in Inhalten oder Verluste oder Schäden jeglicher Art, die infolge der Nutzung des Dienstes oder von Inhalten (oder Produkten) entstanden sind, die über den Dienst veröffentlicht, übertragen oder anderweitig zur Verfügung gestellt wurden, selbst wenn auf deren Möglichkeit hingewiesen wurde. Da einige Staaten oder Gerichtsbarkeiten den Ausschluss oder die Beschränkung der Haftung für Folgeschäden oder zufällige Schäden nicht zulassen, ist unsere Haftung in diesen Staaten oder Gerichtsbarkeiten auf das gesetzlich maximal zulässige Maß beschränkt."
+            },
+            "indemnification": {
+                "title": "ABSCHNITT 14 - ENTSCHÄDIGUNG",
+                "content": "Sie erklären sich damit einverstanden, Ferrum Decor Studio und unsere Muttergesellschaft, Tochtergesellschaften, verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Agenten, Auftragnehmer, Lizenzgeber, Dienstleister, Unterauftragnehmer, Lieferanten, Praktikanten und Mitarbeiter von allen Ansprüchen oder Forderungen, einschließlich angemessener Anwaltskosten, freizustellen, zu verteidigen und schadlos zu halten, die von Dritten aufgrund oder infolge Ihrer Verletzung dieser Nutzungsbedingungen oder der Dokumente, die sie durch Verweis enthalten, oder Ihrer Verletzung von Gesetzen oder Rechten Dritter erhoben werden."
+            },
+            "severability": {
+                "title": "ABSCHNITT 15 - SALVATORISCHE KLAUSEL",
+                "content": "Für den Fall, dass eine Bestimmung dieser Nutzungsbedingungen als rechtswidrig, nichtig oder nicht durchsetzbar befunden wird, ist diese Bestimmung dennoch im größtmöglichen nach geltendem Recht zulässigen Umfang durchsetzbar, und der nicht durchsetzbare Teil gilt als von diesen Nutzungsbedingungen abgetrennt, wobei eine solche Feststellung die Gültigkeit und Durchsetzbarkeit aller anderen verbleibenden Bestimmungen nicht beeinträchtigt."
+            },
+            "termination": {
+                "title": "ABSCHNITT 16 - KÜNDIGUNG",
+                "content": "Die Verpflichtungen und Verbindlichkeiten der Parteien, die vor dem Kündigungsdatum entstanden sind, überdauern die Kündigung dieser Vereinbarung für alle Zwecke. Diese Nutzungsbedingungen sind wirksam, sofern und solange sie nicht von Ihnen oder uns gekündigt werden. Sie können diese Nutzungsbedingungen jederzeit kündigen, indem Sie uns mitteilen, dass Sie unsere Dienste nicht mehr nutzen möchten, oder wenn Sie die Nutzung unserer Website einstellen. Wenn Sie nach unserem alleinigen Ermessen eine Bedingung oder Bestimmung dieser Nutzungsbedingungen nicht einhalten oder wir den Verdacht haben, dass Sie diese nicht eingehalten haben, können wir diese Vereinbarung auch jederzeit ohne Vorankündigung kündigen, und Sie bleiben für alle fälligen Beträge bis einschließlich des Kündigungsdatums haftbar; und/oder wir können Ihnen dementsprechend den Zugriff auf unsere Dienste (oder Teile davon) verweigern."
+            },
+            "agreement": {
+                "title": "ABSCHNITT 17 - GESAMTE VEREINBARUNG",
+                "content": "Das Versäumnis unsererseits, ein Recht oder eine Bestimmung dieser Nutzungsbedingungen auszuüben oder durchzusetzen, stellt keinen Verzicht auf dieses Recht oder diese Bestimmung dar. Diese Nutzungsbedingungen und alle von uns auf dieser Website oder in Bezug auf den Dienst veröffentlichten Richtlinien oder Betriebsregeln stellen die gesamte Vereinbarung und das Verständnis zwischen Ihnen und uns dar und regeln Ihre Nutzung des Dienstes und ersetzen alle vorherigen oder gleichzeitigen Vereinbarungen, Mitteilungen und Vorschläge, ob mündlich oder schriftlich, zwischen Ihnen und uns (einschließlich, aber nicht beschränkt auf frühere Versionen der Nutzungsbedingungen). Unklarheiten bei der Auslegung dieser Nutzungsbedingungen dürfen nicht zu Ungunsten der Partei ausgelegt werden, die sie verfasst hat."
+            },
+            "law": {
+                "title": "ABSCHNITT 18 - ANWENDBARES RECHT",
+                "content": "Diese Nutzungsbedingungen und alle separaten Vereinbarungen, mit denen wir Ihnen Dienste bereitstellen, unterliegen den Gesetzen der Vereinigten Staaten und werden nach diesen ausgelegt."
+            },
+            "changes": {
+                "title": "ABSCHNITT 19 - ÄNDERUNGEN DER NUTZUNGSBEDINGUNGEN",
+                "content": "Sie können die aktuellste Version der Nutzungsbedingungen jederzeit auf dieser Seite einsehen. Wir behalten uns das Recht vor, nach eigenem Ermessen Teile dieser Nutzungsbedingungen zu aktualisieren, zu ändern oder zu ersetzen, indem wir Aktualisierungen und Änderungen auf unserer Website veröffentlichen. Es liegt in Ihrer Verantwortung, unsere Website regelmäßig auf Änderungen zu überprüfen. Ihre fortgesetzte Nutzung oder Ihr Zugriff auf unsere Website oder den Dienst nach der Veröffentlichung von Änderungen dieser Nutzungsbedingungen gilt als Annahme dieser Änderungen."
+            },
+            "contact_info": {
+                "title": "ABSCHNITT 20 - KONTAKTINFORMATIONEN",
+                "content": "Fragen zu den Nutzungsbedingungen sollten an ferrumdecorstudio@icloud.com gesendet werden. Unsere Kontaktinformationen sind unten aufgeführt: Ferrum Decor Studio. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
             }
         }
     }

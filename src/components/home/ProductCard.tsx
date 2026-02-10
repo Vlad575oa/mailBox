@@ -10,9 +10,10 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 interface ProductCardProps {
     product: Product;
+    priority?: boolean;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, priority = false }: ProductCardProps) {
     const t = useTranslations('Catalog');
     const images = product.images || [product.image];
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,7 +53,8 @@ export function ProductCard({ product }: ProductCardProps) {
                             alt={product.title}
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 33vw"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            priority={priority}
                         />
                     </motion.div>
                 </AnimatePresence>

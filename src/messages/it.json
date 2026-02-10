@@ -1,4 +1,9 @@
 {
+    "Metadata": {
+        "title": "FerrumDecor | Cassette postali Premium in Acciaio Corten & Ottone",
+        "description": "Cassette postali artigianali in acciaio, ottone e Corten. Design moderno, durata senza tempo e personalizzazione per la tua casa.",
+        "keywords": "cassette postali, acciaio corten, cassetta postale moderna, cassetta postale personalizzata, cassetta postale ottone"
+    },
     "Navbar": {
         "home": "Home",
         "features": "Vantaggi",
@@ -221,7 +226,7 @@
         "production_label": "Produzione",
         "production_value": "Ucraina",
         "phone_label": "Telefono",
-        "phone_value": "+380 67 381 44 04",
+        "phone_value": "+380673814404",
         "email_label": "Email",
         "email_value": "ferrumdecorstudio@icloud.com",
         "geo_label": "Geografia del lavoro",
@@ -252,6 +257,7 @@
         "global_text": "Lavoriamo con clienti in tutto il mondo e offriamo la consegna internazionale."
     },
     "Footer": {
+        "developed_by": "Site developed by",
         "slogan": "Forgiamo il futuro del fascino esterno. Eccellenza artigianale in ogni saldatura.",
         "rights": "FerrumDecor Studio. Tutti i diritti riservati.",
         "links": {
@@ -291,6 +297,163 @@
             "shipping": {
                 "title": "Spedizione in tutto il mondo",
                 "description": "Inviamo con successo prodotti a clienti in tutto il mondo, garantendo un imballaggio affidabile e una consegna sicura."
+            }
+        }
+    },
+    "PrivacyPolicy": {
+        "title": "Informativa sulla privacy",
+        "last_updated": "Ultimo aggiornamento: 8 ottobre 2025",
+        "disclaimer": "Non raccogliamo direttamente dati personali. Tutte le informazioni inviate tramite il nostro sito sono elaborate esclusivamente dai servizi di terze parti che utilizziamo, come WhatsApp, Google Analytics, ecc. Vi invitiamo a consultare le informative sulla privacy di tali servizi.",
+        "intro": "Questa Informativa sulla privacy descrive come Ferrum Decor Studio (il \"Sito\", \"noi\", \"ci\" o \"nostro\") raccoglie, utilizza e divulga le tue informazioni personali quando visiti, utilizzi i nostri servizi o effettui un acquisto da ferrumdecorstudio.shop (il \"Sito\") o comunichi in altro modo con noi in merito al Sito (collettivamente, i \"Servizi\"). Ai fini della presente Informativa sulla privacy, \"tu\" e \"tuo\" indicano te in quanto utente dei Servizi, che tu sia un cliente, un visitore del sito web o un altro individuo le cui informazioni abbiamo raccolto ai sensi della presente Informativa sulla privacy.",
+        "sections": {
+            "changes": {
+                "title": "Modifiche a questa Informativa sulla privacy",
+                "content": "Potremmo aggiornare la presente Informativa sulla privacy di tanto in tanto, anche per riflettere modifiche alle nostre pratiche o per altri motivi operativi, legali o normativi. Pubblicheremo l'Informativa sulla privacy rivista sul Sito, aggiorneremo la data di \"Ultimo aggiornamento\" e adotteremo qualsiasi altra misura richiesta dalla legge applicabile."
+            },
+            "collection": {
+                "title": "Come raccogliamo e utilizziamo le tue informazioni personali",
+                "content": "Per fornire i Servizi, raccogliamo e abbiamo raccolto negli ultimi 12 mesi informazioni personali su di te da una varietà di fonti, come indicato di seguito. Le informazioni che raccogliamo e utilizziamo variano a seconda di come interagisci con noi."
+            },
+            "types": {
+                "title": "Quali informazioni personali raccogliamo",
+                "content": "I tipi di informazioni personali che otteniamo su di te dipendono da come interagisci con il nostro Sito e utilizzi i nostri Servizi. Quando utilizziamo il termine \"informazioni personali\", ci riferiamo a informazioni che ti identificano, si riferiscono a te, ti descrivono o possono essere associate a te."
+            },
+            "direct_info": {
+                "title": "Informazioni che raccogliamo direttamente da te",
+                "content": "Le informazioni che ci invii direttamente tramite i nostri Servizi possono includere: Dettagli di contatto tra cui nome, indirizzo, numero di telefono ed e-mail. Informazioni sull'ordine tra cui nome, indirizzo di fatturazione, indirizzo di spedizione, conferma di pagamento, indirizzo e-mail e numero di telefono. Informazioni sull'account tra cui nome utente, password, domande di sicurezza e altre informazioni utilizzate a fini di sicurezza dell'account. Informazioni sull'assistenza clienti tra cui le informazioni che scegli di includere nelle comunicazioni con noi, ad esempio quando invii un messaggio tramite i Servizi."
+            },
+            "usage_info": {
+                "title": "Informazioni che raccogliamo sul tuo utilizzo",
+                "content": "Potremmo anche raccogliere automaticamente determinate informazioni sulla tua interazione con i Servizi (\"Dati di utilizzo\"). Per fare ciò, potremmo utilizzare cookie, pixel e tecnologie simili (\"Cookie\"). I Dati di utilizzo possono includere informazioni su come accedi e utilizzi il nostro Sito e il tuo account, incluse informazioni sul dispositivo, informazioni sul browser, informazioni sulla tua connessione di rete, il tuo indirizzo IP e altre informazioni riguardanti la tua interazione con i Servizi."
+            },
+            "third_party_info": {
+                "title": "Informazioni che otteniamo da terze parti",
+                "content": "Infine, potremmo ottenere informazioni su di te da terze parti, inclusi fornitori e prestatori di servizi che possono raccogliere informazioni per nostro conto, come: Aziende che supportano il nostro Sito e i nostri Servizi, come Shopify. I nostri processori di pagamento, che raccolgono informazioni di pagamento (ad esempio, conto bancario, informazioni sulla carta di credito o di debito, indirizzo di fatturazione) per elaborare il tuo pagamento al fine di evadere i tuoi ordini e fornirti prodotti o servizi che hai richiesto, al fine di eseguire il nostro contratto con te."
+            },
+            "usage_purpose": {
+                "title": "Come utilizziamo le tue informazioni personali",
+                "content": "Fornitura di prodotti e servizi. Utilizziamo le tue informazioni personali per fornirti i Servizi al fine di eseguire il nostro contratto con te, incluso per elaborare i tuoi pagamenti, evadere i tuoi ordini, inviarti notifiche relative al tuo account, acquisti, resi, cambi o altre transazioni, per creare, mantenere e gestire in altro modo il tuo account, per organizzare la spedizione, facilitare eventuali resi e cambi e altre caratteristiche e funzionalità relative al tuo account. Marketing e pubblicità. Potremmo utilizzare le tue informazioni personali per scopi di marketing e promozionali, come l'invio di comunicazioni di marketing, pubblicitarie e promozionali tramite e-mail, messaggi di testo o posta ordinaria e per mostrarti pubblicità di prodotti o servizi."
+            },
+            "cookies": {
+                "title": "Cookie",
+                "content": "Come molti siti web, utilizziamo i Cookie sul nostro Sito. Per informazioni specifiche sui Cookie che utilizziamo relativi all'alimentazione del nostro negozio con Shopify, consulta https://www.shopify.com/legal/cookies. Utilizziamo i Cookie per alimentare e migliorare il nostro Sito e i nostri Servizi (incluso per ricordare le tue azioni e preferenze), per eseguire analisi e comprendere meglio l'interazione degli utenti con i Servizi."
+            },
+            "disclosure": {
+                "title": "Come divulghiamo le informazioni personali",
+                "content": "In determinate circostanze, potremmo divulgare le tue informazioni personali a terze parti per scopi di adempimento contrattuale, scopi legittimi e altri motivi soggetti alla presente Informativa sulla privacy. Tali circostanze possono includere: Con fornitori o altre terze parti che eseguono servizi per nostro conto (ad esempio, gestione IT, elaborazione dei pagamenti, analisi dei dati, assistenza clienti, archiviazione cloud, evasione e spedizione)."
+            },
+            "children": {
+                "title": "Dati dei bambini",
+                "content": "I Servizi non sono destinati all'uso da parte dei bambini e non raccogliamo consapevolmente alcuna informazione personale sui bambini. Se sei il genitore o il tutore di un bambino che ci ha fornito le sue informazioni personali, puoi contattarci utilizzando i dettagli di contatto indicati di seguito per richiedere che vengano cancellate."
+            },
+            "security": {
+                "title": "Sicurezza e conservazione delle tue informazioni",
+                "content": "Tieni presente che nessuna misura di sicurezza è perfetta o impenetrabile e non possiamo garantire una \"sicurezza perfetta\". Inoltre, qualsiasi informazione che ci invii potrebbe non essere sicura durante il transito. Ti consigliamo di non utilizzare canali non sicuri per comunicarci informazioni sensibili o riservate."
+            },
+            "rights": {
+                "title": "I tuoi diritti",
+                "content": "A seconda di dove vivi, potresti avere alcuni o tutti i diritti elencati di seguito in relazione alle tue informazioni personali. Tuttavia, questi diritti non sono assoluti, possono essere applicati solo in determinate circostanze e, in alcuni casi, potremmo rifiutare la tua richiesta come consentito dalla legge. Diritto di accesso / conoscenza. Diritto di cancellazione. Diritto di correzione. Diritto di portabilità."
+            },
+            "contact": {
+                "title": "Contatto",
+                "content": "In caso di domande sulle nostre pratiche sulla privacy o sulla presente Informativa sulla privacy, o se desideri esercitare uno dei diritti a tua disposizione, chiamaci o inviaci un'e-mail a ferrumdecorstudio@icloud.com o contattaci all'indirizzo 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US."
+            },
+            "whatsapp": {
+                "title": "Comunicazione WhatsApp",
+                "content": "Utilizziamo WhatsApp Business per ricevere e rispondere ai messaggi degli utenti. Il tuo numero di telefono e il messaggio che invii verranno trasmessi a WhatsApp. Puoi richiedere la cancellazione dei tuoi dati in qualsiasi momento.",
+                "link_text": "Informativa sulla privacy di WhatsApp"
+            }
+        }
+    },
+    "WhatsApp": {
+        "tooltip": "Cliccando sul pulsante, accetti che il tuo numero di telefono e il tuo messaggio vengano inviati al nostro gestore WhatsApp. Consulta la nostra Informativa sulla privacy per ulteriori informazioni.",
+        "privacy_link": "Informativa sulla privacy",
+        "greeting": "Ciao! Vorrei chattare con te"
+    },
+    "TermsOfService": {
+        "title": "Termini di servizio",
+        "last_updated": "Ultimo aggiornamento: 8 ottobre 2025",
+        "intro": "Questo sito web è gestito da Ferrum Decor Studio. In tutto il sito, i termini \"noi\", \"ci\" e \"nostro\" si riferiscono a Ferrum Decor Studio. Ferrum Decor Studio offre questo sito web, comprese tutte le informazioni, gli strumenti e i servizi disponibili da questo sito per te, l'utente, a condizione che tu accetti tutti i termini, le condizioni, le politiche e le comunicazioni qui riportate. Visitando il nostro sito e/o acquistando qualcosa da noi, ti impegni nel nostro \"Servizio\" e accetti di essere vincolato dai seguenti termini e condizioni (\"Termini di servizio\", \"Termini\"), inclusi i termini e le condizioni aggiuntivi e le politiche citate nel presente documento e/o disponibili tramite collegamento ipertestuale. I presenti Termini di servizio si applicano a tutti gli utenti del sito, inclusi, a titolo esemplificativo ma non esaustivo, gli utenti che sono browser, fornitori, clienti, commercianti e/o contributori di contenuti. Leggere attentamente i presenti Termini di servizio prima di accedere o utilizzare il nostro sito web. Accedendo o utilizzando qualsiasi parte del sito, accetti di essere vincolato dai presenti Termini di servizio. Se non accetti tutti i termini e le condizioni del presente contratto, non potrai accedere al sito web né utilizzare alcun servizio. Se i presenti Termini di servizio sono considerati un'offerta, l'accettazione è espressamente limitata ai presenti Termini di servizio. Qualsiasi nuova funzione o strumento aggiunto al negozio corrente sarà anch'esso soggetto ai Termini di servizio. È possibile consultare la versione più recente dei Termini di servizio in qualsiasi momento su questa pagina. Ci riserviamo il diritto di aggiornare, modificare o sostituire qualsiasi parte dei presenti Termini di servizio pubblicando aggiornamenti e/o modifiche sul nostro sito web. Saresti responsabile di controllare periodicamente questa pagina per eventuali modifiche. L'uso continuato o l'accesso al sito web dopo la pubblicazione di eventuali modifiche costituisce accettazione di tali modifiche. Il nostro negozio è ospitato su Shopify Inc. Ci forniscono la piattaforma di e-commerce online che ci consente di venderti i nostri prodotti e servizi.",
+        "sections": {
+            "online_store": {
+                "title": "SEZIONE 1 - TERMINI DEL NEGOZIO ONLINE",
+                "content": "Accettando i presenti Termini di servizio, dichiari di avere almeno la maggiore età nel tuo stato o provincia di residenza, o di avere la maggiore età nel tuo stato o provincia di residenza e di averci fornito il tuo consenso per consentire a chiunque dei tuoi dipendenti minorenni di utilizzare questo sito. Non puoi utilizzare i nostri prodotti per scopi illegali o non autorizzati né puoi, nell'uso del Servizio, violare alcuna legge nella tua giurisdizione (incluse, a titolo esemplificativo ma non esaustivo, le leggi sul copyright). Non devi trasmettere worm o virus o codici di natura distruttiva. Una violazione o violazione di uno qualsiasi dei Termini comporterà la cessazione immediata dei tuoi Servizi."
+            },
+            "general": {
+                "title": "SEZIONE 2 - CONDIZIONI GENERALI",
+                "content": "Ci riserviamo il diritto di rifiutare il Servizio a chiunque per qualsiasi motivo in qualsiasi momento. Comprendi che i tuoi contenuti (escluse le informazioni sulla carta di credito), possono essere trasferiti non crittografati e comportare (a) trasmissioni su varie reti; e (b) modifiche per conformarsi e adattarsi ai requisiti tecnici delle reti o dei dispositivi di connessione. Le informazioni sulla carta di credito sono sempre crittografate durante il trasferimento sulle reti. Accetti di non riprodurre, duplicare, copiare, vendere, rivendere o sfruttare qualsiasi parte del Servizio, l'uso del Servizio o l'accesso al Servizio o qualsiasi contatto sul sito web attraverso il quale viene fornito il Servizio, senza espressa autorizzazione scritta da parte nostra. I titoli utilizzati nel presente contratto sono inclusi solo per comodità e non limiteranno né influenzeranno in altro modo i presenti Termini."
+            },
+            "accuracy": {
+                "title": "SEZIONE 3 - ACCURATEZZA, COMPLETEZZA E TEMPESTIVITÀ DELLE INFORMAZIONI",
+                "content": "Non siamo responsabili se le informazioni rese disponibili su questo sito non sono accurate, complete o aggiornate. Il materiale su questo sito è fornito solo per informazioni generali e non deve essere fatto affidamento o utilizzato come unica base per prendere decisioni senza consultare fonti di informazione primarie, più accurate, più complete o più tempestive. Qualsiasi affidamento sul materiale presente su questo sito è a tuo rischio e pericolo. Questo sito può contenere determinate informazioni storiche. Le informazioni storiche, necessariamente, non sono aggiornate e vengono fornite solo come riferimento. Ci riserviamo il diritto di modificare i contenuti di questo sito in qualsiasi momento, ma non abbiamo l'obbligo di aggiornare alcuna informazione sul nostro sito. Accetti che sia tua responsabilità monitorare le modifiche al nostro sito."
+            },
+            "modifications": {
+                "title": "SEZIONE 4 - MODIFICHE AL SERVIZIO E AI PREZZI",
+                "content": "I prezzi dei nostri prodotti sono soggetti a modifiche senza preavviso. Ci riserviamo il diritto in qualsiasi momento di modificare o interrompere il Servizio (o qualsiasi parte o contenuto dello stesso) senza preavviso in qualsiasi momento. Non saremo responsabili nei tuoi confronti o nei confronti di terze parti per qualsiasi modifica, variazione di prezzo, sospensione o interruzione del Servizio."
+            },
+            "products": {
+                "title": "SEZIONE 5 - PRODOTTI O SERVIZI",
+                "content": "Alcuni prodotti o servizi possono essere disponibili esclusivamente online tramite il sito web. Questi prodotti o servizi possono avere quantità limitate e sono soggetti a reso o cambio solo in base alla nostra Politica di rimborso. Abbiamo fatto ogni sforzo per visualizzare il più accuratamente possibile i colori e le immagini dei nostri prodotti che appaiono nel negozio. Non possiamo garantire che la visualizzazione di qualsiasi colore sul monitor del tuo computer sia accurata. Ci riserviamo il diritto, ma non siamo obbligati, di limitare le vendite dei nostri prodotti o servizi a qualsiasi persona, regione geografica o giurisdizione. Possiamo esercitare questo diritto caso per caso. Ci riserviamo il diritto di limitare le quantità di qualsiasi prodotto o servizio che offriamo. Tutte le descrizioni dei prodotti o i prezzi dei prodotti sono soggetti a modifiche in qualsiasi momento senza preavviso, a nostra esclusiva discrezione. Ci riserviamo il diritto di interrompere qualsiasi prodotto in qualsiasi momento. Qualsiasi offerta per qualsiasi prodotto o servizio effettuata su questo sito è nulla ove vietata. Non garantiamo che la qualità di prodotti, servizi, informazioni o altro materiale acquistato o ottenuto da te soddisferà le tue aspettative o che eventuali errori nel Servizio verranno corretti."
+            },
+            "billing": {
+                "title": "SEZIONE 6 - ACCURATEZZA DELLA FATTURAZIONE E DELLE INFORMAZIONI SULL'ACCOUNT",
+                "content": "Ci riserviamo il diritto di rifiutare qualsiasi ordine effettuato con noi. Possiamo, a nostra esclusiva discrezione, limitare o annullare le quantità acquistate per persona, per nucleo familiare o per ordine. Queste restrizioni possono includere ordini effettuati da o sotto lo stesso account cliente, la stessa carta di credito e/o ordini che utilizzano lo stesso indirizzo di fatturazione e/o spedizione. Nel caso in cui dovessimo apportare una modifica o annullare un ordine, potremmo tentare di informarti contattando l'indirizzo e-mail e/o l'indirizzo di fatturazione/numero di telefono fornito al momento dell'ordine. Ci riserviamo il diritto di limitare o vietare ordini che, a nostro esclusivo giudizio, sembrano essere effettuati da commercianti, rivenditori o distributori. Accetti di fornire informazioni sull'acquisto e sull'account correnti, complete e accurate per tutti gli acquisti effettuati presso il nostro negozio. Accetti di aggiornare tempestivamente il tuo account e altre informazioni, inclusi il tuo indirizzo e-mail, i numeri della carta di credito e le date di scadenza, in modo che possiamo completare le tue transazioni e contattarti se necessario."
+            },
+            "tools": {
+                "title": "SEZIONE 7 - STRUMENTI OPZIONALI",
+                "content": "Potremmo fornirti l'accesso a strumenti di terze parti sui quali non monitoriamo né abbiamo alcun controllo o input. Riconosci e accetti che forniamo l'accesso a tali strumenti \"così come sono\" e \"come disponibili\" senza garanzie, rappresentazioni o condizioni di alcun tipo e senza alcuna approvazione. Non avremo alcuna responsabilità derivante da o relativa all'uso di strumenti opzionali di terze parti. Qualsiasi utilizzo da parte tua degli strumenti opzionali offerti tramite il sito è interamente a tuo rischio e discrezione e dovresti assicurarti di conoscere e approvare i termini in base ai quali gli strumenti sono forniti dai relativi fornitori di terze parti. Potremmo anche, in futuro, offrire nuovi servizi e/o funzionalità tramite il sito web (incluso il rilascio di nuovi strumenti e risorse). Tali nuove funzionalità e/o servizi saranno anch'essi soggetti ai presenti Termini di servizio."
+            },
+            "third_party": {
+                "title": "SEZIONE 8 - COLLEGAMENTI DI TERZE PARTI",
+                "content": "Alcuni contenuti, prodotti e servizi disponibili tramite il nostro Servizio possono includere materiali di terze parti. I collegamenti di terze parti su questo sito possono indirizzarti a siti web di terze parti che non sono affiliati con noi. Non siamo responsabili dell'esame o della valutazione del contenuto o dell'accuratezza e non garantiamo e non avremo alcuna responsabilità per materiali o siti web di terze parti, o per qualsiasi altro materiale, prodotto o servizio di terze parti. Non siamo responsabili per eventuali danni o danni relativi all'acquisto o all'uso di beni, servizi, risorse, contenuti o qualsiasi altra transazione effettuata in relazione a siti web di terze parti. Rivedere attentamente le politiche e le pratiche della terza parte e assicurarsi di averle comprese prima di intraprendere qualsiasi transazione. Reclami, rivendicazioni, preoccupazioni o domande riguardanti prodotti di terze parti devono essere indirizzati alla terza parte."
+            },
+            "comments": {
+                "title": "SEZIONE 9 - COMMENTI DELL'UTENTE, FEEDBACK E ALTRE SOTTOMISSIONI",
+                "content": "Se, su nostra richiesta, invii determinate sottomissioni specifiche (ad esempio iscrizioni a concorsi) o senza una nostra richiesta, invii idee creative, suggerimenti, proposte, piani o altri materiali, sia online, tramite e-mail, per posta ordinaria o in altro modo (collettivamente, 'commenti'), accetti che possiamo, in qualsiasi momento, senza limitazioni, modificare, copiare, pubblicare, distribuire, tradurre e utilizzare in altro modo su qualsiasi supporto i commenti che ci inoltri. Non abbiamo e non avremo alcun obbligo (1) di mantenere riservati i commenti; (2) di pagare un compenso per eventuali commenti; o (3) di rispondere a eventuali commenti. Possiamo, ma non abbiamo l'obbligo di, monitorare, modificare o rimuovere i contenuti che determiniamo a nostra esclusiva discrezione essere illegali, offensivi, minacciosi, calunniosi, diffamatori, pornografici, osceni o altrimenti discutibili o che violano la proprietà intellettuale di qualsiasi parte o i presenti Termini di servizio. Accetti che i tuoi commenti non violino alcun diritto di terze parti, inclusi copyright, marchio, privacy, personalità o altro diritto personale o proprietario. Accetti inoltre che i tuoi commenti non contengano materiale calunnioso o altrimenti illegale, abusivo o osceno, né contengano virus informatici o altri malware che potrebbero in alcun modo influenzare il funzionamento del Servizio o di qualsiasi sito web correlato. Non puoi utilizzare un indirizzo e-mail falso, fingere di essere qualcuno diverso da te stesso o in altro modo fuorviare noi o terze parti sull'origine di eventuali commenti. Sei l'unico responsabile per i commenti che fai e per la loro accuratezza. Non ci assumiamo alcuna responsabilità e non ci assumiamo alcuna responsabilità per eventuali commenti pubblicati da te o da terze parti."
+            },
+            "personal_info": {
+                "title": "SEZIONE 10 - INFORMAZIONI PERSONALI",
+                "content": "L'invio di informazioni personali tramite il negozio è regolato dalla nostra Informativa sulla privacy."
+            },
+            "errors": {
+                "title": "SEZIONE 11 - ERRORI, INACCURATEZZE E OMISSIONI",
+                "content": "Occasionalmente potrebbero esserci informazioni sul nostro sito o nel Servizio che contengono errori tipografici, inesattezze o omissioni che possono riguardare descrizioni dei prodotti, prezzi, promozioni, offerte, spese di spedizione dei prodotti, tempi di transito e disponibilità. Ci riserviamo il diritto di correggere eventuali errori, inesattezze o omissioni e di modificare o aggiornare le informazioni o annullare gli ordini se qualsiasi informazione nel Servizio o su qualsiasi sito web correlato è inesatta in qualsiasi momento senza preavviso (anche dopo aver inviato l'ordine). Non ci assumiamo alcun obbligo di aggiornare, modificare o chiarire le informazioni nel Servizio o su qualsiasi sito web correlato, incluse, a titolo esemplificativo ma non esaustivo, le informazioni sui prezzi, eccetto quanto richiesto dalla legge. Nessun aggiornamento specificato o data di aggiornamento applicata nel Servizio o su qualsiasi sito web correlato, deve essere considerato per indicare che tutte le informazioni nel Servizio o su qualsiasi sito web correlato sono state modificate o aggiornate."
+            },
+            "prohibited": {
+                "title": "SEZIONE 12 - USI PROIBITI",
+                "content": "Oltre agli altri divieti stabiliti nei Termini di servizio, è vietato utilizzare il sito o il suo contenuto: (a) per qualsiasi scopo illegale; (b) per sollecitare altri a compiere o partecipare ad atti illegali; (c) per violare regolamenti, norme, leggi o ordinanze locali internazionali, federali, provinciali o statali; (d) per infrangere o violare i nostri diritti di proprietà intellettuale o i diritti di proprietà intellettuale di altri; (e) per molestare, abusare, insultare, danneggiare, diffamare, calunniare, sminuire, intimidire o discriminare in base a genere, orientamento sessuale, religione, etnia, razza, età, origine nazionale o disabilità; (f) per fornire informazioni false o fuorvianti; (g) per caricare o trasmettere virus o qualsiasi altro tipo di codice dannoso che sarà o potrà essere utilizzato in qualsiasi modo che influenzerà la funzionalità o il funzionamento del Servizio o di qualsiasi sito web correlato, altri siti web o Internet; (h) per raccogliere o tracciare le informazioni personali di altri; (i) per inviare spam, phish, pharm, pretext, spider, crawl o scrape; (j) per qualsiasi scopo osceno o immorale; o (k) per interferire con o eludere le funzioni di sicurezza del Servizio o di qualsiasi sito web correlato, altri siti web o Internet. Ci riserviamo il diritto di interrompere l'uso del Servizio o di qualsiasi sito web correlato per la violazione di uno qualsiasi degli usi vietati."
+            },
+            "disclaimer": {
+                "title": "SEZIONE 13 - ESCLUSIONE DI GARANZIE; LIMITAZIONE DI RESPONSABILITÀ",
+                "content": "Non garantiamo, rappresentiamo o assicuriamo che l'uso del nostro Servizio sarà ininterrotto, tempestivo, sicuro o esente da errori. Non garantiamo che i risultati che possono essere ottenuti dall'uso del Servizio saranno accurati o affidabili. Accetti che di tanto in tanto potremmo rimuovere il Servizio per periodi di tempo indefiniti o annullare il Servizio in qualsiasi momento, senza preavviso. Accetti espressamente che l'uso o l'impossibilità di usare il Servizio è a tuo esclusivo rischio. Il Servizio e tutti i prodotti e servizi forniti all'utente tramite il Servizio sono (salvo quanto espressamente dichiarato da noi) forniti 'così come sono' e 'come disponibili' per l'uso, senza alcuna rappresentazione, garanzia o condizione di alcun tipo, espressa o implicita, comprese tutte le garanzie o condizioni implicite di commerciabilità, qualità commerciabile, idoneità per uno scopo particolare, durata, titolo e non violazione. In nessun caso Ferrum Decor Studio, i nostri amministratori, funzionari, dipendenti, affiliati, agenti, appaltatori, stagisti, fornitori, prestatori di servizi o licenziatari saranno responsabili per qualsiasi infortunio, perdita, reclamo o qualsiasi danno diretto, indiretto, incidentale, punitivo, speciale o consequenziale di qualsiasi tipo, inclusi, a titolo esemplificativo, perdita di profitti, perdita di entrate, perdita di risparmi, perdita di dati, costi di sostituzione o danni simili, sia basati su contratto, torto (inclusa la negligenza), responsabilità oggettiva o altro, derivanti dall'uso di uno qualsiasi dei Servizi o di qualsiasi prodotto acquistato utilizzando il Servizio, o per qualsiasi altro reclamo relativo in qualsiasi modo all'uso del Servizio o di qualsiasi prodotto, inclusi, a titolo esemplificativo ma non esaustivo, eventuali errori o omissioni in qualsiasi contenuto, o qualsiasi perdita o danno di qualsiasi tipo subìto a seguito dell'uso del Servizio o di qualsiasi contenuto (o prodotto) pubblicato, trasmesso o reso disponibile tramite il Servizio, anche se avvisati della loro possibilità. Poiché alcuni stati o giurisdizioni non consentono l'esclusione o la limitazione di responsabilità per danni consequenziali o incidentali, in tali stati o giurisdizioni, la nostra responsabilità sarà limitata nella misura massima consentita dalla legge."
+            },
+            "indemnification": {
+                "title": "SEZIONE 14 - INDENNIZZO",
+                "content": "Accetti di indennizzare, difendere e tenere indenne Ferrum Decor Studio e la nostra società madre, sussidiarie, affiliate, partner, funzionari, direttori, agenti, appaltatori, licenziatari, prestatori di servizi, subappaltatori, fornitori, stagisti e dipendenti, da qualsiasi reclamo o richiesta, comprese le ragionevoli spese legali, avanzate da terze parti a causa o derivanti dalla tua violazione dei presenti Termini di servizio o dei documenti che incorporano per riferimento, o dalla tua violazione di qualsiasi legge o dei diritti di terze parti."
+            },
+            "severability": {
+                "title": "SEZIONE 15 - DIVISIBILITÀ",
+                "content": "Nel caso in cui una qualsiasi disposizione dei presenti Termini di servizio sia determinata essere illegale, nulla o inapplicabile, tale disposizione sarà comunque applicabile nella misura massima consentita dalla legge applicabile e la parte inapplicabile sarà considerata recisa dai presenti Termini di servizio, tale determinazione non pregiudicherà la validità e l'applicabilità di tutte le altre disposizioni rimanenti."
+            },
+            "termination": {
+                "title": "SEZIONE 16 - CESSAZIONE",
+                "content": "Gli obblighi e le responsabilità delle parti sostenuti prima della data di cessazione sopravvivranno alla cessazione del presente contratto a tutti gli effetti. I presenti Termini di servizio sono efficaci a meno che e fino a quando non vengano risolti da te o da noi. Puoi risolvere i presenti Termini di servizio in qualsiasi momento notificandoci che non desideri più utilizzare i nostri Servizi o quando smetti di utilizzare il nostro sito. Se a nostro esclusivo giudizio non riesci, o sospettiamo che tu abbia fallito, a rispettare qualsiasi termine o disposizione dei presenti Termini di servizio, potremmo anche risolvere il presente contratto in qualsiasi momento senza preavviso e rimarrai responsabile per tutti gli importi dovuti fino alla data di cessazione inclusa; e/o di conseguenza potremmo negarti l'accesso ai nostri Servizi (o a qualsiasi parte di essi)."
+            },
+            "agreement": {
+                "title": "SEZIONE 17 - INTERO ACCORDO",
+                "content": "Il mancato esercizio o applicazione da parte nostra di qualsiasi diritto o disposizione dei presenti Termini di servizio non costituirà una rinuncia a tale diritto o disposizione. I presenti Termini di servizio e le eventuali politiche o regole operative pubblicate da noi su questo sito o in relazione al Servizio costituiscono l'intero accordo e intesa tra te e noi e regolano l'uso del Servizio, sostituendo qualsiasi accordo, comunicazione e proposta precedente o contemporanea, sia orale che scritta, tra te e noi (inclusi, a titolo esemplificativo ma non esaustivo, eventuali versioni precedenti dei Termini di servizio). Eventuali ambiguità nell'interpretazione dei presenti Termini di servizio non devono essere interpretate contro la parte redattrice."
+            },
+            "law": {
+                "title": "SEZIONE 18 - LEGGE APPLICABILE",
+                "content": "I presenti Termini di servizio e gli eventuali accordi separati in base ai quali vi forniamo i Servizi saranno regolati e interpretati in conformità con le leggi degli Stati Uniti."
+            },
+            "changes": {
+                "title": "SEZIONE 19 - MODIFICHE AI TERMINI DI SERVIZIO",
+                "content": "È possibile consultare la versione più recente dei Termini di servizio in qualsiasi momento su questa pagina. Ci riserviamo il diritto, a nostra esclusiva discrezione, di aggiornare, modificare o sostituire qualsiasi parte dei presenti Termini di servizio pubblicando aggiornamenti e modifiche al nostro sito web. Saresti responsabile di controllare periodicamente il nostro sito web per eventuali modifiche. L'uso continuato o l'accesso al nostro sito web o al Servizio dopo la pubblicazione di eventuali modifiche ai presenti Termini di servizio costituisce accettazione di tali modifiche."
+            },
+            "contact_info": {
+                "title": "SEZIONE 20 - INFORMAZIONI DI CONTATTO",
+                "content": "Le domande sui Termini di servizio devono essere inviate a ferrumdecorstudio@icloud.com. Le nostre informazioni di contatto sono pubblicate di seguito: Ferrum Decor Studio. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
             }
         }
     }

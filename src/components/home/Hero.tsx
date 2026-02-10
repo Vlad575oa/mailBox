@@ -46,7 +46,7 @@ export function Hero() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start lg:items-center">
 
                     {/* LEFT SIDE: Compact 4x4 Catalog Grid (Now First Order) */}
-                    <div className="lg:col-span-12 xl:col-span-5 order-2 lg:order-1 pl-0 lg:pl-[160px]">
+                    <div className="lg:col-span-12 xl:col-span-5 order-2 lg:order-1 px-[5px] lg:pl-[160px] lg:pr-0">
                         <FadeIn delay={0.4} direction="right">
                             <div className="relative">
                                 {/* Decorative elements */}
@@ -57,7 +57,7 @@ export function Hero() {
 
                                     {/* Desktop: 4x4 Grid */}
                                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                                        {products.map((product) => (
+                                        {products.map((product, index) => (
                                             <Link
                                                 key={product.id}
                                                 href={`/catalog?id=${product.id}`}
@@ -68,6 +68,8 @@ export function Hero() {
                                                     alt={product.name}
                                                     fill
                                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                                    priority={index < 4}
+                                                    sizes="(max-width: 768px) 50vw, 25vw"
                                                 />
                                             </Link>
                                         ))}

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaInstagram, FaPinterest } from 'react-icons/fa';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
@@ -9,9 +10,9 @@ export function Footer() {
     const t = useTranslations('Footer');
 
     return (
-        <footer id="contact" className="bg-gray-950 text-white border-t border-white/5 pt-20 pb-10">
+        <footer id="contact" className="bg-gray-950 text-white border-t border-white/5 pt-12 pb-8">
             <div className="container mx-auto px-4 lg:px-6">
-                <div className="grid gap-12 md:grid-cols-2 mb-16">
+                <div className="grid gap-12 md:grid-cols-2 mb-12">
                     <div className="md:col-span-1">
                         <FadeIn>
                             <div className="text-2xl font-bold tracking-tighter text-white mb-6">
@@ -42,11 +43,24 @@ export function Footer() {
                     </div>
                 </div>
 
-                <FadeIn delay={0.4} className="mt-12 pt-8 border-t border-white/10 text-center text-gray-600 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+                <FadeIn delay={0.4} className="mt-8 pt-6 border-t border-white/10 text-center text-gray-600 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
                     <div>© {new Date().getFullYear()} {t('rights')}</div>
+
+                    <div className="flex items-center gap-2 order-3 md:order-2">
+                        <span className="text-gray-600 text-xs">{t('developed_by')}</span>
+                        <a href="https://t.me/Vlad557" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group/developer">
+                            <Image
+                                src="/images/Logo_Vlad.webp"
+                                alt="Developer Logo"
+                                width={24}
+                                height={24}
+                                className="rounded-full transition-all duration-300 brightness-0 invert-[0.3] group-hover/developer:invert group-hover/developer:brightness-100"
+                            />
+                        </a>
+                    </div>
                     <div className="flex gap-6">
-                        <a href="#" className="hover:text-gray-400">{t('links.terms')}</a>
-                        <a href="#" className="hover:text-gray-400">{t('links.privacy')}</a>
+                        <Link href="/terms" className="hover:text-gray-400">{t('links.terms')}</Link>
+                        <Link href="/privacy" className="hover:text-gray-400">{t('links.privacy')}</Link>
                     </div>
                 </FadeIn>
             </div>
