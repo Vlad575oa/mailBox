@@ -29,8 +29,15 @@ export function ProductCatalog() {
         }
     }, [searchParams, products]);
 
+    // Scroll to top on mobile when product changes
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.innerWidth < 768) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [selectedProduct.id]);
+
     return (
-        <section className="relative w-full bg-[#050505] pt-20 pb-0 overflow-hidden" id="catalog">
+        <section className="relative w-full bg-[#050505] pt-4 pb-0 overflow-hidden" id="catalog">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image

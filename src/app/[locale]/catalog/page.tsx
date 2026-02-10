@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { ProductCatalog } from '@/components/home/ProductCatalog';
+import { ScrollToTop } from '@/components/ui/ScrollToTop';
 import { getTranslations } from 'next-intl/server';
 import productsData from '@/data/products.json';
 import { Product } from '@/types';
@@ -62,8 +63,11 @@ export async function generateMetadata({ params, searchParams }: Props) {
 export default function CatalogPage() {
     // Catalog page render
     return (
-        <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
-            <ProductCatalog />
-        </Suspense>
+        <div className="pt-24 bg-[#050505] min-h-screen">
+            <ScrollToTop />
+            <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
+                <ProductCatalog />
+            </Suspense>
+        </div>
     );
 }

@@ -55,7 +55,7 @@ export function ProductViewer({ product }: ProductViewerProps) {
                                 <motion.div
                                     key={`${product.id}-${idx}-${i}`}
                                     className={`relative aspect-square transition-all duration-700 overflow-hidden rounded-sm shadow-2xl ${isMain
-                                        ? 'w-[660px] sm:w-[1300px] lg:w-[2000px] z-20 cursor-grab active:cursor-grabbing border border-white/5'
+                                        ? 'w-[528px] sm:w-[1300px] lg:w-[2000px] z-20 cursor-grab active:cursor-grabbing border border-white/5'
                                         : 'w-[140px] sm:w-[180px] scale-90 sm:block hidden pointer-events-none'
                                         }`}
                                     layoutId={isMain ? `main-img-${product.id}` : undefined}
