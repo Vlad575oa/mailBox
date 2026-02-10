@@ -30,7 +30,7 @@ export function ProductCatalog() {
     }, [searchParams, products]);
 
     return (
-        <section className="relative w-full bg-[#050505] pt-4 pb-6 overflow-hidden" id="catalog">
+        <section className="relative w-full bg-[#050505] pt-8 pb-0 overflow-hidden" id="catalog">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image

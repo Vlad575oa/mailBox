@@ -62,10 +62,8 @@ export async function generateMetadata({ params, searchParams }: Props) {
 export default function CatalogPage() {
     // Catalog page render
     return (
-        <div className="pt-16 bg-white min-h-screen">
-            <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
-                <ProductCatalog />
-            </Suspense>
-        </div>
+        <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
+            <ProductCatalog />
+        </Suspense>
     );
 }
