@@ -100,6 +100,12 @@
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "Мы специализируемся на производстве премиальных архитектурных люков и металлоконструкций.",
         "collection_title": "Почтовые ящики, которых нет у соседей",
+        "product_details": "Детали товара",
+        "search_placeholder": "Поиск по названию...",
+        "all_materials": "Все материалы",
+        "material_corten": "Corten Steel",
+        "material_steel": "Сталь",
+        "no_products_found": "Товары не найдены",
         "products": {
             "1": "Индивидуальный настенный почтовый ящик из стали Corten",
             "2": "Индивидуальный заказ для Joe (Сталь Corten)",

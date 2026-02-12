@@ -1,14 +1,68 @@
 import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { FaInstagram, FaPinterest } from 'react-icons/fa';
+import { getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
-export default function ContactPage() {
-    const t = useTranslations('Contact');
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Contact' });
+    const baseUrl = 'https://ferrumdecorstudio.shop';
+    const canonicalUrl = `${baseUrl}/${locale}/contact`;
+
+    const languages = {} as Record<string, string>;
+    routing.locales.forEach(loc => {
+        languages[loc] = `${baseUrl}/${loc}/contact`;
+    });
+
+    const title = `${t('title')} | FerrumDecor Studio`;
+    const description = `${t('geo_value')} ${t('delivery_value')}. ${t('phone_label')}: ${t('phone_value')}`;
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: canonicalUrl,
+            languages: {
+                ...languages,
+                'x-default': `${baseUrl}/de/contact`
+            }
+        },
+        openGraph: {
+            title,
+            description,
+            url: canonicalUrl,
+            siteName: 'FerrumDecor',
+            images: [
+                {
+                    url: `${baseUrl}/images/backFAQ.webp`,
+                    width: 1200,
+                    height: 630,
+                    alt: 'Contact FerrumDecor',
+                }
+            ],
+            locale: locale === 'de' ? 'de_DE' : 'en_US',
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: [`${baseUrl}/images/backFAQ.webp`],
+        }
+    };
+}
+
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Contact' });
 
     return (
         <main className="min-h-screen bg-[#09090b] text-white pt-32 pb-20">
             <FadeIn>
                 <div className="container mx-auto px-6 max-w-5xl">
+                    <Breadcrumbs locale={locale} />
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-thin tracking-tight text-white mb-16 text-center">
                         {t('title')} <span className="text-gradient-gold font-serif italic">Ferrum Decor Studio</span>
                     </h1>

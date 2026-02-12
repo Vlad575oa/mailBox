@@ -29,6 +29,21 @@ export function Hero() {
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
+    const trackConversion = (label: string) => {
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+            (window as any).gtag('event', 'click_whatsapp_cta', {
+                'event_category': 'conversion',
+                'event_label': label,
+                'transport_type': 'beacon'
+            });
+        }
+    };
+
+    const handleWhatsAppClick = (url: string, label: string) => {
+        trackConversion(label);
+        handleClick(url);
+    };
+
     return (
         <section className="relative min-h-[90vh] w-full overflow-hidden bg-[#09090b] flex items-center py-20 lg:py-24">
 
@@ -155,7 +170,7 @@ export function Hero() {
                         <FadeIn delay={1.0}>
                             <div className="flex gap-4 justify-center lg:justify-start">
                                 <Button
-                                    onClick={() => handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`)}
+                                    onClick={() => handleWhatsAppClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`, 'Hero CTA Button')}
                                     variant="gold"
                                     size="lg"
                                     className="min-w-[280px] py-2 md:py-3 h-auto flex items-center justify-center gap-3 shadow-xl shadow-[#C5A059]/20 tracking-widest leading-tight px-6 group"

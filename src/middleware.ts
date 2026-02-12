@@ -2,6 +2,8 @@ import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 import { routing } from './i18n/routing';
 
+export const runtime = 'edge';
+
 const intlMiddleware = createMiddleware({
     locales: routing.locales,
     defaultLocale: 'de',

@@ -25,7 +25,7 @@ export function Button({
     const variants = {
         primary: 'bg-white text-black hover:bg-gray-200',
         secondary: 'bg-zinc-800 text-white hover:bg-zinc-700',
-        outline: 'border border-white/20 text-white hover:border-white hover:bg-white/5 backdrop-blur-sm',
+        outline: 'border border-white/30 text-white hover:border-white hover:bg-white/5 backdrop-blur-sm',
         ghost: 'text-gray-400 hover:text-white',
         premium: 'bg-[#C5A059] text-black hover:bg-[#FCF6BA]',
         gold: 'bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] text-black bg-[length:200%_auto] hover:bg-right transition-[background-position] duration-500 shadow-[0_0_20px_rgba(197,160,89,0.3)] hover:shadow-[0_0_30px_rgba(197,160,89,0.5)] border border-[#FCF6BA]/50',
@@ -34,8 +34,8 @@ export function Button({
     const sizes = {
         sm: 'px-4 py-1.5 text-xs uppercase',
         md: 'px-6 py-2.5 text-sm uppercase',
-        lg: 'px-8 py-6 text-base uppercase',
-        xl: 'px-10 py-8 text-lg uppercase font-bold tracking-widest',
+        lg: 'px-8 py-3 text-base uppercase',
+        xl: 'px-10 py-4 text-lg uppercase font-bold tracking-widest',
     };
 
     return (

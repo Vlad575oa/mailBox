@@ -10,8 +10,10 @@ import { ProductViewer } from '../catalog/ProductViewer';
 import { CollectionCarousel } from '../catalog/CollectionCarousel';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export function ProductCatalog() {
+    const t = useTranslations('Catalog');
     const products = productsData as Product[];
     const searchParams = useSearchParams();
     const initialId = searchParams.get('id');
@@ -22,7 +24,7 @@ export function ProductCatalog() {
 
     const [selectedProduct, setSelectedProduct] = useState<Product>(initialProduct);
 
-    // Update selected product if URL param changes (optional, but good for back/forward navigation)
+    // Update selected product if URL param changes
     useEffect(() => {
         const id = searchParams.get('id');
         if (id) {
@@ -58,6 +60,10 @@ export function ProductCatalog() {
 
             <div className="container relative z-10 mx-auto px-4 pb-12">
                 <div className="mt-4 md:mt-0">
+                    <h1 className="sr-only">
+                        {t('title_start')} {t('title_end')}
+                    </h1>
+
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={selectedProduct.id}

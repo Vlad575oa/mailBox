@@ -1,12 +1,66 @@
 import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/ui/FadeIn';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
 
-export default function AboutPage() {
-    const t = useTranslations('About');
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'About' });
+    const baseUrl = 'https://ferrumdecorstudio.shop';
+    const canonicalUrl = `${baseUrl}/${locale}/about`;
+
+    const languages = {} as Record<string, string>;
+    routing.locales.forEach(loc => {
+        languages[loc] = `${baseUrl}/${loc}/about`;
+    });
+
+    const title = `${t('title_start')} ${t('title_end')} | FerrumDecor`;
+    const description = `${t('intro')} ${t('specialization')}`;
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: canonicalUrl,
+            languages: {
+                ...languages,
+                'x-default': `${baseUrl}/de/about`
+            }
+        },
+        openGraph: {
+            title,
+            description,
+            url: canonicalUrl,
+            siteName: 'FerrumDecor',
+            images: [
+                {
+                    url: `${baseUrl}/images/product-10.jpg`,
+                    width: 1200,
+                    height: 630,
+                    alt: 'About FerrumDecor',
+                }
+            ],
+            locale: locale === 'de' ? 'de_DE' : 'en_US',
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: [`${baseUrl}/images/product-10.jpg`],
+        }
+    };
+}
+
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'About' });
 
     return (
         <main className="min-h-screen bg-[#09090b] text-white pt-32 pb-20">
             <div className="container mx-auto px-6">
+                <Breadcrumbs locale={locale} />
                 <FadeIn delay={0.2}>
                     <div className="text-center max-w-3xl mx-auto mb-20">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-thin tracking-tight mb-8 leading-[1.1]">

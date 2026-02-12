@@ -9,6 +9,7 @@ import { SmoothScroll } from '@/components/layout/SmoothScroll';
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 import { WhatsAppProvider } from '@/context/WhatsAppContext';
 import { WhatsAppPrivacyToast } from '@/components/ui/WhatsAppPrivacyToast';
+import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -66,10 +67,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans min-h-screen flex flex-col`}>
+      <body className={`${inter.variable} font-sans min-h-screen flex flex-col`} suppressHydrationWarning>
 
         <NextIntlClientProvider messages={messages}>
           <WhatsAppProvider>
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
             <SmoothScroll>
               <Navbar />
               <main className="flex-grow">

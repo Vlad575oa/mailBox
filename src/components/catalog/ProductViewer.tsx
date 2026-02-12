@@ -35,18 +35,6 @@ export function ProductViewer({ product }: ProductViewerProps) {
         handleClick(`https://wa.me/380673814404?text=${encodedMessage}`);
     };
 
-    // Get 3 images to show in the row: [previous, current, next]
-    const getVisibleIndices = () => {
-        if (images.length === 0) return [];
-        if (images.length === 1) return [0, 0, 0];
-        if (images.length === 2) return [currentIndex === 0 ? 1 : 0, currentIndex, currentIndex === 0 ? 1 : 0];
-
-        const prevIdx = (currentIndex - 1 + images.length) % images.length;
-        const nextIdx = (currentIndex + 1) % images.length;
-        return [prevIdx, currentIndex, nextIdx];
-    };
-
-    const visibleIndices = getVisibleIndices();
 
     return (
         <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-8">
@@ -56,63 +44,56 @@ export function ProductViewer({ product }: ProductViewerProps) {
                 {/* Left Balance Spacer (Visible only on Desktop) */}
                 <div className="hidden lg:block h-full w-full" />
 
-                {/* Center: 3-Image Gallery Strip with Drag/Swipe */}
+                {/* Center: Main Image with External Arrows */}
                 <div className="relative flex flex-col items-center w-full">
-                    <div className="relative w-full flex items-center justify-center gap-4 sm:gap-8 overflow-hidden py-0">
-                        {visibleIndices.map((idx, i) => {
-                            const isMain = i === 1;
-                            return (
-                                <motion.div
-                                    key={`${product.id}-${idx}-${i}`}
-                                    className={`relative aspect-square transition-all duration-700 overflow-hidden rounded-sm shadow-2xl ${isMain
-                                        ? 'w-[528px] sm:w-[1300px] lg:w-[2000px] z-20 cursor-grab active:cursor-grabbing border border-white/5'
-                                        : 'w-[140px] sm:w-[180px] scale-90 sm:block hidden pointer-events-none'
-                                        }`}
-                                    layoutId={isMain ? `main-img-${product.id}` : undefined}
-                                    drag={isMain ? "x" : false}
-                                    dragConstraints={{ left: 0, right: 0 }}
-                                    dragElastic={0.2}
-                                    onDragEnd={(_, info) => {
-                                        if (info.offset.x > 30) prevImage();
-                                        else if (info.offset.x < -30) nextImage();
-                                    }}
-                                >
-                                    <Image
-                                        src={images[idx]}
-                                        alt=""
-                                        fill
-                                        className="object-cover pointer-events-none"
-                                        sizes={isMain ? "800px" : "200px"}
-                                        priority={isMain}
-                                    />
-                                    {isMain && (
-                                        <>
-                                            <div className="absolute top-3 left-3 z-30">
-                                                <span className="px-2 py-0.5 bg-black/80 backdrop-blur-md text-[#C5A059] text-[8px] font-bold uppercase tracking-[0.2em] border border-[#C5A059]/30">
-                                                    {product.material}
-                                                </span>
-                                            </div>
+                    <div className="relative w-full flex items-center justify-center gap-4 sm:gap-10 py-0">
+                        {/* Left Arrow - Now outside */}
+                        <button
+                            onClick={(e) => { e.stopPropagation(); prevImage(); }}
+                            className="p-3 sm:p-4 bg-white/5 hover:bg-white/10 backdrop-blur-md rounded-full border border-white/10 text-white transition-all hover:scale-110 active:scale-90 z-30"
+                            aria-label="Previous image"
+                        >
+                            <FaChevronLeft size={20} />
+                        </button>
 
-                                            {/* Navigation Arrows Overlay (Desktop & Mobile) */}
-                                            <div className="absolute inset-0 flex items-center justify-between px-2 z-30 pointer-events-none">
-                                                <button
-                                                    onClick={(e) => { e.stopPropagation(); prevImage(); }}
-                                                    className="p-2 sm:p-3 bg-black/30 hover:bg-black/60 backdrop-blur-md rounded-full pointer-events-auto border border-white/10 text-white transition-all hover:scale-110 active:scale-90"
-                                                >
-                                                    <FaChevronLeft size={16} />
-                                                </button>
-                                                <button
-                                                    onClick={(e) => { e.stopPropagation(); nextImage(); }}
-                                                    className="p-2 sm:p-3 bg-black/30 hover:bg-black/60 backdrop-blur-md rounded-full pointer-events-auto border border-white/10 text-white transition-all hover:scale-110 active:scale-90"
-                                                >
-                                                    <FaChevronRight size={16} />
-                                                </button>
-                                            </div>
-                                        </>
-                                    )}
-                                </motion.div>
-                            );
-                        })}
+                        <motion.div
+                            key={`${product.id}-${currentIndex}`}
+                            className="relative aspect-square w-full max-w-[600px] overflow-hidden rounded-sm shadow-2xl border border-white/5 z-20 cursor-grab active:cursor-grabbing"
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -20 }}
+                            transition={{ duration: 0.4 }}
+                            drag="x"
+                            dragConstraints={{ left: 0, right: 0 }}
+                            dragElastic={0.2}
+                            onDragEnd={(_, info) => {
+                                if (info.offset.x > 30) prevImage();
+                                else if (info.offset.x < -30) nextImage();
+                            }}
+                        >
+                            <Image
+                                src={images[currentIndex]}
+                                alt={t(`products.${product.id}`)}
+                                fill
+                                className="object-cover pointer-events-none"
+                                sizes="(max-width: 768px) 100vw, 800px"
+                                priority
+                            />
+                            <div className="absolute top-3 left-3 z-30">
+                                <span className="px-2 py-0.5 bg-black/80 backdrop-blur-md text-[#C5A059] text-[8px] font-bold uppercase tracking-[0.2em] border border-[#C5A059]/30">
+                                    {product.material}
+                                </span>
+                            </div>
+                        </motion.div>
+
+                        {/* Right Arrow - Now outside */}
+                        <button
+                            onClick={(e) => { e.stopPropagation(); nextImage(); }}
+                            className="p-3 sm:p-4 bg-white/5 hover:bg-white/10 backdrop-blur-md rounded-full border border-white/10 text-white transition-all hover:scale-110 active:scale-90 z-30"
+                            aria-label="Next image"
+                        >
+                            <FaChevronRight size={20} />
+                        </button>
                     </div>
 
                     {/* Image Pager (Thumbnails for selection) - Reduced Size by 50% from previous */}

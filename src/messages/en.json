@@ -100,6 +100,12 @@
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "We specialize in the production of premium architectural hatches and metal structures.",
         "collection_title": "Mailboxes your neighbors don't have",
+        "product_details": "Product Details",
+        "search_placeholder": "Search by title...",
+        "all_materials": "All Materials",
+        "material_corten": "Corten Steel",
+        "material_steel": "Steel",
+        "no_products_found": "No products found",
         "products": {
             "1": "Custom Wall Mount Corten Steel Mailbox",
             "2": "Custom order for Joe (Corten Steel)",

@@ -14,6 +14,21 @@ export function WhatsAppButton() {
     const greeting = encodeURIComponent(t('greeting'));
     const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${greeting}`;
 
+    const trackConversion = (label: string) => {
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+            (window as any).gtag('event', 'click_whatsapp_cta', {
+                'event_category': 'conversion',
+                'event_label': label,
+                'transport_type': 'beacon'
+            });
+        }
+    };
+
+    const handleWhatsAppClick = (url: string, label: string) => {
+        trackConversion(label);
+        handleClick(url);
+    };
+
     return (
         <>
             {/* Mobile Sticky Button */}
@@ -25,7 +40,7 @@ export function WhatsAppButton() {
                     </div>
 
                     <button
-                        onClick={() => handleClick(whatsappUrl)}
+                        onClick={() => handleWhatsAppClick(whatsappUrl, 'Mobile Sticky Button')}
                         className="mx-auto py-[13px] px-6 rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.2)] active:scale-98 transition-all duration-300 flex items-center justify-center gap-2 relative overflow-hidden text-white border border-white/10"
                         aria-label="Contact us on WhatsApp"
                     >
@@ -50,7 +65,7 @@ export function WhatsAppButton() {
 
                 {/* Button */}
                 <button
-                    onClick={() => handleClick(whatsappUrl)}
+                    onClick={() => handleWhatsAppClick(whatsappUrl, 'Desktop Floating Button')}
                     className="bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_15px_40px_rgba(37,211,102,0.5)] hover:scale-110 active:scale-95 transition-all duration-500 flex items-center justify-center group relative overflow-hidden pointer-events-auto"
                     aria-label="Contact us on WhatsApp"
                 >

@@ -6,6 +6,7 @@ import { CollectionCarousel } from '@/components/catalog/CollectionCarousel';
 import productsData from '@/data/products.json';
 import { Product } from '@/types';
 import { routing } from '@/i18n/routing';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export async function generateStaticParams() {
     const products = productsData as Product[];
@@ -34,8 +35,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         languages[loc] = `${baseUrl}/${loc}/catalog/${product.id}`;
     });
 
-    const title = `${t(`products.${product.id}`)} | FerrumDecor`;
-    const description = `${t(`products.${product.id}`)} - ${t('description')}`;
+    const productTitle = t(`products.${product.id}`);
+    const title = `${productTitle} | FerrumDecor`;
+    const description = `${productTitle} - ${product.material} ${product.category}. ${t('description')}`;
 
     return {
         title,
@@ -51,13 +53,29 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             title,
             description,
             url: canonicalUrl,
-            images: [{ url: product.image }]
+            siteName: 'FerrumDecor',
+            images: [
+                {
+                    url: `${baseUrl}${product.image}`,
+                    width: 1200,
+                    height: 630,
+                    alt: productTitle,
+                }
+            ],
+            locale: locale === 'de' ? 'de_DE' : 'en_US',
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: [`${baseUrl}${product.image}`],
         }
     };
 }
 
 export default async function ProductPage({ params }: { params: Promise<{ locale: string; id: string }> }) {
-    const { id } = await params;
+    const { locale, id } = await params;
     const products = productsData as Product[];
     const product = products.find(p => p.id === Number(id));
 
@@ -65,9 +83,40 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
         notFound();
     }
 
+    const t = await getTranslations({ locale, namespace: 'Catalog' });
+    const baseUrl = 'https://ferrumdecorstudio.shop';
+    const productName = t(`products.${product.id}`);
+
+    const productSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: productName,
+        image: `${baseUrl}${product.image}`,
+        description: `${productName} - ${product.material} ${product.category}. Handcrafted excellence.`,
+        sku: `FD-MB-${product.id}`,
+        brand: {
+            '@type': 'Brand',
+            name: 'FerrumDecor'
+        },
+        offers: {
+            '@type': 'Offer',
+            url: `${baseUrl}/${locale}/catalog/${product.id}`,
+            priceCurrency: 'USD',
+            price: product.priceNumeric,
+            availability: 'https://schema.org/InStock',
+            priceValidUntil: '2026-12-31'
+        }
+    };
+
     return (
         <div className="pt-24 bg-[#050505] min-h-screen">
             <section className="relative w-full pt-4 pb-0 overflow-hidden min-h-[calc(100vh-6rem)]">
+                {/* Product Schema */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+                />
+
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -85,6 +134,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#1a1a1a] via-[#050505] to-[#000000] opacity-40 pointer-events-none z-1" />
 
                 <div className="container relative z-10 mx-auto">
+                    <Breadcrumbs locale={locale} />
                     <ProductViewer product={product} />
 
                     <div className="mt-8 sm:mt-12">

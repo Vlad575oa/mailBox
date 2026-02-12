@@ -43,7 +43,7 @@ export function FAQ() {
                 src="/images/backFAQ.webp"
                 alt="FAQ Background"
                 fill
-                className="object-cover opacity-30"
+                className="object-cover opacity-60"
                 quality={100}
                 priority
                 sizes="100vw"
@@ -91,6 +91,25 @@ export function FAQ() {
                         </FadeIn>
                     ))}
                 </div>
+
+                {/* FAQ Schema */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            '@context': 'https://schema.org',
+                            '@type': 'FAQPage',
+                            mainEntity: faqs.map(faq => ({
+                                '@type': 'Question',
+                                name: faq.question,
+                                acceptedAnswer: {
+                                    '@type': 'Answer',
+                                    text: faq.answer
+                                }
+                            }))
+                        })
+                    }}
+                />
             </div>
         </section>
     );

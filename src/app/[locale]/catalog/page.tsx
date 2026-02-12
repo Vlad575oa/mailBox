@@ -4,6 +4,7 @@ import { ScrollToTop } from '@/components/ui/ScrollToTop';
 import { getTranslations } from 'next-intl/server';
 import productsData from '@/data/products.json';
 import { Product } from '@/types';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -32,8 +33,8 @@ export async function generateMetadata({ params, searchParams }: Props) {
     });
 
     const title = product
-        ? `${t(`products.${product.id}`)} | FerrumDecor`
-        : `${t('title_start')} ${t('title_end')} | FerrumDecor`;
+        ? t(`products.${product.id}`)
+        : `${t('title_start')} ${t('title_end')}`;
 
     const description = product
         ? `${t(`products.${product.id}`)} - ${t('description')}`
@@ -60,11 +61,16 @@ export async function generateMetadata({ params, searchParams }: Props) {
     };
 }
 
-export default function CatalogPage() {
+export default async function CatalogPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+
     // Catalog page render
     return (
         <div className="pt-24 bg-[#050505] min-h-screen">
             <ScrollToTop />
+            <div className="container mx-auto px-6 mt-8 relative z-10">
+                <Breadcrumbs locale={locale} />
+            </div>
             <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
                 <ProductCatalog />
             </Suspense>
