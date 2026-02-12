@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import productsData from '@/data/products.json';
@@ -37,7 +39,7 @@ export function ProductCatalog() {
     }, [selectedProduct.id]);
 
     return (
-        <section className="relative w-full bg-[#050505] pt-4 pb-0 overflow-hidden" id="catalog">
+        <section className="relative w-full bg-[#050505] pt-4 pb-0 overflow-hidden min-h-screen" id="catalog">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -54,25 +56,28 @@ export function ProductCatalog() {
             {/* Background Effects */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#1a1a1a] via-[#050505] to-[#000000] opacity-40 pointer-events-none z-1" />
 
-            <div className="container relative z-10 mx-auto">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={selectedProduct.id}
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 1.02 }}
-                        transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
-                    >
-                        <ProductViewer product={selectedProduct} />
-                    </motion.div>
-                </AnimatePresence>
+            <div className="container relative z-10 mx-auto px-4 pb-12">
+                <div className="mt-4 md:mt-0">
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={selectedProduct.id}
+                            initial={{ opacity: 0, scale: 0.98 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 1.02 }}
+                            transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
+                        >
+                            <ProductViewer product={selectedProduct} />
+                        </motion.div>
+                    </AnimatePresence>
 
-                <div className="mt-8 sm:mt-12">
-                    <CollectionCarousel
-                        products={products}
-                        activeId={selectedProduct.id}
-                        onSelect={setSelectedProduct}
-                    />
+                    <div className="mt-8 sm:mt-12">
+                        <CollectionCarousel
+                            products={products}
+                            activeId={selectedProduct.id}
+                            onSelect={setSelectedProduct}
+                            useLinks={true}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

@@ -3,8 +3,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
+import { FaWhatsapp } from 'react-icons/fa';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
+import { useWhatsApp } from '@/context/WhatsAppContext';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 import productsData from '@/data/products.json';
@@ -21,6 +23,8 @@ const products = productsData.map((item) => ({
 export function Hero() {
     // Re-trigger build
     const t = useTranslations('Hero');
+    const tWA = useTranslations('WhatsApp');
+    const { handleClick } = useWhatsApp();
     const { scrollY } = useScroll();
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
@@ -150,16 +154,20 @@ export function Hero() {
 
                         <FadeIn delay={1.0}>
                             <div className="flex gap-4 justify-center lg:justify-start">
-                                <a href="https://ferrumdecorstudio.shop/collections/mail-boxes" target="_blank" rel="noopener noreferrer">
-                                    <Button variant="gold" size="lg" className="min-w-[280px] py-4 h-auto flex flex-col items-center justify-center shadow-xl shadow-[#C5A059]/20 tracking-widest leading-tight">
-                                        <span className="text-xl font-bold uppercase">{t('cta_buy')}</span>
-                                        <span className="text-xs font-medium text-black/60 tracking-tight lowercase">{t('cta_buy_note')}</span>
-                                    </Button>
-                                </a>
+                                <Button
+                                    onClick={() => handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`)}
+                                    variant="gold"
+                                    size="lg"
+                                    className="min-w-[280px] py-2 md:py-3 h-auto flex items-center justify-center gap-3 shadow-xl shadow-[#C5A059]/20 tracking-widest leading-tight px-6 group"
+                                >
+                                    <FaWhatsapp size={24} className="text-black/80" />
+                                    <div className="flex flex-col items-center">
+                                        <span className="text-base md:text-base font-bold uppercase">{t('cta_hero_line1')}</span>
+                                        <span className="text-[13px] md:text-xs font-medium text-black/70 lowercase">{t('cta_hero_line2')}</span>
+                                    </div>
+                                </Button>
                             </div>
-                            <p className="mt-8 text-lg font-light text-white/90">
-                                {t('main_shop_note')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-[#C5A059] font-medium hover:underline">ferrumdecorstudio.shop</a>
-                            </p>
+
                         </FadeIn>
                     </div>
 

@@ -41,8 +41,11 @@
             "customization_title": "パーソナライズ",
             "customization_desc": "あなたの住所、あなたのスタイル、あなたの選択。",
             "durability_title": "耐久性",
-            "durability_desc": "腐食に対する50年保証。"
+            "durability_desc": "腐食に対する10年保証。"
         },
+        "cta_whatsapp": "個人的なオファーを入手",
+        "cta_hero_line1": "5%割引",
+        "cta_hero_line2": "無料相談",
         "stats": {
             "exp_value": "5+",
             "exp_label": "長年の経験",
@@ -71,7 +74,7 @@
         },
         "durability": {
             "title": "耐久性",
-            "description": "腐食に対する50年保証。"
+            "description": "腐食に対する10年保証。"
         },
         "customization": {
             "title": "カスタマイズ",
@@ -92,7 +95,7 @@
         "brass": "真鍮",
         "steel": "鋼鉄",
         "no_products": "商品が見つかりませんでした。",
-        "buy_now": "今すぐ注文",
+        "buy_now": "5%割引を受け取る",
         "buy_now_note": "ferrumdecorstudio.shop で",
         "buy_intro": "公式サイトおよびオンラインストアで注文と支払いが可能です",
         "shop_link_text": "ferrumdecorstudio.shop",

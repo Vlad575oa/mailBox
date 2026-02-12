@@ -7,6 +7,8 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SmoothScroll } from '@/components/layout/SmoothScroll';
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
+import { WhatsAppProvider } from '@/context/WhatsAppContext';
+import { WhatsAppPrivacyToast } from '@/components/ui/WhatsAppPrivacyToast';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -23,6 +25,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     description: t('description'),
     keywords: t('keywords'),
+    icons: {
+      icon: [
+        { url: '/favicon.ico' },
+        { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      ],
+    },
+    manifest: '/manifest.json',
     openGraph: {
       title: t('title'),
       description: t('description'),
@@ -54,15 +67,19 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col`}>
+
         <NextIntlClientProvider messages={messages}>
-          <SmoothScroll>
-            <Navbar />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
-            <WhatsAppButton />
-          </SmoothScroll>
+          <WhatsAppProvider>
+            <SmoothScroll>
+              <Navbar />
+              <main className="flex-grow">
+                {children}
+              </main>
+              <Footer />
+              <WhatsAppButton />
+              <WhatsAppPrivacyToast />
+            </SmoothScroll>
+          </WhatsAppProvider>
         </NextIntlClientProvider>
         <script
           type="application/ld+json"

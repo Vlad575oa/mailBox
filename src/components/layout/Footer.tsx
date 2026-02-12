@@ -2,12 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaInstagram, FaPinterest } from 'react-icons/fa';
+import { FaInstagram, FaPinterest, FaWhatsapp } from 'react-icons/fa';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
 
 export function Footer() {
     const t = useTranslations('Footer');
+    const tWA = useTranslations('WhatsApp');
 
     return (
         <footer id="contact" className="bg-gray-950 text-white border-t border-white/5 pt-12 pb-8">
@@ -21,6 +22,9 @@ export function Footer() {
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
                                 {t('slogan')}
                             </p>
+                            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                                {t('shop_notice')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-[#C5A059] hover:underline">ferrumdecorstudio.shop</a>
+                            </p>
                             <div className="flex gap-4">
                                 <a href="https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#C5A059] hover:text-white transition-all text-gray-400 group/icon">
                                     <FaInstagram size={18} className="group-hover/icon:scale-110 transition-transform" />
@@ -28,6 +32,14 @@ export function Footer() {
                                 <a href="https://ru.pinterest.com/kushpick0173/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#C5A059] hover:text-white transition-all text-gray-400 group/icon">
                                     <FaPinterest size={18} className="group-hover/icon:scale-110 transition-transform" />
                                 </a>
+                                <div className="relative group/icon">
+                                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-xl text-xs font-light tracking-wide shadow-xl opacity-0 translate-y-4 invisible transition-all duration-500 delay-[3000ms] group-hover/icon:opacity-100 group-hover/icon:translate-y-0 group-hover/icon:delay-0 group-hover/icon:visible w-64 text-center z-50">
+                                        {tWA('tooltip')} <a href="/privacy" className="underline hover:text-white font-medium transition-colors">{tWA('privacy_link')}</a>
+                                    </div>
+                                    <a href={`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`} target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all text-gray-400">
+                                        <FaWhatsapp size={18} className="group-hover/icon:scale-110 transition-transform" />
+                                    </a>
+                                </div>
                             </div>
                         </FadeIn>
                     </div>
@@ -38,6 +50,8 @@ export function Footer() {
                             <ul className="space-y-4 text-gray-400 text-sm">
                                 <li><a href="/#faq" className="hover:text-[#C5A059] transition-colors">FAQ</a></li>
                                 <li><Link href="/contact" className="hover:text-[#C5A059] transition-colors">{t('links.contact')}</Link></li>
+                                <li><a href="tel:+380673814404" className="hover:text-[#C5A059] transition-colors">+380 67 381 44 04</a></li>
+                                <li><a href="mailto:ferrumdecorstudio@icloud.com" className="hover:text-[#C5A059] transition-colors">ferrumdecorstudio@icloud.com</a></li>
                             </ul>
                         </FadeIn>
                     </div>
@@ -63,7 +77,7 @@ export function Footer() {
                                     alt="Developer Logo"
                                     width={32}
                                     height={32}
-                                    className="rounded-full transition-all duration-300 opacity-70 group-hover/developer:opacity-100 group-active/developer:opacity-100"
+                                    className="rounded-full transition-all duration-300 opacity-30 group-hover/developer:opacity-100 group-active/developer:opacity-100"
                                 />
                             </a>
                         </div>
@@ -102,7 +116,7 @@ export function Footer() {
                                     alt="Developer Logo"
                                     width={28}
                                     height={28}
-                                    className="rounded-full transition-all duration-300 opacity-60 hover:opacity-100 group-hover/developer:scale-110"
+                                    className="rounded-full transition-all duration-300 opacity-30 hover:opacity-100 group-hover/developer:scale-110"
                                 />
                             </a>
                         </div>

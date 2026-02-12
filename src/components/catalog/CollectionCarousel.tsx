@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Product } from '@/types';
@@ -10,10 +11,11 @@ import { useTranslations } from 'next-intl';
 interface CollectionCarouselProps {
     products: Product[];
     activeId: number;
-    onSelect: (product: Product) => void;
+    onSelect?: (product: Product) => void;
+    useLinks?: boolean;
 }
 
-export function CollectionCarousel({ products, activeId, onSelect }: CollectionCarouselProps) {
+export function CollectionCarousel({ products, activeId, onSelect, useLinks = false }: CollectionCarouselProps) {
     const t = useTranslations('Catalog');
     const wrapperRef = useRef<HTMLDivElement>(null);
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -51,8 +53,8 @@ export function CollectionCarousel({ products, activeId, onSelect }: CollectionC
             {/* Header Line */}
             <div className="max-w-7xl mx-auto flex items-center justify-between gap-8 mb-4">
                 <div className="h-[1px] flex-grow bg-white/10" />
-                <span className="text-[9px] uppercase tracking-[0.4em] font-medium text-white/30 whitespace-nowrap">
-                    collection browse
+                <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] whitespace-nowrap drop-shadow-[0_0_10px_rgba(197,160,89,0.3)]">
+                    {t('collection_title')}
                 </span>
                 <div className="h-[1px] flex-grow bg-white/10" />
             </div>
@@ -80,17 +82,8 @@ export function CollectionCarousel({ products, activeId, onSelect }: CollectionC
                     >
                         {products.map((product) => {
                             const isActive = product.id === activeId;
-                            return (
-                                <motion.button
-                                    key={product.id}
-                                    onClick={() => onSelect(product)}
-                                    className={`relative flex-shrink-0 flex flex-col items-center transition-all duration-700 ${isActive ? 'w-[40px] sm:w-[50px]' : 'w-[28px] sm:w-[35px] opacity-100 grayscale-0 hover:opacity-100'
-                                        }`}
-                                    animate={{
-                                        scale: isActive ? 1.05 : 0.95,
-                                        y: isActive ? -2 : 0
-                                    }}
-                                >
+                            const ItemContent = (
+                                <>
                                     <div className={`relative aspect-[3/4] w-full overflow-hidden bg-white/5 border transition-all duration-300 ${isActive ? 'border-[#C5A059] shadow-[0_0_10px_rgba(197,160,89,0.3)]' : 'border-white/5'}`}>
                                         <Image
                                             src={product.image}
@@ -106,6 +99,41 @@ export function CollectionCarousel({ products, activeId, onSelect }: CollectionC
                                     <span className={`text-[5px] uppercase tracking-[0.2em] text-center truncate w-full mt-1.5 transition-colors duration-300 ${isActive ? 'text-[#C5A059] font-bold' : 'text-white/40 font-light'}`}>
                                         {t(`products.${product.id}`)}
                                     </span>
+                                </>
+                            );
+
+                            if (useLinks) {
+                                return (
+                                    <Link
+                                        key={product.id}
+                                        href={`/catalog/${product.id}`}
+                                        className={`relative flex-shrink-0 flex flex-col items-center transition-all duration-700 ${isActive ? 'w-[40px] sm:w-[50px]' : 'w-[28px] sm:w-[35px] opacity-100 grayscale-0 hover:opacity-100'}`}
+                                    >
+                                        <motion.div
+                                            animate={{
+                                                scale: isActive ? 1.05 : 0.95,
+                                                y: isActive ? -2 : 0
+                                            }}
+                                            className="w-full h-full flex flex-col items-center"
+                                        >
+                                            {ItemContent}
+                                        </motion.div>
+                                    </Link>
+                                );
+                            }
+
+                            return (
+                                <motion.button
+                                    key={product.id}
+                                    onClick={() => onSelect && onSelect(product)}
+                                    className={`relative flex-shrink-0 flex flex-col items-center transition-all duration-700 ${isActive ? 'w-[40px] sm:w-[50px]' : 'w-[28px] sm:w-[35px] opacity-100 grayscale-0 hover:opacity-100'
+                                        }`}
+                                    animate={{
+                                        scale: isActive ? 1.05 : 0.95,
+                                        y: isActive ? -2 : 0
+                                    }}
+                                >
+                                    {ItemContent}
                                 </motion.button>
                             );
                         })}

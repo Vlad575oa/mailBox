@@ -6,15 +6,18 @@ import { usePathname } from 'next/navigation';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion, useScroll } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
+import { useWhatsApp } from '@/context/WhatsAppContext';
 
 export function Navbar() {
     const t = useTranslations('Navbar');
+    const tWA = useTranslations('WhatsApp');
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const pathname = usePathname();
     const isCatalogPage = pathname.includes('/catalog');
     const { scrollY } = useScroll();
+    const { handleClick } = useWhatsApp();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -83,32 +86,44 @@ export function Navbar() {
 
                         <div className="flex items-center gap-6">
 
-                            <LanguageSwitcher isScrolled={isScrolled} />
+                            <div className="relative group">
+                                <div className="absolute top-full right-0 mt-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-xl text-xs font-light tracking-wide shadow-xl opacity-0 translate-y-4 invisible transition-all duration-500 delay-[3000ms] group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-0 group-hover:visible w-64 text-right z-50">
+                                    {tWA('tooltip')} <Link href="/privacy" className="underline hover:text-[#25D366] transition-colors">{tWA('privacy_link')}</Link>
+                                </div>
+                                <button
+                                    onClick={() => handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`)}
+                                    className="text-white hover:text-[#25D366] transition-colors hover:scale-110 duration-300 block"
+                                >
+                                    <FaWhatsapp size={24} />
+                                </button>
+                            </div>
 
-                            <a
-                                href="https://ferrumdecorstudio.shop/collections/mail-boxes"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`relative px-8 py-3 ml-8 overflow-hidden group rounded-full transition-all duration-500 bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-[length:200%_auto] hover:bg-right hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] flex flex-col items-center justify-center leading-tight`}
-                            >
-                                <span className={`relative text-base font-bold tracking-wider uppercase transition-colors text-black`}>
-                                    {t('shop')}
-                                </span>
-                                <span className="relative text-[10px] font-medium text-black/70 tracking-tight lowercase">
-                                    {t('shop_note')}
-                                </span>
-                            </a>
+                            <LanguageSwitcher isScrolled={isScrolled} />
                         </div>
                     </div>
 
-                    {/* Mobile Menu Toggle */}
-                    <button
-                        className="md:hidden p-2 text-white/80 hover:text-white transition-colors"
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-                    </button>
+                    {/* Mobile Actions */}
+                    <div className="flex items-center gap-4 md:hidden">
+                        <div className="relative group">
+                            <div className="absolute top-full right-0 mt-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-xl text-xs font-light tracking-wide shadow-xl opacity-0 translate-y-4 pointer-events-none transition-all duration-500 delay-[3000ms] group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-0 group-hover:pointer-events-auto w-64 text-right z-50">
+                                {tWA('tooltip')} <Link href="/privacy" className="underline hover:text-[#25D366] transition-colors">{tWA('privacy_link')}</Link>
+                            </div>
+                            <button
+                                onClick={() => handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`)}
+                                className="text-white hover:text-[#25D366] transition-colors block"
+                            >
+                                <FaWhatsapp size={24} />
+                            </button>
+                        </div>
+                        <LanguageSwitcher isScrolled={isScrolled} />
+                        <button
+                            className="p-2 text-white/80 hover:text-white transition-colors"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            aria-label="Toggle menu"
+                        >
+                            {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                        </button>
+                    </div>
                 </div>
             </motion.header>
 
@@ -148,16 +163,6 @@ export function Navbar() {
 
                             <div className="flex flex-col items-center gap-6">
                                 <LanguageSwitcher isScrolled={isScrolled} />
-
-                                <a
-                                    href="https://ferrumdecorstudio.shop/collections/mail-boxes"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-full max-w-[240px] flex flex-col items-center justify-center px-6 py-4 rounded-full bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-[length:200%_auto] hover:bg-right text-black transition-all duration-500 shadow-lg shadow-[#C5A059]/20 leading-tight"
-                                >
-                                    <span className="text-base font-bold tracking-widest uppercase">{t('shop')}</span>
-                                    <span className="text-[10px] font-medium text-black/70 tracking-tight lowercase">{t('shop_note')}</span>
-                                </a>
                             </div>
                         </div>
                     </motion.div>

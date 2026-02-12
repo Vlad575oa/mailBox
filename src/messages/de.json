@@ -41,8 +41,11 @@
             "customization_title": "Personalisierung",
             "customization_desc": "Ihre Adresse, Ihr Stil, Ihre Wahl.",
             "durability_title": "Langlebigkeit",
-            "durability_desc": "50 Jahre Garantie gegen Durchrostung."
+            "durability_desc": "10 Jahre Garantie gegen Durchrostung."
         },
+        "cta_whatsapp": "Erhalten Sie ein persönliches Angebot",
+        "cta_hero_line1": "5% Rabatt",
+        "cta_hero_line2": "kostenlose Beratung",
         "stats": {
             "exp_value": "5+",
             "exp_label": "Jahre Erfahrung",
@@ -71,7 +74,7 @@
         },
         "durability": {
             "title": "Langlebigkeit",
-            "description": "50 Jahre Garantie gegen Durchrostung."
+            "description": "10 Jahre Garantie gegen Durchrostung."
         },
         "customization": {
             "title": "Anpassung",
@@ -92,7 +95,7 @@
         "brass": "Messing",
         "steel": "Stahl",
         "no_products": "Keine Produkte in dieser Kategorie gefunden.",
-        "buy_now": "Bestellen",
+        "buy_now": "Erhalten Sie Ihre 5% Rabatt",
         "buy_now_note": "auf ferrumdecorstudio.shop",
         "buy_intro": "Sie können eine Bestellung aufgeben und für Waren in unserem offiziellen Online-Shop bezahlen",
         "shop_link_text": "ferrumdecorstudio.shop",

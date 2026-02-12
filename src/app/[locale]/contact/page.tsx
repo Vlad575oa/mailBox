@@ -66,6 +66,12 @@ export default function ContactPage() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="mt-12 p-8 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm text-center">
+                        <p className="text-xl text-white/80 font-light">
+                            {t('shop_notice')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-[#C5A059] font-medium hover:underline">ferrumdecorstudio.shop</a>
+                        </p>
+                    </div>
                 </div>
 
                 {/* Decorative background elements */}

@@ -41,8 +41,11 @@
             "customization_title": "Персоналізація",
             "customization_desc": "Ваша адреса, ваш стиль, ваш вибір.",
             "durability_title": "Довговічність",
-            "durability_desc": "Гарантія 50 років на наскрізну корозію."
+            "durability_desc": "10 років гарантії від наскрізної корозії."
         },
+        "cta_whatsapp": "Отримати персональну пропозицію",
+        "cta_hero_line1": "Знижка 5%",
+        "cta_hero_line2": "безкоштовна консультація",
         "stats": {
             "exp_value": "5+",
             "exp_label": "Років Досвіду",
@@ -92,7 +95,7 @@
         "brass": "Латунь",
         "steel": "Сталь",
         "no_products": "В цій категорії товарів не знайдено.",
-        "buy_now": "Замовити",
+        "buy_now": "Заберіть свою знижку 5%",
         "buy_now_note": "на ferrumdecorstudio.shop",
         "buy_intro": "Оформити замовлення та оплатити товар ви можете в нашому офіційному інтернет-магазині",
         "shop_link_text": "ferrumdecorstudio.shop",

@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/Button';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useWhatsApp } from '@/context/WhatsAppContext'; // Add import
+import { FaWhatsapp } from 'react-icons/fa'; // Ensure import
 
 interface ProductViewerProps {
     product: Product;
@@ -14,8 +16,10 @@ interface ProductViewerProps {
 
 export function ProductViewer({ product }: ProductViewerProps) {
     const t = useTranslations('Catalog');
+    const tWA = useTranslations('WhatsApp');
     const images = product.images || [product.image];
     const [currentIndex, setCurrentIndex] = useState(0);
+    const { handleClick } = useWhatsApp();
 
     // Reset index when product changes
     useEffect(() => {
@@ -24,6 +28,12 @@ export function ProductViewer({ product }: ProductViewerProps) {
 
     const nextImage = () => setCurrentIndex((prev) => (prev + 1) % images.length);
     const prevImage = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+
+    const handleBuyClick = () => {
+        const message = `${tWA('greeting')} ${t('products.' + product.id)} - ${product.price}`;
+        const encodedMessage = encodeURIComponent(message);
+        handleClick(`https://wa.me/380673814404?text=${encodedMessage}`);
+    };
 
     // Get 3 images to show in the row: [previous, current, next]
     const getVisibleIndices = () => {
@@ -130,20 +140,18 @@ export function ProductViewer({ product }: ProductViewerProps) {
                 <div className="flex flex-col items-center lg:items-end lg:pt-24 lg:pl-16 gap-6 max-w-[320px] lg:max-w-none mx-auto lg:mx-0">
 
                     {/* Intro Text */}
-                    <p className="text-white/80 text-sm sm:text-base text-center lg:text-right leading-relaxed max-w-[340px]">
-                        {t('buy_intro')} <span className="text-[#C5A059] font-medium block mt-1">{t('shop_link_text')}</span>
-                    </p>
+
 
                     <div className="flex flex-col items-center lg:items-end gap-3">
-                        <a href={product.link} target="_blank" rel="noopener noreferrer" className="group">
-                            <Button
-                                className="relative rounded-full px-8 py-3 sm:px-10 sm:py-4 overflow-hidden group transition-all duration-500 bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-[length:200%_auto] hover:bg-right hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] flex flex-col items-center justify-center leading-tight min-w-[160px]"
-                            >
-                                <span className="relative text-sm sm:text-base font-bold tracking-wider uppercase text-black z-10">
-                                    {t('buy_now')}
-                                </span>
-                            </Button>
-                        </a>
+                        <Button
+                            onClick={handleBuyClick}
+                            className="relative rounded-full px-8 py-3 sm:px-10 sm:py-4 overflow-hidden group transition-all duration-500 bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-[length:200%_auto] hover:bg-right hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] flex flex-col items-center justify-center leading-tight min-w-[160px] animate-pulse"
+                        >
+                            <FaWhatsapp size={20} className="mb-1 text-black" />
+                            <span className="relative text-[10px] sm:text-xs font-bold tracking-wider uppercase text-black z-10">
+                                {t('buy_now')}
+                            </span>
+                        </Button>
 
                         <motion.p
                             key={product.price}

@@ -41,8 +41,11 @@
             "customization_title": "Personalizzazione",
             "customization_desc": "Il tuo indirizzo, il tuo stile, la tua scelta.",
             "durability_title": "Durabilità",
-            "durability_desc": "Garanzia 50 anni contro la corrosione passante."
+            "durability_desc": "Garanzia di 10 anni contro la corrosione passante."
         },
+        "cta_whatsapp": "Ricevi un'offerta personale",
+        "cta_hero_line1": "Sconto 5%",
+        "cta_hero_line2": "consulenza gratuita",
         "stats": {
             "exp_value": "5+",
             "exp_label": "Anni di Esperienza",
@@ -71,7 +74,7 @@
         },
         "durability": {
             "title": "Durabilità",
-            "description": "Garanzia 50 anni contro la corrosione passante."
+            "description": "Garanzia di 10 anni contro la corrosione passante."
         },
         "customization": {
             "title": "Personalizzazione",
@@ -92,7 +95,7 @@
         "brass": "Ottone",
         "steel": "Acciaio",
         "no_products": "Nessun prodotto trovato.",
-        "buy_now": "Ordina Ora",
+        "buy_now": "Richiedi il tuo sconto del 5%",
         "buy_now_note": "su ferrumdecorstudio.shop",
         "buy_intro": "Puoi effettuare un ordine e pagare la merce nel nostro negozio online ufficiale",
         "shop_link_text": "ferrumdecorstudio.shop",

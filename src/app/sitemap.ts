@@ -37,12 +37,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     products.forEach(product => {
         locales.forEach(locale => {
             sitemapEntries.push({
-                url: `${host}/${locale}/catalog?id=${product.id}`,
+                url: `${host}/${locale}/catalog/${product.id}`,
                 lastModified: new Date(),
                 changeFrequency: 'weekly',
                 priority: 0.9,
-                // We should ideally add alternates here too if Next.js supported them in sitemap easily, 
-                // but standard sitemap.xml doesn't enforce hreflang inside it (it's in the page head usually).
             });
         });
     });
