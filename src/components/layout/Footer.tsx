@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FaInstagram, FaPinterest, FaWhatsapp } from 'react-icons/fa';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
+import { sendGTMEvent } from '@/lib/gtm';
 
 export function Footer() {
     const t = useTranslations('Footer');
@@ -23,7 +24,7 @@ export function Footer() {
                                 {t('slogan')}
                             </p>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                                {t('shop_notice')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-[#C5A059] hover:underline">ferrumdecorstudio.shop</a>
+                                {t('shop_notice')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-[#C5A059] hover:underline" onClick={() => sendGTMEvent('shop_click', { location: 'footer' })}>ferrumdecorstudio.shop</a>
                             </p>
                             <div className="flex gap-4">
                                 <a href="https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#C5A059] hover:text-white transition-all text-gray-400 group/icon">
@@ -36,7 +37,7 @@ export function Footer() {
                                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-xl text-xs font-light tracking-wide shadow-xl opacity-0 translate-y-4 invisible transition-all duration-500 delay-[3000ms] group-hover/icon:opacity-100 group-hover/icon:translate-y-0 group-hover/icon:delay-0 group-hover/icon:visible w-64 text-center z-50">
                                         {tWA('tooltip')} <a href="/privacy" className="underline hover:text-white font-medium transition-colors">{tWA('privacy_link')}</a>
                                     </div>
-                                    <a href={`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`} target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all text-gray-400">
+                                    <a href={`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`} target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all text-gray-400" onClick={() => sendGTMEvent('whatsapp_click', { location: 'footer_icon' })}>
                                         <FaWhatsapp size={18} className="group-hover/icon:scale-110 transition-transform" />
                                     </a>
                                 </div>

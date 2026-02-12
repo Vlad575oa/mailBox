@@ -5,6 +5,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { sendGTMEvent } from '@/lib/gtm';
 
 export function FAQ() {
     const t = useTranslations('FAQ');
@@ -60,7 +61,7 @@ export function FAQ() {
                             {t('subtitle')}
                         </p>
                         <p className="mt-4 text-sm text-gray-500">
-                            {t('main_shop_note')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ferrumdecorstudio.shop</a>
+                            {t('main_shop_note')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" onClick={() => sendGTMEvent('shop_click', { location: 'faq' })}>ferrumdecorstudio.shop</a>
                         </p>
                     </FadeIn>
                 </div>

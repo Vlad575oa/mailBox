@@ -3,6 +3,7 @@
 import { useWhatsApp } from '@/context/WhatsAppContext';
 import { FaWhatsapp } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
+import { sendGTMEvent } from '@/lib/gtm';
 
 export function WhatsAppButton() {
     const t = useTranslations('WhatsApp');
@@ -15,6 +16,13 @@ export function WhatsAppButton() {
     const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${greeting}`;
 
     const trackConversion = (label: string) => {
+        sendGTMEvent('whatsapp_click', {
+            event_category: 'conversion',
+            event_label: label,
+            transport_type: 'beacon'
+        });
+
+        // Keep legacy gtag if needed, or remove. Keeping for safety as fallback
         if (typeof window !== 'undefined' && (window as any).gtag) {
             (window as any).gtag('event', 'click_whatsapp_cta', {
                 'event_category': 'conversion',

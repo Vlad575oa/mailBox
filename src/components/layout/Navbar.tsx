@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import { AnimatePresence, motion, useScroll } from 'framer-motion';
 import { FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { useWhatsApp } from '@/context/WhatsAppContext';
+import { sendGTMEvent } from '@/lib/gtm';
 
 export function Navbar() {
     const t = useTranslations('Navbar');
@@ -75,6 +76,11 @@ export function Navbar() {
                                                             `#${item}`
                                     }
                                     className={`relative text-lg font-medium tracking-wide transition-colors duration-300 group text-white hover:text-gradient-gold`}
+                                    onClick={() => {
+                                        if (item === 'catalog') {
+                                            sendGTMEvent('catalog_click', { location: 'navbar' });
+                                        }
+                                    }}
                                 >
                                     {t(item)}
                                     <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#C5A059] transition-all duration-300 group-hover:w-full"></span>
@@ -91,7 +97,10 @@ export function Navbar() {
                                     {tWA('tooltip')} <Link href="/privacy" className="underline hover:text-[#25D366] transition-colors">{tWA('privacy_link')}</Link>
                                 </div>
                                 <button
-                                    onClick={() => handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`)}
+                                    onClick={() => {
+                                        sendGTMEvent('whatsapp_click', { location: 'navbar_desktop' });
+                                        handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`);
+                                    }}
                                     className="text-white hover:text-[#25D366] transition-colors hover:scale-110 duration-300 block"
                                 >
                                     <FaWhatsapp size={24} />
@@ -109,7 +118,10 @@ export function Navbar() {
                                 {tWA('tooltip')} <Link href="/privacy" className="underline hover:text-[#25D366] transition-colors">{tWA('privacy_link')}</Link>
                             </div>
                             <button
-                                onClick={() => handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`)}
+                                onClick={() => {
+                                    sendGTMEvent('whatsapp_click', { location: 'navbar_mobile' });
+                                    handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`);
+                                }}
                                 className="text-white hover:text-[#25D366] transition-colors block"
                             >
                                 <FaWhatsapp size={24} />
@@ -152,7 +164,12 @@ export function Navbar() {
                                                                     `#${item}`
                                         }
                                         className="text-2xl font-light text-white/90 hover:text-[#C5A059] transition-colors"
-                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        onClick={() => {
+                                            setIsMobileMenuOpen(false);
+                                            if (item === 'catalog') {
+                                                sendGTMEvent('catalog_click', { location: 'mobile_menu' });
+                                            }
+                                        }}
                                     >
                                         {t(item)}
                                     </Link>

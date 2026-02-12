@@ -10,6 +10,8 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 import { WhatsAppProvider } from '@/context/WhatsAppContext';
 import { WhatsAppPrivacyToast } from '@/components/ui/WhatsAppPrivacyToast';
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
+import { GoogleTagManager, GoogleTagManagerNoScript } from '@/components/analytics/GoogleTagManager';
+import { PageViewTracker } from '@/components/analytics/PageViewTracker';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -68,9 +70,12 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col`} suppressHydrationWarning>
+        <GoogleTagManagerNoScript gtmId="GTM-TCSTJK3J" />
+        <GoogleTagManager gtmId="GTM-TCSTJK3J" />
 
         <NextIntlClientProvider messages={messages}>
           <WhatsAppProvider>
+            <PageViewTracker />
             <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
             <SmoothScroll>
               <Navbar />
