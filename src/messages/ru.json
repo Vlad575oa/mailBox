@@ -40,7 +40,7 @@
             "customization_title": "Персонализация",
             "customization_desc": "Ваш адрес, ваш стиль, ваш выбор.",
             "durability_title": "Долговечность",
-            "durability_desc": "Гарантия 10 лет на сквозную коррозию."
+            "durability_desc": "Гарантия 50 лет на сквозную коррозию."
         },
         "cta_whatsapp": "Подберем под ваш запрос",
         "cta_hero_line1": "Персональное",
@@ -72,7 +72,7 @@
         },
         "durability": {
             "title": "Долговечность",
-            "description": "Гарантия 10 лет на сквозную коррозию."
+            "description": "Гарантия 50 лет на сквозную коррозию."
         },
         "customization": {
             "title": "Персонализация",

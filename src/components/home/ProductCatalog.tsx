@@ -1,48 +1,24 @@
-'use client';
-
-import Link from 'next/link';
-
-import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 import productsData from '@/data/products.json';
 import { Product } from '@/types';
-import { ProductViewer } from '../catalog/ProductViewer';
-import { CollectionCarousel } from '../catalog/CollectionCarousel';
-import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { CatalogClientWrapper } from './CatalogClientWrapper';
 
-export function ProductCatalog() {
-    const t = useTranslations('Catalog');
+interface ProductCatalogProps {
+    id?: string;
+}
+
+export async function ProductCatalog({ id }: ProductCatalogProps) {
+    const t = await getTranslations('Catalog');
     const products = productsData as Product[];
-    const searchParams = useSearchParams();
-    const initialId = searchParams.get('id');
 
-    const initialProduct = initialId
-        ? products.find(p => p.id === Number(initialId)) || products[0]
+    const initialProduct = id
+        ? products.find(p => p.id === Number(id)) || products[0]
         : products[0];
-
-    const [selectedProduct, setSelectedProduct] = useState<Product>(initialProduct);
-
-    // Update selected product if URL param changes
-    useEffect(() => {
-        const id = searchParams.get('id');
-        if (id) {
-            const product = products.find(p => p.id === Number(id));
-            if (product) setSelectedProduct(product);
-        }
-    }, [searchParams, products]);
-
-    // Scroll to top on mobile when product changes
-    useEffect(() => {
-        if (typeof window !== 'undefined' && window.innerWidth < 768) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    }, [selectedProduct.id]);
 
     return (
         <section className="relative w-full bg-[#050505] pt-4 pb-0 overflow-hidden min-h-screen" id="catalog">
-            {/* Background Image */}
+            {/* Background Image - Server Rendered for LCP */}
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/images/back_catalog.webp"
@@ -50,6 +26,8 @@ export function ProductCatalog() {
                     fill
                     className="object-cover opacity-40"
                     priority
+                    fetchPriority="high"
+                    loading="eager"
                     sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-black/30" />
@@ -59,32 +37,14 @@ export function ProductCatalog() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#1a1a1a] via-[#050505] to-[#000000] opacity-40 pointer-events-none z-1" />
 
             <div className="container relative z-10 mx-auto px-4 pb-12">
-                <div className="mt-4 md:mt-0">
-                    <h1 className="sr-only">
-                        {t('title_start')} {t('title_end')}
-                    </h1>
+                <h1 className="sr-only">
+                    {t('title_start')} {t('title_end')}
+                </h1>
 
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={selectedProduct.id}
-                            initial={{ opacity: 0, scale: 0.98 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 1.02 }}
-                            transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
-                        >
-                            <ProductViewer product={selectedProduct} />
-                        </motion.div>
-                    </AnimatePresence>
-
-                    <div className="mt-8 sm:mt-12">
-                        <CollectionCarousel
-                            products={products}
-                            activeId={selectedProduct.id}
-                            onSelect={setSelectedProduct}
-                            useLinks={true}
-                        />
-                    </div>
-                </div>
+                <CatalogClientWrapper
+                    products={products}
+                    initialProduct={initialProduct}
+                />
             </div>
         </section>
     );

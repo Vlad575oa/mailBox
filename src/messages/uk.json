@@ -40,7 +40,7 @@
             "customization_title": "Персоналізація",
             "customization_desc": "Ваша адреса, ваш стиль, ваш вибір.",
             "durability_title": "Довговічність",
-            "durability_desc": "10 років гарантії від наскрізної корозії."
+            "durability_desc": "50 років гарантії від наскрізної корозії."
         },
         "cta_whatsapp": "Отримати персональну пропозицію",
         "cta_hero_line1": "Персональна",
@@ -100,6 +100,13 @@
         "buy_intro": "Оформити замовлення та оплатити товар ви можете в нашому офіційному інтернет-магазині",
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "Ми спеціалізуємося на виробництві преміальних архітектурних люків та металоконструкцій.",
+        "collection_title": "Поштові скриньки, яких немає у сусідів",
+        "product_details": "Деталі товару",
+        "search_placeholder": "Пошук за назвою...",
+        "all_materials": "Всі матеріали",
+        "material_corten": "Corten Steel",
+        "material_steel": "Сталь",
+        "no_products_found": "Товари не знайдено",
         "products": {
             "1": "Індивідуальна настінна поштова скринька зі сталі Corten",
             "2": "Індивідуальне замовлення для Joe (Сталь Corten)",
@@ -238,7 +245,8 @@
         "delivery_value": "Міжнародна доставка доступна для більшості країн.",
         "social_label": "Соціальні мережі",
         "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
-        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/",
+        "shop_notice": "Відвідайте наш основний магазин для покупок: "
     },
     "About": {
         "title_start": "Про",

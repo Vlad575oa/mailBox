@@ -65,8 +65,9 @@ export async function generateMetadata({ params, searchParams }: Props) {
     };
 }
 
-export default async function CatalogPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function CatalogPage({ params, searchParams }: Props) {
     const { locale } = await params;
+    const { id } = await searchParams;
 
     // Catalog page render
     return (
@@ -75,8 +76,12 @@ export default async function CatalogPage({ params }: { params: Promise<{ locale
             <div className="container mx-auto px-6 mt-0 relative z-10">
                 <Breadcrumbs locale={locale} />
             </div>
-            <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
-                <ProductCatalog />
+            <Suspense fallback={
+                <div className="min-h-screen bg-[#050505] flex items-center justify-center">
+                    <div className="animate-pulse text-[#C5A059] font-serif italic text-xl">FerrumDecor...</div>
+                </div>
+            }>
+                <ProductCatalog id={id as string} />
             </Suspense>
         </div>
     );

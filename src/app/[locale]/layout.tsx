@@ -1,20 +1,23 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import '../globals.css';
+import { Inter } from 'next/font/google';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { SmoothScroll } from '@/components/layout/SmoothScroll';
-import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 import { WhatsAppProvider } from '@/context/WhatsAppContext';
-import { WhatsAppPrivacyToast } from '@/components/ui/WhatsAppPrivacyToast';
-import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
-import { GoogleTagManager, GoogleTagManagerNoScript } from '@/components/analytics/GoogleTagManager';
-import { PageViewTracker } from '@/components/analytics/PageViewTracker';
-import { CookieConsent } from '@/components/ui/CookieConsent';
+import { GoogleTagManagerNoScript } from '@/components/analytics/GoogleTagManager';
+import { ClientSideUtilities } from '@/components/providers/ClientSideUtilities';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+
+
+const inter = Inter({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-inter',
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial']
+});
 import { routing } from '@/i18n/routing';
 
 export function generateStaticParams() {
@@ -77,22 +80,16 @@ export default async function RootLayout({
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col`} suppressHydrationWarning>
         <GoogleTagManagerNoScript gtmId="GTM-TCSTJK3J" />
-        <GoogleTagManager gtmId="GTM-TCSTJK3J" />
 
         <NextIntlClientProvider messages={messages}>
           <WhatsAppProvider>
-            <PageViewTracker />
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
-            <SmoothScroll>
+            <ClientSideUtilities gaId={process.env.NEXT_PUBLIC_GA_ID || ''}>
               <Navbar />
               <main className="flex-grow">
                 {children}
               </main>
               <Footer />
-              <WhatsAppButton />
-              <WhatsAppPrivacyToast />
-              <CookieConsent />
-            </SmoothScroll>
+            </ClientSideUtilities>
           </WhatsAppProvider>
         </NextIntlClientProvider>
         <script

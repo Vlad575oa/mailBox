@@ -1,39 +1,18 @@
-'use client';
-
-import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import { useRef } from 'react';
-import { useTranslations } from 'next-intl';
-
+import { getTranslations } from 'next-intl/server';
 import { getShimmerPlaceholder } from '@/lib/image-utils';
 
-export function BrandStory() {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const t = useTranslations('ProductBento'); // Using ProductBento messages for now as we added keys there
-    const details = ['detail_1', 'detail_2', 'detail_3', 'detail_4']; // Keys for mapping, if we had array in json we could map. But messages are array in json. Next-intl array handling:
-
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ['start end', 'end start'],
-    });
-
-    const y1 = useTransform(scrollYProgress, [0, 1], [0, -50]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [0, 50]);
+export async function BrandStory() {
+    const t = await getTranslations('ProductBento');
 
     return (
-        <section id="brand-story" ref={containerRef} className="py-32 overflow-hidden bg-white relative">
+        <section id="brand-story" className="py-32 overflow-hidden bg-white relative">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
-                    {/* LEFT: Detail Image */}
                     {/* LEFT: Text & Details */}
                     <div className="order-1 md:order-1 space-y-10">
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8, ease: "easeOut" }}
-                        >
+                        <div className="opacity-0 translate-x-[-20px] animate-[fadeIn_0.8s_ease-out_forwards]">
                             <h2 className="text-4xl md:text-6xl font-thin tracking-tight text-[#1A1A1A] mb-8">
                                 {t('title')}
                             </h2>
@@ -44,30 +23,21 @@ export function BrandStory() {
                             {/* Staggered Details List */}
                             <ul className="space-y-4">
                                 {[0, 1, 2, 3].map((i) => (
-                                    <motion.li
+                                    <li
                                         key={i}
-                                        initial={{ opacity: 0, x: -20 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.6, delay: 0.2 + (i * 0.15) }}
-                                        className="flex items-center gap-4 text-lg text-[#1A1A1A]"
+                                        className="flex items-center gap-4 text-lg text-[#1A1A1A] opacity-0 translate-x-[-10px] animate-[fadeIn_0.6s_ease-out_forwards]"
+                                        style={{ animationDelay: `${0.2 + (i * 0.15)}s` }}
                                     >
                                         <span className="w-12 h-[1px] bg-[#B89E72]"></span>
                                         {t(`details.${i}`)}
-                                    </motion.li>
+                                    </li>
                                 ))}
                             </ul>
-
-                        </motion.div>
+                        </div>
                     </div>
 
                     {/* RIGHT: Detail Image */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="order-2 md:order-2 relative"
-                    >
+                    <div className="order-2 md:order-2 relative opacity-0 translate-x-[20px] animate-[fadeIn_0.8s_ease-out_forwards]">
                         <div className="relative z-10">
                             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm shadow-2xl shadow-[#B89E72]/10">
                                 <Image
@@ -83,7 +53,7 @@ export function BrandStory() {
                             </div>
                         </div>
                         <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-[#F9F9F7] border border-[#B89E72]/20 z-0 -z-10" />
-                    </motion.div>
+                    </div>
 
                 </div>
             </div>

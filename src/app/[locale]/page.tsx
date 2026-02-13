@@ -40,10 +40,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
+import { Suspense } from 'react';
+import { HeroSkeleton } from '@/components/home/HeroSkeleton';
+
 export default function Home() {
   return (
     <div className="flex flex-col w-full bg-[#F9F9F7]">
-      <Hero />
+      <Suspense fallback={<HeroSkeleton />}>
+        <Hero />
+      </Suspense>
       <BrandStory />
       <Reviews />
       <FAQ />

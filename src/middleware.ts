@@ -34,7 +34,9 @@ export default function middleware(request: NextRequest) {
         // or just use the defaultLocale ('de') if no header matches.
     }
 
-    return intlMiddleware(request);
+    const response = intlMiddleware(request);
+    response.headers.set('x-pathname', pathname);
+    return response;
 }
 
 export const config = {

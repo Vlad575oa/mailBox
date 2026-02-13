@@ -40,7 +40,7 @@
             "customization_title": "Personalizzazione",
             "customization_desc": "Il tuo indirizzo, il tuo stile, la tua scelta.",
             "durability_title": "Durabilità",
-            "durability_desc": "Garanzia di 10 anni contro la corrosione passante."
+            "durability_desc": "Garanzia di 50 anni contro la corrosione passante."
         },
         "cta_whatsapp": "Ricevi un'offerta personale",
         "cta_hero_line1": "Offerta",
@@ -73,7 +73,7 @@
         },
         "durability": {
             "title": "Durabilità",
-            "description": "Garanzia di 10 anni contro la corrosione passante."
+            "description": "Garanzia di 50 anni contro la corrosione passante."
         },
         "customization": {
             "title": "Personalizzazione",
@@ -99,7 +99,14 @@
         "official_site_note": "Puoi acquistare tutti i prodotti sul nostro sito ufficiale ferrumdecorstudio.com",
         "buy_intro": "Puoi effettuare un ordine e pagare la merce nel nostro negozio online ufficiale",
         "shop_link_text": "ferrumdecorstudio.shop",
-        "specialization": "We specialize in the production of premium architectural hatches and metal structures.",
+        "specialization": "Siamo specializzati nella produzione di botole architettoniche premium e strutture metalliche.",
+        "collection_title": "Cassette postali che i tuoi vicini non hanno",
+        "product_details": "Dettagli del prodotto",
+        "search_placeholder": "Cerca per titolo...",
+        "all_materials": "Tutti i materiali",
+        "material_corten": "Acciaio Corten",
+        "material_steel": "Acciaio",
+        "no_products_found": "Nessun prodotto trovato",
         "products": {
             "1": "Custom Wall Mount Corten Steel Mailbox",
             "2": "Custom order for Joe (Corten Steel)",
@@ -238,7 +245,8 @@
         "delivery_value": "La spedizione internazionale è disponibile per la maggior parte dei paesi.",
         "social_label": "Social Media",
         "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
-        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/",
+        "shop_notice": "Visita il nostro negozio principale per gli acquisti: "
     },
     "About": {
         "title_start": "Chi",

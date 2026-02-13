@@ -40,7 +40,7 @@
             "customization_title": "パーソナライズ",
             "customization_desc": "あなたの住所、あなたのスタイル、あなたの選択。",
             "durability_title": "耐久性",
-            "durability_desc": "腐食に対する10年保証。"
+            "durability_desc": "腐食に対する50年保証。"
         },
         "cta_whatsapp": "個人的なオファーを入手",
         "cta_hero_line1": "個人的な",
@@ -73,7 +73,7 @@
         },
         "durability": {
             "title": "耐久性",
-            "description": "腐食に対する10年保証。"
+            "description": "腐食に対する50年保証。"
         },
         "customization": {
             "title": "カスタマイズ",
@@ -100,6 +100,13 @@
         "buy_intro": "公式サイトおよびオンラインストアで注文と支払いが可能です",
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "私たちは、プレミアムな建築用ハッチや金属構造物の製造を専門としています。",
+        "collection_title": "近所にはない郵便受け",
+        "product_details": "製品詳細",
+        "search_placeholder": "タイトルで検索...",
+        "all_materials": "すべての素材",
+        "material_corten": "コルテン鋼",
+        "material_steel": "スチール",
+        "no_products_found": "商品が見つかりませんでした",
         "products": {
             "1": "Custom Wall Mount Corten Steel Mailbox",
             "2": "Custom order for Joe (Corten Steel)",
@@ -238,7 +245,8 @@
         "delivery_value": "ほとんどの国で国際配送が利用可能です。",
         "social_label": "ソーシャルメディア",
         "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
-        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/",
+        "shop_notice": "購入のためにメインショップを訪問してください："
     },
     "About": {
         "title_start": "私たち",

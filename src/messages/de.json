@@ -40,7 +40,7 @@
             "customization_title": "Personalisierung",
             "customization_desc": "Ihre Adresse, Ihr Stil, Ihre Wahl.",
             "durability_title": "Langlebigkeit",
-            "durability_desc": "10 Jahre Garantie gegen Durchrostung."
+            "durability_desc": "50 Jahre Garantie gegen Durchrostung."
         },
         "cta_whatsapp": "Erhalten Sie ein persönliches Angebot",
         "cta_hero_line1": "Persönliches",
@@ -100,6 +100,13 @@
         "buy_intro": "Sie können eine Bestellung aufgeben und für Waren in unserem offiziellen Online-Shop bezahlen",
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "Wir spezialisieren uns auf die Herstellung von erstklassigen architektonischen Luken und Metallstrukturen.",
+        "collection_title": "Briefkästen, die Ihre Nachbarn nicht haben",
+        "product_details": "Produktdetails",
+        "search_placeholder": "Nach Titel suchen...",
+        "all_materials": "Alle Materialien",
+        "material_corten": "Cortenstahl",
+        "material_steel": "Stahl",
+        "no_products_found": "Keine Produkte gefunden",
         "products": {
             "1": "Individueller Wand-Briefkasten aus Cortenstahl",
             "2": "Sonderanfertigung für Joe (Cortenstahl)",
@@ -238,7 +245,8 @@
         "delivery_value": "Internationaler Versand ist für die meisten Länder verfügbar.",
         "social_label": "Soziale Medien",
         "instagram_url": "https://www.instagram.com/ferrumdecorstudio?igsh=MW15enhuYzVoOW1kNQ%3D%3D&utm_source=qr",
-        "pinterest_url": "https://ru.pinterest.com/kushpick0173/"
+        "pinterest_url": "https://ru.pinterest.com/kushpick0173/",
+        "shop_notice": "Besuchen Sie unseren Hauptshop für Einkäufe: "
     },
     "About": {
         "title_start": "Über",
