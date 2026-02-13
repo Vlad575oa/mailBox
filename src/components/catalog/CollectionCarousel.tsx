@@ -49,11 +49,11 @@ export function CollectionCarousel({ products, activeId, onSelect, useLinks = fa
     }, [products]);
 
     return (
-        <div className="w-full bg-transparent py-4 px-4 sm:px-6">
+        <div className="w-full bg-transparent pb-4 pt-0 px-4 sm:px-6">
             {/* Header Line */}
-            <div className="max-w-7xl mx-auto flex items-center justify-between gap-8 mb-4">
+            <div className="max-w-7xl mx-auto flex items-center justify-between gap-8 mb-2">
                 <div className="h-[1px] flex-grow bg-white/10" />
-                <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] whitespace-nowrap drop-shadow-[0_0_10px_rgba(197,160,89,0.3)]">
+                <span className="text-sm md:text-lg uppercase tracking-[0.2em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] whitespace-nowrap drop-shadow-[0_0_10px_rgba(197,160,89,0.3)]">
                     {t('collection_title')}
                 </span>
                 <div className="h-[1px] flex-grow bg-white/10" />

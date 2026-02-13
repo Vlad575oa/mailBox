@@ -16,14 +16,13 @@
         "shop_note": "auf ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Premium Kollektion 2025",
         "title_start": "Veredeln Sie Ihre",
         "title_end": "Bordsteinattraktivität",
         "description": "Eine Fusion aus moderner Kunst und zeitloser Beständigkeit.",
         "cta_shop": "Kollektion Ansehen",
         "cta_catalog": "Katalog Ansehen",
         "badge_shipping": "Weltweiter Versand",
-        "badge_warranty": "5 Jahre Garantie",
+        "badge_warranty": "50 Jahre Garantie",
         "card_badge": "Bestseller",
         "features_title": "Modellfunktionen",
         "benefits": {
@@ -267,8 +266,10 @@
             "support": "Support",
             "contact": "Kontakt",
             "terms": "Nutzungsbedingungen",
-            "privacy": "Datenschutzrichtlinie"
-        }
+            "privacy": "Datenschutzrichtlinie",
+            "etsy": "Etsy-Shop"
+        },
+        "shop_notice": "Besuchen Sie unseren Hauptshop für Einkäufe: "
     },
     "FeaturesPage": {
         "title": "Vorteile des Ferrum Decor Studio",

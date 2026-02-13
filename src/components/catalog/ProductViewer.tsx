@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/Button';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { useWhatsApp } from '@/context/WhatsAppContext'; // Add import
-import { FaWhatsapp } from 'react-icons/fa'; // Ensure import
+import { FaWhatsapp, FaEtsy } from 'react-icons/fa';
+import { sendGTMEvent } from '@/lib/gtm';
 
 interface ProductViewerProps {
     product: Product;
@@ -19,8 +19,6 @@ export function ProductViewer({ product }: ProductViewerProps) {
     const tWA = useTranslations('WhatsApp');
     const images = product.images || [product.image];
     const [currentIndex, setCurrentIndex] = useState(0);
-    const { handleClick } = useWhatsApp();
-
     // Reset index when product changes
     useEffect(() => {
         setCurrentIndex(0);
@@ -29,17 +27,11 @@ export function ProductViewer({ product }: ProductViewerProps) {
     const nextImage = () => setCurrentIndex((prev) => (prev + 1) % images.length);
     const prevImage = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
-    const handleBuyClick = () => {
-        const message = `${tWA('greeting')} ${t('products.' + product.id)} - ${product.price}`;
-        const encodedMessage = encodeURIComponent(message);
-        handleClick(`https://wa.me/380673814404?text=${encodedMessage}`);
-    };
-
 
     return (
         <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-8">
             {/* 3-Column Layout to ensure perfect centering on Desktop */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-10 lg:gap-0">
+            <div className="grid grid-cols-1 lg:grid-cols-[0.6fr_1.8fr_0.6fr] items-center gap-10 lg:gap-0">
 
                 {/* Left Balance Spacer (Visible only on Desktop) */}
                 <div className="hidden lg:block h-full w-full" />
@@ -58,7 +50,7 @@ export function ProductViewer({ product }: ProductViewerProps) {
 
                         <motion.div
                             key={`${product.id}-${currentIndex}`}
-                            className="relative aspect-square w-full max-w-[600px] overflow-hidden rounded-sm shadow-2xl border border-white/5 z-20 cursor-grab active:cursor-grabbing"
+                            className="relative aspect-square w-full max-w-[600px] lg:max-w-[800px] overflow-hidden rounded-sm shadow-2xl border border-white/5 z-20 cursor-grab active:cursor-grabbing"
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -20 }}
@@ -118,21 +110,40 @@ export function ProductViewer({ product }: ProductViewerProps) {
                 </div>
 
                 {/* Right Area: CTAs - Shifted right and lower on desktop */}
-                <div className="flex flex-col items-center lg:items-end lg:pt-24 lg:pl-16 gap-6 max-w-[320px] lg:max-w-none mx-auto lg:mx-0">
-
-                    {/* Intro Text */}
-
+                <div className="flex flex-col items-center lg:items-end -mt-2 lg:mt-0 lg:pt-16 lg:pl-16 gap-6 max-w-[320px] lg:max-w-none mx-auto lg:mx-0">
 
                     <div className="flex flex-col items-center lg:items-end gap-3">
-                        <Button
-                            onClick={handleBuyClick}
-                            className="relative rounded-full px-8 py-3 sm:px-10 sm:py-4 overflow-hidden group transition-all duration-500 bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-[length:200%_auto] hover:bg-right hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] flex flex-col items-center justify-center leading-tight min-w-[160px] animate-pulse"
-                        >
-                            <FaWhatsapp size={20} className="mb-1 text-black" />
-                            <span className="relative text-[10px] sm:text-xs font-bold tracking-wider uppercase text-black z-10">
-                                {t('buy_now')}
-                            </span>
-                        </Button>
+                        <div className="flex flex-col items-center gap-2">
+                            <a
+                                href={product.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-[11px] sm:text-xs text-center px-4 font-light tracking-wide max-w-[300px] lg:max-w-none hover:text-[#C5A059] transition-colors leading-tight"
+                                onClick={() => sendGTMEvent('shop_click', { location: 'product_viewer_note', product_id: product.id })}
+                            >
+                                {t('official_site_note')}
+                            </a>
+                            <a
+                                href={product.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transform scale-90 hover:scale-100 transition-transform duration-500"
+                                onClick={() => sendGTMEvent('shop_click', { location: 'product_viewer_button', product_id: product.id })}
+                            >
+                                <Button
+                                    className="relative rounded-full px-8 py-3 sm:px-10 sm:py-4 overflow-hidden group transition-all duration-500 bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-[length:200%_auto] hover:bg-right hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] flex flex-col items-center justify-center leading-[1.1] min-w-[160px] animate-pulse"
+                                >
+                                    <span className="relative text-sm font-bold tracking-wider uppercase text-black z-10 leading-none">
+                                        {t('buy_now')}
+                                    </span>
+                                    {t('buy_now_note') && (
+                                        <span className="relative text-[10px] font-medium text-black/70 tracking-tight lowercase z-10 leading-none mt-0.5">
+                                            {t('buy_now_note')}
+                                        </span>
+                                    )}
+                                </Button>
+                            </a>
+                        </div>
 
                         <motion.p
                             key={product.price}
@@ -154,7 +165,8 @@ export function ProductViewer({ product }: ProductViewerProps) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
                 >
-                    <h2 className="text-2xl sm:text-3xl font-light text-white tracking-widest uppercase mb-1">{t(`products.${product.id}`)}</h2>
+                    <h2 className="text-[10px] sm:text-sm font-light text-white tracking-widest uppercase mb-1 leading-tight">{t(`products.${product.id}`)}</h2>
+
                     <div className="h-[1px] w-20 bg-gradient-to-r from-transparent via-[#C5A059]/50 to-transparent mx-auto" />
                 </motion.div>
             </div>

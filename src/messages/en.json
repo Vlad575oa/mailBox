@@ -16,14 +16,13 @@
         "shop_note": "at ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Premium Collection 2025",
         "title_start": "Elevate Your",
         "title_end": "Curb Appeal",
         "description": "A fusion of modern art and timeless durability.",
         "cta_shop": "Shop Collection",
         "cta_catalog": "View Catalog",
         "badge_shipping": "Worldwide Shipping",
-        "badge_warranty": "5-Year Warranty",
+        "badge_warranty": "50-Year Warranty",
         "card_badge": "Best Seller",
         "features_title": "Model Features",
         "benefits": {
@@ -238,7 +237,8 @@
             "support": "Support",
             "contact": "Contact Us",
             "terms": "Terms of Service",
-            "privacy": "Privacy Policy"
+            "privacy": "Privacy Policy",
+            "etsy": "Etsy Shop"
         },
         "shop_notice": "Visit our main shop for purchases: "
     },

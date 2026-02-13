@@ -56,14 +56,7 @@ export function FAQ() {
                             {t('title_start')} <span className="text-primary">{t('title_end')}</span>
                         </h2>
                     </FadeIn>
-                    <FadeIn delay={0.1}>
-                        <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
-                            {t('subtitle')}
-                        </p>
-                        <p className="mt-4 text-sm text-gray-500">
-                            {t('main_shop_note')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" onClick={() => sendGTMEvent('shop_click', { location: 'faq' })}>ferrumdecorstudio.shop</a>
-                        </p>
-                    </FadeIn>
+
                 </div>
 
                 <div className="space-y-4">
@@ -91,6 +84,17 @@ export function FAQ() {
                             </div>
                         </FadeIn>
                     ))}
+                </div>
+
+                <div className="text-center mt-12">
+                    <FadeIn delay={0.1}>
+                        <p className="mt-4 text-xl text-black max-w-2xl mx-auto">
+                            {t('subtitle')}
+                        </p>
+                        <p className="mt-4 text-sm text-black">
+                            {t('main_shop_note')} <a href="https://ferrumdecorstudio.shop/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" onClick={() => sendGTMEvent('shop_click', { location: 'faq' })}>ferrumdecorstudio.shop</a>
+                        </p>
+                    </FadeIn>
                 </div>
 
                 {/* FAQ Schema */}

@@ -109,8 +109,8 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
     };
 
     return (
-        <div className="pt-24 bg-[#050505] min-h-screen">
-            <section className="relative w-full pt-4 pb-0 overflow-hidden min-h-[calc(100vh-6rem)]">
+        <div className="pt-20 bg-[#050505] min-h-screen">
+            <section className="relative w-full pt-0 pb-0 overflow-hidden min-h-[calc(100vh-6rem)]">
                 {/* Product Schema */}
                 <script
                     type="application/ld+json"
@@ -137,7 +137,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
                     <Breadcrumbs locale={locale} />
                     <ProductViewer product={product} />
 
-                    <div className="mt-8 sm:mt-12">
+                    <div className="mt-2 lg:mt-0">
                         <CollectionCarousel
                             products={products}
                             activeId={product.id}

@@ -16,14 +16,13 @@
         "shop_note": "sur ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Collection Premium 2025",
         "title_start": "Sublimez Votre",
         "title_end": "Attrait Extérieur",
         "description": "Une fusion d'art moderne et de durabilité intemporelle.",
         "cta_shop": "Voir la Collection",
         "cta_catalog": "Voir le Catalogue",
         "badge_shipping": "Livraison Mondiale",
-        "badge_warranty": "Garantie 5 Ans",
+        "badge_warranty": "Garantie 50 Ans",
         "card_badge": "Meilleure Vente",
         "features_title": "Caractéristiques du Modèle",
         "benefits": {
@@ -267,8 +266,10 @@
             "support": "Support",
             "contact": "Contact",
             "terms": "Conditions d'Utilisation",
-            "privacy": "Politique de Confidentialité"
-        }
+            "privacy": "Politique de Confidentialité",
+            "etsy": "Boutique Etsy"
+        },
+        "shop_notice": "Visitez notre boutique principale pour les achats : "
     },
     "FeaturesPage": {
         "title": "Avantages de Ferrum Decor Studio",

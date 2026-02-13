@@ -16,14 +16,13 @@
         "shop_note": "ferrumdecorstudio.shop で注文"
     },
     "Hero": {
-        "badge": "プレミアムコレクション 2025",
         "title_start": "高める",
         "title_end": "家の外観の魅力",
         "description": "モダンアートと時代を超越した耐久性の融合。",
         "cta_shop": "コレクションを見る",
         "cta_catalog": "カタログを見る",
         "badge_shipping": "世界中へ配送",
-        "badge_warranty": "5年保証",
+        "badge_warranty": "50年保証",
         "card_badge": "ベストセラー",
         "features_title": "モデルの特徴",
         "benefits": {
@@ -267,8 +266,10 @@
             "support": "サポート",
             "contact": "お問い合わせ",
             "terms": "利用規約",
-            "privacy": "プライバシーポリシー"
-        }
+            "privacy": "プライバシーポリシー",
+            "etsy": "Etsyショップ"
+        },
+        "shop_notice": "購入のためにメインショップを訪問してください："
     },
     "FeaturesPage": {
         "title": "Ferrum Decor Studio の利点",

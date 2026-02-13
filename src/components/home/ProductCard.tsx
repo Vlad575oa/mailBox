@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { getShimmerPlaceholder } from '@/lib/image-utils';
+import { sendGTMEvent } from '@/lib/gtm';
 
 interface ProductCardProps {
     product: Product;
@@ -66,17 +67,29 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
 
                 {/* "Order" Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/20 backdrop-blur-[2px]">
-                    <a
-                        href={product.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="transform scale-90 group-hover:scale-100 transition-transform duration-500"
-                    >
-                        <Button variant="gold" size="sm" className="px-6 py-4 flex flex-col items-center leading-tight shadow-2xl shadow-[#C5A059]/40">
-                            <span className="text-sm font-bold uppercase tracking-widest">{t('buy_now')}</span>
-                            <span className="text-[10px] font-medium text-black/70 tracking-tight lowercase">{t('buy_now_note')}</span>
-                        </Button>
-                    </a>
+                    <div className="flex flex-col items-center gap-2">
+                        <a
+                            href={product.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white text-xs text-center px-4 font-light tracking-wide hover:text-[#C5A059] transition-colors"
+                            onClick={() => sendGTMEvent('shop_click', { location: 'product_card_note', product_id: product.id })}
+                        >
+                            {t('official_site_note')}
+                        </a>
+                        <a
+                            href={product.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="transform scale-90 group-hover:scale-100 transition-transform duration-500"
+                            onClick={() => sendGTMEvent('shop_click', { location: 'product_card_button', product_id: product.id })}
+                        >
+                            <Button variant="gold" size="sm" className="px-6 py-4 flex flex-col items-center leading-tight shadow-2xl shadow-[#C5A059]/40">
+                                <span className="text-sm font-bold uppercase tracking-widest">{t('buy_now')}</span>
+                                <span className="text-[10px] font-medium text-black/70 tracking-tight lowercase">{t('buy_now_note')}</span>
+                            </Button>
+                        </a>
+                    </div>
                 </div>
 
                 {/* Material/Price Badge */}
@@ -90,7 +103,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
             {/* Content & Thumbnails */}
             <div className="p-6 bg-gradient-to-b from-[#18181b] to-black border-t border-white/5">
                 <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-lg font-light text-white leading-tight max-w-[70%]">{t(`products.${product.id}`)}</h3>
+                    <h3 className="text-xs md:text-lg font-light text-white leading-tight max-w-[70%]">{t(`products.${product.id}`)}</h3>
                     <div className="text-right">
                         <p className="text-[#C5A059] font-medium text-lg">{product.price}</p>
                     </div>

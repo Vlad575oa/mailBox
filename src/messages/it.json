@@ -16,14 +16,13 @@
         "shop_note": "su ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Collezione Premium 2025",
         "title_start": "Eleva Il Tuo",
         "title_end": "Fascino Esterno",
         "description": "Una fusione di arte moderna e durabilità senza tempo.",
         "cta_shop": "Vedi Collezione",
         "cta_catalog": "Vedi Catalogo",
         "badge_shipping": "Spedizione Mondiale",
-        "badge_warranty": "Garanzia 5 Anni",
+        "badge_warranty": "Garanzia 50 Anni",
         "card_badge": "Best Seller",
         "features_title": "Caratteristiche del Modello",
         "benefits": {
@@ -267,8 +266,10 @@
             "support": "Supporto",
             "contact": "Contatti",
             "terms": "Termini di Servizio",
-            "privacy": "Privacy Policy"
-        }
+            "privacy": "Privacy Policy",
+            "etsy": "Negozio Etsy"
+        },
+        "shop_notice": "Visita il nostro negozio principale per gli acquisti: "
     },
     "FeaturesPage": {
         "title": "Vantaggi di Ferrum Decor Studio",

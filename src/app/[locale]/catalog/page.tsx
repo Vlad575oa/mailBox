@@ -66,9 +66,9 @@ export default async function CatalogPage({ params }: { params: Promise<{ locale
 
     // Catalog page render
     return (
-        <div className="pt-24 bg-[#050505] min-h-screen">
+        <div className="pt-20 bg-[#050505] min-h-screen">
             <ScrollToTop />
-            <div className="container mx-auto px-6 mt-8 relative z-10">
+            <div className="container mx-auto px-6 mt-0 relative z-10">
                 <Breadcrumbs locale={locale} />
             </div>
             <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>

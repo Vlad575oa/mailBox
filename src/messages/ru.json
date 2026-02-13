@@ -16,7 +16,6 @@
         "shop_note": "на ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Премиум Коллекция 2025",
         "title_start": "Красота вашего дома",
         "title_end": "начинается со входа",
         "description": "Сочетание современного искусства и долговечности.",
@@ -25,7 +24,7 @@
         "cta_buy": "Заказать",
         "cta_buy_note": "на ferrumdecorstudio.shop",
         "badge_shipping": "Доставка по миру",
-        "badge_warranty": "Гарантия 5 лет",
+        "badge_warranty": "Гарантия 50 лет",
         "card_badge": "Хит продаж",
         "features_title": "Особенности Модели",
         "benefits": {
@@ -44,8 +43,8 @@
             "durability_desc": "Гарантия 10 лет на сквозную коррозию."
         },
         "cta_whatsapp": "Подберем под ваш запрос",
-        "cta_hero_line1": "Скидка 5%",
-        "cta_hero_line2": "консультация бесплатно",
+        "cta_hero_line1": "Получить",
+        "cta_hero_line2": "специальное предложение",
         "stats": {
             "exp_value": "5+",
             "exp_label": "Лет Опыта",
@@ -83,7 +82,7 @@
     "ProductGrid": {
         "title": "Полный Каталог",
         "description": "Эксклюзивная коллекция из кортена и латуни. Выберите свой идеальный почтовый ящик.",
-        "buy_btn": "Купить на Ferrum"
+        "buy_btn": "https://ferrumdecorstudio.shop/"
     },
     "Catalog": {
         "title_start": "Наша",
@@ -94,8 +93,9 @@
         "brass": "Латунь",
         "steel": "Сталь",
         "no_products": "Товары не найдены.",
-        "buy_now": "Заберите свою скидку 5%",
+        "buy_now": "Купить",
         "buy_now_note": "на ferrumdecorstudio.shop",
+        "official_site_note": "Всю продукцию вы можете приобрести на нашем официальном сайте ferrumdecorstudio.com",
         "buy_intro": "Оформить заказ и оплатить товар вы можете в нашем официальном интернет-магазине",
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "Мы специализируемся на производстве премиальных архитектурных люков и металлоконструкций.",
@@ -274,7 +274,8 @@
             "support": "Поддержка",
             "contact": "Контакты",
             "terms": "Условия использования",
-            "privacy": "Конфиденциальность"
+            "privacy": "Конфиденциальность",
+            "etsy": "Магазин Etsy"
         },
         "shop_notice": "Посетите наш основной магазин для покупок: "
     },
@@ -378,7 +379,7 @@
     "WhatsApp": {
         "tooltip": "Нажимая на кнопку, вы соглашаетесь с тем, что ваш номер телефона и сообщение будут отправлены нашему менеджеру WhatsApp.",
         "privacy_link": "Политика конфиденциальности",
-        "greeting": "Здравствуйте! Я с сайта ferrummail.com, хочу консультацию и скидку 5%.",
+        "greeting": "Здравствуйте! Я с сайта ferrumdecorstudio.shop, хочу консультацию.",
         "cta_sticky": "Подберем под ваш запрос"
     },
     "TermsOfService": {

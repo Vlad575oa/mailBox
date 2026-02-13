@@ -16,14 +16,13 @@
         "shop_note": "на ferrumdecorstudio.shop"
     },
     "Hero": {
-        "badge": "Преміум Колекція 2025",
         "title_start": "Підкресліть",
         "title_end": "Красу Вашого Дому",
         "description": "Поєднання сучасного мистецтва та вічної довговічності.",
         "cta_shop": "Дивитися Колекцію",
         "cta_catalog": "Переглянути Каталог",
         "badge_shipping": "Доставка по Світу",
-        "badge_warranty": "Гарантія 5 Років",
+        "badge_warranty": "Гарантія 50 Років",
         "card_badge": "Хіт Продажів",
         "features_title": "Особливості Моделі",
         "benefits": {
@@ -267,8 +266,10 @@
             "support": "Підтримка",
             "contact": "Контакти",
             "terms": "Умови Використання",
-            "privacy": "Політика Конфіденційності"
-        }
+            "privacy": "Політика Конфіденційності",
+            "etsy": "Магазин Etsy"
+        },
+        "shop_notice": "Відвідайте наш основний магазин для покупок: "
     },
     "FeaturesPage": {
         "title": "Переваги Ferrum Decor Studio",

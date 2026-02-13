@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useWhatsApp } from '@/context/WhatsAppContext';
 import { FaWhatsapp } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
@@ -8,6 +9,31 @@ import { sendGTMEvent } from '@/lib/gtm';
 export function WhatsAppButton() {
     const t = useTranslations('WhatsApp');
     const { handleClick } = useWhatsApp();
+    const [isFooterVisible, setIsFooterVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsFooterVisible(entry.isIntersecting);
+            },
+            {
+                threshold: 0.1,
+                // Adjust rootMargin to trigger hiding a bit earlier if needed
+                rootMargin: '0px 0px 50px 0px'
+            }
+        );
+
+        const footer = document.getElementById('contact');
+        if (footer) {
+            observer.observe(footer);
+        }
+
+        return () => {
+            if (footer) {
+                observer.unobserve(footer);
+            }
+        };
+    }, []);
 
     // Business phone number
     const PHONE_NUMBER = '380673814404';
@@ -40,7 +66,7 @@ export function WhatsAppButton() {
     return (
         <>
             {/* Mobile Sticky Button */}
-            <div className="hidden max-md:flex fixed bottom-2 left-0 right-0 z-50 px-2 justify-center pointer-events-none">
+            <div className={`hidden max-md:flex fixed bottom-2 left-0 right-0 z-50 px-2 justify-center pointer-events-none transition-all duration-500 ${isFooterVisible ? 'opacity-0 translate-y-10 invisible' : 'opacity-100 translate-y-0'}`}>
                 <div className="relative w-full max-w-sm pointer-events-auto group">
                     {/* Tooltip - Appears ABOVE button on mobile */}
                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-xl text-xs font-light tracking-wide shadow-xl opacity-0 translate-y-4 invisible transition-all duration-500 delay-[3000ms] group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-0 group-hover:visible w-64 text-center z-50">
@@ -53,7 +79,7 @@ export function WhatsAppButton() {
                         aria-label="Contact us on WhatsApp"
                     >
                         {/* Pulsing Background */}
-                        <div className="absolute inset-0 bg-[#25D366]/60 backdrop-blur-md animate-pulse" />
+                        <div className="absolute inset-0 bg-[#25D366]/60 backdrop-blur-md" />
 
                         {/* Hover Overlay */}
                         <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10" />
