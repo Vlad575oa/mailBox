@@ -12,13 +12,19 @@ import { WhatsAppPrivacyToast } from '@/components/ui/WhatsAppPrivacyToast';
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 import { GoogleTagManager, GoogleTagManagerNoScript } from '@/components/analytics/GoogleTagManager';
 import { PageViewTracker } from '@/components/analytics/PageViewTracker';
+import { CookieConsent } from '@/components/ui/CookieConsent';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const baseUrl = 'https://ferrumdecorstudio.shop';
+  const baseUrl = 'https://ferrummail.com';
 
   return {
     metadataBase: new URL(baseUrl),
@@ -85,6 +91,7 @@ export default async function RootLayout({
               <Footer />
               <WhatsAppButton />
               <WhatsAppPrivacyToast />
+              <CookieConsent />
             </SmoothScroll>
           </WhatsAppProvider>
         </NextIntlClientProvider>
@@ -95,9 +102,9 @@ export default async function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
               name: 'FerrumDecor',
-              image: 'https://ferrumdecorstudio.shop/images/logo.png',
+              image: 'https://ferrummail.com/images/logo.png',
               description: locale === 'de' ? 'Premium handgefertigte Briefkästen aus Cortenstahl und Messing.' : 'Premium handcrafted Corten steel and brass mailboxes.',
-              url: `https://ferrumdecorstudio.shop/${locale}`,
+              url: `https://ferrummail.com/${locale}`,
               priceRange: '$$$',
               address: {
                 '@type': 'PostalAddress',

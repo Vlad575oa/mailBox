@@ -11,11 +11,15 @@ type Props = {
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
+export async function generateStaticParams() {
+    return ['de', 'en', 'ru', 'ja', 'it', 'fr', 'uk'].map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({ params, searchParams }: Props) {
     const { locale } = await params;
     const { id } = await searchParams;
     const t = await getTranslations({ locale, namespace: 'Catalog' });
-    const baseUrl = 'https://ferrumdecorstudio.shop';
+    const baseUrl = 'https://ferrummail.com';
 
     // Find product if id exists
     const productId = id ? Number(id) : null;

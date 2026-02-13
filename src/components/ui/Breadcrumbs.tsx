@@ -53,7 +53,7 @@ export function Breadcrumbs({ locale }: BreadcrumbsProps) {
             '@type': 'ListItem',
             position: index + 1,
             name: crumb.label,
-            item: `https://ferrumdecorstudio.shop${crumb.href}`
+            item: `https://ferrummail.com${crumb.href}`
         }))
     };
 

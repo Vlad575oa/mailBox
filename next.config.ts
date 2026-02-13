@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'ferrummail.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'ferrumdecorstudio.shop',
       },
       {
@@ -19,6 +23,9 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.shopify.com',
       }
     ],
+  },
+  experimental: {
+    optimizePackageImports: ['react-icons', 'framer-motion', 'react-use'],
   },
   async headers() {
     return [
@@ -43,7 +50,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://cdn.shopify.com https://ferrumdecorstudio.shop; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com;"
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://cdn.shopify.com https://ferrummail.com https://ferrumdecorstudio.shop; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com;"
           }
         ]
       }

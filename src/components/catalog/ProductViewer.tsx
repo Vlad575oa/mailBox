@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { FaWhatsapp, FaEtsy } from 'react-icons/fa';
-import { sendGTMEvent } from '@/lib/gtm';
+import { trackFerrumShopClick } from '@/lib/analytics';
 
 interface ProductViewerProps {
     product: Product;
@@ -119,7 +119,7 @@ export function ProductViewer({ product }: ProductViewerProps) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-white text-[11px] sm:text-xs text-center px-4 font-light tracking-wide max-w-[300px] lg:max-w-none hover:text-[#C5A059] transition-colors leading-tight"
-                                onClick={() => sendGTMEvent('shop_click', { location: 'product_viewer_note', product_id: product.id })}
+                                onClick={() => trackFerrumShopClick(`product_viewer_note_${product.id}`)}
                             >
                                 {t('official_site_note')}
                             </a>
@@ -128,7 +128,7 @@ export function ProductViewer({ product }: ProductViewerProps) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="transform scale-90 hover:scale-100 transition-transform duration-500"
-                                onClick={() => sendGTMEvent('shop_click', { location: 'product_viewer_button', product_id: product.id })}
+                                onClick={() => trackFerrumShopClick(`product_viewer_button_${product.id}`)}
                             >
                                 <Button
                                     className="relative rounded-full px-8 py-3 sm:px-10 sm:py-4 overflow-hidden group transition-all duration-500 bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-[length:200%_auto] hover:bg-right hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] flex flex-col items-center justify-center leading-[1.1] min-w-[160px] animate-pulse"

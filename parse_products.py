@@ -25,7 +25,7 @@ for row in ws.iter_rows(min_row=1, values_only=False):
         for i, cell in enumerate(cells):
             if cell and isinstance(cell, str):
                 # Check if it's a product URL
-                if 'ferrumdecorstudio.shop/products/' in cell:
+                if 'ferrummail.com/products/' in cell:
                     url = cell
                 # Check if contains 'mailbox' in title
                 elif 'mailbox' in cell.lower() or 'brass' in cell.lower() or 'merbau' in cell.lower():
@@ -50,7 +50,7 @@ for row in ws.iter_rows(min_row=1, values_only=False):
             'id': product_id,
             'name': title_clean,
             'price': price if price else '$359',
-            'url': url if url else 'https://ferrumdecorstudio.shop/collections/mail-boxes',
+            'url': url if url else 'https://ferrummail.com/collections/mail-boxes',
             'image': f'/images/product-{product_id}.jpg'
         })
 

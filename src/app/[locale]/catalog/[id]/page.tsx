@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     if (!product) return {};
 
     const t = await getTranslations({ locale, namespace: 'Catalog' });
-    const baseUrl = 'https://ferrumdecorstudio.shop';
+    const baseUrl = 'https://ferrummail.com';
     const canonicalUrl = `${baseUrl}/${locale}/catalog/${product.id}`;
 
     const languages = {} as Record<string, string>;
@@ -84,7 +84,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
     }
 
     const t = await getTranslations({ locale, namespace: 'Catalog' });
-    const baseUrl = 'https://ferrumdecorstudio.shop';
+    const baseUrl = 'https://ferrummail.com';
     const productName = t(`products.${product.id}`);
 
     const productSchema = {

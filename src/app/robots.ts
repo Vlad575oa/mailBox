@@ -1,12 +1,19 @@
 import { MetadataRoute } from 'next';
 
-export default function robots(): MetadataRoute.Robots {
+import { headers } from 'next/headers';
+
+export default async function robots(): Promise<MetadataRoute.Robots> {
+    const headersList = await headers();
+    const host = headersList.get('host')
+        ? `https://${headersList.get('host')}`
+        : 'https://ferrummail.com';
+
     return {
         rules: {
             userAgent: '*',
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://ferrumdecorstudio.shop/sitemap.xml', // Assuming base URL
+        sitemap: `${host}/sitemap.xml`,
     };
 }

@@ -1,10 +1,14 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { FadeIn } from '@/components/ui/FadeIn';
+import { routing } from '@/i18n/routing';
 
-export default function TermsOfServicePage() {
-    const t = useTranslations('TermsOfService');
+export function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function TermsOfServicePage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'TermsOfService' });
 
     return (
         <main className="min-h-screen bg-black text-white pt-32 pb-20">

@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { sendGTMEvent } from '@/lib/gtm';
+import { sendGTMEvent } from '@/lib/analytics';
 
 export function PageViewTracker() {
     const pathname = usePathname();

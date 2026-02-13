@@ -43,8 +43,8 @@
             "durability_desc": "10-year warranty against corrosion."
         },
         "cta_whatsapp": "Get a personal offer",
-        "cta_hero_line1": "5% Discount",
-        "cta_hero_line2": "free consultation",
+        "cta_hero_line1": "Personal",
+        "cta_hero_line2": "offer",
         "stats": {
             "exp_value": "5+",
             "exp_label": "Years Experience",
@@ -93,8 +93,9 @@
         "brass": "Brass",
         "steel": "Steel",
         "no_products": "No products found.",
-        "buy_now": "Claim your 5% discount",
+        "buy_now": "Buy Now",
         "buy_now_note": "at ferrumdecorstudio.shop",
+        "official_site_note": "You can purchase all products on our official website ferrumdecorstudio.com",
         "buy_intro": "You can place an order and pay for goods in our official online store",
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "We specialize in the production of premium architectural hatches and metal structures.",
@@ -219,8 +220,8 @@
                 "answer": "Absolutely. We offer customization options for fonts and sizes. Please specify your preference in the order notes or contact our support team for a mockup."
             },
             "brand": {
-                "question": "Who is Ferrum Decor Studio?",
-                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+                "question": "Who is Ferrum Decor?",
+                "answer": "Ferrum Decor is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
             },
             "history": {
                 "question": "What is your story?",
@@ -232,7 +233,7 @@
     "Footer": {
         "developed_by": "Site developed by",
         "slogan": "Forging the future of curb appeal. Handcrafted excellence in every weld.",
-        "rights": "FerrumDecor Studio. All rights reserved.",
+        "rights": "FerrumDecor. All rights reserved.",
         "links": {
             "support": "Support",
             "contact": "Contact Us",
@@ -262,7 +263,7 @@
     "About": {
         "title_start": "About",
         "title_end": "Us",
-        "intro": "Ferrum Decor Studio is a Ukrainian workshop of designer metal products for exterior and interior.",
+        "intro": "Ferrum Decor is a Ukrainian workshop of designer metal products for exterior and interior.",
         "specialization": "The brand specializes in creating modern mailboxes, ventilation grilles, hatches and decorative metal elements that combine functionality, durability and architectural aesthetics.",
         "philosophy_title": "Our Philosophy",
         "philosophy_text": "We create products that become part of the home design and form the first impression of the space.",
@@ -273,13 +274,13 @@
             "vents": "Ventilation grilles made of steel, stainless steel and brass"
         },
         "approach_title": "Approach",
-        "approach_text": "Ferrum Decor Studio products are developed taking into account modern architectural trends and are suitable for both private houses and commercial objects.",
+        "approach_text": "Ferrum Decor products are developed taking into account modern architectural trends and are suitable for both private houses and commercial objects.",
         "quality_text": "All products are created with attention to detail and undergo quality control before being sent to the client.",
         "global_title": "Global Reach",
         "global_text": "We work with customers all over the world and offer international delivery."
     },
     "FeaturesPage": {
-        "title": "Advantages of Ferrum Decor Studio",
+        "title": "Advantages of Ferrum Decor",
         "items": {
             "materials": {
                 "title": "Premium Materials",
@@ -314,7 +315,7 @@
     "PrivacyPolicy": {
         "title": "Privacy Policy",
         "last_updated": "Last updated: October 8, 2025",
-        "intro": "This Privacy Policy describes how Ferrum Decor Studio (the \"Site\", \"we\", \"us\", or \"our\") collects, uses, and discloses your personal information when you visit, use our services, or make a purchase from Ferrummail.com (the \"Site\") or otherwise communicate with us regarding the Site (collectively, the \"Services\"). For purposes of this Privacy Policy, \"you\" and \"your\" means you as the user of the Services, whether you are a customer, website visitor, or another individual whose information we have collected pursuant to this Privacy Policy.",
+        "intro": "This Privacy Policy describes how Ferrum Decor (the \"Site\", \"we\", \"us\", or \"our\") collects, uses, and discloses your personal information when you visit, use our services, or make a purchase from ferrumdecorstudio.shop (the \"Site\") or otherwise communicate with us regarding the Site (collectively, the \"Services\"). For purposes of this Privacy Policy, \"you\" and \"your\" means you as the user of the Services, whether you are a customer, website visitor, or another individual whose information we have collected pursuant to this Privacy Policy.",
         "sections": {
             "changes": {
                 "title": "Changes to This Privacy Policy",
@@ -378,13 +379,13 @@
     "WhatsApp": {
         "tooltip": "By clicking the button, you agree that your phone number and message will be sent to our WhatsApp manager.",
         "privacy_link": "Privacy Policy",
-        "greeting": "Hello! I am from ferrummail.com, I would like a consultation and a 5% discount.",
-        "cta_sticky": "Get a personal offer"
+        "greeting": "Hello! I am from ferrummail.com, I would like a consultation regarding the mailboxes.",
+        "cta_sticky": "Choose a variant"
     },
     "TermsOfService": {
         "title": "Terms of Service",
         "last_updated": "Last updated: October 8, 2025",
-        "intro": "This website is operated by Ferrum Decor Studio. Throughout the site, the terms “we”, “us” and “our” refer to Ferrum Decor Studio. Ferrum Decor Studio offers this website, including all information, tools and Services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here. By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content. Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any Services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service. Any new features or tools which are added to the current store shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes. Our store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell our products and Services to you.",
+        "intro": "This website is operated by Ferrum Decor. Throughout the site, the terms “we”, “us” and “our” refer to Ferrum Decor. Ferrum Decor offers this website, including all information, tools and Services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here. By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content. Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any Services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service. Any new features or tools which are added to the current store shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes. Our store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell our products and Services to you.",
         "sections": {
             "online_store": {
                 "title": "SECTION 1 - ONLINE STORE TERMS",
@@ -436,11 +437,11 @@
             },
             "disclaimer": {
                 "title": "SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY",
-                "content": "We do not guarantee, represent or warrant that your use of our Service will be uninterrupted, timely, secure or error-free. We do not warrant that the results that may be obtained from the use of the Service will be accurate or reliable. You agree that from time to time we may remove the Service for indefinite periods of time or cancel the Service at any time, without notice to you. You expressly agree that your use of, or inability to use, the Service is at your sole risk. The Service and all products and Services delivered to you through the Service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement. In no case shall Ferrum Decor Studio, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, Service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the Service or any products procured using the Service, or for any other claim related in any way to your use of the Service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the Service or any content (or product) posted, transmitted, or otherwise made available via the Service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law."
+                "content": "We do not guarantee, represent or warrant that your use of our Service will be uninterrupted, timely, secure or error-free. We do not warrant that the results that may be obtained from the use of the Service will be accurate or reliable. You agree that from time to time we may remove the Service for indefinite periods of time or cancel the Service at any time, without notice to you. You expressly agree that your use of, or inability to use, the Service is at your sole risk. The Service and all products and Services delivered to you through the Service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement. In no case shall Ferrum Decor, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, Service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the Service or any products procured using the Service, or for any other claim related in any way to your use of the Service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the Service or any content (or product) posted, transmitted, or otherwise made available via the Service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law."
             },
             "indemnification": {
                 "title": "SECTION 14 - INDEMNIFICATION",
-                "content": "You agree to indemnify, defend and hold harmless Ferrum Decor Studio and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, Service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law or the rights of a third-party."
+                "content": "You agree to indemnify, defend and hold harmless Ferrum Decor and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, Service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law or the rights of a third-party."
             },
             "severability": {
                 "title": "SECTION 15 - SEVERABILITY",
@@ -464,8 +465,14 @@
             },
             "contact_info": {
                 "title": "SECTION 20 - CONTACT INFORMATION",
-                "content": "Questions about the Terms of Service should be sent to us at ferrumdecorstudio@icloud.com. Our contact information is posted below: Ferrum Decor Studio. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
+                "content": "Questions about the Terms of Service should be sent to us at ferrumdecorstudio@icloud.com. Our contact information is posted below: Ferrum Decor. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
             }
         }
+    },
+    "CookieConsent": {
+        "message": "We use cookies to improve your experience and analyze site traffic.",
+        "accept": "Accept",
+        "decline": "Decline",
+        "privacy_policy": "Privacy Policy"
     }
 }

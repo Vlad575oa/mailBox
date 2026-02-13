@@ -2,9 +2,13 @@ import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import productsData from '@/data/products.json';
 
-const host = 'https://ferrumdecorstudio.shop';
+import { headers } from 'next/headers';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+    const headersList = await headers();
+    const host = headersList.get('host')
+        ? `https://${headersList.get('host')}`
+        : 'https://ferrummail.com';
     const locales = routing.locales;
     const products = productsData;
 

@@ -14,10 +14,14 @@ const FAQ = dynamic(() => import('@/components/home/FAQ').then(mod => ({ default
   loading: () => <div className="min-h-screen bg-gray-50" />
 });
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const baseUrl = 'https://ferrumdecorstudio.shop';
+  const baseUrl = 'https://ferrummail.com';
 
   const languages = {} as Record<string, string>;
   routing.locales.forEach(loc => {

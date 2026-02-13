@@ -43,8 +43,8 @@
             "durability_desc": "Garanzia di 10 anni contro la corrosione passante."
         },
         "cta_whatsapp": "Ricevi un'offerta personale",
-        "cta_hero_line1": "Sconto 5%",
-        "cta_hero_line2": "consulenza gratuita",
+        "cta_hero_line1": "Offerta",
+        "cta_hero_line2": "personale",
         "stats": {
             "exp_value": "5+",
             "exp_label": "Anni di Esperienza",
@@ -94,8 +94,9 @@
         "brass": "Ottone",
         "steel": "Acciaio",
         "no_products": "Nessun prodotto trovato.",
-        "buy_now": "Richiedi il tuo sconto del 5%",
+        "buy_now": "Acquista ora",
         "buy_now_note": "su ferrumdecorstudio.shop",
+        "official_site_note": "Puoi acquistare tutti i prodotti sul nostro sito ufficiale ferrumdecorstudio.com",
         "buy_intro": "Puoi effettuare un ordine e pagare la merce nel nostro negozio online ufficiale",
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "We specialize in the production of premium architectural hatches and metal structures.",
@@ -213,8 +214,8 @@
                 "answer": "Assolutamente. Offriamo opzioni di personalizzazione per caratteri e dimensioni. Si prega di specificare la preferenza nelle note dell'ordine o contattare il nostro team di supporto per una bozza."
             },
             "brand": {
-                "question": "Who is Ferrum Decor Studio?",
-                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+                "question": "Who is Ferrum Decor?",
+                "answer": "Ferrum Decor is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
             },
             "history": {
                 "question": "What is your story?",
@@ -242,7 +243,7 @@
     "About": {
         "title_start": "Chi",
         "title_end": "Siamo",
-        "intro": "Ferrum Decor Studio è un laboratorio ucraino di prodotti in metallo di design per esterni e interni.",
+        "intro": "Ferrum Decor è un laboratorio ucraino di prodotti in metallo di design per esterni e interni.",
         "specialization": "Il marchio è specializzato nella creazione di cassette postali moderne, griglie di ventilazione, botole ed elementi decorativi in metallo che combinano funzionalità, durata ed estetica architettonica.",
         "philosophy_title": "La Nostra Filosofia",
         "philosophy_text": "Creiamo prodotti che diventano parte del design della casa e formano la prima impressione dello spazio.",
@@ -253,7 +254,7 @@
             "vents": "Griglie di ventilazione in acciaio, acciaio inossidabile e ottone"
         },
         "approach_title": "Approccio",
-        "approach_text": "I prodotti Ferrum Decor Studio sono sviluppati tenendo conto delle moderne tendenze architettoniche e sono adatti sia per case private che per oggetti commerciali.",
+        "approach_text": "I prodotti Ferrum Decor sono sviluppati tenendo conto delle moderne tendenze architettoniche e sono adatti sia per case private che per oggetti commerciali.",
         "quality_text": "Tutti i prodotti sono creati con attenzione ai dettagli e sottoposti a controllo qualità prima di essere inviati al cliente.",
         "global_title": "Copertura Globale",
         "global_text": "Lavoriamo con clienti in tutto il mondo e offriamo la consegna internazionale."
@@ -261,7 +262,7 @@
     "Footer": {
         "developed_by": "Site developed by",
         "slogan": "Forgiamo il futuro del fascino esterno. Eccellenza artigianale in ogni saldatura.",
-        "rights": "FerrumDecor Studio. Tutti i diritti riservati.",
+        "rights": "FerrumDecor. Tutti i diritti riservati.",
         "links": {
             "support": "Supporto",
             "contact": "Contatti",
@@ -272,7 +273,7 @@
         "shop_notice": "Visita il nostro negozio principale per gli acquisti: "
     },
     "FeaturesPage": {
-        "title": "Vantaggi di Ferrum Decor Studio",
+        "title": "Vantaggi di Ferrum Decor",
         "items": {
             "materials": {
                 "title": "Materiali Premium",
@@ -307,7 +308,7 @@
     "PrivacyPolicy": {
         "title": "Informativa sulla privacy",
         "last_updated": "Ultimo aggiornamento: 8 ottobre 2025",
-        "intro": "Questa Informativa sulla privacy descrive come Ferrum Decor Studio (il \"Sito\", \"noi\", \"ci\" o \"nostro\") raccoglie, utilizza e divulga le tue informazioni personali quando visiti, utilizzi i nostri servizi o effettui un acquisto da ferrumdecorstudio.shop (il \"Sito\") o comunichi in altro modo con noi in merito al Sito (collettivamente, i \"Servizi\"). Ai fini della presente Informativa sulla privacy, \"tu\" e \"tuo\" indicano te in quanto utente dei Servizi, che tu sia un cliente, un visitore del sito web o un altro individuo le cui informazioni abbiamo raccolto ai sensi della presente Informativa sulla privacy.",
+        "intro": "Questa Informativa sulla privacy descrive come Ferrum Decor (il \"Sito\", \"noi\", \"ci\" o \"nostro\") raccoglie, utilizza e divulga le tue informazioni personali quando visiti, utilizzi i nostri servizi o effettui un acquisto da ferrummail.com (il \"Sito\") o comunichi in altro modo con noi in merito al Sito (collettivamente, i \"Servizi\"). Ai fini della presente Informativa sulla privacy, \"tu\" e \"tuo\" indicano te in quanto utente dei Servizi, che tu sia un cliente, un visitore del sito web o un altro individuo le cui informazioni abbiamo raccolto ai sensi della presente Informativa sulla privacy.",
         "sections": {
             "changes": {
                 "title": "Modifiche a questa Informativa sulla privacy",
@@ -371,12 +372,13 @@
     "WhatsApp": {
         "tooltip": "Cliccando sul pulsante, accetti che il tuo numero di telefono e il tuo messaggio vengano inviati al nostro gestore WhatsApp. Consulta la nostra Informativa sulla privacy per ulteriori informazioni.",
         "privacy_link": "Informativa sulla privacy",
-        "greeting": "Ciao! Vorrei chattare con te"
+        "greeting": "Ciao! Vengo da ferrummail.com, vorrei una consulenza riguardo alle cassette postali.",
+        "cta_sticky": "Scegli una variante"
     },
     "TermsOfService": {
         "title": "Termini di servizio",
         "last_updated": "Ultimo aggiornamento: 8 ottobre 2025",
-        "intro": "Questo sito web è gestito da Ferrum Decor Studio. In tutto il sito, i termini \"noi\", \"ci\" e \"nostro\" si riferiscono a Ferrum Decor Studio. Ferrum Decor Studio offre questo sito web, comprese tutte le informazioni, gli strumenti e i servizi disponibili da questo sito per te, l'utente, a condizione che tu accetti tutti i termini, le condizioni, le politiche e le comunicazioni qui riportate. Visitando il nostro sito e/o acquistando qualcosa da noi, ti impegni nel nostro \"Servizio\" e accetti di essere vincolato dai seguenti termini e condizioni (\"Termini di servizio\", \"Termini\"), inclusi i termini e le condizioni aggiuntivi e le politiche citate nel presente documento e/o disponibili tramite collegamento ipertestuale. I presenti Termini di servizio si applicano a tutti gli utenti del sito, inclusi, a titolo esemplificativo ma non esaustivo, gli utenti che sono browser, fornitori, clienti, commercianti e/o contributori di contenuti. Leggere attentamente i presenti Termini di servizio prima di accedere o utilizzare il nostro sito web. Accedendo o utilizzando qualsiasi parte del sito, accetti di essere vincolato dai presenti Termini di servizio. Se non accetti tutti i termini e le condizioni del presente contratto, non potrai accedere al sito web né utilizzare alcun servizio. Se i presenti Termini di servizio sono considerati un'offerta, l'accettazione è espressamente limitata ai presenti Termini di servizio. Qualsiasi nuova funzione o strumento aggiunto al negozio corrente sarà anch'esso soggetto ai Termini di servizio. È possibile consultare la versione più recente dei Termini di servizio in qualsiasi momento su questa pagina. Ci riserviamo il diritto di aggiornare, modificare o sostituire qualsiasi parte dei presenti Termini di servizio pubblicando aggiornamenti e/o modifiche sul nostro sito web. Saresti responsabile di controllare periodicamente questa pagina per eventuali modifiche. L'uso continuato o l'accesso al sito web dopo la pubblicazione di eventuali modifiche costituisce accettazione di tali modifiche. Il nostro negozio è ospitato su Shopify Inc. Ci forniscono la piattaforma di e-commerce online che ci consente di venderti i nostri prodotti e servizi.",
+        "intro": "Questo sito web è gestito da Ferrum Decor. In tutto il sito, i termini \"noi\", \"ci\" e \"nostro\" si riferiscono a Ferrum Decor. Ferrum Decor offre questo sito web, comprese tutte le informazioni, gli strumenti e i servizi disponibili da questo sito per te, l'utente, a condizione che tu accetti tutti i termini, le condizioni, le politiche e le comunicazioni qui riportate. Visitando il nostro sito e/o acquistando qualcosa da noi, ti impegni nel nostro \"Servizio\" e accetti di essere vincolato dai seguenti termini e condizioni (\"Termini di servizio\", \"Termini\"), inclusi i termini e le condizioni aggiuntivi e le politiche citate nel presente documento e/o disponibili tramite collegamento ipertestuale. I presenti Termini di servizio si applicano a tutti gli utenti del sito, inclusi, a titolo esemplificativo ma non esaustivo, gli utenti che sono browser, fornitori, clienti, commercianti e/o contributori di contenuti. Leggere attentamente i presenti Termini di servizio prima di accedere o utilizzare il nostro sito web. Accedendo o utilizzando qualsiasi parte del sito, accetti di essere vincolato dai presenti Termini di servizio. Se non accetti tutti i termini e le condizioni del presente contratto, non potrai accedere al sito web né utilizzare alcun servizio. Se i presenti Termini di servizio sono considerati un'offerta, l'accettazione è espressamente limitata ai presenti Termini di servizio. Qualsiasi nuova funzione o strumento aggiunto al negozio corrente sarà anch'esso soggetto ai Termini di servizio. È possibile consultare la versione più recente dei Termini di servizio in qualsiasi momento su questa pagina. Ci riserviamo il diritto di aggiornare, modificare o sostituire qualsiasi parte dei presenti Termini di servizio pubblicando aggiornamenti e/o modifiche sul nostro sito web. Saresti responsabile di controllare periodicamente questa pagina per eventuali modifiche. L'uso continuato o l'accesso al sito web dopo la pubblicazione di eventuali modifiche costituisce accettazione di tali modifiche. Il nostro negozio è ospitato su Shopify Inc. Ci forniscono la piattaforma di e-commerce online che ci consente di venderti i nostri prodotti e servizi.",
         "sections": {
             "online_store": {
                 "title": "SEZIONE 1 - TERMINI DEL NEGOZIO ONLINE",
@@ -428,11 +430,11 @@
             },
             "disclaimer": {
                 "title": "SEZIONE 13 - ESCLUSIONE DI GARANZIE; LIMITAZIONE DI RESPONSABILITÀ",
-                "content": "Non garantiamo, rappresentiamo o assicuriamo che l'uso del nostro Servizio sarà ininterrotto, tempestivo, sicuro o esente da errori. Non garantiamo che i risultati che possono essere ottenuti dall'uso del Servizio saranno accurati o affidabili. Accetti che di tanto in tanto potremmo rimuovere il Servizio per periodi di tempo indefiniti o annullare il Servizio in qualsiasi momento, senza preavviso. Accetti espressamente che l'uso o l'impossibilità di usare il Servizio è a tuo esclusivo rischio. Il Servizio e tutti i prodotti e servizi forniti all'utente tramite il Servizio sono (salvo quanto espressamente dichiarato da noi) forniti 'così come sono' e 'come disponibili' per l'uso, senza alcuna rappresentazione, garanzia o condizione di alcun tipo, espressa o implicita, comprese tutte le garanzie o condizioni implicite di commerciabilità, qualità commerciabile, idoneità per uno scopo particolare, durata, titolo e non violazione. In nessun caso Ferrum Decor Studio, i nostri amministratori, funzionari, dipendenti, affiliati, agenti, appaltatori, stagisti, fornitori, prestatori di servizi o licenziatari saranno responsabili per qualsiasi infortunio, perdita, reclamo o qualsiasi danno diretto, indiretto, incidentale, punitivo, speciale o consequenziale di qualsiasi tipo, inclusi, a titolo esemplificativo, perdita di profitti, perdita di entrate, perdita di risparmi, perdita di dati, costi di sostituzione o danni simili, sia basati su contratto, torto (inclusa la negligenza), responsabilità oggettiva o altro, derivanti dall'uso di uno qualsiasi dei Servizi o di qualsiasi prodotto acquistato utilizzando il Servizio, o per qualsiasi altro reclamo relativo in qualsiasi modo all'uso del Servizio o di qualsiasi prodotto, inclusi, a titolo esemplificativo ma non esaustivo, eventuali errori o omissioni in qualsiasi contenuto, o qualsiasi perdita o danno di qualsiasi tipo subìto a seguito dell'uso del Servizio o di qualsiasi contenuto (o prodotto) pubblicato, trasmesso o reso disponibile tramite il Servizio, anche se avvisati della loro possibilità. Poiché alcuni stati o giurisdizioni non consentono l'esclusione o la limitazione di responsabilità per danni consequenziali o incidentali, in tali stati o giurisdizioni, la nostra responsabilità sarà limitata nella misura massima consentita dalla legge."
+                "content": "Non garantiamo, rappresentiamo o assicuriamo che l'uso del nostro Servizio sarà ininterrotto, tempestivo, sicuro o esente da errori. Non garantiamo che i risultati che possono essere ottenuti dall'uso del Servizio saranno accurati o affidabili. Accetti che di tanto in tanto potremmo rimuovere il Servizio per periodi di tempo indefiniti o annullare il Servizio in qualsiasi momento, senza preavviso. Accetti espressamente che l'uso o l'impossibilità di usare il Servizio è a tuo esclusivo rischio. Il Servizio e tutti i prodotti e servizi forniti all'utente tramite il Servizio sono (salvo quanto espressamente dichiarato da noi) forniti 'così come sono' e 'come disponibili' per l'uso, senza alcuna rappresentazione, garanzia o condizione di alcun tipo, espressa o implicita, comprese tutte le garanzie o condizioni implicite di commerciabilità, qualità commerciabile, idoneità per uno scopo particolare, durata, titolo e non violazione. In nessun caso Ferrum Decor, i nostri amministratori, funzionari, dipendenti, affiliati, agenti, appaltatori, stagisti, fornitori, prestatori di servizi o licenziatari saranno responsabili per qualsiasi infortunio, perdita, reclamo o qualsiasi danno diretto, indiretto, incidentale, punitivo, speciale o consequenziale di qualsiasi tipo, inclusi, a titolo esemplificativo, perdita di profitti, perdita di entrate, perdita di risparmi, perdita di dati, costi di sostituzione o danni simili, sia basati su contratto, torto (inclusa la negligenza), responsabilità oggettiva o altro, derivanti dall'uso di uno qualsiasi dei Servizi o di qualsiasi prodotto acquistato utilizzando il Servizio, o per qualsiasi altro reclamo relativo in qualsiasi modo all'uso del Servizio o di qualsiasi prodotto, inclusi, a titolo esemplificativo ma non esaustivo, eventuali errori o omissioni in qualsiasi contenuto, o qualsiasi perdita o danno di qualsiasi tipo subìto a seguito dell'uso del Servizio o di qualsiasi contenuto (o prodotto) pubblicato, trasmesso o reso disponibile tramite il Servizio, anche se avvisati della loro possibilità. Poiché alcuni stati o giurisdizioni non consentono l'esclusione o la limitazione di responsabilità per danni consequenziali o incidentali, in tali stati o giurisdizioni, la nostra responsabilità sarà limitata nella misura massima consentita dalla legge."
             },
             "indemnification": {
                 "title": "SEZIONE 14 - INDENNIZZO",
-                "content": "Accetti di indennizzare, difendere e tenere indenne Ferrum Decor Studio e la nostra società madre, sussidiarie, affiliate, partner, funzionari, direttori, agenti, appaltatori, licenziatari, prestatori di servizi, subappaltatori, fornitori, stagisti e dipendenti, da qualsiasi reclamo o richiesta, comprese le ragionevoli spese legali, avanzate da terze parti a causa o derivanti dalla tua violazione dei presenti Termini di servizio o dei documenti che incorporano per riferimento, o dalla tua violazione di qualsiasi legge o dei diritti di terze parti."
+                "content": "Accetti di indennizzare, difendere e tenere indenne Ferrum Decor e la nostra società madre, sussidiarie, affiliate, partner, funzionari, direttori, agenti, appaltatori, licenziatari, prestatori di servizi, subappaltatori, fornitori, stagisti e dipendenti, da qualsiasi reclamo o richiesta, comprese le ragionevoli spese legali, avanzate da terze parti a causa o derivanti dalla tua violazione dei presenti Termini di servizio o dei documenti che incorporano per riferimento, o dalla tua violazione di qualsiasi legge o dei diritti di terze parti."
             },
             "severability": {
                 "title": "SEZIONE 15 - DIVISIBILITÀ",
@@ -456,8 +458,14 @@
             },
             "contact_info": {
                 "title": "SEZIONE 20 - INFORMAZIONI DI CONTATTO",
-                "content": "Le domande sui Termini di servizio devono essere inviate a ferrumdecorstudio@icloud.com. Le nostre informazioni di contatto sono pubblicate di seguito: Ferrum Decor Studio. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
+                "content": "Le domande sui Termini di servizio devono essere inviate a ferrumdecorstudio@icloud.com. Le nostre informazioni di contatto sono pubblicate di seguito: Ferrum Decor. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
             }
+        },
+        "CookieConsent": {
+            "message": "Utilizziamo i cookie per migliorare la tua esperienza e analizzare il traffico del sito.",
+            "accept": "Accetta",
+            "decline": "Rifiuta",
+            "privacy_policy": "Informativa sulla privacy"
         }
     }
 }

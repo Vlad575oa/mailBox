@@ -13,6 +13,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 import productsData from '@/data/products.json';
 import { getShimmerPlaceholder } from '@/lib/image-utils';
+import { trackWhatsAppClick } from '@/lib/analytics';
 
 const products = productsData.map((item) => ({
     id: item.id,
@@ -79,6 +80,7 @@ export function Hero() {
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
     const trackConversion = (label: string) => {
+        trackWhatsAppClick(label);
         if (typeof window !== 'undefined' && (window as any).gtag) {
             (window as any).gtag('event', 'click_whatsapp_cta', {
                 'event_category': 'conversion',
@@ -125,6 +127,7 @@ export function Hero() {
                     </div>
                 ) : (
                     <motion.div
+                        initial={{ opacity: 1 }}
                         style={{ y: y1 }}
                         className="absolute inset-0 z-0"
                     >
@@ -154,7 +157,8 @@ export function Hero() {
                         <div className="lg:col-span-7 order-1 lg:order-2 text-center lg:text-left pl-0 lg:pl-40 pr-6">
 
 
-                            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                            {/* Optimized: Removed animation delay for LCP element */}
+                            <div>
                                 <h1 className="text-[38px] md:text-[50px] lg:text-[62px] font-thin tracking-tight text-white mb-8 leading-[1.1]">
                                     {t('title_start')} <br />
                                     <span className="font-serif italic text-gradient-gold">
@@ -163,7 +167,7 @@ export function Hero() {
                                 </h1>
                             </div>
 
-                            <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                            <div className="animate-fade-in-up">
                                 <p className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed mb-10 text-balance">
                                     {t('description')}
                                 </p>

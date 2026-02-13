@@ -43,8 +43,8 @@
             "durability_desc": "10 Jahre Garantie gegen Durchrostung."
         },
         "cta_whatsapp": "Erhalten Sie ein persönliches Angebot",
-        "cta_hero_line1": "5% Rabatt",
-        "cta_hero_line2": "kostenlose Beratung",
+        "cta_hero_line1": "Persönliches",
+        "cta_hero_line2": "Angebot",
         "stats": {
             "exp_value": "5+",
             "exp_label": "Jahre Erfahrung",
@@ -94,8 +94,9 @@
         "brass": "Messing",
         "steel": "Stahl",
         "no_products": "Keine Produkte in dieser Kategorie gefunden.",
-        "buy_now": "Erhalten Sie Ihre 5% Rabatt",
+        "buy_now": "Jetzt Kaufen",
         "buy_now_note": "auf ferrumdecorstudio.shop",
+        "official_site_note": "Sie können alle Produkte auf unserer offiziellen Website ferrumdecorstudio.com erwerben",
         "buy_intro": "Sie können eine Bestellung aufgeben und für Waren in unserem offiziellen Online-Shop bezahlen",
         "shop_link_text": "ferrumdecorstudio.shop",
         "specialization": "Wir spezialisieren uns auf die Herstellung von erstklassigen architektonischen Luken und Metallstrukturen.",
@@ -213,8 +214,8 @@
                 "answer": "Absolut. Wir bieten Anpassungsoptionen für Schriftarten und Größen. Bitte geben Sie Ihre Präferenz in den Bestellnotizen an oder kontaktieren Sie unser Support-Team für einen Entwurf."
             },
             "brand": {
-                "question": "Who is Ferrum Decor Studio?",
-                "answer": "Ferrum Decor Studio is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
+                "question": "Who is Ferrum Decor?",
+                "answer": "Ferrum Decor is a Ukrainian brand of designer metal products. We create corten steel mailboxes, decorative vents, and custom metalworks that make your home exterior stylish and durable."
             },
             "history": {
                 "question": "What is your story?",
@@ -242,7 +243,7 @@
     "About": {
         "title_start": "Über",
         "title_end": "Uns",
-        "intro": "Ferrum Decor Studio ist eine ukrainische Werkstatt für Design-Metallprodukte für Außen- und Innenbereiche.",
+        "intro": "Ferrum Decor ist eine ukrainische Werkstatt für Design-Metallprodukte für Außen- und Innenbereiche.",
         "specialization": "Die Marke ist spezialisiert auf die Herstellung moderner Briefkästen, Lüftungsgitter, Luken und dekorativer Metallelemente, die Funktionalität, Langlebigkeit und architektonische Ästhetik verbinden.",
         "philosophy_title": "Unsere Philosophie",
         "philosophy_text": "Wir schaffen Produkte, die Teil des Wohndesigns werden und den ersten Eindruck des Raumes prägen.",
@@ -253,7 +254,7 @@
             "vents": "Lüftungsgitter aus Stahl, Edelstahl und Messing"
         },
         "approach_title": "Ansatz",
-        "approach_text": "Produkte von Ferrum Decor Studio werden unter Berücksichtigung moderner Architekturtrends entwickelt und eignen sich sowohl für Privathäuser als auch für gewerbliche Objekte.",
+        "approach_text": "Produkte von Ferrum Decor werden unter Berücksichtigung moderner Architekturtrends entwickelt und eignen sich sowohl für Privathäuser als auch für gewerbliche Objekte.",
         "quality_text": "Alle Produkte werden mit Liebe zum Detail gefertigt und durchlaufen vor dem Versand an den Kunden eine Qualitätskontrolle.",
         "global_title": "Globale Reichweite",
         "global_text": "Wir arbeiten mit Kunden auf der ganzen Welt zusammen und bieten internationalen Versand an."
@@ -261,7 +262,7 @@
     "Footer": {
         "developed_by": "Site developed by",
         "slogan": "Wir schmieden die Zukunft der Bordsteinattraktivität. Handgefertigte Exzellenz in jeder Schweißnaht.",
-        "rights": "FerrumDecor Studio. Alle Rechte vorbehalten.",
+        "rights": "FerrumDecor. Alle Rechte vorbehalten.",
         "links": {
             "support": "Support",
             "contact": "Kontakt",
@@ -272,7 +273,7 @@
         "shop_notice": "Besuchen Sie unseren Hauptshop für Einkäufe: "
     },
     "FeaturesPage": {
-        "title": "Vorteile des Ferrum Decor Studio",
+        "title": "Vorteile des Ferrum Decor",
         "items": {
             "materials": {
                 "title": "Premium Materialien",
@@ -307,7 +308,7 @@
     "PrivacyPolicy": {
         "title": "Datenschutzerklärung",
         "last_updated": "Zuletzt aktualisiert: 8. Oktober 2025",
-        "intro": "Diese Datenschutzerklärung beschreibt, wie Ferrum Decor Studio (die „Website“, „wir“, „uns“ oder „unser“) Ihre personenbezogenen Daten sammelt, verwendet und offenlegt, wenn Sie ferrumdecorstudio.shop (die „Website“) besuchen, unsere Dienste nutzen oder einen Kauf tätigen oder anderweitig mit uns bezüglich der Website kommunizieren (zusammen die „Dienste“). Für die Zwecke dieser Datenschutzerklärung bedeuten „Sie“ und „Ihr“ Sie als Nutzer der Dienste, unabhängig davon, ob Sie ein Kunde, ein Website-Besucher oder eine andere Person sind, deren Daten wir gemäß dieser Datenschutzerklärung gesammelt haben.",
+        "intro": "Diese Datenschutzerklärung beschreibt, wie Ferrum Decor (die „Website“, „wir“, „uns“ oder „unser“) Ihre personenbezogenen Daten sammelt, verwendet und offenlegt, wenn Sie ferrummail.com (die „Website“) besuchen, unsere Dienste nutzen oder einen Kauf tätigen oder anderweitig mit uns bezüglich der Website kommunizieren (zusammen die „Dienste“). Für die Zwecke dieser Datenschutzerklärung bedeuten „Sie“ und „Ihr“ Sie als Nutzer der Dienste, unabhängig davon, ob Sie ein Kunde, ein Website-Besucher oder eine andere Person sind, deren Daten wir gemäß dieser Datenschutzerklärung gesammelt haben.",
         "sections": {
             "changes": {
                 "title": "Änderungen dieser Datenschutzerklärung",
@@ -370,13 +371,14 @@
     },
     "WhatsApp": {
         "tooltip": "Durch Klicken auf die Schaltfläche erklären Sie sich damit einverstanden, dass Ihre Telefonnummer und Nachricht an unseren WhatsApp-Manager gesendet werden. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
-        "privacy_link": "Datenschutzerklärung",
-        "greeting": "Hallo! Ich möchte mit Ihnen sprechen"
+        "privacy_link": "Datenschutzrichtlinie",
+        "greeting": "Hallo! Ich komme von ferrummail.com, ich hätte gerne eine Beratung zu den Briefkästen.",
+        "cta_sticky": "Variante wählen"
     },
     "TermsOfService": {
         "title": "Nutzungsbedingungen",
         "last_updated": "Zuletzt aktualisiert: 8. Oktober 2025",
-        "intro": "Diese Website wird von Ferrum Decor Studio betrieben. Auf der gesamten Website beziehen sich die Begriffe „wir“, „uns“ und „unser“ auf Ferrum Decor Studio. Ferrum Decor Studio bietet diese Website, einschließlich aller Informationen, Tools und Dienste, die auf dieser Website verfügbar sind, Ihnen, dem Nutzer, unter der Bedingung an, dass Sie alle hier angegebenen Bedingungen, Richtlinien und Hinweise akzeptieren. Indem Sie unsere Website besuchen und/oder etwas bei uns kaufen, nehmen Sie an unserem „Dienst“ teil und erklären sich damit einverstanden, an die folgenden Bedingungen gebunden zu sein („Nutzungsbedingungen“, „Bedingungen“), einschließlich der zusätzlichen Bedingungen und Richtlinien, auf die hierin verwiesen wird und/oder die per Hyperlink verfügbar sind. Diese Nutzungsbedingungen gelten für alle Nutzer der Website, einschließlich, aber nicht beschränkt auf Nutzer, die Browser, Verkäufer, Kunden, Händler und/oder Ersteller von Inhalten sind. Bitte lesen Sie diese Nutzungsbedingungen sorgfältig durch, bevor Sie auf unsere Website zugreifen oder diese nutzen. Durch den Zugriff auf oder die Nutzung eines Teils der Website erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie nicht allen Bedingungen dieser Vereinbarung zustimmen, dürfen Sie nicht auf die Website zugreifen oder Dienste nutzen. Wenn diese Nutzungsbedingungen als Angebot betrachtet werden, ist die Annahme ausdrücklich auf diese Nutzungsbedingungen beschränkt. Alle neuen Funktionen oder Tools, die dem aktuellen Shop hinzugefügt werden, unterliegen ebenfalls den Nutzungsbedingungen. Sie können die aktuellste Version der Nutzungsbedingungen jederzeit auf dieser Seite einsehen. Wir behalten uns das Recht vor, Teile dieser Nutzungsbedingungen zu aktualisieren, zu ändern oder zu ersetzen, indem wir Aktualisierungen und/oder Änderungen auf unserer Website veröffentlichen. Es liegt in Ihrer Verantwortung, diese Seite regelmäßig auf Änderungen zu überprüfen. Ihre fortgesetzte Nutzung oder Ihr Zugriff auf die Website nach der Veröffentlichung von Änderungen gilt als Annahme dieser Änderungen. Unser Shop wird auf Shopify Inc. gehostet. Sie stellen uns die Online-E-Commerce-Plattform zur Verfügung, die es uns ermöglicht, unsere Produkte und Dienste an Sie zu verkaufen.",
+        "intro": "Diese Website wird von Ferrum Decor betrieben. Auf der gesamten Website beziehen sich die Begriffe „wir“, „uns“ und „unser“ auf Ferrum Decor. Ferrum Decor bietet diese Website, einschließlich aller Informationen, Tools und Dienste, die auf dieser Website verfügbar sind, Ihnen, dem Nutzer, unter der Bedingung an, dass Sie alle hier angegebenen Bedingungen, Richtlinien und Hinweise akzeptieren. Indem Sie unsere Website besuchen und/oder etwas bei uns kaufen, nehmen Sie an unserem „Dienst“ teil und erklären sich damit einverstanden, an die folgenden Bedingungen gebunden zu sein („Nutzungsbedingungen“, „Bedingungen“), einschließlich der zusätzlichen Bedingungen und Richtlinien, auf die hierin verwiesen wird und/oder die per Hyperlink verfügbar sind. Diese Nutzungsbedingungen gelten für alle Nutzer der Website, einschließlich, aber nicht beschränkt auf Nutzer, die Browser, Verkäufer, Kunden, Händler und/oder Ersteller von Inhalten sind. Bitte lesen Sie diese Nutzungsbedingungen sorgfältig durch, bevor Sie auf unsere Website zugreifen oder diese nutzen. Durch den Zugriff auf oder die Nutzung eines Teils der Website erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie nicht allen Bedingungen dieser Vereinbarung zustimmen, dürfen Sie nicht auf die Website zugreifen oder Dienste nutzen. Wenn diese Nutzungsbedingungen als Angebot betrachtet werden, ist die Annahme ausdrücklich auf diese Nutzungsbedingungen beschränkt. Alle neuen Funktionen oder Tools, die dem aktuellen Shop hinzugefügt werden, unterliegen ebenfalls den Nutzungsbedingungen. Sie können die aktuellste Version der Nutzungsbedingungen jederzeit auf dieser Seite einsehen. Wir behalten uns das Recht vor, Teile dieser Nutzungsbedingungen zu aktualisieren, zu ändern oder zu ersetzen, indem wir Aktualisierungen und/oder Änderungen auf unserer Website veröffentlichen. Es liegt in Ihrer Verantwortung, diese Seite regelmäßig auf Änderungen zu überprüfen. Ihre fortgesetzte Nutzung oder Ihr Zugriff auf die Website nach der Veröffentlichung von Änderungen gilt als Annahme dieser Änderungen. Unser Shop wird auf Shopify Inc. gehostet. Sie stellen uns die Online-E-Commerce-Plattform zur Verfügung, die es uns ermöglicht, unsere Produkte und Dienste an Sie zu verkaufen.",
         "sections": {
             "online_store": {
                 "title": "ABSCHNITT 1 - BEDINGUNGEN FÜR DEN ONLINE-SHOP",
@@ -428,11 +430,11 @@
             },
             "disclaimer": {
                 "title": "ABSCHNITT 13 - HAFTUNGSAUSSCHLUSS; HAFTUNGSBESCHRÄNKUNG",
-                "content": "Wir garantieren, vertreten oder gewährleisten nicht, dass Ihre Nutzung unseres Dienstes ununterbrochen, rechtzeitig, sicher oder fehlerfrei erfolgt. Wir garantieren nicht, dass die Ergebnisse, die durch die Nutzung des Dienstes erzielt werden können, genau oder zuverlässig sind. Sie erklären sich damit einverstanden, dass wir von Zeit zu Zeit den Dienst für unbestimmte Zeiträume entfernen oder den Dienst jederzeit ohne Vorankündigung kündigen können. Sie stimmen ausdrücklich zu, dass Ihre Nutzung des Dienstes bzw. die Unfähigkeit zur Nutzung des Dienstes auf Ihr alleiniges Risiko erfolgt. Der Dienst und alle Produkte und Dienste, die Ihnen über den Dienst bereitgestellt werden, werden (sofern nicht ausdrücklich von uns angegeben) „wie besehen“ und „wie verfügbar“ für Ihre Nutzung bereitgestellt, ohne jegliche Zusicherungen, Gewährleistungen oder Bedingungen jeglicher Art, weder ausdrücklich noch stillschweigend, einschließlich aller stillschweigenden Gewährleistungen oder Bedingungen der Marktgängigkeit, der marktgängigen Qualität, der Eignung für einen bestimmten Zweck, der Haltbarkeit, des Eigentums und der Nichtverletzung von Rechten. In keinem Fall haftet Ferrum Decor Studio, unsere Direktoren, leitenden Angestellten, Mitarbeiter, verbundenen Unternehmen, Agenten, Auftragnehmer, Praktikanten, Lieferanten, Dienstleister oder Lizenzgeber für Verletzungen, Verluste, Ansprüche oder direkte, indirekte, zufällige, strafende, besondere oder Folgeschäden jeglicher Art, einschließlich, aber nicht beschränkt auf entgangenen Gewinn, entgangenen Umsatz, entgangene Einsparungen, Datenverlust, Ersatzkosten oder ähnliche Schäden, unabhängig davon, ob sie auf Vertrag, unerlaubter Handlung (einschließlich Fahrlässigkeit), Gefährdungshaftung oder anderweitig beruhen, die sich aus Ihrer Nutzung des Dienstes oder von Produkten ergeben, die über den Dienst bezogen wurden, oder für andere Ansprüche, die in irgendeiner Weise mit Ihrer Nutzung des Dienstes oder eines Produkts zusammenhängen, einschließlich, aber nicht beschränkt auf Fehler oder Auslassungen in Inhalten oder Verluste oder Schäden jeglicher Art, die infolge der Nutzung des Dienstes oder von Inhalten (oder Produkten) entstanden sind, die über den Dienst veröffentlicht, übertragen oder anderweitig zur Verfügung gestellt wurden, selbst wenn auf deren Möglichkeit hingewiesen wurde. Da einige Staaten oder Gerichtsbarkeiten den Ausschluss oder die Beschränkung der Haftung für Folgeschäden oder zufällige Schäden nicht zulassen, ist unsere Haftung in diesen Staaten oder Gerichtsbarkeiten auf das gesetzlich maximal zulässige Maß beschränkt."
+                "content": "Wir garantieren, vertreten oder gewährleisten nicht, dass Ihre Nutzung unseres Dienstes ununterbrochen, rechtzeitig, sicher oder fehlerfrei erfolgt. Wir garantieren nicht, dass die Ergebnisse, die durch die Nutzung des Dienstes erzielt werden können, genau oder zuverlässig sind. Sie erklären sich damit einverstanden, dass wir von Zeit zu Zeit den Dienst für unbestimmte Zeiträume entfernen oder den Dienst jederzeit ohne Vorankündigung kündigen können. Sie stimmen ausdrücklich zu, dass Ihre Nutzung des Dienstes bzw. die Unfähigkeit zur Nutzung des Dienstes auf Ihr alleiniges Risiko erfolgt. Der Dienst und alle Produkte und Dienste, die Ihnen über den Dienst bereitgestellt werden, werden (sofern nicht ausdrücklich von uns angegeben) „wie besehen“ und „wie verfügbar“ für Ihre Nutzung bereitgestellt, ohne jegliche Zusicherungen, Gewährleistungen oder Bedingungen jeglicher Art, weder ausdrücklich noch stillschweigend, einschließlich aller stillschweigenden Gewährleistungen oder Bedingungen der Marktgängigkeit, der marktgängigen Qualität, der Eignung für einen bestimmten Zweck, der Haltbarkeit, des Eigentums und der Nichtverletzung von Rechten. In keinem Fall haftet Ferrum Decor, unsere Direktoren, leitenden Angestellten, Mitarbeiter, verbundenen Unternehmen, Agenten, Auftragnehmer, Praktikanten, Lieferanten, Dienstleister oder Lizenzgeber für Verletzungen, Verluste, Ansprüche oder direkte, indirekte, zufällige, strafende, besondere oder Folgeschäden jeglicher Art, einschließlich, aber nicht beschränkt auf entgangenen Gewinn, entgangenen Umsatz, entgangene Einsparungen, Datenverlust, Ersatzkosten oder ähnliche Schäden, unabhängig davon, ob sie auf Vertrag, unerlaubter Handlung (einschließlich Fahrlässigkeit), Gefährdungshaftung oder anderweitig beruhen, die sich aus Ihrer Nutzung des Dienstes oder von Produkten ergeben, die über den Dienst bezogen wurden, oder für andere Ansprüche, die in irgendeiner Weise mit Ihrer Nutzung des Dienstes oder eines Produkts zusammenhängen, einschließlich, aber nicht beschränkt auf Fehler oder Auslassungen in Inhalten oder Verluste oder Schäden jeglicher Art, die infolge der Nutzung des Dienstes oder von Inhalten (oder Produkten) entstanden sind, die über den Dienst veröffentlicht, übertragen oder anderweitig zur Verfügung gestellt wurden, selbst wenn auf deren Möglichkeit hingewiesen wurde. Da einige Staaten oder Gerichtsbarkeiten den Ausschluss oder die Beschränkung der Haftung für Folgeschäden oder zufällige Schäden nicht zulassen, ist unsere Haftung in diesen Staaten oder Gerichtsbarkeiten auf das gesetzlich maximal zulässige Maß beschränkt."
             },
             "indemnification": {
                 "title": "ABSCHNITT 14 - ENTSCHÄDIGUNG",
-                "content": "Sie erklären sich damit einverstanden, Ferrum Decor Studio und unsere Muttergesellschaft, Tochtergesellschaften, verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Agenten, Auftragnehmer, Lizenzgeber, Dienstleister, Unterauftragnehmer, Lieferanten, Praktikanten und Mitarbeiter von allen Ansprüchen oder Forderungen, einschließlich angemessener Anwaltskosten, freizustellen, zu verteidigen und schadlos zu halten, die von Dritten aufgrund oder infolge Ihrer Verletzung dieser Nutzungsbedingungen oder der Dokumente, die sie durch Verweis enthalten, oder Ihrer Verletzung von Gesetzen oder Rechten Dritter erhoben werden."
+                "content": "Sie erklären sich damit einverstanden, Ferrum Decor und unsere Muttergesellschaft, Tochtergesellschaften, verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Agenten, Auftragnehmer, Lizenzgeber, Dienstleister, Unterauftragnehmer, Lieferanten, Praktikanten und Mitarbeiter von allen Ansprüchen oder Forderungen, einschließlich angemessener Anwaltskosten, freizustellen, zu verteidigen und schadlos zu halten, die von Dritten aufgrund oder infolge Ihrer Verletzung dieser Nutzungsbedingungen oder der Dokumente, die sie durch Verweis enthalten, oder Ihrer Verletzung von Gesetzen oder Rechten Dritter erhoben werden."
             },
             "severability": {
                 "title": "ABSCHNITT 15 - SALVATORISCHE KLAUSEL",
@@ -456,8 +458,14 @@
             },
             "contact_info": {
                 "title": "ABSCHNITT 20 - KONTAKTINFORMATIONEN",
-                "content": "Fragen zu den Nutzungsbedingungen sollten an ferrumdecorstudio@icloud.com gesendet werden. Unsere Kontaktinformationen sind unten aufgeführt: Ferrum Decor Studio. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
+                "content": "Fragen zu den Nutzungsbedingungen sollten an ferrumdecorstudio@icloud.com gesendet werden. Unsere Kontaktinformationen sind unten aufgeführt: Ferrum Decor. ferrumdecorstudio@icloud.com. 4393 Commons Drive East ste 103, building 2, app. #8, Destin, FL, 32541, US. +380673814404"
             }
+        },
+        "CookieConsent": {
+            "message": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und den Website-Verkehr zu analysieren.",
+            "accept": "Akzeptieren",
+            "decline": "Ablehnen",
+            "privacy_policy": "Datenschutzerklärung"
         }
     }
 }

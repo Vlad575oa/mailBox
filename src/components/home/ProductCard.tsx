@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { getShimmerPlaceholder } from '@/lib/image-utils';
-import { sendGTMEvent } from '@/lib/gtm';
+import { trackFerrumShopClick } from '@/lib/analytics';
 
 interface ProductCardProps {
     product: Product;
@@ -73,7 +73,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-white text-xs text-center px-4 font-light tracking-wide hover:text-[#C5A059] transition-colors"
-                            onClick={() => sendGTMEvent('shop_click', { location: 'product_card_note', product_id: product.id })}
+                            onClick={() => trackFerrumShopClick(`product_card_note_${product.id}`)}
                         >
                             {t('official_site_note')}
                         </a>
@@ -82,7 +82,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="transform scale-90 group-hover:scale-100 transition-transform duration-500"
-                            onClick={() => sendGTMEvent('shop_click', { location: 'product_card_button', product_id: product.id })}
+                            onClick={() => trackFerrumShopClick(`product_card_button_${product.id}`)}
                         >
                             <Button variant="gold" size="sm" className="px-6 py-4 flex flex-col items-center leading-tight shadow-2xl shadow-[#C5A059]/40">
                                 <span className="text-sm font-bold uppercase tracking-widest">{t('buy_now')}</span>

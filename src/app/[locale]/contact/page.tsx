@@ -3,12 +3,16 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { FaInstagram, FaPinterest } from 'react-icons/fa';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }));
+}
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'Contact' });
-    const baseUrl = 'https://ferrumdecorstudio.shop';
+    const baseUrl = 'https://ferrummail.com';
     const canonicalUrl = `${baseUrl}/${locale}/contact`;
 
     const languages = {} as Record<string, string>;
@@ -16,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         languages[loc] = `${baseUrl}/${loc}/contact`;
     });
 
-    const title = `${t('title')} | FerrumDecor Studio`;
+    const title = `${t('title')} | FerrumDecor`;
     const description = `${t('geo_value')} ${t('delivery_value')}. ${t('phone_label')}: ${t('phone_value')}`;
 
     return {
@@ -64,7 +68,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 <div className="container mx-auto px-6 max-w-5xl">
                     <Breadcrumbs locale={locale} />
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-thin tracking-tight text-white mb-16 text-center">
-                        {t('title')} <span className="text-gradient-gold font-serif italic">Ferrum Decor Studio</span>
+                        {t('title')} <span className="text-gradient-gold font-serif italic">Ferrum Decor</span>
                     </h1>
 
                     <div className="grid md:grid-cols-2 gap-8 text-white">

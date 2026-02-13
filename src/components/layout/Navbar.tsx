@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { AnimatePresence, motion, useScroll } from 'framer-motion';
 import { FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { useWhatsApp } from '@/context/WhatsAppContext';
-import { sendGTMEvent } from '@/lib/gtm';
+import { sendGTMEvent, trackWhatsAppClick } from '@/lib/analytics';
 
 export function Navbar() {
     const t = useTranslations('Navbar');
@@ -98,7 +98,7 @@ export function Navbar() {
                                 </div>
                                 <button
                                     onClick={() => {
-                                        sendGTMEvent('whatsapp_click', { location: 'navbar_desktop' });
+                                        trackWhatsAppClick('navbar_desktop');
                                         handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`);
                                     }}
                                     className="text-white hover:text-[#25D366] transition-colors hover:scale-110 duration-300 block"
@@ -119,7 +119,7 @@ export function Navbar() {
                             </div>
                             <button
                                 onClick={() => {
-                                    sendGTMEvent('whatsapp_click', { location: 'navbar_mobile' });
+                                    trackWhatsAppClick('navbar_mobile');
                                     handleClick(`https://wa.me/380673814404?text=${encodeURIComponent(tWA('greeting'))}`);
                                 }}
                                 className="text-white hover:text-[#25D366] transition-colors block"
