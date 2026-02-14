@@ -3,7 +3,7 @@ import Image from 'next/image';
 import productsData from '@/data/products.json';
 import { getShimmerPlaceholder } from '@/lib/image-utils';
 
-const products = productsData.map((item) => ({
+const products = productsData.slice(0, 8).map((item) => ({
     id: item.id,
     name: item.title,
     image: item.image,
@@ -30,10 +30,10 @@ export function HeroProductGrid() {
                                     alt={product.name}
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                    priority={index < 4}
-                                    loading={index < 4 ? 'eager' : 'lazy'}
+                                    priority={index < 2}
+                                    loading={index < 2 ? 'eager' : 'lazy'}
                                     sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 15vw"
-                                    quality={70}
+                                    quality={60}
                                     placeholder="blur"
                                     blurDataURL={getShimmerPlaceholder(100, 100)}
                                 />

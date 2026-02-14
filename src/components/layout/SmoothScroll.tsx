@@ -1,7 +1,6 @@
 'use client';
 
 import { ReactNode, useEffect } from 'react';
-import Lenis from 'lenis';
 
 export function SmoothScroll({ children }: { children: ReactNode }) {
     useEffect(() => {
@@ -9,25 +8,37 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
 
         if (isMobile) return;
 
-        const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            orientation: 'vertical',
-            gestureOrientation: 'vertical',
-            smoothWheel: true,
-            wheelMultiplier: 1,
-            touchMultiplier: 2,
-        });
+        // Dynamically import Lenis to reduce initial bundle size
+        const initSmoothScroll = async () => {
+            const { default: Lenis } = await import('lenis');
 
-        function raf(time: number) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                orientation: 'vertical',
+                gestureOrientation: 'vertical',
+                smoothWheel: true,
+                wheelMultiplier: 1,
+                touchMultiplier: 2,
+            });
 
-        requestAnimationFrame(raf);
+            function raf(time: number) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            const frameId = requestAnimationFrame(raf);
+
+            return () => {
+                cancelAnimationFrame(frameId);
+                lenis.destroy();
+            };
+        };
+
+        const cleanupPromise = initSmoothScroll();
 
         return () => {
-            lenis.destroy();
+            cleanupPromise.then(cleanup => cleanup && cleanup());
         };
     }, []);
 

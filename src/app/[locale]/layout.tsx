@@ -78,7 +78,18 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const messages = await getMessages();
+  const allMessages = await getMessages();
+
+  // Filter messages to only include what's needed for layout components
+  // to reduce initial HTML size and hydration payload
+  const messages = {
+    Navbar: allMessages.Navbar,
+    Footer: allMessages.Footer,
+    WhatsApp: allMessages.WhatsApp,
+    CookieConsent: allMessages.CookieConsent,
+    Metadata: allMessages.Metadata,
+    Common: allMessages.Common
+  };
 
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>

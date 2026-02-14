@@ -11,12 +11,12 @@ export async function Hero() {
         <>
             <section className="relative min-h-[90vh] w-full overflow-hidden bg-[#09090b] flex items-center py-20 lg:py-24">
 
-                {/* Background Image - CSS Controlled Responsiveness */}
+                {/* Background Image - Art Direction using picture to avoid double loading */}
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-[#09090b]/50 z-2" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-[#09090b]/50 z-[2]" />
 
-                    {/* Desktop Hero Image */}
-                    <div className="hidden md:block absolute inset-0">
+                    <picture>
+                        <source media="(max-width: 767px)" srcSet="/images/bg_hero_mobile.webp" />
                         <Image
                             src="/images/hero-bg-modern.webp"
                             alt="Premium Mailbox"
@@ -27,33 +27,19 @@ export async function Hero() {
                             className="object-cover"
                             sizes="100vw"
                         />
-                    </div>
-
-                    {/* Mobile Hero Image */}
-                    <div className="md:hidden absolute inset-0">
-                        <Image
-                            src="/images/bg_hero_mobile.webp"
-                            alt="Premium Mailbox"
-                            fill
-                            priority
-                            fetchPriority="high"
-                            quality={70}
-                            className="object-cover"
-                            sizes="100vw"
-                        />
-                    </div>
+                    </picture>
                 </div>
 
                 <div className="w-full relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start lg:items-center">
 
-                        {/* LEFT SIDE: Compact 4x4 Catalog Grid */}
+                        {/* LEFT SIDE: Compact 4x4 Catalog Grid (Shown only on Desktop via CSS) */}
                         <div className="hidden lg:block lg:col-span-12 xl:col-span-5 order-2 lg:order-1 px-[5px] lg:pl-[160px] lg:pr-0">
                             <HeroProductGrid />
                         </div>
 
                         {/* RIGHT SIDE: Main Content */}
-                        <div className="lg:col-span-7 order-1 lg:order-2 text-center lg:text-left pl-0 lg:pl-40 pr-6">
+                        <div className="lg:col-span-7 xl:col-span-7 order-1 lg:order-2 text-center lg:text-left pl-0 lg:pl-40 pr-6">
 
                             <div>
                                 <h1 className="text-[38px] md:text-[50px] lg:text-[62px] font-thin tracking-tight text-white mb-8 leading-[1.1]">
