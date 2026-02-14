@@ -208,18 +208,13 @@ async function parseData() {
             allRemote = [...new Set([...allRemote, ...cleanScraped])];
         }
 
-        if (p.id >= 1 && p.id <= 16 && allRemote.length > 1) {
-            console.log(`Product ${p.id}: Skipping the first (duplicate) image as requested.`);
-            allRemote.shift();
-        }
-
         const localImages = [];
         for (let idx = 0; idx < allRemote.length; idx++) {
             const url = allRemote[idx];
             try {
                 process.stdout.write(`Product ${p.id}: Processing image ${idx + 1}/${allRemote.length}\r`);
-                // Use idx + 1 to start indexing from 1
-                const localPath = await downloadAndProcessImage(url, p.id, idx + 1);
+                // Use idx to start indexing from 0
+                const localPath = await downloadAndProcessImage(url, p.id, idx);
                 localImages.push(localPath);
             } catch (err) {
                 // error logging
