@@ -106,9 +106,9 @@
   },
   {
     "id": 6,
-    "title": "$949.00 USD",
+    "title": "PURE BRASS Personalized Mailbox",
     "link": "https://ferrumdecorstudio.shop/products/pure-brass-personalized-letter-box-modern-wall-mount-brass-mailbox-unique-personalized-post-box-copy",
-    "price": "Price on request",
+    "price": "$949.00 USD",
     "image": "/images/product-6-0.jpg",
     "images": [
       "/images/product-6-0.jpg",
@@ -124,15 +124,15 @@
       "/images/product-6-10.jpg",
       "/images/product-6-11.jpg"
     ],
-    "priceNumeric": 0,
+    "priceNumeric": 949,
     "category": "Mailbox",
-    "material": "Steel"
+    "material": "Brass"
   },
   {
     "id": 7,
-    "title": "$949.00 USD",
+    "title": "PURE BRASS Personalized Letter Box",
     "link": "https://ferrumdecorstudio.shop/products/custom-wall-mount-cor-ten-steel-mailbox-modern-personalizable-corten-postbox-unique-personalized-mail-box-copy-3",
-    "price": "Price on request",
+    "price": "$949.00 USD",
     "image": "/images/product-7-0.jpg",
     "images": [
       "/images/product-7-0.jpg",
@@ -144,9 +144,9 @@
       "/images/product-7-6.jpg",
       "/images/product-7-7.jpg"
     ],
-    "priceNumeric": 0,
+    "priceNumeric": 949,
     "category": "Mailbox",
-    "material": "Steel"
+    "material": "Brass"
   },
   {
     "id": 8,
@@ -277,9 +277,9 @@
   },
   {
     "id": 14,
-    "title": "$395.00 USD",
+    "title": "Merbau Wall mount personalized mailbox",
     "link": "https://ferrumdecorstudio.shop/products/pure-brass-personalized-mailbox-copy",
-    "price": "Price on request",
+    "price": "$395.00 USD",
     "image": "/images/product-14-0.jpg",
     "images": [
       "/images/product-14-0.jpg",
@@ -292,15 +292,15 @@
       "/images/product-14-7.jpg",
       "/images/product-14-8.jpg"
     ],
-    "priceNumeric": 0,
+    "priceNumeric": 395,
     "category": "Mailbox",
     "material": "Steel"
   },
   {
     "id": 15,
-    "title": "$949.00 USD",
+    "title": "PURE BRASS Personalized Mailbox",
     "link": "https://ferrumdecorstudio.shop/products/bespoke-custom-built-wall-mount-cor-ten-steel-mailbox-copy",
-    "price": "Price on request",
+    "price": "$949.00 USD",
     "image": "/images/product-15-0.jpg",
     "images": [
       "/images/product-15-0.jpg",
@@ -312,9 +312,9 @@
       "/images/product-15-6.jpg",
       "/images/product-15-7.jpg"
     ],
-    "priceNumeric": 0,
+    "priceNumeric": 949,
     "category": "Mailbox",
-    "material": "Steel"
+    "material": "Brass"
   },
   {
     "id": 16,

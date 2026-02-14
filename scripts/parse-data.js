@@ -155,13 +155,19 @@ async function parseData() {
         } else if (cell === '💰') {
             const nextRow = rawData[i + 1];
             if (nextRow && nextRow[0]) {
-                currentProduct.price = String(nextRow[0]);
+                currentProduct.price = String(nextRow[0]).replace('✏️', '').trim();
                 i++;
             }
         } else if (typeof cell === 'string') {
-            if (cell === 'Preview 1' || cell === '✏️') continue;
-            if (!cell.startsWith('http') && cell.length > 3) {
-                currentProduct.title = cell.replace('✏️', '').trim();
+            const cleanCell = cell.replace('✏️', '').trim();
+            if (cleanCell === 'Preview 1' || cleanCell === '' || cell === '✏️') continue;
+            if (cleanCell.startsWith('http')) continue;
+
+            // Detect price - if it contains currency symbols or USD/EUR
+            if (cleanCell.includes('$') || cleanCell.toLowerCase().includes('usd')) {
+                currentProduct.price = cleanCell;
+            } else if (cleanCell.length > 3) {
+                currentProduct.title = cleanCell;
             }
         }
     }
