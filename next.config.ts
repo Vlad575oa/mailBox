@@ -28,6 +28,7 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['react-icons', 'framer-motion', 'react-use'],
     cpus: 1,
     workerThreads: false,
+    nextScriptWorkers: true,
   },
   async headers() {
     return [
@@ -56,7 +57,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://tagmanager.google.com https://mc.yandex.ru; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://cdn.shopify.com https://ferrummail.com https://ferrumdecorstudio.shop https://www.googletagmanager.com https://www.google-analytics.com https://stats.g.doubleclick.net https://mc.yandex.ru; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://mc.yandex.ru; frame-src 'self' https://www.googletagmanager.com https://mc.yandex.ru;"
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://tagmanager.google.com https://mc.yandex.ru; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://cdn.shopify.com https://ferrummail.com https://ferrumdecorstudio.shop https://www.googletagmanager.com https://www.google-analytics.com https://stats.g.doubleclick.net https://mc.yandex.ru; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://mc.yandex.ru; frame-src 'self' https://www.googletagmanager.com https://mc.yandex.ru; worker-src 'self' blob:;"
           }
         ]
       }

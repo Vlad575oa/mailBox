@@ -6,29 +6,8 @@ import Script from 'next/script';
 const METRIKA_ID = 106825200;
 
 export function YandexMetrika() {
-    const [shouldLoad, setShouldLoad] = useState(false);
-
-    useEffect(() => {
-        const loadMetrika = () => {
-            if ('requestIdleCallback' in window) {
-                (window as any).requestIdleCallback(() => setShouldLoad(true), { timeout: 2000 });
-            } else {
-                setTimeout(() => setShouldLoad(true), 1000);
-            }
-        };
-
-        if (document.readyState === 'complete') {
-            loadMetrika();
-        } else {
-            window.addEventListener('load', loadMetrika);
-            return () => window.removeEventListener('load', loadMetrika);
-        }
-    }, []);
-
-    if (!shouldLoad) return null;
-
     return (
-        <Script id="yandex-metrika" strategy="afterInteractive">
+        <Script id="yandex-metrika" strategy="worker">
             {`
                 (function(m,e,t,r,i,k,a){
                     m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

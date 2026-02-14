@@ -4,32 +4,12 @@ import { useState, useEffect } from 'react';
 import Script from 'next/script';
 
 export function GoogleTagManager({ gtmId }: { gtmId: string }) {
-    const [shouldLoad, setShouldLoad] = useState(false);
-
-    useEffect(() => {
-        const loadGTM = () => {
-            // Wait for the browser to be idle after the page has fully loaded
-            if ('requestIdleCallback' in window) {
-                (window as any).requestIdleCallback(() => setShouldLoad(true), { timeout: 2000 });
-            } else {
-                setTimeout(() => setShouldLoad(true), 1000);
-            }
-        };
-
-        if (document.readyState === 'complete') {
-            loadGTM();
-        } else {
-            window.addEventListener('load', loadGTM);
-            return () => window.removeEventListener('load', loadGTM);
-        }
-    }, []);
-
-    if (!gtmId || !shouldLoad) return null;
+    if (!gtmId) return null;
 
     return (
         <Script
             id="gtm-script"
-            strategy="afterInteractive"
+            strategy="worker"
             dangerouslySetInnerHTML={{
                 __html: `
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
