@@ -88,7 +88,11 @@ export default async function RootLayout({
     WhatsApp: allMessages.WhatsApp,
     CookieConsent: allMessages.CookieConsent,
     Metadata: allMessages.Metadata,
-    Common: allMessages.Common
+    Common: allMessages.Common,
+    Hero: allMessages.Hero,
+    FAQ: allMessages.FAQ,
+    Reviews: allMessages.Reviews,
+    Catalog: allMessages.Catalog
   };
 
   return (

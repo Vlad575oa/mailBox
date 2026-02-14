@@ -183,11 +183,22 @@ async function parseData() {
     const finalProducts = [];
 
     for (const p of products) {
-        // If we have a link, scrape for more images
-        let allRemote = [...p.remoteImages];
+        // Deduplicate URLs and apply special logic for products 1-16
+        let allRemote = [...new Set(p.remoteImages.map(url => url.split('?')[0]))];
+
         if (p.link) {
             const scraped = await fetchProductGallery(p.link);
-            allRemote = [...new Set([...allRemote, ...scraped])];
+            const cleanScraped = scraped.map(url => url.split('?')[0]);
+            allRemote = [...new Set([...allRemote, ...cleanScraped])];
+        }
+
+        // SPECIAL FIX: For products 1-16, the first image is often a duplicate 
+        // of a later one or just a redundant copy.
+        // User specifically asked to skip the duplicate with prefix 0 (the first one) 
+        // as they are duplicates with prefix 1.
+        if (p.id >= 1 && p.id <= 16 && allRemote.length > 1) {
+            console.log(`Product ${p.id}: Skipping the first (duplicate) image as requested.`);
+            allRemote.shift();
         }
 
         const localImages = [];
