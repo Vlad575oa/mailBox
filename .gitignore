@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large files
+deploy.zip
+*.xlsx
+
+# Python/Scripts
+*.py
+*.sh
+*.txt
+/scripts/
+/all_product_files.txt
+/used_images.txt
+
+# Local files
+.DS_Store
+.env.local
