@@ -30,8 +30,8 @@ export function HeroProductGrid() {
                                     alt={product.name}
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                    priority={index < 4}
-                                    loading={index < 4 ? 'eager' : 'lazy'}
+                                    priority={index < 6}
+                                    loading={index < 6 ? 'eager' : 'lazy'}
                                     sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 15vw"
                                     placeholder="blur"
                                     blurDataURL={getShimmerPlaceholder(100, 100)}

@@ -23,7 +23,7 @@ export async function Hero() {
                             fill
                             priority
                             fetchPriority="high"
-                            quality={95}
+                            quality={80}
                             className="object-cover"
                             sizes="100vw"
                         />
@@ -37,7 +37,7 @@ export async function Hero() {
                             fill
                             priority
                             fetchPriority="high"
-                            quality={90}
+                            quality={80}
                             className="object-cover"
                             sizes="100vw"
                         />
