@@ -6,8 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "eslint",
-    "prebuild": "node scripts/parse-data.js",
-    "build:fast": "node scripts/parse-data.js --fast && next build",
     "start": "next start"
   },
   "dependencies": {
