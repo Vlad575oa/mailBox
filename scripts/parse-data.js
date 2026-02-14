@@ -180,13 +180,8 @@ async function parseData() {
         // If we have a link, scrape for more images
         let allRemote = [...p.remoteImages];
         if (p.link) {
-            // In FAST_MODE, we skip scraping if we already have some images for this product
-            if (FAST_MODE && p.remoteImages.length > 0) {
-                console.log(`Product ${p.id}: Skipping scrape in fast mode`);
-            } else {
-                const scraped = await fetchProductGallery(p.link);
-                allRemote = [...new Set([...allRemote, ...scraped])];
-            }
+            const scraped = await fetchProductGallery(p.link);
+            allRemote = [...new Set([...allRemote, ...scraped])];
         }
 
         const localImages = [];

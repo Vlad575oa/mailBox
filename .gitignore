@@ -48,7 +48,7 @@ deploy.zip
 *.py
 *.sh
 *.txt
-/scripts/
+# /scripts/
 /all_product_files.txt
 /used_images.txt
 
