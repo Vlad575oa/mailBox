@@ -10,6 +10,7 @@ const CookieConsent = dynamic(() => import('@/components/ui/CookieConsent').then
 const PageViewTracker = dynamic(() => import('@/components/analytics/PageViewTracker').then(mod => mod.PageViewTracker), { ssr: false });
 const GoogleAnalytics = dynamic(() => import('@/components/analytics/GoogleAnalytics').then(mod => mod.GoogleAnalytics), { ssr: false });
 const GoogleTagManager = dynamic(() => import('@/components/analytics/GoogleTagManager').then(mod => mod.GoogleTagManager), { ssr: false });
+const YandexMetrika = dynamic(() => import('@/components/analytics/YandexMetrika').then(mod => mod.YandexMetrika), { ssr: false });
 
 export function ClientSideUtilities({ children, gaId }: { children: ReactNode; gaId: string }) {
     return (
@@ -17,6 +18,7 @@ export function ClientSideUtilities({ children, gaId }: { children: ReactNode; g
             <PageViewTracker />
             <GoogleAnalytics gaId={gaId} />
             <GoogleTagManager gtmId="GTM-TCSTJK3J" />
+            <YandexMetrika />
             <SmoothScroll>
                 {children}
                 <WhatsAppButton />

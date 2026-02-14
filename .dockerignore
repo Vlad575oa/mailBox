@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+.gitignore
+.env.local
+.DS_Store
+README.md
+Dockerfile
+.dockerignore
+package-lock.json
+deploy.zip
+*.xlsx
+*.sh
+*.py
+*.txt
+scripts

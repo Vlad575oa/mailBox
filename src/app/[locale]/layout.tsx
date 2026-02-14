@@ -7,6 +7,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { WhatsAppProvider } from '@/context/WhatsAppContext';
 import { GoogleTagManagerNoScript } from '@/components/analytics/GoogleTagManager';
+import { YandexMetrikaNoScript } from '@/components/analytics/YandexMetrika';
 import { ClientSideUtilities } from '@/components/providers/ClientSideUtilities';
 
 
@@ -63,6 +64,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       locale: locale === 'de' ? 'de_DE' : 'en_US',
       type: 'website',
     },
+    verification: {
+      google: 'google2ecff5706b29c82e',
+    },
   };
 }
 
@@ -80,6 +84,7 @@ export default async function RootLayout({
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col`} suppressHydrationWarning>
         <GoogleTagManagerNoScript gtmId="GTM-TCSTJK3J" />
+        <YandexMetrikaNoScript />
 
         <NextIntlClientProvider messages={messages}>
           <WhatsAppProvider>

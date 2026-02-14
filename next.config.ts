@@ -26,6 +26,8 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizePackageImports: ['react-icons', 'framer-motion', 'react-use'],
+    cpus: 1,
+    workerThreads: false,
   },
   async headers() {
     return [
@@ -55,7 +57,8 @@ const nextConfig: NextConfig = {
         ]
       }
     ];
-  }
+  },
+  output: 'standalone',
 };
 
 export default withNextIntl(nextConfig);
