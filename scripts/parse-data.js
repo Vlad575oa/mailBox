@@ -2,6 +2,8 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const http = require('http');
+const sharp = require('sharp');
 
 const EXCEL_FILE = path.resolve(__dirname, '../Book1.xlsx');
 const IMAGES_DIR = path.resolve(__dirname, '../public/images');
@@ -14,35 +16,58 @@ if (!fs.existsSync(IMAGES_DIR)) {
 
 const FAST_MODE = process.argv.includes('--fast');
 
-function downloadImage(url, filepath) {
-    if (fs.existsSync(filepath)) {
-        return Promise.resolve();
+async function downloadAndProcessImage(url, pId, index) {
+    const cleanUrl = url.split('?')[0];
+    const extension = path.extname(cleanUrl) || '.jpg';
+    const webpFilename = `product-${pId}-${index}.webp`;
+    const webpPath = path.join(IMAGES_DIR, webpFilename);
+
+    // CACHE: If .webp already exists, skip everything
+    if (fs.existsSync(webpPath) && !process.argv.includes('--force')) {
+        return `/images/${webpFilename}`;
     }
+
+    const tempFilename = `temp-${pId}-${index}${extension}`;
+    const tempPath = path.join(IMAGES_DIR, tempFilename);
+
     return new Promise((resolve, reject) => {
-        const file = fs.createWriteStream(filepath);
+        const file = fs.createWriteStream(tempPath);
         const protocol = url.startsWith('https') ? https : http;
         const options = {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             }
         };
+
         protocol.get(url, options, (response) => {
             if (response.statusCode >= 300 && response.statusCode < 400 && response.headers.location) {
-                // Handle redirects
-                downloadImage(response.headers.location, filepath).then(resolve).catch(reject);
+                downloadAndProcessImage(response.headers.location, pId, index).then(resolve).catch(reject);
                 return;
             }
             if (response.statusCode !== 200) {
-                reject(new Error(`Failed to download ${url}: Status ${response.statusCode}`));
+                reject(new Error(`Status ${response.statusCode}`));
                 return;
             }
+
             response.pipe(file);
-            file.on('finish', () => {
+            file.on('finish', async () => {
                 file.close();
-                resolve();
+                try {
+                    // Convert to WebP using sharp
+                    await sharp(tempPath)
+                        .webp({ quality: 80 })
+                        .toFile(webpPath);
+
+                    // Cleanup temp file
+                    fs.unlinkSync(tempPath);
+                    resolve(`/images/${webpFilename}`);
+                } catch (err) {
+                    fs.unlink(tempPath, () => { });
+                    reject(err);
+                }
             });
         }).on('error', (err) => {
-            fs.unlink(filepath, () => { });
+            fs.unlink(tempPath, () => { });
             reject(err);
         });
     });
@@ -204,20 +229,15 @@ async function parseData() {
         const localImages = [];
         for (let idx = 0; idx < allRemote.length; idx++) {
             const url = allRemote[idx];
-            const cleanUrl = url.split('?')[0];
-            const extension = path.extname(cleanUrl) || '.jpg';
-            const filename = `product-${p.id}-${idx}${extension}`;
-            const downloadPath = path.join(IMAGES_DIR, filename);
-
             try {
-                process.stdout.write(`Product ${p.id}: Downloading ${idx + 1}/${allRemote.length}\r`);
-                await downloadImage(url, downloadPath);
-                localImages.push(`/images/${filename}`);
+                process.stdout.write(`Product ${p.id}: Processing image ${idx + 1}/${allRemote.length}\r`);
+                const localPath = await downloadAndProcessImage(url, p.id, idx);
+                localImages.push(localPath);
             } catch (err) {
                 // console.error(`\nError downloading for ${p.id}:`, err.message);
             }
         }
-        console.log(`\nProduct ${p.id}: ${localImages.length} images saved.`);
+        console.log(`\nProduct ${p.id}: ${localImages.length} images processed (WebP).`);
 
         finalProducts.push({
             id: p.id,
