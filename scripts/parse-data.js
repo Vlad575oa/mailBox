@@ -12,7 +12,12 @@ if (!fs.existsSync(IMAGES_DIR)) {
     fs.mkdirSync(IMAGES_DIR, { recursive: true });
 }
 
+const FAST_MODE = process.argv.includes('--fast');
+
 function downloadImage(url, filepath) {
+    if (fs.existsSync(filepath)) {
+        return Promise.resolve();
+    }
     return new Promise((resolve, reject) => {
         const file = fs.createWriteStream(filepath);
         const protocol = url.startsWith('https') ? https : http;
@@ -175,8 +180,13 @@ async function parseData() {
         // If we have a link, scrape for more images
         let allRemote = [...p.remoteImages];
         if (p.link) {
-            const scraped = await fetchProductGallery(p.link);
-            allRemote = [...new Set([...allRemote, ...scraped])];
+            // In FAST_MODE, we skip scraping if we already have some images for this product
+            if (FAST_MODE && p.remoteImages.length > 0) {
+                console.log(`Product ${p.id}: Skipping scrape in fast mode`);
+            } else {
+                const scraped = await fetchProductGallery(p.link);
+                allRemote = [...new Set([...allRemote, ...scraped])];
+            }
         }
 
         const localImages = [];

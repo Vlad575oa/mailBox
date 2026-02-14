@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "eslint",
-    "prebuild": "node scripts/parse-data.js"
+    "prebuild": "node scripts/parse-data.js",
+    "build:fast": "node scripts/parse-data.js --fast && next build",
+    "start": "next start"
   },
   "dependencies": {
     "clsx": "^2.1.1",
